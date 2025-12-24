@@ -73,7 +73,7 @@ last_edit_time_format: "%d %b %Y a las %H:%M"
 gh_edit_link: false
 
 # Color scheme
-color_scheme: nil
+color_scheme: ahoraficho
 
 callouts_level: quiet
 callouts:

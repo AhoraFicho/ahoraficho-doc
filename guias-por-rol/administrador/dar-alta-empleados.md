@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Desactivar Usuarios
+title: Dar de Alta Empleados
 parent: Administrador
 grand_parent: Guías por Rol
-nav_order: 2
+nav_order: 1
 ---
 
-# Desactivar Usuarios
+# Dar de Alta Empleados
 {: .no_toc }
 
-Cómo desactivar temporal o definitivamente un empleado en AhoraFicho.
+Cómo registrar nuevos trabajadores en AhoraFicho de forma individual o masiva.
 {: .fs-6 .fw-300 }
 
 ---
@@ -22,424 +22,559 @@ Cómo desactivar temporal o definitivamente un empleado en AhoraFicho.
 
 ---
 
-## ¿Cuándo desactivar un usuario?
+## Antes de empezar
 
-Debes desactivar un usuario en estos casos:
+### Información necesaria
 
-### Desactivación temporal
-- 🏥 **Baja médica prolongada** (>1 mes)
-- 🌴 **Excedencia** temporal
-- 👶 **Permiso de maternidad/paternidad**
-- 📚 **Permiso de estudios**
-- 🔒 **Suspensión disciplinaria**
+Antes de dar de alta un empleado, ten preparada esta información:
 
-### Desactivación definitiva
-- 👋 **Fin de contrato** laboral
-- 🚪 **Despido** o baja voluntaria
-- 🔄 **Cambio a otra empresa** del grupo
-- ⚰️ **Fallecimiento** del empleado
+**Datos personales:**
+- ✅ Nombre completo
+- ✅ Email corporativo (será su usuario)
+- ✅ DNI o ID del empleado
+- ✅ Teléfono de contacto
+- ✅ Fecha de nacimiento
+
+**Datos laborales:**
+- ✅ Departamento
+- ✅ Horario de trabajo
+- ✅ Fecha de alta en la empresa
+- ✅ Rol (Empleado, Manager, Admin)
+
+**Configuración de fichaje:**
+- ✅ Métodos de fichaje permitidos (Web, App, PIN, QR, RFID)
+- ✅ ¿Requiere geolocalización?
+- ✅ ¿Requiere fichaje obligatorio?
+
+**Vacaciones:**
+- ✅ Días de vacaciones anuales
+- ✅ Fecha de caducidad de vacaciones
+
+---
+
+## Alta individual de empleado
+
+### Paso 1: Acceder a Trabajadores
+
+1. Ve al menú lateral **"Configuraciones"** (sección ADMIN)
+2. Selecciona **"Trabajadores"**
+3. Verás el listado de empleados actuales
+
+### Paso 2: Crear nuevo empleado
+
+1. Haz clic en el botón **"Crear nuevo"** (parte superior)
+2. Se abrirá el formulario de alta de empleado
+
+---
+
+## Formulario de alta
+
+El formulario está dividido en varias secciones:
+
+### 📋 Información Personal
+
+**Nombre completo** (obligatorio)
+- Nombre y apellidos del empleado
+- Ejemplo: "Juan Pérez García"
+
+**Email** (obligatorio)
+- Email corporativo del empleado
+- Será su **usuario de acceso**
+- Debe ser único en el sistema
+- Ejemplo: "juan.perez@empresa.com"
+
+{: .warning }
+> **Importante**: El email no puede cambiarse después. Asegúrate de que sea correcto.
+
+**DNI/ID Empleado** (obligatorio)
+- DNI, NIE o código de empleado
+- Ejemplo: "12345678A"
+- Útil para identificación en nóminas
+
+**Teléfono** (opcional)
+- Número de contacto del empleado
+- Formato: Con o sin prefijo internacional
+- Ejemplo: "+34 600123456" o "600123456"
+
+**Fecha de nacimiento** (opcional)
+- Selecciona del calendario
+- Útil para felicitaciones automáticas (si está configurado)
+
+---
+
+### 💼 Información de Contacto
+
+**Usuario** (se genera automáticamente)
+- Se crea a partir del email
+- No necesitas rellenarlo manualmente
+
+**Contraseña** (obligatoria en alta)
+- Contraseña temporal para el primer acceso
+- **Requisitos mínimos:**
+  - 8 caracteres
+  - 1 mayúscula
+  - 1 número
+  - 1 carácter especial
+
+**Confirmar contraseña**
+- Repite la contraseña anterior
+
+{: .tip }
+> **Consejo**: Usa una contraseña temporal sencilla como "Temporal123!" y pide al empleado que la cambie en su primer acceso.
+
+---
+
+### 🏢 Configuración Laboral
+
+**Empresa**
+- Tu empresa (ya seleccionada por defecto)
+- No modificable
+
+**Departamento(s)** (obligatorio)
+- Selecciona al menos un departamento
+- Puedes asignar múltiples departamentos
+- Usa Ctrl+Click (Windows) o Cmd+Click (Mac) para seleccionar varios
+
+**Horario** (obligatorio)
+- Selecciona el horario de trabajo del empleado
+- Si aún no existe, créalo primero en [Horarios](/guias-por-rol/administrador/crear-horarios/)
+- Puedes cambiarlo después si es necesario
+
+**Responsable (Manager 1)** (opcional)
+- Selecciona quién será su responsable directo
+- Aprobará sus ausencias y cambios de fichaje
+- Si no asignas, las aprobaciones irán al administrador
+
+**Responsable 2 (Manager 2)** (opcional)
+- Responsable secundario
+- Útil para coberturas cuando el Manager 1 está ausente
+
+---
+
+### 🔐 Configuración de PIN para Terminal
+
+**PIN de terminal** (opcional)
+- Código de 6 dígitos para fichaje en terminales
+- Solo si vas a usar fichaje por PIN
+- Ejemplo: "123456"
+- Debe ser único por empleado
+
+{: .note }
+> Si dejas vacío, el empleado no podrá fichar por PIN.
+
+---
+
+### 📱 Métodos de Fichaje Permitidos
+
+Selecciona qué métodos de fichaje puede usar este empleado:
+
+**☑️ Fichaje Web**
+- Desde navegador de escritorio/móvil
+- Recomendado: Activar siempre
+
+**☑️ Fichaje Móvil**
+- Desde aplicación iOS/Android
+- Recomendado para trabajadores móviles
+
+**☑️ Fichaje PIN**
+- Desde terminal con código PIN
+- Requiere tener PIN configurado
+
+**☑️ Fichaje QR**
+- Escaneando código QR
+- Útil para acceso rápido desde app
+
+**☑️ Fichaje RFID**
+- Con tarjeta RFID
+- Requiere lectores RFID instalados
 
 {: .important }
-> **Importante**: NUNCA borres un usuario. Siempre desactívalo para mantener el histórico de fichajes y cumplir con requisitos legales.
+> **Importante**: Debes marcar al menos un método de fichaje. Si no marcas ninguno, el empleado no podrá fichar.
+
+**Tag RFID** (opcional)
+- ID de la tarjeta RFID del empleado
+- Solo necesario si usas fichaje RFID
+- Ejemplo: "0123456789ABCD"
 
 ---
 
-## Desactivar vs Eliminar
+### ⚙️ Configuración General
 
-### ❌ NO elimines usuarios
+**☑️ Habilitado**
+- Marca esta casilla para que el empleado pueda acceder
+- Desactívala para dar de baja temporal
+- Por defecto: Marcado
 
-**Razones para NO borrar:**
-- 📜 **Legal**: Debes conservar registros 4 años (RD 8/2019)
-- 📊 **Histórico**: Perderías todos sus fichajes y ausencias
-- 💼 **Nóminas**: Necesitas el histórico para auditorías
-- 🔍 **Inspecciones**: Inspección de Trabajo puede solicitarlos
+**☑️ Requiere Fichaje**
+- Si está marcado, el empleado DEBE fichar
+- Si no está marcado, el fichaje es opcional
+- Recomendado: Marcado para la mayoría
 
-### ✅ Desactiva usuarios
+**☑️ Requiere Geolocalización**
+- Si está marcado, debe compartir ubicación al fichar
+- Si no, puede fichar sin ubicación
+- Útil para trabajadores de campo
 
-**Ventajas de desactivar:**
-- ✅ Mantiene TODO el histórico
-- ✅ Cumple con requisitos legales
-- ✅ Libera un usuario activo de tu plan
-- ✅ Puedes reactivarlo si es necesario
-- ✅ Evita accesos no autorizados
+**☑️ Notificaciones WhatsApp**
+- Si está marcado, recibirá notificaciones por WhatsApp
+- Requiere configuración previa de integración WhatsApp
+- El empleado debe dar su consentimiento
 
 ---
 
-## Cómo desactivar un usuario
+### 🌴 Configuración de Ausencias
 
-### Método 1: Desde el listado de trabajadores
+Esta sección la veremos en detalle en [Asignar Vacaciones](/guias-por-rol/administrador/asignar-vacaciones/).
+
+**Días de vacaciones anuales** (opcional)
+- Número de días de vacaciones al año
+- Ejemplo: 22, 23, 30
+- Si dejas vacío, no podrá solicitar vacaciones
+
+**Fecha de caducidad** (opcional)
+- Cuándo expiran los días de vacaciones
+- Ejemplo: 31/12/2025
+- Si dejas vacío, no caducan
+
+---
+
+## Guardar el empleado
+
+Una vez completado el formulario:
+
+1. Revisa que todos los datos son correctos
+2. Verifica el email (no podrás cambiarlo después)
+3. Haz clic en **"Guardar"** o **"Crear"**
+
+Verás un mensaje de confirmación:
+✅ "Empleado creado correctamente"
+
+---
+
+## Después de crear el empleado
+
+### Email de bienvenida
+
+El empleado recibirá automáticamente un email con:
+- 👤 Su usuario (el email que configuraste)
+- 🔑 Contraseña temporal
+- 🔗 Enlace de acceso a AhoraFicho
+- 📱 Enlaces de descarga de apps móviles
+
+### Configuración adicional
+
+Después de crear el empleado, puedes:
+
+1. **Asignar vacaciones específicas**
+   - Ve a su ficha de empleado
+   - Haz clic en "Ausencias Máximas"
+   - Configura años específicos
+
+2. **Configurar horario personalizado**
+   - Si necesita horario diferente del asignado inicialmente
+   - Ve a [Asignar Horarios](/guias-por-rol/administrador/asignar-horarios/)
+
+3. **Añadir a proyectos** (si módulo activo)
+   - Asigna el empleado a proyectos específicos
+
+---
+
+## Editar empleado existente
+
+Para modificar datos de un empleado:
 
 1. Ve a **"Configuraciones"** → **"Trabajadores"**
-2. Localiza el empleado en el listado
+2. Busca el empleado en el listado
 3. Haz clic en **"Editar"** (icono de lápiz ✏️)
-4. Desmarca la casilla **"☑️ Habilitado"**
+4. Modifica los campos necesarios
 5. Haz clic en **"Guardar"**
 
-### Método 2: Desde la ficha del empleado
+### Campos que NO puedes editar
 
-1. Ve a **"Configuraciones"** → **"Trabajadores"**
-2. Haz clic en el nombre del empleado
-3. Se abrirá su ficha detallada
-4. Haz clic en **"Editar"**
-5. Desmarca **"☑️ Habilitado"**
-6. Guarda los cambios
+- ❌ Email (es el identificador único)
+- ❌ Empresa
 
----
+Para cambiar el email, debes crear un nuevo usuario.
 
-## Efectos de desactivar un usuario
+### Cambiar contraseña de un empleado
 
-### ✅ Lo que ocurre inmediatamente
+Si un empleado olvida su contraseña y no puede recuperarla:
 
-**Acceso al sistema:**
-- ❌ No puede iniciar sesión
-- ❌ Si está conectado, se cerrará su sesión en el próximo refresco
-- ❌ No puede fichar
-- ❌ No puede solicitar ausencias
-
-**Visibilidad:**
-- 👁️ Aparece en listados como "Inactivo"
-- 🔴 Se marca en rojo o con icono de desactivado
-- 📊 NO aparece en calendarios de equipo activo
-- 📈 NO se incluye en estadísticas de usuarios activos
-
-**Licencias:**
-- ✅ Libera 1 usuario activo de tu plan
-- ✅ Puedes dar de alta a otro empleado
-
-### 📊 Lo que se conserva
-
-**Histórico completo:**
-- ✅ Todos sus fichajes pasados
-- ✅ Todas sus ausencias
-- ✅ Sus gastos e imputaciones
-- ✅ Sus documentos
-- ✅ Reportes generados
-
-**Información personal:**
-- ✅ Datos personales y laborales
-- ✅ Horarios asignados históricamente
-- ✅ Departamentos
-- ✅ Responsables asignados
+1. Edita el empleado
+2. En el campo **"Nueva contraseña"** introduce una temporal
+3. En **"Confirmar nueva contraseña"** repite la contraseña
+4. Guarda
+5. Comunica la contraseña temporal al empleado
+6. Pídele que la cambie en su primer acceso
 
 ---
 
-## Ver usuarios inactivos
+## Alta masiva de empleados
 
-Por defecto, el listado muestra solo usuarios activos.
+Si necesitas dar de alta a muchos empleados a la vez:
 
-### Mostrar inactivos
+### Opción 1: Importar desde Excel/CSV
 
 1. Ve a **"Configuraciones"** → **"Trabajadores"**
-2. Activa el filtro **"☑️ Mostrar inactivos"**
-3. Los usuarios desactivados aparecerán en el listado
+2. Haz clic en **"Importar"**
+3. Descarga la **plantilla de ejemplo**
+4. Rellena la plantilla con los datos de tus empleados
+5. Guarda el archivo en formato **CSV** o **Excel**
+6. Sube el archivo
+7. Revisa los datos antes de confirmar
+8. Haz clic en **"Importar"**
 
-**Identificación visual:**
-- 🔴 Fila en color rojo o gris
-- 🚫 Icono de "desactivado"
-- 📛 Etiqueta "Inactivo"
+### Estructura de la plantilla
+
+La plantilla incluye estas columnas:
+
+| Campo | Obligatorio | Ejemplo |
+|:------|:------------|:--------|
+| Nombre completo | Sí | Juan Pérez García |
+| Email | Sí | juan.perez@empresa.com |
+| DNI | Sí | 12345678A |
+| Teléfono | No | 600123456 |
+| Departamento | Sí | Ventas |
+| Horario | Sí | Jornada Partida |
+| Contraseña | Sí | Temporal123! |
+
+{: .warning }
+> **Importante**: Todos los emails deben ser únicos. Emails duplicados causarán error en la importación.
+
+### Ventajas de la importación masiva
+
+- ✅ Ahorra tiempo con muchos empleados
+- ✅ Menos errores de tipeo
+- ✅ Puedes preparar los datos fuera del sistema
+- ✅ Puedes revisar antes de confirmar
 
 ---
 
-## Reactivar un usuario
+## Roles y permisos
 
-Si necesitas volver a activar un empleado (por ejemplo, tras una baja temporal):
+Al crear un empleado, puedes asignarle roles:
 
-### Paso 1: Localizar el usuario
+### Roles disponibles
+
+**Empleado** (sin rol asignado)
+- Acceso básico
+- Solo ve su información
+- No puede validar ni configurar
+
+**Manager**
+- Todo lo anterior +
+- Puede validar ausencias de su equipo
+- Puede aprobar cambios de fichaje de su equipo
+- Ve reportes de su departamento
+
+**Admin**
+- Todo lo anterior +
+- Puede dar de alta/baja empleados
+- Puede configurar empresa
+- Acceso a todas las configuraciones
+
+**SuperAdmin** (solo para Solutions2AZ)
+- Acceso total al sistema
+- Gestión multi-empresa
+- No asignes este rol a empleados normales
+
+### Asignar rol
+
+Los roles se asignan en la sección **"Configuraciones"** → **"Roles"**:
+
+1. Ve a Roles
+2. Selecciona el rol (Manager, Admin)
+3. Añade el usuario al rol
+4. Guarda
+
+{: .note }
+> Un usuario puede tener múltiples roles. Por ejemplo, puede ser Manager Y Admin.
+
+---
+
+## Verificar usuarios activos disponibles
+
+### Límite de usuarios
+
+Tu plan de AhoraFicho tiene un **límite de usuarios activos**:
 
 1. Ve a **"Configuraciones"** → **"Trabajadores"**
-2. Activa **"☑️ Mostrar inactivos"**
-3. Busca el empleado desactivado
+2. En la parte superior verás:
+   ```
+   Usuarios activos: 45 / 50
+   Usuarios disponibles: 5
+   ```
 
-### Paso 2: Reactivar
+{: .warning }
+> **Atención**: Si alcanzas el máximo de usuarios activos, no podrás dar de alta más empleados hasta que desactives alguno o amplíes tu plan.
 
-1. Haz clic en **"Editar"**
-2. Marca la casilla **"☑️ Habilitado"**
-3. Verifica/actualiza sus datos si es necesario:
-   - Horario actual
-   - Departamento
-   - Responsable
-   - Días de vacaciones
-4. Haz clic en **"Guardar"**
+### Ampliar plan
 
-### Paso 3: Notificar al empleado
-
-El empleado podrá volver a acceder con sus credenciales anteriores.
-
-Si no recuerda su contraseña:
-1. Puede usar "¿Olvidaste tu contraseña?"
-2. O tú puedes resetearla desde su ficha
+Si necesitas más usuarios:
+1. Contacta con soporte: soporte@ahoraficho.es
+2. O con tu comercial asignado
+3. Se actualizará tu plan según necesidades
 
 ---
 
 ## Casos especiales
 
-### Empleado en periodo de baja médica
+### Empleado con múltiples departamentos
 
-**¿Debo desactivarlo?**
+Si un empleado trabaja en varios departamentos:
 
-Depende de la duración:
+1. En el campo "Departamentos", selecciona todos los necesarios
+2. Mantén pulsado Ctrl (Windows) o Cmd (Mac) para selección múltiple
+3. El primer departamento será el principal
 
-- **Baja corta (<1 mes)**: NO desactives
-  - Mantiene acceso para consultar
-  - Puede ver sus datos
-  - No cuenta como fichaje activo
-
-- **Baja larga (>1 mes)**: Puedes desactivar
-  - Libera licencia
-  - Mantiene histórico
-  - Reactiva cuando se incorpore
-
-### Empleado de baja voluntaria
-
-**Procedimiento recomendado:**
-
-1. **Último día de trabajo**: Deja activo
-2. **Día siguiente**: Desactiva el usuario
-3. **Conserva durante 4 años** mínimo
-4. **NO borres**: Requisito legal
-
-**Documentación adicional:**
-- Exporta sus fichajes completos
-- Genera reporte mensual de su último mes
-- Guarda en archivo de RR.HH.
-
-### Empleado despedido
-
-**Desactivación inmediata:**
-
-1. Desactiva el usuario inmediatamente
-2. Verifica que no tenga sesión activa
-3. Si es crítico, contacta con soporte para forzar cierre de sesión
-4. Genera reportes finales
+### Empleado sin departamento
 
 {: .warning }
-> **Seguridad**: En caso de despido conflictivo, desactiva el usuario antes de comunicarle la decisión.
+> **No recomendado**: Siempre asigna al menos un departamento. Sin departamento, el empleado puede tener problemas de acceso a ciertas funcionalidades.
 
-### Excedencia o permiso largo
+Si temporalmente no sabes el departamento:
+- Crea un departamento "Sin asignar" o "General"
+- Asígnalo provisionalmente
+- Cámbialo cuando tengas la información correcta
 
-**Desactivación temporal planificada:**
+### Empleado con horario flexible
 
-1. Desactiva desde el primer día de excedencia
-2. Anota en observaciones: "Excedencia hasta [fecha]"
-3. Programa reactivación cuando corresponda
-4. Notifica al empleado antes de reactivar
+Si el empleado no tiene horario fijo:
 
----
+1. Crea un horario "Flexible" sin horas específicas
+2. O márcalo como "sin horario"
+3. Configura **"Requiere Fichaje"** como NO obligatorio
 
-## Cambiar contraseña antes de desactivar
+### Becarios o temporales
 
-Si quieres asegurar que nadie acceda con las credenciales antiguas:
+Para empleados temporales:
 
-1. Edita el empleado
-2. Cambia su contraseña a algo aleatorio
-3. Desactiva el usuario
-4. Guarda
-
-{: .note }
-> No es estrictamente necesario (desactivar impide el acceso), pero añade una capa extra de seguridad.
-
----
-
-## Impacto en validaciones y aprobaciones
-
-### Usuario con solicitudes pendientes
-
-Si el usuario tenía solicitudes pendientes de aprobación:
-
-**Cambios de fichaje:**
-- ✅ Las solicitudes pendientes permanecen
-- ✅ Puedes aprobarlas/rechazarlas normalmente
-- ✅ Se aplicarán a su histórico
-
-**Ausencias pendientes:**
-- ✅ Las solicitudes quedan registradas
-- ❌ Probablemente debas rechazarlas si ya no trabaja
-- ✅ Si es temporal, puedes aprobarlas
-
-### Usuario que era Manager
-
-Si desactivas un usuario que era Manager:
-
-**Empleados a su cargo:**
-- ⚠️ Quedan sin responsable directo
-- ⚠️ Sus validaciones irán al Administrador
-
-**Acciones recomendadas:**
-1. Antes de desactivar, asigna nuevo Manager a su equipo
-2. O designa Manager suplente
-3. Verifica que no queden validaciones pendientes
+1. Créalos normalmente
+2. Anota la fecha de fin de contrato
+3. Desactívalos cuando finalice el período
+4. No los borres (mantén histórico)
 
 ---
 
-## Informe de usuarios activos/inactivos
-
-### Consultar estadísticas
-
-1. Ve a **"Configuraciones"** → **"Trabajadores"**
-2. En la parte superior verás:
-
-```
-👥 Usuarios activos: 45 / 50
-😴 Usuarios inactivos: 12
-📊 Total usuarios: 57
-```
-
-### Exportar listado
-
-Puedes exportar el listado de usuarios:
-
-1. Filtra por activos o inactivos según necesites
-2. Haz clic en **"Exportar"**
-3. Selecciona formato (Excel, PDF, CSV)
-4. Se descargará con:
-   - Nombre
-   - Email
-   - Departamento
-   - Estado (Activo/Inactivo)
-   - Fecha de alta
-   - Fecha de baja (si aplica)
-
----
-
-## Mejores prácticas
+## Buenas prácticas
 
 ### ✅ Recomendaciones
 
-**Proceso de baja:**
-1. Genera reportes finales del empleado
-2. Exporta su historial completo
-3. Desactiva el usuario
-4. Anota motivo de baja en observaciones
-5. Reasigna su equipo si era Manager
-6. Archiva documentación
+**Antes de crear:**
+- Verifica que el email sea correcto (no podrás cambiarlo)
+- Asegúrate de tener el departamento creado
+- Ten listo el horario que asignarás
+- Prepara los datos completos
 
-**Mantenimiento regular:**
-- Revisa mensualmente usuarios inactivos antiguos
-- Verifica que usuarios temporales se reactivaron
-- Limpia sesiones activas fantasma
+**Durante la creación:**
+- Rellena todos los campos obligatorios
+- Asigna al menos un método de fichaje
+- Configura un responsable (Manager)
+- Establece días de vacaciones desde el inicio
 
-**Documentación:**
-- Mantén registro de bajas con fechas
-- Anota motivos en observaciones del usuario
-- Conserva evidencias de fin de relación laboral
+**Después de crear:**
+- Verifica que el empleado recibió el email de bienvenida
+- Confirma que puede acceder al sistema
+- Revisa su ficha para verificar datos
+- Asigna vacaciones específicas si es necesario
 
 ### ❌ Evita
 
-- ❌ Borrar usuarios (NUNCA)
-- ❌ Desactivar sin generar reportes finales
-- ❌ Dejar usuarios inactivos como Manager de otros
-- ❌ No documentar el motivo de baja
-- ❌ Reactivar sin verificar datos actualizados
-
----
-
-## Conservación de datos (RGPD)
-
-### Período de conservación
-
-Según la normativa:
-
-**Mínimo legal:**
-- 📜 **4 años**: Registros de jornada (RD 8/2019)
-- 📜 **4 años**: Datos de nóminas
-- 📜 **10 años**: Algunas cotizaciones a la Seguridad Social
-
-**Recomendación:**
-- 🗂️ Conserva usuarios desactivados al menos **4 años**
-- 🗂️ Después de 4 años, puedes solicitar eliminación total
-- 🗂️ Consulta con tu asesoría laboral para casos específicos
-
-### Solicitud de eliminación
-
-Si quieres eliminar completamente un usuario tras el período legal:
-
-1. Contacta con soporte: soporte@ahoraficho.es
-2. Indica:
-   - Nombre del usuario
-   - Fecha de baja
-   - Confirmación de que ha pasado período legal
-3. Solutions2AZ procederá con la eliminación definitiva
-
-{: .warning }
-> **Atención**: La eliminación definitiva NO se puede revertir. Todos los datos del usuario se borrarán permanentemente.
-
----
-
-## Preguntas frecuentes
-
-### ¿Puedo desactivar varios usuarios a la vez?
-
-Actualmente no hay función de desactivación masiva. Debes hacerlo uno por uno.
-
-Si necesitas desactivar muchos usuarios:
-- Contacta con soporte
-- Proporciona listado de usuarios
-- Se puede hacer mediante importación
-
-### ¿Un usuario desactivado consume licencia?
-
-No, los usuarios desactivados NO cuentan para el límite de usuarios activos de tu plan.
-
-### ¿Se pueden ver los fichajes de usuarios inactivos?
-
-Sí, completamente:
-- En reportes generales siguen apareciendo
-- Puedes filtrar por usuario inactivo
-- Su histórico permanece intacto
-
-### ¿Qué pasa con sus ausencias aprobadas futuras?
-
-Si un usuario tenía ausencias aprobadas para fechas futuras y lo desactivas:
-- Las ausencias quedan registradas
-- Aparecerán en calendarios históricos
-- No afectan a calendarios de equipo activo
-
-### ¿Puedo reactivar a un usuario después de años?
-
-Sí, mientras no se haya eliminado definitivamente:
-- Edita el usuario
-- Márcalo como habilitado
-- Actualiza sus datos (horario, departamento, etc.)
-- El usuario recupera acceso con sus credenciales antiguas
+- Crear usuarios sin email verificado
+- Usar emails personales en lugar de corporativos
+- Dejar sin departamento
+- Dejar sin horario asignado
+- No configurar métodos de fichaje
+- Usar contraseñas demasiado complejas (temporales)
+- Borrar empleados en lugar de desactivarlos
 
 ---
 
 ## Solución de problemas
 
-### No puedo desactivar un usuario
+### El email ya existe
+
+**Error**: "El email ya está registrado en el sistema"
+
+**Solución:**
+- Verifica si el empleado ya existe (búscalo)
+- Si existe pero está desactivado, reactívalo
+- Si es un empleado nuevo, usa otro email
+
+### No recibe el email de bienvenida
 
 **Posibles causas:**
-- No tienes permisos de Administrador
-- El usuario es SuperAdmin (solo otro SuperAdmin puede)
-
-### El usuario sigue pudiendo acceder
+- Email incorrecto
+- Filtro de spam
+- Servidor de email con problemas
 
 **Soluciones:**
-1. Verifica que guardaste los cambios
-2. El usuario puede tener sesión activa (se cerrará en máximo 8 horas)
-3. Si es urgente, cambia su contraseña además de desactivar
+1. Verifica el email en la ficha del empleado
+2. Pide al empleado que revise spam
+3. Reenvía las credenciales manualmente
+4. Genera nueva contraseña y envíala por otro medio
 
-### No aparece en el listado de inactivos
+### Error al importar empleados
 
-**Verificaciones:**
-1. ¿Activaste el filtro "Mostrar inactivos"?
-2. ¿Guardaste los cambios al desactivar?
-3. ¿Estás en la empresa correcta? (para SuperAdmins)
+**Errores comunes:**
+- Formato de archivo incorrecto (usa CSV o Excel)
+- Emails duplicados
+- Departamentos que no existen
+- Horarios que no existen
+
+**Solución:**
+- Descarga la plantilla de nuevo
+- Verifica que departamentos y horarios existan
+- Revisa que no haya emails repetidos
+- Asegúrate del formato correcto
+
+---
+
+## Preguntas frecuentes
+
+### ¿Puedo crear empleados sin asignar horario?
+
+Técnicamente sí, pero no es recomendable. Sin horario:
+- No se podrán generar reportes comparativos
+- No se detectarán impuntualidades
+- El empleado no sabrá cuándo debe fichar
+
+### ¿Qué pasa si creo un empleado sin activar "Habilitado"?
+
+El empleado quedará creado pero **no podrá acceder** al sistema hasta que lo actives.
+
+### ¿Puedo cambiar el email de un empleado?
+
+No directamente. El email es el identificador único. Si necesitas cambiarlo:
+1. Crea un nuevo usuario con el email correcto
+2. Desactiva el usuario antiguo
+3. Nota: Se perderá el histórico vinculado al usuario anterior
+
+### ¿Los empleados ven su contraseña inicial?
+
+Sí, la reciben por email. Deben cambiarla en su primer acceso por seguridad.
+
+### ¿Cuántos empleados puedo crear?
+
+Depende de tu plan contratado. Verifica en "Trabajadores" cuántos usuarios activos tienes disponibles.
 
 ---
 
 ## ¿Necesitas ayuda?
 
-Si tienes problemas al desactivar usuarios:
+Si tienes problemas al dar de alta empleados:
 
+- 🔧 Consulta esta guía completa
 - 📧 Email: soporte@ahoraficho.es
 - 💬 [Preguntas Frecuentes](/preguntas-frecuentes/)
-- 📞 Soporte telefónico
+- 📞 Soporte telefónico (horario comercial)
 
 ---
 
 ## Guías relacionadas
 
-- 👉 [Dar de alta empleados](/guias-por-rol/administrador/dar-alta-empleados/)
-- 👉 [Gestión de empleados](/guias-por-rol/administrador/)
-- 👉 [Exportar datos](/reportes/)
+- 👉 [Desactivar usuarios](/guias-por-rol/administrador/desactivar-usuarios/)
+- 👉 [Crear horarios](/guias-por-rol/administrador/crear-horarios/)
+- 👉 [Asignar horarios](/guias-por-rol/administrador/asignar-horarios/)
+- 👉 [Asignar vacaciones](/guias-por-rol/administrador/asignar-vacaciones/)
+- 👉 [Gestión de departamentos](/guias-por-rol/administrador/gestion-departamentos/)

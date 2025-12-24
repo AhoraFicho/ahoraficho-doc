@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Guía del Manager
+title: Manager
 parent: Guías por Rol
-nav_order: 3
+nav_order: 2
 has_children: true
 permalink: /guias-por-rol/manager/
 ---
