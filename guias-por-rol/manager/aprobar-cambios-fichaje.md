@@ -67,11 +67,10 @@ Haz clic aquí para revisar la solicitud.
 ### Opción 2: Desde el menú
 
 1. Inicia sesión como **Manager**
-2. Ve al menú lateral → **"Fichajes"** → **"Cambios Pendientes"**
-   O bien → **"Solicitudes Pendientes"** → Pestaña **"Fichajes"**
+2. Ve al menú lateral → **"Validaciones"** → **"Cambios Fichajes"**
 3. Verás un listado con todas las solicitudes pendientes
 
-![Menú cambios fichaje](/assets/images/placeholder-menu-cambios-fichaje.png)
+<!-- ![Menú cambios fichaje](/assets/images/placeholder-menu-cambios-fichaje.png) -->
 
 ### Opción 3: Desde el Dashboard
 
@@ -99,9 +98,9 @@ Al acceder a la sección verás una tabla con todas las solicitudes:
 | **Fecha Solicitud** | Cuándo se solicitó el cambio |
 | **Acciones** | Botones para aprobar/rechazar |
 
-![Listado cambios fichaje](/assets/images/placeholder-listado-cambios-fichaje.png)
+<!-- ![Listado cambios fichaje](/assets/images/placeholder-listado-cambios-fichaje.png) -->
 
-### Filtros disponibles
+<!-- ### Filtros disponibles
 
 - **Estado**: Pendientes, Aprobados, Rechazados, Todos
 - **Empleado**: Filtrar por un empleado específico
@@ -109,11 +108,11 @@ Al acceder a la sección verás una tabla con todas las solicitudes:
 - **Tipo de cambio**: Añadir entrada, añadir salida, modificar, eliminar
 
 {: .tip }
-> **Consejo**: Usa el filtro **"Solo Pendientes"** para concentrarte en las que requieren tu acción.
+> **Consejo**: Usa el filtro **"Solo Pendientes"** para concentrarte en las que requieren tu acción. -->
 
 ---
 
-## Revisar una solicitud de cambio
+<!-- ## Revisar una solicitud de cambio
 
 ### Paso 1: Abrir el detalle
 
@@ -149,7 +148,7 @@ Al acceder a la sección verás una tabla con todas las solicitudes:
 | **Modificar salida** | Cambiar hora de salida | Fichó mal la hora |
 | **Eliminar fichaje** | Borrar un fichaje erróneo | Fichó por error dos veces |
 
----
+--- -->
 
 ## Verificar la legitimidad del cambio
 
@@ -203,7 +202,7 @@ Si el cambio está justificado y es legítimo:
 2. (Opcional) Añade un comentario interno
 3. Haz clic en **"Confirmar"**
 
-![Aprobar cambio fichaje](/assets/images/placeholder-aprobar-cambio-fichaje.png)
+<!-- ![Aprobar cambio fichaje](/assets/images/placeholder-aprobar-cambio-fichaje.png) -->
 
 ### Paso 2: Confirmación
 
@@ -228,7 +227,7 @@ Si el cambio no está justificado o es sospechoso:
 2. **OBLIGATORIO**: Añade un comentario explicando por qué rechazas
 3. Haz clic en **"Confirmar"**
 
-![Rechazar cambio fichaje](/assets/images/placeholder-rechazar-cambio-fichaje.png)
+<!-- ![Rechazar cambio fichaje](/assets/images/placeholder-rechazar-cambio-fichaje.png) -->
 
 ### Paso 2: Justificar el rechazo
 
@@ -338,9 +337,13 @@ Como Manager, debes estar atento a:
 ### Para Managers
 
 ✅ **Revisa diariamente**: No dejes acumular solicitudes
+
 ✅ **Sé consistente**: Aplica los mismos criterios a todos
+
 ✅ **Documenta decisiones**: Especialmente los rechazos
+
 ✅ **Comunica expectativas**: Deja claro al equipo qué toleras y qué no
+
 ✅ **Verifica antes de aprobar**: No apruebes "a ciegas"
 
 ### Para comunicar al equipo

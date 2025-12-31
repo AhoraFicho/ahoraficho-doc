@@ -128,7 +128,7 @@ Cuando inicias sesión como Manager, verás las siguientes secciones en el menú
 - 💰 **Gastos**: Aprobar tickets (si el módulo está activo)
 - 📋 **Imputaciones**: Validar horas en proyectos (si el módulo está activo)
 
-![Menú del Manager](/assets/images/placeholder-menu-manager.png)
+<!-- ![Menú del Manager](/assets/images/placeholder-menu-manager.png) -->
 
 ### Notificaciones
 

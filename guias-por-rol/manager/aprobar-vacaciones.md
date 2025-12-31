@@ -61,10 +61,10 @@ Haz clic aquí para revisar la solicitud.
 ### Opción 2: Desde el menú
 
 1. Inicia sesión como **Manager**
-2. Ve al menú lateral → **"Vacaciones"** o **"Solicitudes Pendientes"**
+2. Ve al menú lateral → **"Validaciones"** o **"Ausencias pendientes"**
 3. Verás un listado con todas las solicitudes de tu(s) departamento(s)
 
-![Menú vacaciones manager](/assets/images/placeholder-menu-vacaciones-manager.png)
+<!-- ![Menú vacaciones manager](/assets/images/placeholder-menu-vacaciones-manager.png) -->
 
 ### Opción 3: Desde el Dashboard
 
@@ -83,15 +83,14 @@ Al acceder a la sección de vacaciones, verás una tabla con todas las solicitud
 | Columna | Descripción |
 |---------|-------------|
 | **Empleado** | Nombre del solicitante + departamento |
-| **Fecha Desde** | Primer día de la ausencia |
-| **Fecha Hasta** | Último día de la ausencia |
-| **Días** | Número de días laborables solicitados |
+| **Fecha** | Primer día de la ausencia |
+| **Observaciones** | Información extra asociada a la solicitud |
 | **Tipo** | Vacaciones, Permiso, Baja médica, etc. |
 | **Estado** | Pendiente, Aprobado, Rechazado |
 | **Fecha Solicitud** | Cuándo se solicitó |
 | **Acciones** | Botones para aprobar/rechazar |
 
-![Listado solicitudes vacaciones](/assets/images/placeholder-listado-vacaciones-manager.png)
+<!-- ![Listado solicitudes vacaciones](/assets/images/placeholder-listado-vacaciones-manager.png) -->
 
 ### Filtros disponibles
 
@@ -109,7 +108,7 @@ Puedes filtrar las solicitudes por:
 
 ## Revisar una solicitud de vacaciones
 
-### Paso 1: Abrir el detalle
+<!-- ### Paso 1: Abrir el detalle
 
 1. Haz clic en el botón **"Ver Detalle"** o en el nombre del empleado
 2. Se abrirá una ventana con la información completa
@@ -130,7 +129,7 @@ Puedes filtrar las solicitudes por:
 - Festivos incluidos en el período (no se descuentan)
 - Fines de semana visibles
 
-![Detalle solicitud vacaciones](/assets/images/placeholder-detalle-solicitud-vacaciones.png)
+![Detalle solicitud vacaciones](/assets/images/placeholder-detalle-solicitud-vacaciones.png) -->
 
 ### Verificaciones que debes hacer
 
@@ -157,7 +156,7 @@ Si todo está correcto y puedes aprobar la solicitud:
 2. (Opcional) Añade un comentario de aprobación
 3. Haz clic en **"Confirmar"**
 
-![Aprobar solicitud](/assets/images/placeholder-aprobar-vacaciones.png)
+<!-- ![Aprobar solicitud](/assets/images/placeholder-aprobar-vacaciones.png) -->
 
 ### Paso 2: Confirmación
 
@@ -181,7 +180,7 @@ Si no puedes aprobar la solicitud por algún motivo:
 2. **OBLIGATORIO**: Añade un comentario explicando el motivo del rechazo
 3. Haz clic en **"Confirmar"**
 
-![Rechazar solicitud](/assets/images/placeholder-rechazar-vacaciones.png)
+<!-- ![Rechazar solicitud](/assets/images/placeholder-rechazar-vacaciones.png) -->
 
 ### Paso 2: Justificar el rechazo
 
@@ -233,7 +232,7 @@ Si aprobaste por error o las circunstancias cambiaron:
 
 Para ver qué empleados están de vacaciones en un período:
 
-1. Ve a **"Vacaciones"** → **"Calendario del Equipo"**
+1. Ve a **"Equipo"** → **"Calendario del Equipo"**
 2. Verás un calendario con:
    - Ausencias aprobadas (en verde)
    - Ausencias pendientes (en amarillo)
@@ -285,7 +284,7 @@ Aunque la funcionalidad es la misma, puedes recibir solicitudes de diferentes ti
 | **Vacaciones** | ✅ Sí | ✅ Sí |
 | **Permiso retribuido** | ✅ Sí | ❌ No |
 | **Baja médica** | ❌ No (informativa) | ❌ No |
-| **Asuntos propios** | ✅ Sí | Según política |
+| **Asuntos propios** | ✅ Sí | ❌ No |
 | **Permiso no retribuido** | ✅ Sí | ❌ No |
 
 {: .note }
@@ -293,7 +292,7 @@ Aunque la funcionalidad es la misma, puedes recibir solicitudes de diferentes ti
 
 ---
 
-## Notificaciones y recordatorios
+<!-- ## Notificaciones y recordatorios
 
 ### Configurar tus notificaciones
 
@@ -313,7 +312,7 @@ El sistema puede enviarte recordatorios si tienes solicitudes pendientes:
 - **Cada 24 horas**: Si hay solicitudes de más de 1 día sin revisar
 - **3 días antes del inicio**: Si hay vacaciones aprobadas próximas a empezar
 
----
+--- -->
 
 ## Casos especiales
 
@@ -384,9 +383,9 @@ La solicitud permanecerá en estado "Pendiente" indefinidamente. El empleado no 
 
 ### ¿Puedo aprobar parcialmente una solicitud?
 
-No directamente. Si el empleado solicita 10 días y solo puedes aprobar 5, debes:
-1. Rechazar la solicitud
-2. Comentario: "Puedo aprobar solo del 15 al 19 (5 días). Por favor, envía una nueva solicitud con esas fechas."
+Si. Si el empleado solicita 10 días y solo puedes aprobar 5, debes:
+1. Aceptar los días que consideres y 
+2. rechazar los que no añadiendo la justificación oportuna
 
 ### ¿Los empleados pueden cancelar vacaciones aprobadas?
 
