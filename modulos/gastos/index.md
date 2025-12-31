@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Gastos
-nav_order: 8
-has_children: true
-permalink: /modulos/gastos/
+# layout: default
+# title: Gastos
+# nav_order: 8
+# has_children: true
+# permalink: /modulos/gastos/
 ---
 
 # Módulo de Gastos

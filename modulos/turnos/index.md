@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Turnos
-nav_order: 10
-has_children: true
-permalink: /modulos/turnos/
+# layout: default
+# title: Turnos
+# nav_order: 10
+# has_children: true
+# permalink: /modulos/turnos/
 ---
 
 # Módulo de Turnos
