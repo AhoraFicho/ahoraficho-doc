@@ -53,7 +53,7 @@ En AhoraFicho existen **4 tipos** de registros:
 
 ## Métodos de fichaje disponibles
 
-AhoraFicho ofrece **5 métodos** diferentes para fichar. Tu empresa decide cuáles están habilitados para ti:
+AhoraFicho ofrece **4 métodos** diferentes para fichar. Tu empresa decide cuáles están habilitados para ti:
 
 ### 1. 🌐 Fichaje Web
 Desde cualquier navegador accediendo a AhoraFicho.es
@@ -64,11 +64,11 @@ Desde la aplicación de iOS o Android
 ### 3. 🔢 Fichaje por PIN
 En terminales físicos usando tu código PIN de 6 dígitos
 
-### 4. 📷 Fichaje por QR
-Escaneando un código QR desde la app móvil
-
-### 5. 🏷️ Fichaje por RFID
+### 4. 🏷️ Fichaje por RFID
 Con tarjeta RFID en terminales compatibles
+
+<!-- ### 5. 📷 Fichaje por QR
+Escaneando un código QR rotativo desde la app móvil -->
 
 {: .tip }
 > Consulta con tu administrador qué métodos están habilitados para tu cuenta.
@@ -77,18 +77,16 @@ Con tarjeta RFID en terminales compatibles
 
 ## Cómo fichar desde la Web
 
-### Opción 1: Botón de fichaje en el Dashboard
-
 Esta es la forma más rápida y común:
 
 1. **Inicia sesión** en AhoraFicho.es
 2. En el Dashboard verás un **botón grande de fichaje** arriba a la derecha
 3. El botón muestra tu **estado actual**:
-   - *"Fichar"* si no has fichado hoy
    - *"Iniciar jornada"* para entrar
    - *"Iniciar pausa"* si estás trabajando
    - *"Terminar pausa"* si estás en descanso
    - *"Finalizar jornada"* para salir
+   - *"Fichar"* restro de registros
 
 4. **Haz clic en el botón**
 5. Si la geolocalización está habilitada, el navegador te pedirá **permiso para acceder a tu ubicación**
@@ -97,16 +95,6 @@ Esta es la forma más rápida y común:
 
 ![Botón de fichaje en Dashboard](../assets/images/boton-fichaje-dashboard.png)
 *Botón de fichaje visible en el Dashboard*
-
-### Opción 2: Desde el menú "Mis Fichajes"
-
-1. Ve al menú lateral **"Mi Trabajo"**
-2. Selecciona **"Mis Fichajes"**
-3. En esta pantalla verás:
-   - Listado de tus fichajes del día/semana
-   - Botón de **"Fichar ahora"** en la parte superior
-4. Haz clic en **"Fichar ahora"**
-5. Confirma la ubicación si se solicita
 
 ---
 
@@ -159,7 +147,7 @@ Si tu empresa tiene terminales de fichaje con PIN:
 
 ---
 
-## Cómo fichar por QR
+<!-- ## Cómo fichar por QR
 
 ### Desde la app móvil
 
@@ -179,7 +167,7 @@ Algunas empresas tienen **QR generales** en lugares específicos:
 4. Introduce tu PIN o credenciales si se solicitan
 5. Confirma el fichaje
 
----
+--- -->
 
 ## Cómo fichar por RFID
 
@@ -248,8 +236,8 @@ Depende de la configuración de tu empresa:
 
 El Dashboard muestra:
 - ✅ Tu **estado actual** (fichado / no fichado)
-- ⏰ **Hora de tu último fichaje**
-- 📊 **Resumen del día**: horas trabajadas, pausas, etc.
+- ⏰ **Hora de tus últimos fichajes de la semana**
+- 📊 **Accesos directos**
 
 ### En "Mis Fichajes"
 
@@ -270,7 +258,6 @@ Ve a **"Mi Trabajo"** → **"Mi resumen diario"** para ver:
 - Resumen consolidado por día
 - Total de horas trabajadas
 - Horas efectivas (descontando pausas)
-- Comparación con tu horario asignado
 
 ---
 
@@ -280,7 +267,7 @@ Ve a **"Mi Trabajo"** → **"Mi resumen diario"** para ver:
 
 **Posibles causas:**
 - Tu cuenta no tiene permisos de fichaje habilitados
-- El módulo de fichajes está desactivado
+- No es hora de fichar en base a tu horario
 
 **Solución:** Contacta con tu administrador
 

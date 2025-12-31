@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Aprobar Gastos
-parent: Guía del Manager
+parent: Manager
 grand_parent: Guías por Rol
 nav_order: 3
 ---

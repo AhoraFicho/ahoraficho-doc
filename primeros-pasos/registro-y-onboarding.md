@@ -30,8 +30,8 @@ El proceso de registro en AhoraFicho es sencillo y lo gestionamos nosotros para 
 Puedes contratar AhoraFicho a través de:
 
 - 🌐 **Web**: [www.ahoraficho.es](https://www.ahoraficho.es)
-- 📧 **Email**: Contactando con comercial@solutions2az.net
-- 📞 **Teléfono**: Llamando a nuestro equipo comercial
+- 📧 **Email**: Contactando con comercial@ahoraficho.es
+- 📞 **Teléfono**: +34 91 989 59 90
 
 ### Paso 2: Envío de información
 
@@ -59,7 +59,7 @@ Una vez contratado el servicio, te solicitaremos la siguiente información:
 
 ---
 
-## Configuración inicial realizada por Solutions2AZ
+## Configuración inicial realizada por AhoraFicho
 
 Nuestro equipo se encarga de configurar los siguientes elementos:
 
@@ -82,11 +82,11 @@ Nuestro equipo se encarga de configurar los siguientes elementos:
 - Configuración de días festivos nacionales (opcional)
 - Margen de flexibilidad horaria (si aplica)
 
-### ✅ Cuenta de administrador
+### ✅ Trabajadores
 
-- Alta del usuario administrador principal
-- Asignación de permisos de administración
-- Envío de credenciales de acceso
+- Alta de los trabajadores y del administrador principal
+- Asignación de permisos / horarios y departamentos correspondientes
+- Envío de credenciales de acceso al administrador
 
 ### ✅ Módulos activados
 
@@ -112,7 +112,7 @@ El proceso completo suele tomar entre **24-48 horas laborables**:
 
 ```mermaid
 gantt
-    title Timeline de Onboarding
+    title Timeline de Configuración
     dateFormat  HH:mm
     section Día 1
     Contratación y envío de datos      :a1, 00:00, 2h
@@ -120,7 +120,7 @@ gantt
     section Día 2
     Configuración avanzada             :a3, 00:00, 2h
     Alta de usuarios                   :a4, after a3, 2h
-    Envío de credenciales              :a5, after a4, 1h
+    Envío de credenciales              :a5, after a4, 2h
 ```
 
 1. **Día 1 - Mañana**: Recibimos tu información

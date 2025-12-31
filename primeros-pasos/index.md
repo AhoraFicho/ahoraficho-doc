@@ -48,14 +48,14 @@ Cuando contratas AhoraFicho, el proceso es el siguiente:
 
 ```mermaid
 graph LR
-    A[Contratación] --> B[Envío de datos]
-    B --> C[Configuración inicial]
-    C --> D[Alta empleados]
-    D --> E[¡Listo para usar!]
+    A[Contratación] --> B[Envío de datos];
+    B --> C[Configuración inicial];
+    C --> D[Alta empleados];
+    D --> E[Listo para usar];
 ```
 
 {: .highlight }
-Solutions2AZ se encarga de la configuración inicial de tu plataforma, aunque posteriormente puedes modificar todos los parámetros.
+El equipo de AhoraFicho se encarga de la configuración inicial de tu plataforma, aunque posteriormente puedes modificar todos los parámetros según necesites.
 
 ---
 
@@ -64,7 +64,7 @@ Solutions2AZ se encarga de la configuración inicial de tu plataforma, aunque po
 <div class="code-example" markdown="1">
 
 ### 1. [Registro y Onboarding](/primeros-pasos/registro-y-onboarding/)
-Proceso de alta de la empresa y configuración inicial realizada por Solutions2AZ.
+Proceso de alta de la empresa y configuración inicial realizada por AhoraFicho.
 
 ### 2. [Acceso a la Plataforma](/primeros-pasos/acceso-a-la-plataforma/)
 Cómo acceder a AhoraFicho desde web y móvil. Recuperación de contraseña.
@@ -90,4 +90,4 @@ Si tienes dudas durante el proceso de configuración inicial:
 ---
 
 {: .note }
-> **Para administradores**: Una vez completada la configuración inicial, te recomendamos leer la [Guía del Administrador](/guias-por-rol/administrador/) para conocer todas las funcionalidades disponibles.
+> **Administradores**: Una vez completada la configuración inicial, te recomendamos leer la [Guía del Administrador](/guias-por-rol/administrador/) para conocer todas las funcionalidades disponibles.

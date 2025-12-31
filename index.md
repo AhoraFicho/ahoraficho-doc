@@ -12,7 +12,7 @@ permalink: /
 AhoraFicho.es es la solución completa para el control horario digital que cumple con el Real Decreto-ley 8/2019 y facilita la gestión del tiempo de trabajo de tu empresa.
 {: .fs-6 .fw-300 }
 
-[Empezar ahora](/primeros-pasos/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Empezar ahora](/primeros-pasos/){: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Probar Demo](https://democompleta.ahoraficho.es/Identity/Account/AutoLogin?username=comercial@solutions2az.net&password=Demo@2025){: .btn .fs-5 .mb-4 .mb-md-0 target="_blank" }
 
 ---
@@ -55,20 +55,20 @@ AhoraFicho cuenta con **7 módulos** que puedes activar según las necesidades d
 <div class="code-example" markdown="1">
 
 ### 👤 Empleado
-- [Mi primer fichaje](/guias-por-rol/empleado/como-fichar/)
+- [Mi primer fichaje](/primeros-pasos/primer-fichaje/)
 - [Solicitar vacaciones](/guias-por-rol/empleado/solicitar-vacaciones/)
 - [¿Olvidé fichar?](/guias-por-rol/empleado/olvide-fichar/)
 
 ### 👨‍💼 Manager
-- [Validar ausencias del equipo](/guias-por-rol/manager/validar-ausencias/)
-- [Aprobar cambios de fichaje](/guias-por-rol/manager/validar-cambios-fichaje/)
-- [Consultar reportes del equipo](/guias-por-rol/manager/reportes-equipo/)
+- [Validar ausencias del equipo](/guias-por-rol/manager/aprobar-vacaciones/)
+- [Aprobar cambios de fichaje](/guias-por-rol/manager/aprobar-cambios-fichaje/)
+- [Consultar reportes del equipo](/reportes/resumen-diario-departamento/)
 
 ### 🔧 Administrador
 - [Dar de alta empleados](/guias-por-rol/administrador/dar-alta-empleados/)
 - [Crear y asignar horarios](/guias-por-rol/administrador/crear-horarios/)
 - [Configurar turnos rotativos](/guias-por-rol/administrador/configurar-turnos-rotativos/)
-- [Desactivar usuarios](/guias-por-rol/administrador/desactivar-usuarios/)
+- [Desactivar usuarios](/guias-por-rol/administrador/desactivar-empleados/)
 - [Informe para inspección de trabajo](/reportes/informe-inspeccion-trabajo/)
 
 </div>

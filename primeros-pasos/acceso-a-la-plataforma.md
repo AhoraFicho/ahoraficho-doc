@@ -27,12 +27,12 @@ AhoraFicho está disponible en múltiples plataformas:
 
 ### 🌐 Acceso Web
 
-Accede desde cualquier navegador moderno:
+Accede desde cualquier navegador moderno, a tu empresa se le asginara una url personalizada:
 
-**URL principal**: [https://www.ahoraficho.es](https://www.ahoraficho.es)
+**URL principal demo**: [https://demo.ahoraficho.es](https://demo.ahoraficho.es)
 
 {: .note }
-> La plataforma es **multi-tenant**, lo que significa que tu empresa tiene su propio espacio aislado dentro de AhoraFicho.
+> La plataforma es **multi-tenant**, lo que significa que tu empresa tiene su propio espacio aislado dentro de AhoraFicho con una url única.
 
 #### Navegadores compatibles
 
@@ -49,10 +49,10 @@ Accede desde cualquier navegador moderno:
 Las apps móviles son **webviews embebidas** de la plataforma web, optimizadas para móvil.
 
 - **Android**: [Descargar desde Google Play](https://play.google.com/store/apps/details?id=net.solutions2az.ahoraficho)
-- **iOS**: Próximamente en App Store
+- **iOS**: [Descargar desde App Store](https://apps.apple.com/es/app/ahoraficho/id6757076575)
 
 {: .tip }
-> Las aplicaciones móviles ofrecen una experiencia optimizada y permiten recibir notificaciones push.
+> Las aplicaciones móviles ofrecen una experiencia optimizada.
 
 ---
 
@@ -67,11 +67,12 @@ Después del onboarding, recibirás un email con:
 
 ### Paso 1: Acceder a la plataforma
 
-1. Abre tu navegador y ve a [https://www.ahoraficho.es](https://www.ahoraficho.es)
+1. Abre tu navegador y ve a la url proporcionada [https://demo.ahoraficho.es](https://demo.ahoraficho.es)
 2. Haz clic en **"Entrar"** o **"Login"**
 3. Introduce tu email y contraseña temporal
 
 ![Pantalla de login](../assets/images/login-screen.png)
+
 *Pantalla de inicio de sesión de AhoraFicho*
 
 ### Paso 2: Cambiar contraseña temporal
@@ -190,11 +191,11 @@ La forma más rápida de acceder desde la app móvil es mediante código QR:
 2. Abre la app
 3. Pulsa **"Acceder a mi panel"**
 4. Selecciona **"Escanear código QR"**
-5. En la web, ve a tu perfil y genera el código QR
+5. En tu panel, en el menú derecho pincha en "Descargar APP"
 6. Escanea el código con la app
 
 {: .tip }
-> El código QR te permite acceder sin introducir usuario y contraseña manualmente.
+> El código QR te permite acceder directamente a tu empresa.
 
 ### Acceso manual en la app
 
@@ -203,7 +204,8 @@ Si prefieres acceder manualmente:
 1. Abre la app
 2. Pulsa **"Acceder a mi panel"**
 3. Selecciona **"Introducir manualmente"**
-4. Introduce tu email y contraseña
+4. Introduce la url de tu empresa
+5. Introduce tu email y contraseña
 
 ---
 
@@ -234,7 +236,7 @@ Tu usuario **siempre es tu email corporativo**. Si no lo recuerdas:
 Para cerrar sesión de forma segura:
 
 1. Haz clic en tu nombre/avatar (arriba a la derecha)
-2. Selecciona **"Desconectarse"** o **"Cerrar sesión"**
+2. Selecciona **"Desconectarse"**
 
 {: .important }
 > **Buena práctica**: Cierra siempre tu sesión si usas un ordenador compartido.

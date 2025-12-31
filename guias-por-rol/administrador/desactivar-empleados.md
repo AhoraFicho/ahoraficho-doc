@@ -358,7 +358,7 @@ Si quieres eliminar completamente un usuario tras el período legal:
    - Nombre del usuario
    - Fecha de baja
    - Confirmación de que ha pasado período legal
-3. Solutions2AZ procederá con la eliminación definitiva
+3. AhoraFicho procederá con la eliminación definitiva
 
 {: .warning }
 > **Atención**: La eliminación definitiva NO se puede revertir. Todos los datos del usuario se borrarán permanentemente.

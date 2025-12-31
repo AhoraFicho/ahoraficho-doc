@@ -373,7 +373,7 @@ Al crear un empleado, puedes asignarle roles:
 - Puede configurar empresa
 - Acceso a todas las configuraciones
 
-**SuperAdmin** (solo para Solutions2AZ)
+**SuperAdmin** (solo para AhoraFicho)
 - Acceso total al sistema
 - Gestión multi-empresa
 - No asignes este rol a empleados normales

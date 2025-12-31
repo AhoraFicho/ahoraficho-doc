@@ -37,19 +37,17 @@ Las aplicaciones de AhoraFicho para iOS y Android son **webviews embebidas**, lo
 | Plataforma | Estado | Enlace |
 |:-----------|:-------|:-------|
 | **Android** | ✅ Disponible | [Google Play Store](https://play.google.com/store/apps/details?id=net.solutions2az.ahoraficho) |
-| **iOS** | 🔜 Próximamente | App Store (En desarrollo) |
+| **iOS** | ✅ Disponible | [App Store](https://apps.apple.com/es/app/ahoraficho/id6757076575) |
 
-{: .note }
-> Los usuarios de iOS pueden acceder perfectamente desde el navegador Safari hasta que la app esté disponible.
 
 ---
 
-## Instalación en Android
+## Instalación en Android / iOS
 
 ### Opción 1: Desde Google Play Store (Recomendada)
 
 1. Abre **Google Play Store** en tu dispositivo
-2. Busca **"AhoraFicho"** o **"AhoraFicho.es"**
+2. Busca **"AhoraFicho"**
 3. Selecciona la app desarrollada por **Solutions2AZ**
 4. Pulsa **"Instalar"**
 5. Espera a que se complete la descarga e instalación
@@ -58,17 +56,30 @@ Las aplicaciones de AhoraFicho para iOS y Android son **webviews embebidas**, lo
 **Enlace directo:**
 [https://play.google.com/store/apps/details?id=net.solutions2az.ahoraficho](https://play.google.com/store/apps/details?id=net.solutions2az.ahoraficho)
 
-### Opción 2: Desde el modal de la web
+### Opción 2: Desde App Store (Recomendada)
+
+1. Abre **App Store** en tu dispositivo
+2. Busca **"AhoraFicho"**
+3. Selecciona la app desarrollada por **Solutions2AZ**
+4. Pulsa **"Instalar"**
+5. Espera a que se complete la descarga e instalación
+6. Pulsa **"Abrir"**
+
+**Enlace directo:**
+[https://apps.apple.com/es/app/ahoraficho/id6757076575](https://apps.apple.com/es/app/ahoraficho/id6757076575)
+
+### Opción 3: Desde el modal de la web
 
 1. Accede a AhoraFicho desde tu navegador móvil
 2. En el menú lateral, pulsa **"Descargar APP"** (al final del menú)
 3. Se abrirá un modal con:
-   - Enlace directo a Google Play
+   - Enlace directo a Google Play o App Store
    - Código QR para escanear
    - Instrucciones de acceso
-4. Pulsa **"Descargar APK"** o el icono de Google Play
+4. Pulsa **"Icono de cada plataforma"**
 
-![Modal descarga app](../assets/images/modal-descarga-app.png)
+![Modal descarga app](../assets/images/modal-app.png)
+
 *Modal de descarga de app desde la web*
 
 ---
@@ -92,10 +103,8 @@ Esta es la forma más sencilla y rápida:
    - Pulsa **"Acceder a mi panel"**
    - Selecciona **"Escanear código QR"**
    - Apunta la cámara al código QR mostrado en la web
-   - ¡Acceso automático!
+   - Entra con tu email/usuario y contraseña
 
-{: .tip }
-> El código QR te autentica automáticamente sin necesidad de introducir usuario y contraseña.
 
 ### Opción 2: Introducir credenciales manualmente
 
@@ -105,8 +114,7 @@ Si prefieres acceder manualmente:
 2. Pulsa **"Acceder a mi panel"**
 3. Selecciona **"Introducir manualmente"**
 4. Introduce:
-   - **Usuario**: Tu email corporativo
-   - **Contraseña**: Tu contraseña de AhoraFicho
+   - **Url**: Url de tu entorno
 5. Pulsa **"Entrar"**
 
 ---
@@ -187,7 +195,7 @@ La app tiene un menú inferior con acceso directo a:
 
 ---
 
-## Funcionalidades offline
+<!-- ## Funcionalidades offline
 
 La app permite algunas funcionalidades sin conexión:
 
@@ -228,7 +236,7 @@ La app puede enviarte notificaciones para:
 1. Ve a tu **Perfil** en la app
 2. Selecciona **Configuración**
 3. Toca **Notificaciones**
-4. Personaliza qué tipo de notificaciones quieres recibir
+4. Personaliza qué tipo de notificaciones quieres recibir -->
 
 ---
 
@@ -273,14 +281,14 @@ La app puede enviarte notificaciones para:
    - Ajustes → Apps → AhoraFicho → Almacenamiento → Limpiar caché
 4. Si persiste, desinstala y reinstala la app
 
-### No recibo notificaciones
+<!-- ### No recibo notificaciones
 
 **Soluciones:**
 1. Verifica que las notificaciones estén activadas:
    - Ajustes → Apps → AhoraFicho → Notificaciones
 2. Verifica que no esté en modo "No molestar"
 3. Desactiva optimización de batería para AhoraFicho:
-   - Ajustes → Batería → Optimización de batería → AhoraFicho → No optimizar
+   - Ajustes → Batería → Optimización de batería → AhoraFicho → No optimizar -->
 
 ### La ubicación no se registra
 
@@ -303,7 +311,7 @@ Si tienes activadas las actualizaciones automáticas en Google Play:
 
 ### Actualización manual
 
-1. Abre **Google Play Store**
+1. Abre **Google Play Store** o **App Store**
 2. Busca **AhoraFicho**
 3. Si hay actualización disponible, verás el botón **"Actualizar"**
 4. Pulsa **"Actualizar"**
@@ -337,7 +345,7 @@ Si necesitas desinstalar la app:
 Si prefieres no instalar la app, puedes acceder desde cualquier navegador móvil:
 
 1. Abre **Chrome**, **Firefox** o **Safari** en tu móvil
-2. Ve a [https://www.ahoraficho.es](https://www.ahoraficho.es)
+2. Ve a [https://demo.ahoraficho.es](https://demo.ahoraficho.es)
 3. Inicia sesión normalmente
 4. La web está **optimizada para móvil** y funciona perfectamente
 
@@ -346,11 +354,16 @@ Si prefieres no instalar la app, puedes acceder desde cualquier navegador móvil
 Puedes añadir AhoraFicho a tu pantalla de inicio sin instalar la app:
 
 **En Chrome (Android):**
-1. Accede a www.ahoraficho.es
+1. Accede a demo.ahoraficho.es
 2. Pulsa el menú (⋮) → **"Añadir a pantalla de inicio"**
 3. Dale un nombre y pulsa **"Añadir"**
 4. Ahora tendrás un icono de acceso directo en tu pantalla de inicio
 
+**En Chrome (iOS):**
+1. Accede a demo.ahoraficho.es
+2. Pulsa el menú (⋮) → Compartir → **"Añadir a pantalla de inicio"**
+3. Dale un nombre y pulsa **"Añadir"**
+4. Ahora tendrás un icono de acceso directo en tu pantalla de inicio
 ---
 
 ## Próximos pasos
