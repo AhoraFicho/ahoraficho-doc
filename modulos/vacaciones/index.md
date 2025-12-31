@@ -25,7 +25,7 @@ El **módulo de Vacaciones y Ausencias** permite a los empleados solicitar días
 
 - 📅 **Solicitar vacaciones**: Los empleados piden sus días libres
 - ✅ **Aprobar/Rechazar**: Los Managers validan las solicitudes
-- 📊 **Control de saldo**: Días disponibles vs consumidos
+- 📊 **Control de días**: Días disponibles vs consumidos
 - 📧 **Notificaciones**: Alertas automáticas
 - 📑 **Reportes**: Informes de ausencias
 
@@ -38,7 +38,7 @@ El **módulo de Vacaciones y Ausencias** permite a los empleados solicitar días
 | **Vacaciones** | ✅ Sí | ✅ Sí | ✅ Sí |
 | **Permiso retribuido** | ❌ No | ✅ Sí | ✅ Sí |
 | **Baja médica** | ❌ No | ❌ No | ⚠️ Parcial |
-| **Asuntos propios** | Según política | ✅ Sí | ❌ No |
+| **Asuntos propios** | ❌ No | ✅ Sí | ❌ No |
 | **Permiso no retribuido** | ❌ No | ✅ Sí | ❌ No |
 
 ### Vacaciones anuales
@@ -48,14 +48,13 @@ El **módulo de Vacaciones y Ausencias** permite a los empleados solicitar días
 - Pueden tener fecha de caducidad (ej: 31 diciembre)
 - Deben ser aprobadas por el Manager
 
-👉 [Ver guía: Solicitar Vacaciones](/guias-por-rol/empleado/solicitar-vacaciones/)
-👉 [Ver guía: Aprobar Vacaciones](/guias-por-rol/manager/aprobar-vacaciones/)
+👉 [Ver guía: Solicitar Vacaciones](/guias-por-rol/empleado/solicitar-vacaciones/) | 👉 [Ver guía: Aprobar Vacaciones](/guias-por-rol/manager/aprobar-vacaciones/)
 
 ### Permisos retribuidos
 
 Días libres pagados por situaciones específicas:
 - Matrimonio (15 días)
-- Nacimiento de hijo (4-5 semanas)
+- Nacimiento de hijo (6 semanas)
 - Fallecimiento familiar (2-4 días según parentesco)
 - Mudanza (1 día)
 - Asuntos médicos propios o familiares
@@ -129,8 +128,8 @@ Los Managers pueden ver un calendario con todas las ausencias:
 
 - 🟢 **Verde**: Ausencias aprobadas
 - 🟡 **Amarillo**: Ausencias pendientes
-- 🔴 **Rojo**: Días sin cobertura suficiente
-- ⚪ **Gris**: Festivos
+- 🔴 **Rojo**: Ausencias rechazadas
+- ⚪ **Azul**: Festivos
 
 Permite detectar solapamientos y planificar mejor la cobertura.
 
@@ -179,7 +178,7 @@ Los Managers pueden:
 - 📧 Recordatorio: solicitudes sin revisar (24h)
 - 📧 Alerta: vacaciones que generan problemas de cobertura
 
----
+<!-- ---
 
 ## Reportes de ausencias
 
@@ -195,7 +194,7 @@ Los Managers pueden:
 - **Costes**: Días retribuidos vs no retribuidos
 - **Cumplimiento**: % de vacaciones disfrutadas
 
-👉 [Ver guía: Reportes](/reportes/)
+👉 [Ver guía: Reportes](/reportes/) -->
 
 ---
 

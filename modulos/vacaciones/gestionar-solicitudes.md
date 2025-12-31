@@ -27,14 +27,14 @@ Como **Administrador**, puedes ver y gestionar las solicitudes de toda la empres
 
 ### Acceder a solicitudes
 
-1. Ve a **"Vacaciones"** → **"Todas las solicitudes"**
-2. Verás solicitudes de todos los empleados
-3. Puedes filtrar por:
+1. Ve a **"Validaciones"** → **"Ausencias Pendientes"**
+2. Verás solicitudes pendientes de todos los empleados
+<!-- 3. Puedes filtrar por:
    - Estado (Pendientes, Aprobadas, Rechazadas)
    - Empleado
    - Departamento
    - Tipo de ausencia
-   - Rango de fechas
+   - Rango de fechas -->
 
 ---
 
@@ -52,7 +52,7 @@ Como **Administrador**, puedes ver y gestionar las solicitudes de toda la empres
 - Vacaciones de Navidad (si aplica cierre de empresa)
 - Solicitudes sencillas sin conflictos
 
----
+<!-- ---
 
 ## Resolver conflictos
 
@@ -66,7 +66,7 @@ El sistema alerta si:
 **Acciones:**
 1. Contacta con los empleados para escalonar fechas
 2. Rechaza una y aprueba otra (explicando motivo)
-3. Negocia solución alternativa
+3. Negocia solución alternativa -->
 
 ---
 
@@ -85,13 +85,13 @@ Las bajas médicas **no requieren aprobación**, pero debes:
 
 ### Establecer reglas
 
-**Desde**: Configuración → Vacaciones
+**Desde**: Trabajadores → Editar trabajador → Ausencias máximas
 
-**Opciones:**
+<!-- **Opciones:**
 - Días de antelación mínima (ej: 15 días)
 - Máximo de empleados simultáneos (ej: no más del 30%)
 - Períodos bloqueados (ej: Black Friday en retail)
-- Caducidad de vacaciones (31 dic o arrastre a marzo)
+- Caducidad de vacaciones (31 dic o arrastre a marzo) -->
 
 ---
 
