@@ -26,14 +26,9 @@ Cómo gestionar tu perfil personal, cambiar contraseña y configurar notificacio
 
 Puedes acceder a tu perfil de dos formas:
 
-### Opción 1: Menú superior
+### Menú superior
 1. Haz clic en tu **nombre o avatar** (arriba a la derecha)
 2. Selecciona **"Mi Perfil"**
-
-### Opción 2: Menú lateral
-1. En el menú lateral, al final
-2. Haz clic en tu nombre de usuario
-3. Selecciona **"Mi Perfil"**
 
 ---
 
@@ -45,17 +40,17 @@ En tu perfil encontrarás tu información personal:
 
 | Campo | Descripción | ¿Puedo editarlo? |
 |:------|:------------|:-----------------|
-| **Nombre completo** | Tu nombre y apellidos | ❌ No* |
-| **Email** | Email corporativo | ❌ No* |
+| **Nombre completo** | Tu nombre y apellidos | ✅ Sí |
+| **Email** | Email corporativo | ✅ Sí |
 | **Teléfono** | Número de contacto | ✅ Sí |
-| **Fecha de nacimiento** | Tu fecha de nacimiento | ❌ No* |
-| **DNI/ID Empleado** | Documento de identidad | ❌ No* |
+| **Fecha de nacimiento** | Tu fecha de nacimiento | ✅ Sí |
+| **DNI/ID Empleado** | Documento de identidad | ✅ Sí |
 | **Departamento** | Departamento asignado | ❌ No* |
 | **Empresa** | Empresa a la que perteneces | ❌ No |
 
 *Los campos marcados con ❌ solo pueden ser editados por tu Administrador por razones de seguridad.
 
-### Información laboral
+<!-- ### Información laboral
 
 **Datos de trabajo:**
 - **Horario asignado**: Tu jornada laboral estándar
@@ -67,7 +62,7 @@ En tu perfil encontrarás tu información personal:
 - **Días de vacaciones anuales**: Asignados este año
 - **Días consumidos**: Ya disfrutados
 - **Días disponibles**: Pendientes de usar
-- **Fecha de caducidad**: Cuándo expiran tus días
+- **Fecha de caducidad**: Cuándo expiran tus días -->
 
 ---
 
@@ -131,7 +126,7 @@ Tu nueva contraseña debe cumplir:
 
 ---
 
-## Configuración de Fichaje
+<!-- ## Configuración de Fichaje
 
 ### Métodos de fichaje habilitados
 
@@ -333,7 +328,7 @@ Si tu empresa tiene restricción por edificios:
 {: .note }
 > Solo podrás fichar si estás dentro del radio permitido de alguno de estos edificios.
 
----
+--- -->
 
 ## Descargar mis datos (RGPD)
 
@@ -368,7 +363,7 @@ Si quieres que se eliminen tus datos:
 
 ---
 
-## Cambiar Foto de Perfil
+<!-- ## Cambiar Foto de Perfil
 
 ### Subir avatar (si está habilitado)
 
@@ -397,7 +392,7 @@ Aunque actualmente AhoraFicho está en español, en futuras versiones podrás:
 - Configurar formato de fecha
 - Configurar zona horaria
 
----
+--- -->
 
 ## Cerrar Sesión
 
@@ -406,7 +401,7 @@ Aunque actualmente AhoraFicho está en español, en futuras versiones podrás:
 Para cerrar tu sesión:
 
 1. Haz clic en tu nombre (arriba a la derecha)
-2. Selecciona **"Desconectarse"** o **"Cerrar sesión"**
+2. Selecciona **"Desconectarse"** 
 3. Serás redirigido a la pantalla de login
 
 {: .important }

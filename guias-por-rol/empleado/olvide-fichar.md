@@ -68,7 +68,7 @@ Hay dos formas de solicitar un cambio:
 #### Opción A: Desde el listado de fichajes
 
 1. Localiza el fichaje que necesitas corregir (o el día sin fichaje)
-2. Haz clic en el botón **"Solicitar cambio"** o **"..."** → **"Solicitar cambio"**
+2. Haz clic en el botón del lápiz **"Solicitar cambio"**
 3. Se abrirá un formulario
 
 #### Opción B: Crear nuevo fichaje con solicitud
@@ -83,19 +83,19 @@ Hay dos formas de solicitar un cambio:
 
 El formulario te pedirá:
 
-### 📅 Fecha y hora del fichaje original
+<!-- ### 📅 Fecha y hora del fichaje original
 - **Fecha**: Selecciona el día del fichaje
-- **Hora original**: La hora que está registrada actualmente (o vacío si no fichaste)
+- **Hora original**: La hora que está registrada actualmente (o vacío si no fichaste) -->
 
 ### 🕐 Nueva fecha y hora
 - **Nueva fecha**: Normalmente la misma (a menos que sea otro día)
 - **Nueva hora**: La hora correcta a la que deberías haber fichado
 
-### 📝 Tipo de acceso
+<!-- ### 📝 Tipo de acceso
 - **Entrada**: Inicio de jornada
 - **Salida a pausa**: Inicio de descanso
 - **Regreso de pausa**: Fin de descanso
-- **Salida**: Fin de jornada
+- **Salida**: Fin de jornada -->
 
 ### 💬 Observaciones (obligatorio)
 Explica brevemente por qué necesitas el cambio:

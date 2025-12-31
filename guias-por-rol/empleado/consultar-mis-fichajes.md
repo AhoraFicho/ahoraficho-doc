@@ -70,7 +70,6 @@ Los fichajes se muestran con diferentes colores según su tipo:
 - 🟢 **Verde**: Entrada (inicio jornada)
 - 🟡 **Amarillo**: Pausas (inicio y fin)
 - 🔴 **Rojo**: Salida (fin jornada)
-- 🔵 **Azul**: Fichaje automático (si está configurado)
 
 ---
 
@@ -306,7 +305,7 @@ Si tu empresa tiene configuradas notificaciones de impuntualidad:
 
 ---
 
-## Gráficos y estadísticas
+<!-- ## Gráficos y estadísticas
 
 ### Vista de gráficos (si está disponible)
 
@@ -325,7 +324,7 @@ Algunas empresas tienen habilitados gráficos con:
 - Total horas por mes
 - Comparación mes a mes
 
----
+--- -->
 
 ## Casos especiales
 
@@ -349,13 +348,13 @@ Si aparecen fichajes duplicados:
 - Contacta con tu administrador para que lo corrija
 - O solicita eliminación del duplicado
 
-### Fichajes automáticos
+<!-- ### Fichajes automáticos
 
 Si tu empresa tiene configurado autofichaje:
 
 - 🔵 Aparecen marcados como "Automático"
 - Se generan según tu horario
-- Puedes solicitar cambios si no son correctos
+- Puedes solicitar cambios si no son correctos -->
 
 ---
 

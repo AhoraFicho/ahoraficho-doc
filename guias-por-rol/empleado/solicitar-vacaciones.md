@@ -112,6 +112,10 @@ Cada tipo puede tener diferentes requisitos:
 - Algunos descuentan días, otros no
 - Algunos requieren aprobación, otros son automáticos
 
+### Año administrativo
+
+Si la empresa lo permite se pueden coger ausencias de años anteriores o posteriores, aquí seleccionas el año par el que cuenta esa ausencia
+
 ### 📎 Archivo adjunto (opcional)
 
 Para algunos tipos de ausencia puedes (o debes) adjuntar documentación:
@@ -150,7 +154,7 @@ Una vez completado el formulario:
 
 1. Revisa que las fechas son correctas
 2. Verifica el número de días que se van a descontar
-3. Haz clic en **"Guardar"** o **"Enviar solicitud"**
+3. Haz clic en **"Guardar"**
 
 Verás un mensaje de confirmación:
 ✅ "Solicitud de ausencia creada correctamente"
@@ -211,11 +215,11 @@ Debajo del calendario encontrarás el listado detallado:
 ```
 
 Para cada ausencia verás:
-- Fechas
+- Fecha
 - Tipo de ausencia
 - Estado
-- Número de días
-- Opción de **editar** (si está pendiente) o **ver detalles**
+- Notas
+- Opción de **eliminar** (si está pendiente)
 
 ---
 
@@ -263,7 +267,7 @@ Puedes consultar las ausencias de tus compañeros:
 
 ## Casos especiales
 
-### Solicitar medio día
+<!-- ### Solicitar medio día
 
 Algunas empresas permiten solicitar medios días:
 
@@ -273,7 +277,7 @@ Algunas empresas permiten solicitar medios días:
    - **Tarde**: De mediodía hasta hora de salida
 
 {: .note }
-> La disponibilidad de medios días depende de la configuración de tu empresa.
+> La disponibilidad de medios días depende de la configuración de tu empresa. -->
 
 ### Ausencias de varios días
 
