@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Preguntas Frecuentes
-nav_order: 10
+nav_order: 50
 permalink: /preguntas-frecuentes/
 ---
 
@@ -306,11 +306,11 @@ Sí, el rol de Manager incluye todas las funciones de Empleado más las de super
 
 ### ¿La app es gratis?
 
-Sí, la descarga e instalación son gratuitas. El coste lo asume tu empresa.
+Sí, la descarga e instalación son gratuitas. El coste lo asume tu empresa al contratar la plataforma.
 
 ### ¿Funciona offline?
 
-Parcialmente. Puedes fichar sin internet y el fichaje se sincronizará cuando recuperes conexión.
+No. Requieres internet para poder acceder a la aplicación.
 
 ### ¿Consume muchos datos?
 

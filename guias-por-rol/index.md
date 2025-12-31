@@ -27,8 +27,8 @@ Guía para responsables de equipo. Validaciones, reportes y gestión de tu equip
 ### 🔧 [Administrador](/guias-por-rol/administrador/)
 Documentación completa para administradores. Configuración, gestión de usuarios y reportes avanzados.
 
-### 👑 [SuperAdmin](/guias-por-rol/superadmin/)
-Guía para super administradores. Gestión multi-empresa y configuración global de la plataforma.
+<!-- ### 👑 [SuperAdmin](/guias-por-rol/superadmin/)
+Guía para super administradores. Gestión multi-empresa y configuración global de la plataforma. -->
 
 ---
 
