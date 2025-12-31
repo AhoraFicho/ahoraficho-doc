@@ -46,11 +46,11 @@ Todos los empleados activos pueden fichar, independientemente de su rol:
 
 ## Métodos de fichaje disponibles
 
-AhoraFicho ofrece **5 métodos diferentes** para fichar:
+AhoraFicho ofrece **4 métodos diferentes** para fichar:
 
 ### 1. 🌐 Fichaje Web
 
-Fichar desde el navegador accediendo a www.ahoraficho.es
+Fichar desde el navegador accediendo a la url de tu empresa, por ejemplo demo.ahoraficho.es
 
 - **Ventajas**: No requiere instalar nada
 - **Ideal para**: Empleados con ordenador de sobremesa
@@ -78,7 +78,7 @@ Fichar desde un terminal compartido usando código de 6 dígitos
 
 👉 [Ver guía: Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/)
 
-### 4. 📷 Fichaje QR
+<!-- ### 4. 📷 Fichaje QR
 
 Fichar escaneando código QR desde la app móvil
 
@@ -86,9 +86,9 @@ Fichar escaneando código QR desde la app móvil
 - **Ideal para**: Oficinas, tiendas
 - **Requiere**: App móvil + código QR visible
 
-👉 [Ver guía: Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/)
+👉 [Ver guía: Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/) -->
 
-### 5. 🏷️ Fichaje RFID
+### 4. 🏷️ Fichaje RFID
 
 Fichar con tarjeta o llavero RFID
 
@@ -177,8 +177,8 @@ Los empleados pueden consultar sus propios fichajes:
 
 Los Managers pueden ver fichajes de su equipo:
 
-1. Ve a **"Departamentos"** → Selecciona tu departamento
-2. Haz clic en **"Resumen Diario"** o **"Resumen Semanal"**
+1. Ve a **"Reportes"**
+2. Haz clic en **"Resumen Diario Dpto"** o **"Resumen Semanal Dpto"**
 3. Verás todos los fichajes del equipo
 
 👉 [Ver guía: Resumen Diario por Departamento](/reportes/resumen-diario-departamento/)
@@ -187,7 +187,7 @@ Los Managers pueden ver fichajes de su equipo:
 
 Los Administradores pueden ver todos los fichajes:
 
-1. Ve a **"Fichajes"** o **"Reportes"**
+1. Ve a **"Reportes"**
 2. Filtra por empleado, departamento, edificio, fecha
 3. Exporta a PDF o Excel si es necesario
 
@@ -196,12 +196,12 @@ Los Administradores pueden ver todos los fichajes:
 ## ¿Olvidé fichar?
 
 Si un empleado olvida fichar, puede solicitar una corrección:
-
-1. Ve a **"Mis Fichajes"**
-2. Selecciona el día con el olvido
-3. Haz clic en **"Solicitar cambio"**
-4. Introduce la hora correcta y el motivo
-5. El Manager aprobará o rechazará la solicitud
+1. **"Ficha lo antes posible"**
+2. Ve a **"Mis Fichajes"**
+3. Selecciona el registro de ahora mismo
+4. Haz clic en **"Solicitar cambio"**
+5. Introduce la hora correcta y el motivo
+6. El Manager aprobará o rechazará la solicitud
 
 👉 [Ver guía: ¿Olvidé Fichar?](/guias-por-rol/empleado/olvide-fichar/)
 
@@ -272,7 +272,7 @@ Sí, si un día es festivo configurado en el sistema, no se contará como ausenc
 
 ### ¿Se puede fichar sin conexión a internet?
 
-Depende del método. La app móvil puede guardar el fichaje temporalmente y sincronizar cuando haya conexión.
+No, siempre se necesita acceso a internet para poder fichar.
 
 ---
 
@@ -289,6 +289,6 @@ Si tienes dudas sobre el módulo de Fichajes:
 
 - 👉 [Primer Fichaje](/primeros-pasos/primer-fichaje/)
 - 👉 [Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/)
-- 👉 [Historial de Fichajes](/modulos/fichajes/historial-fichajes/)
+- 👉 [Historial de Fichajes](/guias-por-rol/empleado/consultar-mis-fichajes/)
 - 👉 [¿Olvidé Fichar?](/guias-por-rol/empleado/olvide-fichar/)
 - 👉 [Gestión de Edificios](/guias-por-rol/administrador/gestion-edificios/)

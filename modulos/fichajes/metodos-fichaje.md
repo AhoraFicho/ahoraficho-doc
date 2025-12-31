@@ -28,7 +28,6 @@ AhoraFicho ofrece 5 métodos diferentes para que los empleados registren su entr
 | **🌐 Web** | ⭐⭐⭐ | Usuario + contraseña | Oficinas con ordenador |
 | **📱 App Móvil** | ⭐⭐⭐⭐ | App instalada | Teletrabajo, movilidad |
 | **🔢 PIN** | ⭐⭐⭐⭐⭐ | Solo PIN (6 dígitos) | Fábricas, almacenes |
-| **📷 QR** | ⭐⭐⭐⭐⭐ | App + código QR | Tiendas, oficinas |
 | **🏷️ RFID** | ⭐⭐⭐⭐⭐ | Tarjeta/llavero | Oficinas grandes, hoteles |
 
 ---
@@ -40,12 +39,12 @@ Fichar desde el navegador accediendo a la plataforma web.
 ### Cómo funciona
 
 1. Abre tu navegador (Chrome, Firefox, Edge, Safari)
-2. Ve a **www.ahoraficho.es**
+2. Ve a la url de tu empresa, por ejemplo: **demo.ahoraficho.es**
 3. Inicia sesión con tu usuario y contraseña
 4. Haz clic en el botón **"Fichar"** en el dashboard
 5. Confirma el fichaje
 
-![Fichaje web](/assets/images/placeholder-fichaje-web.png)
+<!-- ![Fichaje web](/assets/images/placeholder-fichaje-web.png) -->
 
 ### Ventajas
 
@@ -68,7 +67,7 @@ Fichar desde el navegador accediendo a la plataforma web.
 - Empleados que ya tienen la web abierta
 
 {: .tip }
-> **Consejo**: Guarda www.ahoraficho.es como marcador/favorito en tu navegador para acceder rápidamente.
+> **Consejo**: Guarda demo.ahoraficho.es como marcador/favorito en tu navegador para acceder rápidamente.
 
 ---
 
@@ -84,7 +83,7 @@ Fichar desde la aplicación móvil de AhoraFicho en tu smartphone.
 4. Toca el botón grande **"Fichar"**
 5. Confirma con tu huella dactilar o Face ID (opcional)
 
-![Fichaje app móvil](/assets/images/placeholder-fichaje-app.png)
+<!-- ![Fichaje app móvil](/assets/images/placeholder-fichaje-app.png) -->
 
 ### Ventajas
 
@@ -127,7 +126,7 @@ Fichar usando un código PIN de 6 dígitos en un terminal compartido.
 4. Pulsa **"Enter"** o **"Fichar"**
 5. El sistema confirma el fichaje mostrando tu nombre
 
-![Fichaje PIN](/assets/images/placeholder-fichaje-pin.png)
+<!-- ![Fichaje PIN](/assets/images/placeholder-fichaje-pin.png) -->
 
 ### ¿Dónde está mi PIN?
 
@@ -166,10 +165,10 @@ Tu PIN personal está en:
 
 **Para Administradores:**
 1. Prepara un dispositivo (tablet, ordenador touch)
-2. Abre www.ahoraficho.es
+2. Abre demo.ahoraficho.es
 3. Inicia sesión con una cuenta de Administrador
-4. Ve a **"Configuración"** → **"Terminal PIN"**
-5. Activa el **"Modo Terminal"**
+4. Ve a **"Configuración"** → **"Dispositivos"**
+5. Registra un nuevo termina **"Modo Terminal"**
 6. La pantalla se bloqueará mostrando solo el teclado PIN
 7. Coloca el terminal en un lugar accesible para todos
 
@@ -178,7 +177,7 @@ Tu PIN personal está en:
 
 ---
 
-## 4. 📷 Fichaje QR
+<!-- ## 4. 📷 Fichaje QR
 
 Fichar escaneando un código QR con la app móvil.
 
@@ -229,9 +228,9 @@ Fichar escaneando un código QR con la app móvil.
 {: .tip }
 > **Recomendación**: Plastifica el código QR impreso para que dure más y sea resistente al agua/suciedad.
 
----
+--- -->
 
-## 5. 🏷️ Fichaje RFID
+## 4. 🏷️ Fichaje RFID
 
 Fichar acercando una tarjeta o llavero RFID a un lector.
 
@@ -243,7 +242,7 @@ Fichar acercando una tarjeta o llavero RFID a un lector.
 4. **¡BIP!** El lector emite un sonido y el fichaje se registra
 5. El sistema muestra brevemente el nombre del empleado
 
-![Fichaje RFID](/assets/images/placeholder-fichaje-rfid.png)
+<!-- ![Fichaje RFID](/assets/images/placeholder-fichaje-rfid.png) -->
 
 ### Ventajas
 
@@ -292,9 +291,8 @@ Fichar acercando una tarjeta o llavero RFID a un lector.
 | Método | Hardware | Software | Internet | Coste adicional |
 |--------|----------|----------|----------|-----------------|
 | **Web** | Ordenador/móvil | Navegador | ✅ Sí | No |
-| **App Móvil** | Smartphone | App instalada | ⚠️ Opcional | No |
+| **App Móvil** | Smartphone | App instalada | ✅ Sí | No |
 | **PIN** | Terminal compartido | Navegador | ✅ Sí | Dispositivo terminal |
-| **QR** | Smartphone | App instalada | ⚠️ Opcional | Impresión QR |
 | **RFID** | Lector RFID | - | ✅ Sí | Lector + tarjetas |
 
 ### Velocidad de fichaje
@@ -329,13 +327,12 @@ Las empresas pueden activar **múltiples métodos** simultáneamente:
 
 **Para Administradores:**
 
-1. Ve a **"Configuración"** → **"Métodos de Fichaje"**
+1. Ve a **"Configuración"** → **"Trabajadores"** → **"Métodos de Fichaje"**
 2. Activa o desactiva cada método según necesites
 3. Configura opciones específicas:
    - **Web**: Permitir guardar sesión
    - **App**: Requerir GPS obligatorio
    - **PIN**: Longitud del PIN (4 o 6 dígitos)
-   - **QR**: Generar códigos por edificio
    - **RFID**: Configurar lectores
 4. Guarda los cambios
 
@@ -345,7 +342,7 @@ Las empresas pueden activar **múltiples métodos** simultáneamente:
 
 ### ¿Puedo usar diferentes métodos en diferentes días?
 
-Sí, puedes fichar con el método que prefieras cada día (si están activos).
+Sí, puedes fichar con el método que prefieras cada día (si están activos para el trabajador).
 
 ### ¿Qué método es más seguro?
 
@@ -355,9 +352,6 @@ Todos son seguros, pero RFID y QR son más difíciles de falsificar que PIN (que
 
 No, cada empleado tiene un PIN único. El sistema no permite duplicados.
 
-### ¿Puedo fichar con QR si no tengo datos móviles?
-
-Sí, la app puede guardar el fichaje y sincronizarlo cuando tengas WiFi.
 
 ### ¿Qué pasa si pierdo mi tarjeta RFID?
 
