@@ -3,7 +3,10 @@ description: Aquí encontrarás toda la documentación de usuario necesaria para
 theme: just-the-docs
 
 url: https://documentacion.ahoraficho.es
+baseurl: "" # Importante: vacío porque usas dominio personalizado
 
+# AÑADE ESTA LÍNEA - Es la clave para URLs limpias
+permalink: pretty
 logo: "/assets/images/logo.png"
 favicon_ico: "/assets/images/favicon.png"
 
