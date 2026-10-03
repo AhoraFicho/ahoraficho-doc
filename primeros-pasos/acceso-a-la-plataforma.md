@@ -134,42 +134,86 @@ El menú lateral muestra diferentes opciones según tu rol:
 📊 Dashboard
 👤 Mi Trabajo
    ├── Mis Fichajes
-   ├── Mi resumen diario
+   ├── Mis Cierres (*)
    ├── Mis ausencias
-   └── [otros módulos activos]
+   ├── Mis gastos (*)
+   ├── Mis imputaciones (*)
+   ├── Mis servicios (*)
+   ├── Mis documentos (*)
+   ├── Mi bolsa de horas (*)
+   └── Mis notificaciones
 👥 Equipo
    ├── Calendario del equipo
-   └── [otros calendarios]
+   ├── Calendario General (**)
+   └── Calendarios de gastos e imputaciones del equipo (*)
 ```
+
+(\*) Solo si el módulo correspondiente está activado.
+(\*\*) Solo si tu empresa ha habilitado el calendario general.
 
 ### 👨‍💼 Manager
 
 ```
 [Todo lo anterior] +
 ✅ Validaciones
-   ├── Cambios de Fichajes
    ├── Ausencias Pendientes
-   ├── Gastos Pendientes
-   └── Imputaciones Pendientes
+   ├── Gastos Pendientes (*)
+   └── Imputaciones Pendientes (*)
 📈 Reportes
-   ├── Resumen Diario Dpto.
-   ├── Resumen Semanal Dpto.
+   ├── Resumen diario
+   ├── Resumen semanal
+   ├── Reporte mensual
+   ├── Reporte horas nocturnas
+   ├── Impuntualidades
    └── [otros reportes]
 🏢 Empresa
    └── [vistas de empresa]
+```
+
+### ✅ Validador
+
+```
+✅ Validaciones
+   ├── Cambios de Fichajes
+   └── Cierres Mensuales
 ```
 
 ### 🔧 Administrador
 
 ```
 [Todo lo anterior] +
+✅ Validaciones
+   ├── Cambios de Fichajes
+   ├── Cierres Mensuales
+   ├── Ausencias Pendientes
+   ├── Gastos Pendientes (*)
+   └── Imputaciones Pendientes (*)
 ⚙️ Configuraciones
    ├── Trabajadores
    ├── Departamentos
    ├── Edificios
+   ├── Departamento Edificios
    ├── Horarios
    ├── Días festivos
-   └── [más configuraciones]
+   ├── Bloqueos de vacaciones
+   ├── Proyectos (*)
+   ├── Notificaciones
+   ├── Dispositivos
+   ├── Alias de IP
+   ├── Tipos de Ausencias
+   ├── Tipos de gasto (*)
+   ├── Tipos de servicio (*)
+   ├── Categoría documentos (*)
+   └── Roles
+🏢 Empresa
+   ├── Calendarios de empresa (ausencias, gastos, imputaciones)
+   ├── Gestión de Fichajes
+   ├── Gestión de Ausencias
+   ├── Gestión de Gastos (*)
+   ├── Gestión de Imputaciones (*)
+   ├── Gestión de Servicios (*)
+   └── Gestión de documentos (*)
+📥 Descargar APP
 ```
 
 {: .note }
@@ -276,7 +320,7 @@ Puedes marcar **"Recordar mi usuario"** en el login para facilitar futuros acces
 ### No veo todas las opciones del menú
 
 Esto es normal. El menú muestra solo las opciones disponibles según:
-- Tu rol (Empleado, Manager, Admin, SuperAdmin)
+- Tu rol (Empleado, Manager, Validador, Admin, SuperAdmin)
 - Los módulos activados en tu empresa
 
 Si crees que deberías ver más opciones, contacta con tu administrador.

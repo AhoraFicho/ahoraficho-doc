@@ -3,7 +3,7 @@ layout: default
 title: Solicitar Vacaciones
 parent: Empleado
 grand_parent: Guías por Rol
-nav_order: 2
+nav_order: 3
 ---
 
 # Solicitar Vacaciones
@@ -26,141 +26,102 @@ Cómo solicitar vacaciones, permisos y ausencias en AhoraFicho.
 
 ### ¿Cuántos días de vacaciones tengo?
 
-Puedes consultar tu saldo de vacaciones en:
-
 1. Ve a **"Mi Trabajo"** → **"Mis ausencias"**
-2. En la parte superior verás un resumen:
-   - **Días máximos al año**: Asignados por tu empresa
-   - **Días usados**: Vacaciones ya disfrutadas
-   - **Días pendientes**: Vacaciones aprobadas pero no disfrutadas
-   - **Días disponibles**: Vacaciones que aún puedes solicitar
+2. En la parte superior verás las tarjetas de resumen por **año administrativo** (año anterior, actual y siguiente), cada una con:
+   - **Aceptada**: días ya aprobados
+   - **Pendiente**: días esperando aprobación
+   - **Rechazada**: días denegados
+   - **No usadas**: días disponibles que aún puedes solicitar
 
 {: .important }
-> **Importante**: Los días de vacaciones pueden tener fecha de caducidad. Consulta con tu administrador cuándo expiran tus días de vacaciones.
+> **Caducidad**: Tus días pueden tener fecha de caducidad. Si tienes días próximos a caducar verás el aviso *"¡Atención! Tienes ausencias próximas a caducar"*, junto con los **días perdidos** y **días disponibles** reales.
 
 ---
 
 ## Tipos de ausencias
 
-AhoraFicho distingue entre diferentes tipos de ausencias:
+En el desplegable del formulario verás los tipos configurados por tu empresa. Los habituales:
 
-| Tipo | Descripción | Descuenta días |
-|:-----|:------------|:---------------|
+| Tipo | Descripción | Descuenta vacaciones |
+|:-----|:------------|:---------------------|
 | **Vacaciones** | Días de descanso anuales | ✅ Sí |
-| **Permiso retribuido** | Asuntos propios, médicos, etc. | Depende del tipo |
-| **Baja médica** | Incapacidad temporal | ❌ No |
-| **Permiso sin sueldo** | Asuntos personales no retribuidos | ❌ No |
-| **Otros** | Según configuración de tu empresa | Variable |
+| **Baja** | Incapacidad temporal | ❌ No (con adjunto) |
+| **Teletrabajo** | Jornada en remoto | ❌ No |
+| **Asuntos propios** | Permisos puntuales | ❌ No (con duración) |
+| **Otras ausencias justificadas** | Según configuración | ❌ No |
+| **Compensatorio** | Día compensatorio del banco de horas extras (si está activo) | ❌ No (consume horas del banco) |
 
-{: .note }
-> Los tipos de ausencia disponibles dependen de la configuración de tu empresa. Consulta con tu administrador qué tipos puedes solicitar.
+👉 [Ver todos los tipos en detalle](/modulos/vacaciones/tipos-ausencias/)
 
 ---
 
 ## Cómo solicitar vacaciones
 
-### Paso 1: Acceder al calendario de ausencias
+### Paso 1: Acceder a "Mis ausencias"
 
 1. Ve al menú lateral **"Mi Trabajo"**
 2. Selecciona **"Mis ausencias"**
 3. Verás tu calendario personal de ausencias
 
-### Paso 2: Crear nueva solicitud
+### Paso 2: Seleccionar las fechas en el calendario
 
-Hay dos formas:
-
-#### Opción A: Desde el botón "Nueva petición"
-
-1. Haz clic en **"Crear petición"** o **"Nueva petición"** (botón superior)
-2. Se abrirá el formulario de solicitud
-
-#### Opción B: Desde el calendario
-
-1. Haz clic en el día del calendario donde quieres empezar las vacaciones
-2. Se abrirá automáticamente el formulario con esa fecha
+**Selecciona el rango de días arrastrando sobre el calendario** (del primer al último día): se abrirá automáticamente el formulario **"Nueva petición"** con esas fechas.
 
 ---
 
-## Formulario de solicitud de ausencia
+## Formulario de solicitud
 
-El formulario te pedirá:
+### 🏷️ Tipo ausencia
+
+Selecciona el tipo del desplegable. Según el tipo:
+
+- **Vacaciones**: no se pide adjunto ni duración (descuenta del saldo)
+- **Baja**: aparece el campo de **fichero** para adjuntar el parte médico
+- **Resto de tipos**: aparecen el fichero (opcional) y la **duración**
 
 ### 📅 Fechas
 
-**Fecha desde:**
-- Primer día de tu ausencia
-- Puedes seleccionar desde el calendario
+Del primer día al último. El sistema **excluye automáticamente fines de semana y festivos** del cómputo.
 
-**Fecha hasta:**
-- Último día de tu ausencia
-- Se calculará automáticamente el número de días
+### 🗓️ Año administrativo
 
-{: .tip }
-> **Consejo**: El sistema excluye automáticamente fines de semana y festivos del cómputo de días.
+Selecciona a qué año se imputa la ausencia (año anterior, actual o siguiente), según el saldo que quieras consumir. Si los días del año anterior ya han caducado, esa opción aparecerá deshabilitada y verás el aviso correspondiente.
 
-### 🏷️ Tipo de ausencia
+### 🌗 Jornada (media jornada)
 
-Selecciona del desplegable el tipo:
-- Vacaciones
-- Permiso retribuido
-- Baja médica
-- Asuntos propios
-- Etc.
+Para **vacaciones de un solo día**, si tu horario lo permite, puedes elegir:
 
-Cada tipo puede tener diferentes requisitos:
-- Algunos requieren documentación adjunta
-- Algunos descuentan días, otros no
-- Algunos requieren aprobación, otros son automáticos
+- **Jornada completa** (todo el día, 1 día de saldo)
+- **Mañana** (medio día de saldo)
+- **Tarde** (medio día de saldo)
 
-### Año administrativo
+{: .note }
+> La media jornada solo está disponible para vacaciones de **un solo día** y si tu horario tiene configurado el punto de corte de media jornada. Las opciones no disponibles se deshabilitan.
 
-Si la empresa lo permite se pueden coger ausencias de años anteriores o posteriores, aquí seleccionas el año par el que cuenta esa ausencia
+### ⏱️ Duración (para permisos)
 
-### 📎 Archivo adjunto (opcional)
+En tipos que no son vacaciones ni baja, puedes indicar la duración del permiso (de 30 minutos a 10 horas, en intervalos de 30 minutos).
 
-Para algunos tipos de ausencia puedes (o debes) adjuntar documentación:
+### 📎 Fichero (opcional, obligatorio en baja)
 
-- **Baja médica**: Parte médico (obligatorio)
-- **Otros permisos**: Justificante si lo requiere tu empresa
+Adjunta documentación de apoyo (parte médico, justificante...). Formatos admitidos: PDF, imágenes y documentos de oficina.
 
-**Formatos permitidos:**
-- PDF, PNG, JPG, JPEG
-- Tamaño máximo: 5 MB
+### 💬 Motivo
 
-**Para adjuntar:**
-1. Haz clic en **"Seleccionar fichero"** o **"Examinar"**
-2. Selecciona el archivo de tu ordenador
-3. El nombre del archivo aparecerá
+Campo de texto libre para dar contexto al aprobador:
 
-### 💬 Observaciones (opcional pero recomendado)
-
-Campo de texto libre para añadir información adicional:
-
-**Ejemplos de buenas observaciones:**
 - ✅ "Vacaciones de verano planificadas con antelación"
 - ✅ "Asunto personal - cita médica especialista"
-- ✅ "Permiso de paternidad por nacimiento de hijo"
 
-**Cuándo es especialmente útil:**
-- Para justificar ausencias de última hora
-- Para dar contexto al Manager
-- Para urgencias o situaciones especiales
+### Guardar
 
----
+Pulsa **"Guardar"**. Verás *"Datos guardados correctamente"* y la solicitud quedará **pendiente** en el calendario (en amarillo).
 
-## Enviar la solicitud
+Mensajes de validación habituales:
 
-Una vez completado el formulario:
-
-1. Revisa que las fechas son correctas
-2. Verifica el número de días que se van a descontar
-3. Haz clic en **"Guardar"**
-
-Verás un mensaje de confirmación:
-✅ "Solicitud de ausencia creada correctamente"
-
-{: .warning }
-> **Atención**: Crear la solicitud NO significa que esté aprobada. Debes esperar la aprobación de tu Manager/Administrador.
+- *"No tienes suficientes días de vacaciones disponibles para solicitar X día(s). Disponible actual: Y día(s)."*
+- *"No puedes solicitar vacaciones en el rango seleccionado porque hay fechas bloqueadas para el edificio..."* (si tu empresa usa bloqueos de vacaciones)
+- *"No hay días válidos nuevos para solicitar en el rango seleccionado."* (si ya tienes solicitudes sobre esos días)
 
 ---
 
@@ -168,87 +129,55 @@ Verás un mensaje de confirmación:
 
 ### ¿Quién aprueba mi solicitud?
 
-Tu solicitud será revisada por:
-
-1. **Tu Manager** (si tienes uno asignado)
-2. **El Administrador** de la empresa
-3. **Manager suplente** (si tu Manager está de ausente)
+1. **Tu Responsable** (Manager 1 de tu ficha; si no tienes, se pasa al segundo responsable o al Administrador)
+2. Si tu empresa tiene activada la **doble aprobación** y tienes **Responsable 2**: tras aprobar tu responsable, la solicitud pasa a **"Pendiente Segunda Aprobación"** y la resuelve tu segundo responsable
+3. Los **Administradores** pueden resolver cualquier solicitud de la empresa
 
 ### Estados de una solicitud
 
 | Estado | Color | Descripción |
 |:-------|:------|:------------|
-| **Pendiente** | 🟡 Amarillo | Esperando aprobación |
-| **Aceptada** | 🟢 Verde | Aprobada - puedes disfrutarla |
-| **Rechazada** | 🔴 Rojo | Denegada (verás el motivo) |
+| **Pendiente** | 🟡 Amarillo | Esperando primera aprobación |
+| **Pendiente Segunda Aprobación** | 🟠 Naranja | Aprobada por tu primer responsable; falta el segundo (solo con doble aprobación activada) |
+| **Aceptada** | 🟢 Verde | Aprobada: puedes disfrutarla |
+| **Rechazada** | 🔴 Rojo | Denegada |
 
 ### Notificaciones
 
-Recibirás un **email** cuando:
-- ✉️ Tu solicitud sea aprobada
-- ✉️ Tu solicitud sea rechazada
-- ✉️ Haya comentarios del aprobador
-
-{: .note }
-> También puedes configurar notificaciones por WhatsApp si está habilitado en tu empresa.
+Recibirás un **email** y una **notificación push** cuando tu solicitud cambie de estado o tenga comentarios del aprobador.
 
 ---
 
 ## Ver el estado de tus ausencias
 
-### Desde "Mis ausencias"
+### Calendario
 
-1. Ve a **"Mi Trabajo"** → **"Mis ausencias"**
-2. Verás tu calendario con colores:
-   - 🟢 **Verde**: Ausencias aprobadas
-   - 🟡 **Amarillo**: Ausencias pendientes
-   - 🔴 **Rojo**: Ausencias rechazadas
+En **"Mis ausencias"** el calendario muestra tus ausencias con colores por estado (verde aceptadas, amarillo pendientes, rojo rechazadas, naranja segunda aprobación).
 
 ### Listado de ausencias
 
-Debajo del calendario encontrarás el listado detallado:
-
-```
-📅 01/07/2025 - 15/07/2025 | Vacaciones | ✅ Aceptada | 11 días
-📅 24/12/2024 - 26/12/2024 | Vacaciones | 🟡 Pendiente | 3 días  
-📅 15/03/2024 - 15/03/2024 | Asunto propio | ❌ Rechazada | 1 día
-```
-
-Para cada ausencia verás:
-- Fecha
-- Tipo de ausencia
-- Estado
-- Notas
-- Opción de **eliminar** (si está pendiente)
+Debajo del calendario tienes el listado detallado con: fecha, **año administrativo**, tipo (con badge Mañana/Tarde en media jornada), duración, estado, motivo y **usuario aprobador**.
 
 ---
 
-## Editar o cancelar una solicitud
+## Modificar o cancelar una solicitud
 
-### Editar solicitud pendiente
+### Eliminar una solicitud futura
 
-Solo puedes editar solicitudes en estado **"Pendiente"**:
-
-1. Ve a **"Mis ausencias"**
-2. Localiza la solicitud pendiente
-3. Haz clic en **"Editar"** o icono de lápiz ✏️
-4. Modifica lo necesario
-5. Haz clic en **"Guardar"**
-
-{: .warning }
-> No puedes editar ausencias ya aprobadas o rechazadas.
-
-### Cancelar solicitud
-
-Para cancelar una solicitud pendiente:
+Puedes eliminar cualquier ausencia con **fecha futura** (pendiente o aceptada):
 
 1. Ve a **"Mis ausencias"**
-2. Localiza la solicitud
-3. Haz clic en **"Eliminar"** o icono de papelera 🗑️
+2. Localiza el día en el listado
+3. Pulsa el icono de **papelera** 🗑️
 4. Confirma la eliminación
 
-{: .important }
-> Si ya está aprobada y necesitas cancelarla, contacta con tu Manager o Administrador.
+### Otras acciones sobre tus ausencias
+
+- **Subir adjunto** 📤: si el tipo lo permite y aún no tiene archivo
+- **Modificar duración** ✏️: en permisos con duración (entre 30 minutos y 10 horas)
+
+{: .warning }
+> **No se pueden editar las fechas ni el tipo** de una solicitud: si te has equivocado, elimínala y crea una nueva. Para cancelar una ausencia que ya ha empezado o pasada, contacta con tu Manager o Administrador.
 
 ---
 
@@ -257,45 +186,22 @@ Para cancelar una solicitud pendiente:
 Puedes consultar las ausencias de tus compañeros:
 
 1. Ve a **"Equipo"** → **"Calendario del equipo"**
-2. Verás un calendario con las ausencias **aprobadas** de todo el equipo
+2. Verás un calendario con las ausencias **aprobadas** del equipo
 3. Útil para planificar tus vacaciones evitando coincidencias
-
-{: .note }
-> Solo verás ausencias aprobadas. Las solicitudes pendientes de tus compañeros no son visibles por privacidad.
 
 ---
 
 ## Casos especiales
 
-<!-- ### Solicitar medio día
+### Vacaciones de medio día
 
-Algunas empresas permiten solicitar medios días:
-
-1. Marca la opción **"Medio día"** en el formulario (si está disponible)
-2. Selecciona:
-   - **Mañana**: De la hora de entrada hasta mediodía
-   - **Tarde**: De mediodía hasta hora de salida
-
-{: .note }
-> La disponibilidad de medios días depende de la configuración de tu empresa. -->
-
-### Ausencias de varios días
-
-Para ausencias largas (>5 días):
-
-1. Introduce la fecha desde y fecha hasta
-2. El sistema calculará automáticamente:
-   - Días laborables (excluyendo fines de semana)
-   - Días festivos (según calendario de tu empresa)
-3. Verás el total de días que se descontarán
+Si solo necesitas la mañana o la tarde de un día concreto: selecciona ese único día en el calendario y elige **"Mañana"** o **"Tarde"** en el campo Jornada (si tu horario lo permite). Solo descuenta medio día.
 
 ### Ausencia urgente o de última hora
 
-Si necesitas solicitar una ausencia urgente:
-
 1. Créala normalmente
-2. En **Observaciones** indica: "Urgente - [motivo]"
-3. Contacta por otro medio con tu Manager (email, teléfono, WhatsApp)
+2. En **Motivo** indica: "Urgente - [motivo]"
+3. Contacta por otro medio con tu Manager (email, teléfono)
 4. Explica la situación
 
 {: .warning }
@@ -303,16 +209,17 @@ Si necesitas solicitar una ausencia urgente:
 
 ### Baja médica
 
-Para bajas médicas:
+1. Selecciona tipo **"Baja"**
+2. **Adjunta el parte médico**
+3. Indica las fechas (primera fecha de baja y alta estimada)
 
-1. Selecciona tipo: **"Baja médica"** o **"Incapacidad temporal"**
-2. **Adjunta el parte médico** (obligatorio)
-3. Fecha desde: Primer día de baja
-4. Fecha hasta: Fecha estimada de alta (o déjalo abierto si no lo sabes)
+Puedes **subir partes de confirmación** posteriores desde el listado con el icono de subida 📤.
 
-**Partes de confirmación:**
-- Sube los partes de confirmación a medida que los recibas
-- Edita la ausencia para extender fechas si es necesario
+### Día compensatorio (banco de horas extras)
+
+Si tu empresa tiene el **banco de horas extras** activo, los días compensatorios se solicitan desde **"Mi Trabajo" → "Mi bolsa de horas"** y generan una ausencia de tipo **Compensatorio** que sigue el flujo normal de aprobación.
+
+👉 [Ver guía: Banco de horas extras](/modulos/banco-horas/)
 
 ---
 
@@ -320,44 +227,27 @@ Para bajas médicas:
 
 ### ¿Puedo solicitar vacaciones aunque no tenga días disponibles?
 
-Técnicamente sí, puedes crear la solicitud, pero:
-- Probablemente será rechazada
-- Consulta antes con tu Manager
-- Algunas empresas permiten adelantar días del año siguiente
+No: el sistema validará tu saldo y te avisará si no tienes días suficientes. Consulta con tu Manager si puedes adelantar días del año siguiente (el año administrativo lo permite si tu empresa lo configura).
 
-### ¿Qué pasa si mi Manager no aprueba a tiempo?
+### ¿Qué pasa si mi responsable no aprueba a tiempo?
 
-Depende de la política de tu empresa:
-- Algunas empresas tienen aprobación automática tras X días
-- Otras requieren aprobación manual siempre
-- Contacta con tu administrador si urge
-
-### ¿Puedo ver las ausencias aprobadas del año pasado?
-
-Sí, en el calendario puedes:
-1. Usar los filtros de fecha
-2. Navegar por meses/años anteriores
-3. Ver tu historial completo
+La solicitud permanece **Pendiente** (o **Pendiente Segunda Aprobación**) hasta que se valide. Recuerda amablemente a tu responsable o contacta con un Administrador si urge.
 
 ### ¿Los festivos cuentan como vacaciones?
 
-No, los festivos configurados por tu empresa:
-- NO se descuentan de tus vacaciones
-- Se excluyen automáticamente del cálculo
-- Aparecen marcados en el calendario
+No: los festivos configurados no se descuentan del saldo y se excluyen automáticamente del cálculo de días.
 
-### ¿Qué pasa si me rechazan las vacaciones?
+### ¿Qué pasa si me pongo enfermo durante mis vacaciones?
 
-1. Recibirás una notificación con el motivo
-2. Puedes contactar con tu Manager para aclarar
-3. Puedes solicitar otras fechas alternativas
+Según el Estatuto de los Trabajadores las vacaciones se interrumpen. Comunícalo a tu empresa: el Administrador gestionará la situación (la app no lo hace automáticamente).
 
 ### ¿Puedo solicitar vacaciones para el año que viene?
 
-Depende de la configuración:
-- Algunas empresas lo permiten con meses de antelación
-- Otras solo permiten el año en curso
-- Consulta la política de tu empresa
+Sí, mediante el **año administrativo** del formulario (si tu empresa lo permite y tienes saldo asignado de ese año).
+
+### ¿Por qué aparece "bloqueado" un rango de fechas?
+
+Tu empresa puede tener **bloqueos de vacaciones** configurados para ciertos edificios y fechas (por ejemplo, campaña de Navidad). En ese periodo no se pueden solicitar vacaciones.
 
 ---
 
@@ -365,47 +255,20 @@ Depende de la configuración:
 
 ### ✅ Haz
 
-- Solicita vacaciones con la mayor antelación posible (mínimo 15 días)
+- Solicita vacaciones con la mayor antelación posible
 - Verifica el calendario del equipo antes de solicitar
 - Comunica tus planes a tu Manager informalmente antes de solicitar
 - Adjunta documentación cuando sea necesario
-- Sé claro en las observaciones
 
 ### ❌ Evita
 
 - Solicitar vacaciones de última hora sin motivo justificado
-- Solicitar en fechas con alta carga de trabajo
 - Coincidir con muchos compañeros de tu equipo
-- Dejar campos vacíos sin justificación
-- Cancelar ausencias aprobadas sin avisar
-
----
-
-## Consejos para maximizar tus vacaciones
-
-### 🗓️ Planifica con antelación
-
-- Revisa el calendario de festivos
-- Combina puentes con festivos
-- Solicita con 1-2 meses de antelación
-
-### 👥 Coordina con tu equipo
-
-- Consulta el calendario del equipo
-- Habla con tus compañeros antes de solicitar
-- Evita dejar el equipo sin cobertura
-
-### 📊 Aprovecha los puentes
-
-Combina:
-- Festivo en jueves → Solicita viernes = 4 días
-- Festivo en martes → Solicita lunes = 4 días
+- Dejar días sin usar hasta que caduquen: recibirás avisos, ¡úsalo a tiempo!
 
 ---
 
 ## ¿Necesitas ayuda?
-
-Si tienes problemas para solicitar ausencias:
 
 - 👨‍💼 Contacta con tu Manager
 - 🔧 Habla con tu Administrador
@@ -415,6 +278,7 @@ Si tienes problemas para solicitar ausencias:
 
 ## Guías relacionadas
 
-- 👉 [Consultar mis ausencias](/guias-por-rol/empleado/consultar-mis-fichajes/)
-- 👉 [Calendario del equipo](/guias-por-rol/empleado/)
+- 👉 [Aprobar Vacaciones (Manager)](/guias-por-rol/manager/aprobar-vacaciones/)
+- 👉 [Tipos de ausencias](/modulos/vacaciones/tipos-ausencias/)
+- 👉 [Banco de horas extras](/modulos/banco-horas/)
 - 👉 [Mi perfil](/guias-por-rol/empleado/mi-perfil/)

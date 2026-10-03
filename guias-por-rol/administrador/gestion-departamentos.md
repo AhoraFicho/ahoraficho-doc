@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Gestión de Departamentos
 parent: Guía del Administrador
@@ -29,7 +29,7 @@ Los departamentos te permiten organizar a los empleados de tu empresa en unidade
 - ✅ Segmentar empleados por áreas (Ventas, Producción, Administración, etc.)
 - ✅ Asignar responsables (Managers) a cada departamento
 - ✅ Generar reportes filtrados por departamento
-- ✅ Gestionar horarios y turnos por áreas específicas
+- ✅ Gestionar horarios por áreas específicas
 - ✅ Controlar accesos y permisos según estructura organizativa
 
 {: .tip }
@@ -42,7 +42,7 @@ Los departamentos te permiten organizar a los empleados de tu empresa en unidade
 ### Paso 1: Acceder a la gestión de departamentos
 
 1. Inicia sesión como **Administrador**
-2. Ve al menú lateral y haz clic en **"Configuración"**
+2. Ve al menú lateral y haz clic en **"Configuraciones"**
 3. Selecciona **"Departamentos"**
 4. Haz clic en el botón **"Nuevo Departamento"**
 
@@ -84,7 +84,7 @@ En el formulario, introduce la siguiente información:
 
 Si necesitas modificar los datos de un departamento:
 
-1. Ve a **"Configuración"** → **"Departamentos"**
+1. Ve a **"Configuraciones"** → **"Departamentos"**
 2. Busca el departamento en el listado
 3. Haz clic en el botón **"Editar"** (icono de lápiz)
 4. Modifica los campos necesarios
@@ -103,14 +103,14 @@ Existen dos formas de asignar empleados a departamentos:
 
 ### Opción 1: Desde el perfil del empleado
 
-1. Ve a **"Empleados"** → Selecciona el empleado
+1. Ve a **"Trabajadores"** → Selecciona el empleado
 2. Haz clic en **"Editar"**
 3. En el campo **"Departamento"**, selecciona el departamento del desplegable
 4. Guarda los cambios
 
 ### Opción 2: Asignación masiva
 
-1. Ve a **"Empleados"**
+1. Ve a **"Trabajadores"**
 2. Selecciona varios empleados marcando las casillas
 3. Haz clic en **"Acciones masivas"**
 4. Selecciona **"Cambiar departamento"**
@@ -128,7 +128,7 @@ Existen dos formas de asignar empleados a departamentos:
 
 Los Managers son empleados con permisos para supervisar a otros empleados de su departamento. Para asignar un responsable:
 
-1. Ve a **"Configuración"** → **"Departamentos"**
+1. Ve a **"Configuraciones"** → **"Departamentos"**
 2. Edita el departamento deseado
 3. En el campo **"Responsable"**, selecciona un empleado con rol **Manager**
 4. Guarda los cambios
@@ -169,7 +169,7 @@ Empresa Principal
 
 ### Crear un departamento hijo
 
-1. Ve a **"Configuración"** → **"Departamentos"**
+1. Ve a **"Configuraciones"** → **"Departamentos"**
 2. Haz clic en **"Nuevo Departamento"**
 3. Completa los datos del departamento
 4. En el campo **"Departamento padre"**, selecciona el departamento superior
@@ -186,7 +186,7 @@ Empresa Principal
 
 Si un departamento deja de usarse (por ejemplo, tras una reorganización), puedes desactivarlo:
 
-1. Ve a **"Configuración"** → **"Departamentos"**
+1. Ve a **"Configuraciones"** → **"Departamentos"**
 2. Edita el departamento que quieres desactivar
 3. Desmarca la casilla **"Activo"**
 4. Guarda los cambios
@@ -246,7 +246,7 @@ Si un empleado no tiene departamento asignado:
 
 Si un empleado cambia de área:
 
-1. Ve a **"Empleados"** → Edita el empleado
+1. Ve a **"Trabajadores"** → Edita el empleado
 2. Cambia el departamento en el desplegable
 3. Guarda los cambios
 
@@ -275,7 +275,7 @@ No hay límite. Puedes crear tantos departamentos como necesites según la estru
 
 ### ¿Un empleado puede estar en varios departamentos a la vez?
 
-No, cada empleado solo puede pertenecer a **un departamento** a la vez. Si necesitas gestionar empleados que trabajan en varias áreas, considera crear departamentos transversales o usar otro método de clasificación.
+Sí, un empleado puede pertenecer a **varios departamentos** a la vez: se asignan desde la edición del trabajador (marcando los departamentos). Ten en cuenta que en el **alta** del empleado se selecciona un único departamento inicial; los adicionales se añaden después editando su ficha.
 
 ### ¿Los departamentos afectan a los horarios?
 

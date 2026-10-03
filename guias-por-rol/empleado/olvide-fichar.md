@@ -9,7 +9,7 @@ nav_order: 1
 # ¿Olvidé Fichar?
 {: .no_toc }
 
-Qué hacer cuando te olvidas de registrar tu entrada, salida o pausa.
+Qué hacer cuando te olvidas de registrar tu entrada, salida o pausa, o fichaste a una hora incorrecta.
 {: .fs-6 .fw-300 }
 
 ---
@@ -24,252 +24,145 @@ Qué hacer cuando te olvidas de registrar tu entrada, salida o pausa.
 
 ## No te preocupes, tiene solución
 
-Olvidarse de fichar es algo que ocurre. AhoraFicho tiene un sistema de **solicitud de cambios** que te permite corregir fichajes olvidados o erróneos.
+Olvidarse de fichar es algo que ocurre. AhoraFicho tiene un sistema de **solicitud de cambios** que permite corregir la hora de un fichaje, siempre con aprobación posterior.
 
 {: .important }
-> **Importante**: Solicita la corrección lo antes posible. Las correcciones requieren aprobación de tu Manager o Administrador.
+> **Regla de oro**: Ficha lo antes posible con la hora real (aunque sea tarde) y, si necesitas corregirla, solicita el cambio cuanto antes. Los empleados **nunca** modifican fichajes directamente: toda corrección pasa por una solicitud que valida un **Validador** o **Administrador**.
 
 ---
 
-## Tipos de correcciones que puedes solicitar
+## Situaciones que puedes corregir
 
-### 1. Olvidé fichar la entrada
-No registraste tu llegada al trabajo.
+### 1. Fichaste a una hora incorrecta
+Fichaste (por ejemplo al entrar), pero la hora registrada no es la real. **Es el caso ideal para "Solicitar cambio"**: corriges la hora del fichaje ya existente.
 
-### 2. Olvidé fichar la salida
-Te fuiste sin fichar la salida.
+### 2. Día sin fichajes o con incidencia
+No tienes ningún fichaje ese día o tu jornada está incompleta. Usa el botón **"Solucionar"** que aparece en el día afectado (ver más abajo).
 
-### 3. Olvidé fichar una pausa
-No registraste tu descanso de comida o pausa.
-
-### 4. Fichaje erróneo
-Fichaste por error o a una hora incorrecta.
+{: .note }
+> **No se puede**: cambiar la fecha de un fichaje, añadir un fichaje nuevo desde la solicitud de cambio ni eliminar un fichaje erróneo. Esas correcciones las realiza el Administrador desde la gestión de fichajes (o se generan automáticamente con "Solucionar").
 
 ---
 
-## Cómo solicitar un cambio de fichaje
+## Cómo solicitar un cambio de hora
 
 ### Paso 1: Acceder a "Mis Fichajes"
 
 1. Ve al menú lateral **"Mi Trabajo"**
 2. Selecciona **"Mis Fichajes"**
-3. Verás el listado de tus fichajes
 
-### Paso 2: Localizar el día con el problema
+### Paso 2: Localizar el fichaje
 
-Puedes usar los filtros para encontrar el día:
-- Filtrar por fecha
-- Ver por semana o mes
+1. Usa los filtros de fecha para encontrar el día (o los accesos rápidos "Esta semana", "Semana pasada"...)
+2. Cada día se muestra con su estado: **Correcto** ✅, **Incidencia** ⚠️, **Ausencia** 📅 o **Sin fichajes** ❌
+3. Dentro del día, localiza el fichaje concreto (verás su hora y el método de acceso: Web, Móvil, PIN...)
 
-### Paso 3: Solicitar el cambio
+### Paso 3: Pulsar "Solicitar cambio"
 
-Hay dos formas de solicitar un cambio:
-
-#### Opción A: Desde el listado de fichajes
-
-1. Localiza el fichaje que necesitas corregir (o el día sin fichaje)
-2. Haz clic en el botón del lápiz **"Solicitar cambio"**
-3. Se abrirá un formulario
-
-#### Opción B: Crear nuevo fichaje con solicitud
-
-1. Ve a **"Mi Trabajo"** → **"Mis Fichajes"**
-2. Haz clic en **"Solicitar cambio de fichaje"** (botón superior)
-3. Se abrirá el formulario de solicitud
-
----
-
-## Formulario de solicitud de cambio
-
-El formulario te pedirá:
-
-<!-- ### 📅 Fecha y hora del fichaje original
-- **Fecha**: Selecciona el día del fichaje
-- **Hora original**: La hora que está registrada actualmente (o vacío si no fichaste) -->
-
-### 🕐 Nueva fecha y hora
-- **Nueva fecha**: Normalmente la misma (a menos que sea otro día)
-- **Nueva hora**: La hora correcta a la que deberías haber fichado
-
-<!-- ### 📝 Tipo de acceso
-- **Entrada**: Inicio de jornada
-- **Salida a pausa**: Inicio de descanso
-- **Regreso de pausa**: Fin de descanso
-- **Salida**: Fin de jornada -->
-
-### 💬 Observaciones (obligatorio)
-Explica brevemente por qué necesitas el cambio:
-
-**Ejemplos de buenas observaciones:**
-- ✅ "Olvidé fichar la entrada. Llegué a las 8:00h como siempre"
-- ✅ "Me fui sin fichar. Salí a las 18:30h"
-- ✅ "Fiché por error a las 12:00 en lugar de 12:30"
-- ✅ "Se me olvidó registrar la pausa de comida de 14:00 a 15:00"
-
-**Ejemplos de malas observaciones:**
-- ❌ "Error"
-- ❌ "Me olvidé"
-- ❌ "Corrección"
-
-{: .tip }
-> **Consejo**: Sé específico en tus observaciones. Ayuda a tu Manager a aprobar rápidamente la solicitud.
-
----
-
-## Proceso de aprobación
-
-### ¿Quién aprueba mi solicitud?
-
-Tu solicitud será revisada por:
-1. Tu **Manager** (si tienes uno asignado)
-2. El **Administrador** de la empresa
-
-### Estados de una solicitud
-
-| Estado | Icono | Descripción |
-|:-------|:------|:------------|
-| **Pendiente** | 🟡 | Esperando aprobación |
-| **Aprobada** | ✅ | Cambio aplicado, visible en tu historial |
-| **Rechazada** | ❌ | Solicitud denegada (verás el motivo) |
-
-### ¿Cuánto tarda la aprobación?
-
-Depende de tu empresa, pero normalmente:
-- **24-48 horas laborables** en empresas grandes
-- **Mismo día** en empresas pequeñas
+1. Pulsa el **icono del lápiz** ✏️ junto al fichaje (tooltip *"Solicitar cambio"*)
+2. Se abre el formulario de solicitud
 
 {: .note }
-> Recibirás una notificación por email cuando tu solicitud sea aprobada o rechazada.
+> Si el lápiz **no aparece** en un fichaje, es que ya tiene una solicitud pendiente de validación. Espera a que se resuelva antes de solicitar otro cambio sobre el mismo fichaje.
 
----
+### Paso 4: Rellenar la solicitud
 
-## Ver el estado de tus solicitudes
+| Campo | Descripción |
+|-------|-------------|
+| **Nueva hora** | La hora correcta del fichaje (solo la hora: la fecha del fichaje se mantiene) |
+| **Motivo** | Explica brevemente qué pasó (ej: "Olvidé fichar al salir con prisa", "Error de la app") |
 
-### Desde "Mis Fichajes"
+3. Pulsa **"Guardar"**
 
-1. Ve a **"Mi Trabajo"** → **"Mis Fichajes"**
-2. Los fichajes con solicitudes pendientes aparecen marcados con:
-   - 🟡 **Pendiente de validación**
-   - ✅ **Aprobado**
-   - ❌ **Rechazado**
+### Paso 5: Esperar la validación
 
-### Desde "Validaciones" (si eres Manager)
-
-Si tienes rol de Manager, puedes ver:
-- **"Validaciones"** → **"Cambios de Fichajes"**
-- Aquí verás todas las solicitudes de tu equipo
-
----
-
-## Casos especiales
-
-### Olvidé fichar varios días seguidos
-
-Si olvidaste fichar durante varios días (por ejemplo, después de vacaciones):
-
-1. Solicita un cambio **para cada día** individualmente
-2. O contacta con tu administrador para solicitar una **creación masiva**
+- Tu solicitud queda **pendiente** hasta que un **Validador** o **Administrador** la revise
+- Al resolverse, recibirás una **notificación por email y push** con el resultado
+- Si se **aprueba**: la hora del fichaje se actualiza automáticamente
+- Si se **rechaza**: la hora original se mantiene; puedes enviar una nueva solicitud con mejor justificación
 
 {: .warning }
-> No esperes demasiado tiempo. Algunas empresas tienen políticas de tiempo máximo para solicitar correcciones.
-
-### Fichaje duplicado
-
-Si fichaste dos veces por error:
-
-1. Solicita un cambio para **eliminar** el fichaje duplicado
-2. En observaciones indica: "Fichaje duplicado por error"
-
-### Cambio de varios fichajes del mismo día
-
-Si necesitas corregir entrada, pausa y salida del mismo día:
-
-1. Crea **una solicitud por cada fichaje** a corregir
-2. Sé específico en cada observación
+> **El motivo importa**: Un motivo claro ("Olvidé fichar la salida al salir con prisa") facilita la aprobación. Los cambios para "maquillar" retrasos suelen ser rechazados: el registro debe reflejar la realidad.
 
 ---
 
-## Evitar olvidar fichar en el futuro
+## ¿Y si no fiché nada en todo el día?
 
-### 🔔 Activa notificaciones
+Si un día aparece como **"Sin fichajes"** ❌ o con estado **"Incidencia"** ⚠️, verás el botón **"Solucionar"** en la fila del día:
 
-1. Ve a **"Mi Perfil"** → **"Notificaciones"**
-2. Activa:
-   - Recordatorios de fichaje
-   - Alertas de olvido de fichaje
+1. Pulsa **"Solucionar"**
+2. Se abre un asistente para crear o corregir los fichajes de ese día
+3. Al confirmar, los fichajes se registran como cambios **con trazabilidad**
 
-### 📱 Usa la app móvil
+También puedes solicitar cambios puntuales desde la pantalla de **Cierre Mensual**, que muestra los mismos lápices de "Solicitar cambio" mientras revisas el mes.
 
-La app móvil te facilita fichar desde cualquier lugar:
-- Widget de acceso rápido
-- Notificaciones de recordatorio
-- [Descarga la app](/primeros-pasos/descarga-app-movil/)
+---
 
-### ⏰ Crea un hábito
+## Consultar el estado de tus solicitudes
 
-- Ficha nada más llegar
-- Ficha justo antes de salir
-- Configura alarmas en tu teléfono
+- En **"Mis Fichajes"**, el fichaje con solicitud pendiente **pierde el lápiz** mientras está en revisión
+- En la pantalla de **Cierre Mensual**, los fichajes con solicitud pendiente muestran el badge **"Pendiente de validación"** ⏳
+- El resultado final (aprobado/rechazado) te llega por **notificación**, y el observaciones del cambio quedan registrados en el historial del fichaje
+
+{: .note }
+> **No puedes cancelar** una solicitud una vez enviada: permanecerá pendiente hasta que un Validador o Administrador la resuelva.
+
+---
+
+## Meses cerrados
+
+Si tu empresa usa el **cierre mensual** y ya cerraste el mes con tu firma, **no podrás solicitar cambios** de fichajes de ese mes. El sistema te lo indicará claramente. Si la corrección es imprescindible, un **Administrador** deberá reabrir el cierre.
+
+👉 [Ver guía: Cierre Mensual](/guias-por-rol/empleado/cierres-mensuales/)
+
+---
+
+## Buenas prácticas
+
+✅ **Ficha siempre en el momento**: aunque llegues tarde, la hora real debe registrarse
+
+✅ **Solicita la corrección en 24-48h**: las solicitudes muy antiguas generan desconfianza y suelen rechazarse
+
+✅ **Explica el motivo con claridad**: ayuda a quien valida a aprobar rápido
+
+❌ **No solicites cambios para ocultar retrasos**: se detectan y se rechazan
 
 ---
 
 ## Preguntas frecuentes
 
-### ¿Puedo modificar un fichaje directamente?
+### ¿Quién aprueba mi solicitud?
 
-No, los empleados no pueden modificar fichajes directamente por seguridad. Siempre debes **solicitar un cambio** que será aprobado por tu superior.
+Los roles **Validador** y **Administrador**. Tu Manager no valida cambios de fichaje (valida ausencias, gastos e imputaciones). Ver [diferencia entre Manager y Validador](/guias-por-rol/validador/).
 
-### ¿Cuántas solicitudes puedo hacer?
+### ¿Cuánto tarda en resolverse?
 
-No hay límite, pero recuerda que cada solicitud debe estar justificada. Solicitudes excesivas pueden ser revisadas por tu Manager.
+Depende de quien valida en tu empresa. Recibirás una notificación en cuanto se resuelva.
 
-### ¿Qué pasa si me rechazan la solicitud?
+### ¿Puedo solicitar un cambio de un fichaje de hace un mes?
 
-Recibirás una notificación con el motivo del rechazo. Puedes:
-1. Contactar con tu Manager para aclarar
-2. Volver a solicitar con más información
+Sí, mientras ese mes no esté cerrado con el cierre mensual. Ten en cuenta que las solicitudes muy antiguas se revisan con más detalle.
+
+### ¿La solicitud cambia también la fecha?
+
+No. Solo se solicita una **nueva hora para el mismo día** del fichaje.
 
 ### ¿Puedo cancelar una solicitud pendiente?
 
-Sí, mientras esté en estado "Pendiente":
-1. Ve a **"Mis Fichajes"**
-2. Localiza la solicitud pendiente
-3. Haz clic en **"Cancelar solicitud"**
-
-### Mi Manager está de vacaciones, ¿quién aprueba?
-
-Si tu Manager está ausente:
-- El Administrador de la empresa puede aprobar
-- O el Manager suplente (si está configurado)
-
----
-
-## Consejos y buenas prácticas
-
-### ✅ Haz
-- Solicita correcciones lo antes posible
-- Sé claro y específico en las observaciones
-- Verifica la hora correcta antes de solicitar
-
-### ❌ Evita
-- Esperar días o semanas para solicitar correcciones
-- Observaciones vagas como "error" o "olvidé"
-- Solicitar cambios sin verificar la hora correcta
+No. Si te has equivocado, comunica a quien valida que rechace esa solicitud y envía una nueva.
 
 ---
 
 ## ¿Necesitas ayuda?
 
-Si tienes problemas para solicitar un cambio:
-
-- 👨‍💼 Contacta con tu Manager
-- 🔧 Habla con tu Administrador interno
 - 📧 Email: soporte@ahoraficho.es
+- 💬 [Preguntas Frecuentes](/preguntas-frecuentes/)
 
 ---
 
 ## Guías relacionadas
 
-- 👉 [Cómo fichar correctamente](/primeros-pasos/primer-fichaje/)
-- 👉 [Consultar mis fichajes](/guias-por-rol/empleado/consultar-mis-fichajes/)
-- 👉 [Configurar notificaciones](/guias-por-rol/empleado/mi-perfil/)
+- 👉 [Consultar Mis Fichajes](/guias-por-rol/empleado/consultar-mis-fichajes/)
+- 👉 [Cierre Mensual](/guias-por-rol/empleado/cierres-mensuales/)
+- 👉 [Aprobar Cambios de Fichaje (Validador)](/guias-por-rol/validador/aprobar-cambios-fichaje/)
+- 👉 [Módulo de Fichajes](/modulos/fichajes/)

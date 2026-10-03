@@ -28,9 +28,8 @@ Encuentra respuestas rápidas a las preguntas más comunes sobre AhoraFicho orga
 Tu empresa te enviará un email de bienvenida con:
 - Tu usuario (normalmente tu email)
 - Tu contraseña temporal
-- Tu PIN de fichaje (6 dígitos)
 
-Si no lo recibiste, contacta con tu Administrador.
+Si tu empresa te ha habilitado el fichaje por PIN o RFID, tus credenciales de terminal se configuran en el alta. Si no lo recibiste, contacta con tu Administrador.
 
 ### ¿Olvidé mi contraseña, cómo la recupero?
 
@@ -41,7 +40,7 @@ Si no lo recibiste, contacta con tu Administrador.
 
 ### ¿Puedo cambiar mi contraseña?
 
-Sí, ve a **"Mi Perfil"** → **"Seguridad"** → **"Cambiar contraseña"**.
+Sí, ve a **"Mi Perfil"** → **"Cambiar contraseña"**.
 
 ### ¿Qué navegadores son compatibles?
 
@@ -63,20 +62,18 @@ Accede a www.ahoraficho.es, inicia sesión y haz clic en el botón grande "Ficha
 
 ### ¿Puedo fichar desde mi móvil?
 
-Sí, hay tres formas:
+Sí, hay dos formas:
 1. **App móvil**: Descarga desde Google Play o App Store
-2. **Navegador móvil**: Accede a www.ahoraficho.es
-3. **QR**: Escanea el código QR de tu oficina con la app
+2. **Navegador móvil**: Accede a la web de tu empresa desde el navegador
 
 👉 [Ver guía: Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/)
 
 ### ¿Olvidé fichar, qué hago?
 
-1. Ve a **"Mis Fichajes"**
-2. Selecciona el día
-3. Haz clic en **"Solicitar cambio"**
-4. Indica la hora correcta y el motivo
-5. Tu Manager aprobará o rechazará
+1. Ve a **"Mi Trabajo"** → **"Mis Fichajes"**
+2. Localiza el fichaje y pulsa el icono del lápiz (**"Solicitar cambio"**)
+3. Indica la hora correcta y el motivo
+4. Un Validador o Administrador aprobará o rechazará la solicitud
 
 👉 [Ver guía: ¿Olvidé Fichar?](/guias-por-rol/empleado/olvide-fichar/)
 
@@ -105,7 +102,7 @@ Contacta con tu Administrador para verificar la configuración.
 
 ### ¿Los fichajes se guardan si no hay internet?
 
-Sí, en la app móvil. El fichaje se sincronizará automáticamente cuando recuperes conexión.
+No. AhoraFicho requiere conexión a internet para registrar fichajes, tanto en la web como en la app móvil. Asegúrate de tener cobertura de datos o WiFi en el momento de fichar.
 
 ---
 
@@ -113,24 +110,27 @@ Sí, en la app móvil. El fichaje se sincronizará automáticamente cuando recup
 
 ### ¿Cómo solicito vacaciones?
 
-1. Ve a **"Vacaciones"**
-2. Haz clic en **"Nueva solicitud"**
+1. Ve a **"Mi Trabajo"** → **"Mis ausencias"**
+2. Selecciona el rango de fechas en el calendario (se abrirá el formulario)
 3. Selecciona fechas y tipo de ausencia
-4. Añade comentarios (opcional)
-5. Envía la solicitud
+4. Añade un motivo (opcional)
+5. Guarda la solicitud
 
 👉 [Ver guía: Solicitar Vacaciones](/guias-por-rol/empleado/solicitar-vacaciones/)
 
 ### ¿Cuántos días de vacaciones tengo?
 
-Ve a **"Mi Perfil"** o **"Vacaciones"** para ver tu saldo:
-- Días totales asignados
-- Días consumidos
-- Días disponibles
+Ve a **"Mi Trabajo"** → **"Mis ausencias"** y consulta los contadores de cada año:
+- Días aceptados
+- Días pendientes de aprobar
+- Días rechazados
+- Días no usados disponibles
+
+Si tus días están próximos a caducar, verás un aviso en pantalla.
 
 ### ¿Puedo cancelar vacaciones ya aprobadas?
 
-Sí, antes de que empiecen. Ve a **"Mis Vacaciones"** → Selecciona la solicitud → **"Cancelar"**.
+Sí, antes de que empiecen. Ve a **"Mi Trabajo"** → **"Mis ausencias"**, localiza el día y pulsa el icono de eliminar.
 
 ### ¿Cuánto tardan en aprobar mis vacaciones?
 
@@ -138,7 +138,7 @@ Depende de tu Manager, pero generalmente en 24-48 horas laborables. Recibirás u
 
 ### ¿Por qué rechazaron mis vacaciones?
 
-Tu Manager debe explicar el motivo en los comentarios del rechazo. Puedes solicitar fechas alternativas.
+Tu Manager (o el segundo responsable, si tu empresa usa la doble aprobación) puede indicar el motivo en el rechazo. Puedes solicitar fechas alternativas.
 
 ### ¿Los festivos descuentan de mis vacaciones?
 
@@ -150,25 +150,19 @@ Según el Estatuto de los Trabajadores, las vacaciones se interrumpen. Presenta 
 
 ### ¿Puedo solicitar vacaciones de un solo día?
 
-Sí, no hay mínimo de días. Puedes solicitar desde 1 día hasta todo tu saldo disponible.
+Sí, no hay mínimo de días. Puedes solicitar desde 1 día hasta todo tu saldo disponible. Además, si tu horario lo permite, puedes solicitar vacaciones de media jornada (mañana o tarde) para un día suelto.
 
 ---
 
-## 👔 Horarios y Turnos
+## ⏰ Horarios
 
 ### ¿Cómo sé cuál es mi horario?
 
-Ve a **"Mi Perfil"** → **"Horario asignado"**. Verás tu jornada laboral y días de trabajo.
+Tu horario lo configura tu empresa. El botón de fichaje se adapta automáticamente a tu horario y, si tu empresa lo tiene activado, recibirás recordatorios de entrada y salida (por email y notificación push).
 
 ### ¿Puedo cambiar mi horario?
 
-No directamente. Debes solicitarlo a tu Manager o Administrador. Ellos pueden asignarte un horario diferente.
-
-### ¿Qué es un turno rotativo?
-
-Un turno que cambia semanalmente o mensualmente (ej: una semana de mañana, otra de tarde). Lo configura el Administrador.
-
-👉 [Ver guía: Turnos Rotativos](/guias-por-rol/administrador/configurar-turnos-rotativos/)
+No directamente. Debes solicitarlo a tu Manager o Administrador. Ellos pueden asignarte un horario diferente, de forma permanente o temporal (por ejemplo, un horario de verano con fecha de inicio y fin).
 
 ### ¿Qué pasa si llego tarde?
 
@@ -182,11 +176,11 @@ El sistema registra tu hora real de entrada. Si llegas tarde frecuentemente, tu 
 
 ### ¿Cómo subo un gasto?
 
-1. Ve a **"Mis Gastos"**
-2. Haz clic en **"Nuevo gasto"**
-3. Completa: importe, fecha, categoría, concepto
-4. **Adjunta el ticket o factura** (obligatorio)
-5. Envía para aprobación
+1. Ve a **"Mi Trabajo"** → **"Mis gastos"**
+2. Haz clic en **"Nueva solicitud"**
+3. Completa: tipo de gasto, proyecto, importe, fecha y observaciones
+4. Adjunta el ticket o factura (según la política de tu empresa)
+5. Guarda la solicitud para su aprobación
 
 ### ¿Qué tipo de gastos puedo reclamar?
 
@@ -202,7 +196,7 @@ Una vez tu Manager apruebe el gasto, Administración procesará el reembolso (no
 
 ### ¿Debo adjuntar siempre el ticket?
 
-**Sí, obligatorio**. Sin ticket, el gasto no puede ser aprobado ni reembolsado.
+La app permite adjuntar el ticket o factura en cada gasto. En la mayoría de empresas es obligatorio según su política interna: consulta con tu Administrador.
 
 ---
 
@@ -270,27 +264,54 @@ Si la app dice "No estás en la ubicación permitida":
 
 ## 👥 Roles y Permisos
 
+### ¿Qué roles existen en AhoraFicho?
+
+- **Empleado**: sin rol asignado. Ficha, consulta sus datos y solicita ausencias, gastos e imputaciones.
+- **Manager**: responsable de un equipo (departamento y/o empleados asignados). Valida ausencias, gastos e imputaciones de su equipo y consulta reportes de departamento.
+- **Validador**: persona encargada de validar los **cambios de fichaje** de los empleados (y consultar los cierres mensuales). Puede ser alguien de RRHH o un responsable sin ser Manager de un departamento.
+- **Administrador (Admin)**: gestiona la configuración de la empresa y además puede validar ausencias, gastos, imputaciones y cambios de fichaje.
+- **SuperAdmin**: administración de la plataforma (multi-empresa). No se asigna a empleados.
+
 ### ¿Qué es un Manager?
 
-Un empleado con permisos para aprobar solicitudes de vacaciones, cambios de fichaje y gastos de su equipo.
+Un empleado con permisos para aprobar ausencias, gastos e imputaciones de su equipo (departamento y/o empleados que tenga asignados como responsables).
 
 👉 [Ver: Guía del Manager](/guias-por-rol/manager/)
 
+### ¿Qué es un Validador?
+
+El rol encargado de aprobar o rechazar las **solicitudes de cambio de fichaje** de los empleados. Si tiene empleados asignados directamente, valida solo esos; si no, valida los de sus departamentos asociados.
+
+👉 [Ver: Guía del Validador](/guias-por-rol/validador/)
+
+### ¿Cuál es la diferencia entre Manager y Validador?
+
+| Acción | Manager | Validador |
+|--------|:-------:|:---------:|
+| Fichar y gestionar sus propios datos | ✅ | ✅ |
+| Validar ausencias del equipo | ✅ | ❌ |
+| Validar gastos del equipo | ✅ | ❌ |
+| Validar imputaciones del equipo | ✅ | ❌ |
+| Aprobar cambios de fichaje | ❌ | ✅ |
+| Consultar cierres mensuales de los empleados | ❌ | ✅ |
+| Reportes de departamento | ✅ | ❌ |
+| Configuración de la empresa | ❌ | ❌ |
+
 ### ¿Qué es un Administrador?
 
-La persona que gestiona la configuración de la empresa: crear empleados, horarios, departamentos, etc.
+La persona que gestiona la configuración de la empresa: crear empleados, horarios, departamentos, etc. Además puede validar ausencias, gastos, imputaciones y cambios de fichaje, y reabrir cierres mensuales.
 
 👉 [Ver: Guía del Administrador](/guias-por-rol/administrador/)
 
 ### ¿Puedo ser Manager y Empleado a la vez?
 
-Sí, el rol de Manager incluye todas las funciones de Empleado más las de supervisión.
+Sí, el rol de Manager incluye todas las funciones de Empleado más las de supervisión. Lo mismo aplica al rol de Validador.
 
 ### ¿Quién puede ver mis fichajes?
 
 - **Tú**: Todos tus fichajes
-- **Tu Manager**: Fichajes de su departamento
-- **Administradores**: Todos los fichajes
+- **Tu Manager**: Fichajes de su departamento y de los empleados que tenga asignados
+- **Validadores y Administradores**: Fichajes según su ámbito de validación
 - **SuperAdmin**: Todas las empresas
 
 ---
@@ -326,7 +347,7 @@ Sí, la app es compatible con tablets Android e iOS.
 
 ### ¿Cómo activo un módulo opcional?
 
-Solo el **SuperAdmin** puede activar módulos (Gastos, Imputaciones, Turnos, etc.). Contacta con soporte@ahoraficho.es
+Solo el **SuperAdmin** puede activar módulos (Gastos, Imputaciones, Servicios, Documentos, Banco de horas extras, etc.). Contacta con soporte@ahoraficho.es
 
 ### ¿Puedo usar AhoraFicho en varias sucursales?
 

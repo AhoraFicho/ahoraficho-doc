@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Registro y Onboarding
 parent: Primeros Pasos
@@ -97,9 +97,9 @@ Por defecto, se activan:
 Módulos opcionales (bajo petición):
 - 📦 Gastos
 - 📦 Imputaciones de proyectos
-- 📦 Turnos rotativos
 - 📦 Servicios
 - 📦 Documentos
+- 📦 Banco de horas extras
 
 {: .tip }
 > **Consejo**: Puedes solicitar la activación de módulos adicionales en cualquier momento contactando con soporte.
@@ -173,7 +173,7 @@ Una vez recibidas tus credenciales:
 
 1. 👉 [Acceder a la plataforma](/primeros-pasos/acceso-a-la-plataforma/)
 2. 👉 [Dar de alta a tus empleados](/guias-por-rol/administrador/dar-alta-empleados/)
-3. 👉 [Configurar horarios y turnos](/guias-por-rol/administrador/crear-horarios/)
+3. 👉 [Configurar horarios](/guias-por-rol/administrador/crear-horarios/)
 
 ---
 

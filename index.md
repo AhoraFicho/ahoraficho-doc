@@ -26,27 +26,30 @@ AhoraFicho.es es una plataforma web de **control horario digital** diseñada esp
 - ✅ **Control horario digital** conforme al RD 8/2019
 - 📱 **Multiplataforma**: Web, iOS y Android
 - 📍 **Geolocalización** opcional para fichajes
-- 🔒 **Múltiples métodos de fichaje**: Web, App, PIN, QR, RFID
+- 🔒 **Múltiples métodos de fichaje**: Web, App, PIN, RFID (QR próximamente)
+- 🔏 **Cierre mensual con firma** del trabajador
 - 📊 **Reportes completos** para inspecciones de trabajo
 - 🏢 **Sistema modular** adaptable a cada empresa
-- ⏰ **Gestión de horarios** flexibles y turnos rotativos
-- 🌴 **Control de vacaciones** y ausencias
+- ⏰ **Gestión de horarios** flexibles, con cambios temporales programados
+- 🌴 **Control de vacaciones** y ausencias, con doble aprobación opcional
+- ⏱️ **Banco de horas extras** con días compensatorios y compensación económica
 
 ---
 
 ## Módulos disponibles
 
-AhoraFicho cuenta con **7 módulos** que puedes activar según las necesidades de tu empresa:
+AhoraFicho cuenta con **6 módulos** que puedes activar según las necesidades de tu empresa:
 
 | Módulo | Descripción | Estado |
 |:-------|:------------|:-------|
-| **Fichajes** | Control de entrada/salida de empleados | Siempre activo |
+| **Fichajes** | Control de entrada/salida de empleados, con cierre mensual firmado | Siempre activo |
 | **Vacaciones y Ausencias** | Gestión de permisos y días libres | Siempre activo |
 | **Gastos** | Control de gastos de empleados | Opcional |
 | **Imputaciones** | Seguimiento de proyectos y tareas | Opcional |
-| **Turnos** | Gestión de turnos rotativos | Opcional |
 | **Servicios** | Control de servicios externos (limpiezas, mantenimiento) | Opcional |
 | **Documentos** | Distribución y acuse de recibo de documentos | Opcional |
+
+Además, con el **Banco de horas extras** (opcional), los empleados acumulan las horas trabajadas de más y pueden solicitar días compensatorios o compensación económica.
 
 ---
 
@@ -61,13 +64,18 @@ AhoraFicho cuenta con **7 módulos** que puedes activar según las necesidades d
 
 ### 👨‍💼 Manager
 - [Validar ausencias del equipo](/guias-por-rol/manager/aprobar-vacaciones/)
-- [Aprobar cambios de fichaje](/guias-por-rol/manager/aprobar-cambios-fichaje/)
+- [Aprobar gastos del equipo](/guias-por-rol/manager/aprobar-gastos/)
 - [Consultar reportes del equipo](/reportes/resumen-diario-departamento/)
+
+### ✅ Validador
+- [Aprobar cambios de fichaje](/guias-por-rol/validador/aprobar-cambios-fichaje/)
+- [Revisar cierres mensuales](/guias-por-rol/validador/revisar-cierres/)
+- [Diferencia entre Manager y Validador](/guias-por-rol/validador/)
 
 ### 🔧 Administrador
 - [Dar de alta empleados](/guias-por-rol/administrador/dar-alta-empleados/)
 - [Crear y asignar horarios](/guias-por-rol/administrador/crear-horarios/)
-- [Configurar turnos rotativos](/guias-por-rol/administrador/configurar-turnos-rotativos/)
+- [Asignar horarios de forma masiva](/guias-por-rol/administrador/asignar-horarios/)
 - [Desactivar usuarios](/guias-por-rol/administrador/desactivar-empleados/)
 - [Informe para inspección de trabajo](/reportes/informe-inspeccion-trabajo/)
 

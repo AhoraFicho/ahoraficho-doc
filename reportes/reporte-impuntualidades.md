@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Reporte de Impuntualidades
 parent: Reportes
@@ -229,7 +229,7 @@ Es un **tiempo de tolerancia** que puedes configurar por horario para permitir p
 
 ### Configurar el margen flexible
 
-1. Ve a **"Configuración"** → **"Horarios"**
+1. Ve a **"Configuraciones"** → **"Horarios"**
 2. Edita el horario deseado
 3. En el campo **"Margen de tolerancia entrada"**, introduce los minutos (ejemplo: 10)
 4. Guarda los cambios
@@ -330,7 +330,7 @@ No, el margen flexible se configura por **horario**, no por empleado individual.
 
 ### ¿Los retrasos se notifican automáticamente?
 
-Sí, si has configurado el sistema de notificaciones. Puedes activar o desactivar las alertas automáticas desde **"Configuración"** → **"Notificaciones"**.
+Sí, si has configurado el sistema de notificaciones. Puedes activar o desactivar las alertas automáticas desde **"Configuraciones"** → **"Notificaciones"**.
 
 ---
 

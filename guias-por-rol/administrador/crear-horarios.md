@@ -252,23 +252,24 @@ Escenarios:
 
 ---
 
-## Autofichaje (Fichaje automático)
+## Registro de jornada en un paso
 
-### ¿Qué es el autofichaje?
+### ¿Qué es?
 
-Sistema que registra automáticamente entradas/salidas según el horario asignado.
+Sistema que permite al empleado registrar **toda su jornada de golpe**: en lugar de fichar entrada, pausas y salida una a una, pulsa **"Registrar Jornada"**, revisa (y ajusta si hace falta) los bloques de su horario del día y los confirma todos de una vez.
 
 **¿Cuándo es útil?**
-- Empleados que siempre cumplen horario
-- Trabajadores sin acceso a dispositivos de fichaje
-- Simplificación administrativa
+- Empleados de confianza que siempre cumplen horario
+- Trabajadores sin acceso continuo a dispositivos de fichaje
+- Simplificación del día a día
 
-**☑️ Activar autofichaje**
-- Marca esta casilla para habilitar
-- El sistema fichará automáticamente
+**☑️ Activarlo**
+- Activa la opción correspondiente en el formulario del horario
+- El botón del empleado cambiará de "Iniciar jornada" a **"Registrar Jornada"** en los días con ese horario
+- Se registran todos los fichajes del día en una sola confirmación (transacción protegida contra duplicados)
 
 {: .warning }
-> **Atención**: El autofichaje puede no cumplir requisitos legales estrictos en algunas inspecciones. Consulta con tu asesoría laboral.
+> **Atención**: Registrar la jornada sin fichar en el momento puede no cumplir requisitos legales estrictos en algunas inspecciones. Consulta con tu asesoría laboral.
 
 ---
 
@@ -319,12 +320,12 @@ Si necesitas más de 2 turnos:
 - Crea horarios separados por franja
 - O contacta con soporte para personalización
 
-### Horarios rotativos (turnos)
+### Horarios cambiantes (por fechas)
 
-Si tienes empleados con horarios cambiantes (turnos mañana/tarde/noche):
-- NO uses horarios fijos
-- Usa el módulo de **Turnos**
-- Ver: [Configurar Turnos Rotativos](/guias-por-rol/administrador/configurar-turnos-rotativos/)
+Si tienes empleados con horarios cambiantes (por ejemplo, mañana/tarde/noche o horario de verano):
+- NO cambies el horario fijo a mano cada semana
+- Usa la **Asignación Masiva de Horarios** con cambios **temporales** (fecha de inicio y fecha de fin, con vuelta automática al horario habitual)
+- Ver: [Asignar Horarios](/guias-por-rol/administrador/asignar-horarios/)
 
 ### Horario sin horas fijas (100% flexible)
 
@@ -567,19 +568,19 @@ Opciones:
 
 ## Integración con otros módulos
 
-### Horarios y Turnos
+### Horarios y cambios temporales
 
-Si usas el módulo de **Turnos**:
-- Los turnos sobrescriben el horario base
-- El horario sirve como plantilla
-- Los turnos permiten rotaciones
+Si necesitas que un empleado rote de horario por periodos (verano, turnos de mañana/tarde por semanas):
+- El horario asignado es su horario base
+- Usa la **Asignación Masiva** con **cambios temporales** (fecha inicio/fin) para rotaciones, con vuelta automática al horario base
+- Ver [Asignar Horarios](/guias-por-rol/administrador/asignar-horarios/)
 
-### Horarios y Autofichaje
+### Horarios y registro de jornada en un paso
 
-Si activas autofichaje en el horario:
-- El sistema fichará automáticamente según horario
+Si activas el registro de jornada en un paso en el horario:
+- El empleado registrará toda la jornada de golpe con el botón **"Registrar Jornada"**
 - Útil para empleados muy regulares
-- Ver [Configuración de Autofichaje](#autofichaje-fichaje-automático)
+- Ver [Registro de jornada en un paso](#registro-de-jornada-en-un-paso)
 
 ---
 
@@ -596,5 +597,4 @@ Si tienes problemas al crear horarios:
 ## Guías relacionadas
 
 - 👉 [Asignar Horarios](/guias-por-rol/administrador/asignar-horarios/)
-- 👉 [Configurar Turnos Rotativos](/guias-por-rol/administrador/configurar-turnos-rotativos/)
 - 👉 [Dar de alta empleados](/guias-por-rol/administrador/dar-alta-empleados/)

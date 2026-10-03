@@ -21,9 +21,10 @@ El **módulo de Fichajes** es el sistema de registro de jornada laboral que perm
 ### Características principales
 
 - ⏰ **Registro de entrada/salida**: Los empleados fichan al llegar y al salir
-- 📱 **Múltiples métodos**: Web, App móvil, PIN, QR, RFID
+- 📱 **Múltiples métodos**: Web, App móvil, PIN, RFID (QR próximamente)
 - 🌍 **Control de ubicación**: GPS y restricción por IP (opcional)
 - 📊 **Historial completo**: Todos los fichajes quedan registrados
+- 🔏 **Cierre mensual**: El trabajador puede cerrar y firmar su mes con confirmación de fichajes
 - ✅ **Cumplimiento legal**: 100% conforme al RD 8/2019
 
 {: .important }
@@ -38,7 +39,8 @@ Todos los empleados activos pueden fichar, independientemente de su rol:
 | Rol | Puede fichar | Puede ver fichajes de otros |
 |-----|--------------|------------------------------|
 | **Empleado** | ✅ Sí | ❌ No (solo los suyos) |
-| **Manager** | ✅ Sí | ✅ Sí (su departamento) |
+| **Manager** | ✅ Sí | ✅ Sí (su equipo: departamento y/o asignados, vía reportes) |
+| **Validador** | ✅ Sí | ✅ Sí (ámbito de validación, vía gestiones de fichajes) |
 | **Administrador** | ✅ Sí | ✅ Sí (todos) |
 | **SuperAdmin** | ✅ Sí | ✅ Sí (todas las empresas) |
 
@@ -78,16 +80,6 @@ Fichar desde un terminal compartido usando código de 6 dígitos
 
 👉 [Ver guía: Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/)
 
-<!-- ### 4. 📷 Fichaje QR
-
-Fichar escaneando código QR desde la app móvil
-
-- **Ventajas**: Higiénico (sin tocar pantalla), rápido
-- **Ideal para**: Oficinas, tiendas
-- **Requiere**: App móvil + código QR visible
-
-👉 [Ver guía: Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/) -->
-
 ### 4. 🏷️ Fichaje RFID
 
 Fichar con tarjeta o llavero RFID
@@ -97,6 +89,10 @@ Fichar con tarjeta o llavero RFID
 - **Requiere**: Lector RFID + tarjetas
 
 👉 [Ver guía: Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/)
+
+### 📷 Fichaje QR (próximamente)
+
+El fichaje por código QR estará disponible próximamente. El QR actual de la plataforma sirve para configurar el acceso a la app móvil, no para fichar.
 
 ---
 
@@ -116,13 +112,16 @@ Fichar con tarjeta o llavero RFID
 
 ### Tipos de fichaje
 
-Cuando un empleado ficha, el sistema alterna automáticamente entre:
+El botón de fichaje cambia automáticamente según tu horario y tus fichajes del día:
 
-- 🟢 **Entrada** (fichaje impar: 1º, 3º, 5º...)
-- 🔴 **Salida** (fichaje par: 2º, 4º, 6º...)
+- 🟢 **Iniciar jornada** (primer fichaje del día)
+- 🔵 **Iniciar pausa** (salida intermedia)
+- 🟣 **Terminar pausa** (regreso de la pausa)
+- 🔴 **Finalizar jornada** (último fichaje del día)
+- ⚡ **Fichar ahora** (cuando la jornada ya está completa)
 
 {: .tip }
-> **Automático**: El empleado solo hace clic en "Fichar", el sistema detecta automáticamente si es entrada o salida según el último fichaje.
+> **Automático**: El empleado solo pulsa el botón; el sistema determina el tipo de fichaje según tu horario y los registros del día. Si tu horario tiene activado el **registro de jornada en un paso**, verás el botón "Registrar Jornada" para registrar todos los fichajes del día de una sola vez.
 
 ---
 
@@ -175,11 +174,11 @@ Los empleados pueden consultar sus propios fichajes:
 
 ### Para Managers
 
-Los Managers pueden ver fichajes de su equipo:
+Los Managers pueden ver los fichajes de su equipo en los reportes:
 
 1. Ve a **"Reportes"**
-2. Haz clic en **"Resumen Diario Dpto"** o **"Resumen Semanal Dpto"**
-3. Verás todos los fichajes del equipo
+2. Haz clic en **"Resumen diario"** o **"Resumen semanal"**
+3. Verás los fichajes del equipo
 
 👉 [Ver guía: Resumen Diario por Departamento](/reportes/resumen-diario-departamento/)
 
@@ -195,18 +194,36 @@ Los Administradores pueden ver todos los fichajes:
 
 ## ¿Olvidé fichar?
 
-Si un empleado olvida fichar, puede solicitar una corrección:
-1. **"Ficha lo antes posible"**
-2. Ve a **"Mis Fichajes"**
-3. Selecciona el registro de ahora mismo
-4. Haz clic en **"Solicitar cambio"**
-5. Introduce la hora correcta y el motivo
-6. El Manager aprobará o rechazará la solicitud
+Si un empleado olvida fichar, dispone de dos mecanismos:
+
+**1. Fichar ahora**: lo primero es fichar lo antes posible con la hora real (aunque sea tarde).
+
+**2. Solicitar un cambio de fichaje** para corregir la hora:
+1. Ve a **"Mi Trabajo"** → **"Mis Fichajes"**
+2. Localiza el día afectado y pulsa el icono del lápiz (**"Solicitar cambio"**)
+3. Introduce la hora correcta y el motivo
+4. Un Validador o Administrador aprobará o rechazará la solicitud
+
+Además, si un día aparece como **"Sin fichajes"** o con **"Incidencia"**, verás un botón **"Solucionar"** que permite crear o corregir los fichajes de ese día de forma guiada (queda registrado como cambio con su trazabilidad).
 
 👉 [Ver guía: ¿Olvidé Fichar?](/guias-por-rol/empleado/olvide-fichar/)
 
 {: .important }
 > **Trazabilidad**: Todos los cambios de fichaje quedan registrados con el nombre del aprobador para cumplir con el RD 8/2019.
+
+---
+
+## Cierre mensual
+
+El trabajador puede **cerrar su mes de forma mensual**: confirma cada uno de sus fichajes del mes anterior, firma digitalmente y el mes queda cerrado. Una vez cerrado un mes, no se pueden solicitar cambios de fichaje de ese mes.
+
+- Se realiza desde **"Mis Fichajes" → "Cierre Mensual"** durante los primeros días de cada mes (plazo configurable).
+- El historial de cierres está en **"Mi Trabajo" → "Mis Cierres"**, con descarga de PDF firmado.
+- Validadores y Administradores consultan los cierres en **"Validaciones" → "Cierres Mensuales"**; los Administradores pueden reabrir un cierre con su motivo registrado.
+
+👉 [Ver guía: Cierre Mensual (empleado)](/guias-por-rol/empleado/cierres-mensuales/)
+
+👉 [Ver guía: Revisar Cierres Mensuales (validador/admin)](/guias-por-rol/validador/revisar-cierres/)
 
 ---
 
@@ -260,7 +277,7 @@ Solicita una corrección desde "Mis Fichajes". Tu Manager deberá aprobar el cam
 
 ### ¿Los fichajes se pueden modificar?
 
-No directamente. Los empleados deben solicitar cambios que deben ser aprobados por un Manager o Administrador.
+No directamente. Los empleados deben solicitar cambios que deben ser aprobados por un **Validador** o **Administrador**. Si el mes ya está cerrado con el cierre mensual, no se pueden solicitar cambios (salvo que un Administrador reabra el cierre).
 
 ### ¿Puedo fichar desde mi móvil personal?
 
@@ -291,4 +308,5 @@ Si tienes dudas sobre el módulo de Fichajes:
 - 👉 [Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/)
 - 👉 [Historial de Fichajes](/guias-por-rol/empleado/consultar-mis-fichajes/)
 - 👉 [¿Olvidé Fichar?](/guias-por-rol/empleado/olvide-fichar/)
+- 👉 [Cierre Mensual](/guias-por-rol/empleado/cierres-mensuales/)
 - 👉 [Gestión de Edificios](/guias-por-rol/administrador/gestion-edificios/)

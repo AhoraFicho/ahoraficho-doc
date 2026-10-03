@@ -41,9 +41,8 @@ Es un **reporte agregado** que agrupa los fichajes de cada empleado por **semana
 ### Paso 1: Navegar al reporte
 
 1. Inicia sesión como **Manager** o **Administrador**
-2. Ve al menú lateral y haz clic en **"Departamentos"**
-3. Selecciona el departamento que quieres consultar
-4. Haz clic en **"Resumen Semanal"**
+2. Ve al menú lateral, sección **"Reportes"**
+3. Haz clic en **"Resumen semanal"**
 
 ![Acceso a resumen semanal](/assets/images/placeholder-acceso-resumen-semanal.png)
 

@@ -2,7 +2,7 @@
 layout: default
 title: Administrador
 parent: Guías por Rol
-nav_order: 3
+nav_order: 4
 has_children: true
 permalink: /guias-por-rol/administrador/
 ---
@@ -36,9 +36,9 @@ Como administrador de AhoraFicho, tienes acceso completo a la gestión de tu emp
 
 ### ⏰ Gestión de Horarios
 - Crear horarios personalizados
-- Asignar horarios a empleados
+- Asignar horarios a empleados (individual o masiva)
+- Cambios temporales de horario con fecha de inicio y fin
 - Configurar flexibilidad horaria
-- Gestionar turnos rotativos
 - Historial de cambios de horario
 
 ### 🌴 Gestión de Vacaciones
@@ -80,17 +80,14 @@ Como administrador de AhoraFicho, tienes acceso completo a la gestión de tu emp
 #### [Dar de Alta Empleados](/guias-por-rol/administrador/dar-alta-empleados/)
 Proceso completo para registrar nuevos trabajadores en el sistema.
 
-#### [Desactivar Usuarios](/guias-por-rol/administrador/desactivar-usuarios/)
+#### [Desactivar Usuarios](/guias-por-rol/administrador/desactivar-empleados/)
 Cómo desactivar temporalmente o definitivamente un empleado.
 
 #### [Crear Horarios](/guias-por-rol/administrador/crear-horarios/)
 Configurar horarios de trabajo personalizados.
 
 #### [Asignar Horarios](/guias-por-rol/administrador/asignar-horarios/)
-Asignar horarios a empleados individual o masivamente.
-
-#### [Configurar Turnos Rotativos](/guias-por-rol/administrador/configurar-turnos-rotativos/)
-Gestionar turnos para trabajadores con horarios cambiantes.
+Asignar horarios a empleados individual o masivamente, con cambios permanentes o temporales.
 
 #### [Asignar Vacaciones](/guias-por-rol/administrador/asignar-vacaciones/)
 Configurar días de vacaciones anuales para empleados.
@@ -103,6 +100,9 @@ Configurar centros de trabajo y geolocalización.
 
 #### [Días Festivos](/guias-por-rol/administrador/dias-festivos/)
 Configurar el calendario de festivos de la empresa.
+
+#### [Bloqueos de Vacaciones](/guias-por-rol/administrador/bloqueos-vacaciones/)
+Impedir solicitudes de vacaciones en fechas concretas por edificio.
 
 </div>
 
@@ -151,15 +151,16 @@ Configuraciones
 ├── Departamento Edificios
 ├── Horarios
 ├── Días festivos
+├── Bloqueos de vacaciones
 ├── Proyectos (si módulo activo)
 ├── ─────────────────
 ├── Notificaciones
 ├── Dispositivos
 ├── Alias de IP
 ├── Tipos de Ausencias
-├── Tipos de Gastos (si módulo activo)
-├── Tipos de Servicios (si módulo activo)
-├── Categorías de Documentos (si módulo activo)
+├── Tipos de gasto (si módulo activo)
+├── Tipos de servicio (si módulo activo)
+├── Categoría documentos (si módulo activo)
 └── Roles
 ```
 
@@ -167,14 +168,15 @@ Configuraciones
 
 ```
 Empresa
-├── Calendarios (ausencias, gastos, imputaciones)
+├── Calendario de la empresa (ausencias)
+├── Gastos de empresa (si módulo activo)
+├── Imputaciones empresa (si módulo activo)
 ├── Gestión de Fichajes
 ├── Gestión de Ausencias
-├── Gestión de Gastos
-├── Gestión de Imputaciones
-├── Gestión de Turnos
-├── Gestión de Servicios
-└── Gestión de Documentos
+├── Gestión de Gastos (si módulo activo)
+├── Gestión de Imputaciones (si módulo activo)
+├── Gestión de Servicios (si módulo activo)
+└── Gestión de documentos (si módulo activo)
 ```
 
 ### ✅ Validaciones
@@ -182,22 +184,25 @@ Empresa
 ```
 Validaciones
 ├── Cambios de Fichajes
+├── Cierres Mensuales
 ├── Ausencias Pendientes
-├── Gastos Pendientes
-└── Imputaciones Pendientes
+├── Gastos Pendientes (si módulo activo)
+└── Imputaciones Pendientes (si módulo activo)
 ```
 
 ### 📊 Reportes
 
 ```
 Reportes
-├── Resumen Diario Departamento
-├── Resumen Semanal Departamento
-├── Reporte Mensual
+├── Resumen diario
+├── Resumen semanal
+├── Reporte mensual
+├── Reporte horas nocturnas
 ├── Impuntualidades
+├── Bolsa horas extras (si módulo activo)
 ├── Resumen Ausencias
-├── Resumen por Proyectos
-└── Reporte de Servicios
+├── Resumen por Proyectos (si módulo activo)
+└── Reporte de servicios (si módulo activo)
 ```
 
 ---
@@ -240,18 +245,21 @@ Reportes
 
 Puedes delegar algunas tareas a Managers:
 
-| Tarea | Manager | Admin |
-|:------|:--------|:------|
-| Aprobar ausencias de su equipo | ✅ | ✅ |
-| Aprobar cambios de fichaje | ✅ | ✅ |
-| Ver reportes de su equipo | ✅ | ✅ |
-| Dar de alta empleados | ❌ | ✅ |
-| Modificar horarios | ❌ | ✅ |
-| Configurar empresa | ❌ | ✅ |
-| Gestionar departamentos | ❌ | ✅ |
+| Tarea | Manager | Validador | Admin |
+|:------|:--------|:----------|:------|
+| Aprobar ausencias de su equipo | ✅ | ❌ | ✅ |
+| Aprobar gastos e imputaciones de su equipo | ✅ | ❌ | ✅ |
+| Aprobar cambios de fichaje | ❌ | ✅ | ✅ |
+| Consultar cierres mensuales | ❌ | ✅ | ✅ |
+| Ver reportes de su equipo | ✅ | ❌ | ✅ |
+| Dar de alta empleados | ❌ | ❌ | ✅ |
+| Modificar horarios | ❌ | ❌ | ✅ |
+| Configurar empresa | ❌ | ❌ | ✅ |
+| Gestionar departamentos | ❌ | ❌ | ✅ |
+| Reabrir cierres mensuales | ❌ | ❌ | ✅ |
 
 {: .tip }
-> **Consejo**: Asigna Managers a departamentos para distribuir la carga de validaciones.
+> **Consejo**: Asigna Managers a departamentos para distribuir la carga de validaciones de ausencias/gastos/imputaciones, y el rol **Validador** para quien deba aprobar los cambios de fichaje. Ver [Diferencia entre Manager y Validador](/guias-por-rol/validador/).
 
 ---
 
@@ -285,7 +293,6 @@ Como administrador, eres responsable de garantizar:
 
 - [Dar de alta empleados](/guias-por-rol/administrador/dar-alta-empleados/)
 - [Crear y asignar horarios](/guias-por-rol/administrador/crear-horarios/)
-- [Configurar turnos rotativos](/guias-por-rol/administrador/configurar-turnos-rotativos/)
 - [Informe para inspección](/reportes/informe-inspeccion-trabajo/)
 
 ### 🆘 ¿Necesitas ayuda?

@@ -1,9 +1,9 @@
 ---
-# layout: default
-# title: Documentos
-# nav_order: 12
-# has_children: true
-# permalink: /modulos/documentos/
+layout: default
+title: Documentos
+nav_order: 12
+has_children: true
+permalink: /modulos/documentos/
 ---
 
 # Módulo de Documentos
@@ -50,24 +50,25 @@ Sistema de gestión documental integrado para almacenar y organizar archivos de 
 
 ## Subir documentos (Administrador)
 
-1. Ve a **"Empleados"** → Selecciona empleado
-2. Pestaña **"Documentos"**
-3. Haz clic en **"Subir documento"**
-4. Completa:
+1. Ve a **"Empresa"** → **"Gestión de documentos"**
+2. Selecciona el empleado y haz clic en **"Subir documento"**
+3. Completa:
    - **Tipo**: Contrato, Nómina, Certificado, etc.
    - **Nombre**: Descripción del archivo
    - **Archivo**: Selecciona PDF/Word/Imagen
-   - **Notificar empleado**: ✅ Sí (le llegará email)
-5. Sube el documento
+   - **Requiere acuse de recibo**: el empleado deberá confirmar que lo ha recibido
+4. Sube el documento (el empleado recibirá una notificación)
+
+También puedes subir documentos desde la ficha del trabajador (**"Configuraciones" → "Trabajadores"** → Editar → Documentos).
 
 ---
 
 ## Consultar mis documentos (Empleado)
 
-1. Ve a **"Mis Documentos"**
+1. Ve a **"Mi Trabajo"** → **"Mis documentos"**
 2. Verás todos tus archivos organizados por tipo
 3. Haz clic en cualquier documento para descargarlo
-4. Guárdalo en tu ordenador
+4. Si requiere **acuse de recibo**, confirma su recepción
 
 **Documentos comunes que encontrarás:**
 - Tu contrato laboral

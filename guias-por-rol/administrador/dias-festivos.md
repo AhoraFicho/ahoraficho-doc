@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Días Festivos
 parent: Guía del Administrador
@@ -42,7 +42,7 @@ Los días festivos son jornadas no laborables que afectan al cálculo de horario
 ### Paso 1: Acceder a la gestión de festivos
 
 1. Inicia sesión como **Administrador**
-2. Ve al menú lateral y haz clic en **"Configuración"**
+2. Ve al menú lateral y haz clic en **"Configuraciones"**
 3. Selecciona **"Días Festivos"**
 4. Verás el calendario anual con los festivos configurados
 
@@ -133,7 +133,7 @@ Si tu empresa tiene varios centros de trabajo en diferentes localidades, cada un
 
 ### Configurar edificios con festivos diferenciados
 
-1. Ve a **"Configuración"** → **"Edificios"**
+1. Ve a **"Configuraciones"** → **"Edificios"**
 2. Verifica que cada centro de trabajo esté creado (Madrid, Barcelona, Valencia, etc.)
 3. Regresa a **"Días Festivos"**
 4. Al crear un festivo, selecciona el **"Edificio"** al que aplica
@@ -166,7 +166,7 @@ AhoraFicho permite importar calendarios oficiales de festivos para agilizar la c
 
 ### Importar festivos oficiales
 
-1. Ve a **"Configuración"** → **"Días Festivos"**
+1. Ve a **"Configuraciones"** → **"Días Festivos"**
 2. Haz clic en **"Importar calendario"**
 3. Selecciona el año y la comunidad autónoma
 4. Haz clic en **"Importar"**
@@ -183,7 +183,7 @@ AhoraFicho permite importar calendarios oficiales de festivos para agilizar la c
 
 ### Editar un festivo existente
 
-1. Ve a **"Configuración"** → **"Días Festivos"**
+1. Ve a **"Configuraciones"** → **"Días Festivos"**
 2. Busca el festivo en el calendario
 3. Haz clic en el festivo para ver los detalles
 4. Haz clic en **"Editar"**

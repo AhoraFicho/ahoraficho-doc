@@ -9,7 +9,7 @@ nav_order: 4
 # Asignar Horarios
 {: .no_toc }
 
-Cómo asignar horarios a empleados de forma individual o masiva.
+Cómo asignar horarios a empleados de forma individual o masiva, con cambios permanentes o temporales (con fecha de inicio y fin).
 {: .fs-6 .fw-300 }
 
 ---
@@ -36,30 +36,26 @@ Antes de asignar horarios, asegúrate de:
 
 ## Métodos de asignación
 
-Existen **tres formas** de asignar horarios:
+Existen **dos formas** de asignar horarios:
 
-### 1. Asignación individual simple
-Al dar de alta o editar un empleado
+### 1. Asignación individual
+Al dar de alta o editar un empleado (cambio inmediato).
 
 ### 2. Asignación masiva
-Asignar el mismo horario a múltiples empleados a la vez
-
-### 3. Asignación programada
-Programar cambios de horario para fechas futuras
+Asignar el mismo horario a múltiples empleados a la vez, de forma **permanente** o **temporal** (con fecha de inicio y fecha de fin y vuelta automática al horario habitual).
 
 ---
 
-## Asignación Individual Simple
+## Asignación Individual
 
 ### Durante el alta de empleado
 
 Cuando [das de alta un empleado](/guias-por-rol/administrador/dar-alta-empleados/):
 
-1. En el formulario de empleado
-2. Sección **"Configuración Laboral"**
-3. Campo **"Horario"**
-4. Selecciona el horario del desplegable
-5. Guarda el empleado
+1. En el formulario de alta, sección **"Configuración Laboral"**
+2. Campo **"Horario"**
+3. Selecciona el horario del desplegable
+4. Guarda el empleado
 
 ### Para empleado existente
 
@@ -70,7 +66,7 @@ Cuando [das de alta un empleado](/guias-por-rol/administrador/dar-alta-empleados
 5. Haz clic en **"Guardar"**
 
 {: .note }
-> Este método cambia el horario **inmediatamente**. Para cambios programados, usa la asignación masiva.
+> Este método cambia el horario **inmediatamente**. Para cambios programados o temporales, usa la asignación masiva.
 
 ---
 
@@ -79,123 +75,65 @@ Cuando [das de alta un empleado](/guias-por-rol/administrador/dar-alta-empleados
 ### Cuándo usar asignación masiva
 
 - 📅 Cambio de horario de verano (muchos empleados)
+- 🔄 Horarios cambiantes por periodos (mañana/tarde/noche por semanas o meses)
 - 🏢 Nuevo departamento con mismo horario
-- 🔄 Reorganización empresarial
 - 📊 Ajustes por departamento
 
-### Acceder a Asignación Masiva
+### Acceder
 
 1. Ve a **"Configuraciones"** → **"Horarios"**
-2. Haz clic en el horario que quieres asignar
-3. Haz clic en **"Asignación Masiva"** o botón similar
+2. Pulsa el botón de **"Asignación Masiva de Horarios"**
 
-**O desde el menú:**
-
-1. Busca la opción **"Asignación Masiva de Horarios"** en Configuraciones
-2. Se abrirá el panel de asignación masiva
+La pantalla tiene **dos pestañas**: **"Cambio Permanente"** y **"Cambio Temporal (Verano/Invierno)"**.
 
 ---
 
-## Panel de Asignación Masiva
+## Pestaña: Cambio Permanente
 
-### Sección 1: Seleccionar Empleados
+El empleado queda con el nuevo horario de forma indefinida a partir de la fecha indicada.
 
-**Filtrar empleados:**
+### Pasos
 
-Puedes filtrar por:
-- **Todos los empleados** (marca/desmarca todos)
-- **Por departamento**: Solo empleados de un departamento específico
-- **Por horario actual**: Empleados que tengan X horario ahora
-- **Búsqueda**: Por nombre o email
+1. **Seleccionar Horario**: elige el horario a asignar
+2. **Fecha de Inicio**:
+   - Si seleccionas hoy o una fecha pasada, se aplica **inmediatamente**
+   - Si seleccionas una fecha futura, el cambio queda **programado**
+3. **Descripción (opcional)**: documenta el motivo (ej: "Cambio de horario por nueva jornada laboral")
+4. **Seleccionar Empleados**:
+   - Filtra por departamento con el desplegable **"-- Todos los Departamentos --"**
+   - Usa **"Seleccionar Todos"** / **"Deseleccionar Todos"**
+   - Verás la lista con el **horario actual** de cada empleado antes de aplicar
+5. Pulsa **"Aplicar Cambios"**
 
-**Seleccionar empleados:**
+### Resultado
 
-```
-☑️ Seleccionar Todos   |  ☐ Deseleccionar Todos
-
-🔍 Filtrar por departamento: [Todos ▼]
-
-Empleados seleccionados: 12
-
-☑️ Juan Pérez - Ventas (Horario actual: Jornada Partida)
-☑️ María García - Ventas (Horario actual: Jornada Partida)
-☐ Pedro López - Marketing (Horario actual: Intensivo)
-☑️ Ana Martínez - Ventas (Horario actual: Jornada Partida)
-...
-```
-
-{: .tip }
-> **Consejo**: Usa los filtros para seleccionar rápidamente grupos de empleados.
-
-### Sección 2: Seleccionar Horario
-
-**Horario a asignar:**
-
-Selecciona del desplegable el horario que quieres asignar:
-
-```
-Seleccionar Horario: [Jornada Intensiva Verano ▼]
-
-Opciones:
-- Jornada Partida 9-18h
-- Jornada Intensiva 8-15h
-- Jornada Intensiva Verano ✓
-- Media Jornada Mañanas
-- Media Jornada Tardes
-```
-
-### Sección 3: Fecha de Inicio
-
-**¿Cuándo aplicar el cambio?**
-
-Opciones:
-- **Ahora (inmediato)**: Se aplica al guardar
-- **Fecha específica**: Programa para una fecha futura
-
-```
-Fecha de inicio: [01/06/2025 📅]
-```
-
-**Ejemplo de uso:**
-- Hoy es 15 de mayo
-- Seleccionas fecha: 1 de junio
-- El cambio se aplicará automáticamente el 1 de junio
-
-### Sección 4: Descripción (opcional)
-
-Campo de texto libre para documentar el cambio:
-
-```
-Descripción: _________________________________
-
-Ejemplo: "Cambio a horario de verano según acuerdo laboral"
-```
-
-{: .tip }
-> **Recomendación**: Documenta siempre cambios masivos para futuras referencias.
+- Fecha actual o pasada → mensaje *"Horario asignado correctamente a X empleado(s)"*
+- Fecha futura → mensaje *"Cambio programado para X empleado(s) el [fecha]"*
 
 ---
 
-## Aplicar cambios
+## Pestaña: Cambio Temporal (Verano/Invierno)
 
-Una vez configurado todo:
+Programa un cambio de horario **con fecha de inicio y fecha de fin**, con **vuelta automática** al horario actual al terminar. Es la herramienta ideal para horarios estacionales o rotaciones de horario por periodos.
 
-1. Revisa el resumen:
-   ```
-   Empleados seleccionados: 25
-   Horario a asignar: Jornada Intensiva Verano
-   Fecha de inicio: 01/06/2025
-   Descripción: Cambio a horario de verano
-   ```
+### Pasos
 
-2. Haz clic en **"Aplicar Cambios"** o **"Guardar"**
+1. **Horario Temporal**: elige el horario que se aplicará durante el periodo
+2. **Fecha Inicio**: primer día del horario temporal
+3. **Fecha Fin**: último día (la fecha de fin debe ser posterior a la de inicio)
+4. **Descripción (opcional)**: ej: "Horario de verano 2025"
+5. **Seleccionar Empleados**: igual que en el cambio permanente
+6. Pulsa **"Programar Cambio Temporal"**
 
-3. Verás confirmación:
-   ```
-   ✅ Cambio de horario programado correctamente
-   
-   Se aplicará a 25 empleados el 01/06/2025
-   ```
+### Resultado
+
+Mensaje: *"Cambio temporal programado para X empleado(s): desde [inicio] hasta [fin]"*
+
+{: .important }
+> **Vuelta automática**: Al llegar la fecha de fin, los empleados vuelven solos a su horario anterior. No hace falta programar la vuelta manualmente.
+
+{: .tip }
+> **Sustituye a los turnos rotativos**: Para equipos con horarios que cambian por semanas o meses (mañanas un mes, tardes al siguiente), programa cambios temporales encadenados con sus fechas de inicio y fin.
 
 ---
 
@@ -206,214 +144,92 @@ Una vez configurado todo:
 Para ver cambios de horario programados que aún no se han aplicado:
 
 1. Ve a **"Configuraciones"** → **"Horarios"**
-2. Busca sección **"Cambios Programados"** o **"Cambios Pendientes"**
+2. Entra en **"Cambios de Horario Programados"**
 
 Verás una tabla:
 
-| Empleados | Horario Nuevo | Fecha Aplicación | Estado | Acciones |
-|:----------|:--------------|:-----------------|:-------|:---------|
-| 25 empleados | Intensivo Verano | 01/06/2025 | Pendiente | ❌ Cancelar |
-| 5 empleados | Media Jornada | 15/06/2025 | Pendiente | ❌ Cancelar |
+| Empleado | Horario | Fecha Aplicación | Descripción | Creado Por | Estado | Acciones |
+|:---------|:--------|:-----------------|:------------|:-----------|:-------|:---------|
+| Juan Pérez | Intensivo Verano | 01/06/2026 | Horario de verano | Admin | Pendiente | Cancelar |
 
 ### Cancelar cambio programado
 
-Si necesitas cancelar un cambio que aún no se ha aplicado:
-
-1. Localiza el cambio en "Cambios Programados"
-2. Haz clic en ❌ **"Cancelar"**
+1. Localiza el cambio en "Cambios de Horario Programados"
+2. Haz clic en **"Cancelar Cambio"**
 3. Confirma la cancelación
 
 {: .warning }
-> Solo puedes cancelar cambios **pendientes**. Los ya aplicados no pueden deshacerse (pero sí puedes hacer otro cambio).
+> Solo puedes cancelar cambios **pendientes**. Los ya aplicados no se deshacen (pero puedes crear otro cambio).
 
 ---
 
-## Historial de Cambios de Horario
+## Historial de cambios de horario
 
-### Ver historial global
-
-1. Ve a **"Configuraciones"** → **"Horarios"**
-2. Sección **"Historial de Cambios"**
-
-Verás un registro de todos los cambios de horario realizados:
-
-| Fecha | Empleados | Horario Anterior | Horario Nuevo | Aplicado Por | Estado |
-|:------|:----------|:-----------------|:--------------|:-------------|:-------|
-| 01/06/2025 | 25 | Partida 9-18h | Intensivo Verano | Admin | Aplicado |
-| 15/05/2025 | 5 | Intensivo | Media Jornada | Admin | Aplicado |
-
-### Ver historial de un empleado
-
-Para ver el historial de horarios de un empleado específico:
+### Historial de un empleado
 
 1. Ve a **"Configuraciones"** → **"Trabajadores"**
-2. Haz clic en el empleado
-3. Sección **"Historial de Horarios"**
+2. Abre el **histórico de horarios** del empleado
 
-```
-Horario Actual: Jornada Intensiva Verano
-Desde: 01/06/2025
+Verás el **horario actual** y todos sus horarios anteriores con:
 
-Historial:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-01/06/2025 - Actual
-Jornada Intensiva Verano
-Aplicado por: Admin
-Motivo: Cambio a horario de verano
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-01/01/2025 - 31/05/2025
-Jornada Partida 9-18h
-Aplicado por: Admin
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-15/09/2024 - 31/12/2024
-Jornada Intensiva (antiguo)
-Aplicado por: Admin
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
+| Horario | Fecha Inicio | Fecha Fin | Estado | Descripción | Creado Por |
+|:--------|:-------------|:----------|:-------|:------------|:-----------|
+| Intensivo Verano | 01/06/2026 | 30/09/2026 | Vigente | Horario de verano | Admin |
+| Jornada Partida | 01/01/2026 | — | Anterior | — | Admin |
 
 ---
 
 ## Casos de uso comunes
 
-### Caso 1: Cambio de horario de verano
+### Caso 1: Horario de verano con vuelta automática
 
-**Situación:**
-- 50 empleados pasan a jornada intensiva en verano
-- Del 1 de junio al 30 de septiembre
+**Situación:** 50 empleados pasan a jornada intensiva del 1 de junio al 30 de septiembre.
 
-**Solución:**
+1. Asignación masiva → pestaña **"Cambio Temporal"**
+2. Horario temporal: "Jornada Intensiva Verano"
+3. Fecha Inicio: 01/06 · Fecha Fin: 30/09
+4. Selecciona los 50 empleados
+5. Programar → el 1 de octubre vuelven solos a su horario habitual
 
-**Paso 1 - 15 de mayo: Programar cambio a verano**
-1. Asignación masiva
-2. Selecciona 50 empleados
-3. Horario: "Jornada Intensiva Verano"
-4. Fecha: 01/06/2025
-5. Descripción: "Cambio a horario de verano"
-6. Aplicar
+### Caso 2: Rotación de horarios por meses (mañana/tarde)
 
-**Paso 2 - 15 de septiembre: Programar vuelta**
-1. Asignación masiva
-2. Selecciona los mismos 50 empleados
-3. Horario: "Jornada Partida Estándar"
-4. Fecha: 01/10/2025
-5. Descripción: "Fin horario de verano"
-6. Aplicar
+**Situación:** Un equipo alterna un mes en mañanas y otro en tardes.
 
-{: .tip }
-> Los cambios se aplicarán automáticamente en las fechas programadas.
+1. Programa un cambio temporal a "Horario de Mañanas" (01/01 → 31/01)
+2. Programa otro cambio temporal a "Horario de Tardes" (01/02 → 28/02)
+3. Repite según el plan de rotación
 
-### Caso 2: Nuevo departamento completo
-
-**Situación:**
-- Se crea departamento "Atención al Cliente" con 15 empleados
-- Horario especial: 10:00 - 19:00
-
-**Solución:**
+### Caso 3: Nuevo departamento completo
 
 1. Crea el horario "Atención Cliente 10-19h"
-2. Asignación masiva
+2. Asignación masiva (Cambio Permanente)
 3. Filtra por departamento: "Atención al Cliente"
-4. Selecciona todos (15 empleados)
-5. Horario: "Atención Cliente 10-19h"
-6. Fecha: Inmediato
-7. Aplicar
-
-### Caso 3: Empleado en reducción de jornada
-
-**Situación:**
-- Empleado pasa a media jornada temporal por conciliación
-- Del 1 de julio al 31 de diciembre
-
-**Solución:**
-
-**Opción A: Individual simple**
-1. Edita el empleado
-2. Cambia horario a "Media Jornada"
-3. Anota en observaciones la fecha de fin
-4. Recordatorio manual para volver a cambiar en enero
-
-**Opción B: Con asignación masiva (mejor)**
-1. Programa cambio individual para 01/07/2025 a "Media Jornada"
-2. Programa segundo cambio para 01/01/2026 de vuelta a "Jornada Completa"
+4. Selecciona todos y **"Aplicar Cambios"**
 
 ### Caso 4: Empleados de campo con horario flexible
 
-**Situación:**
-- 10 comerciales sin horario fijo
-- Necesitan fichaje pero sin restricciones horarias
-
-**Solución:**
-
-1. Crea horario "Flexible Comerciales"
-   - Lun-Vie: 00:00 - 23:59
-   - Flexibilidad: Todo el día
-   - Sin notificaciones de impuntualidad
-   
-2. Asignación masiva
-3. Selecciona los 10 comerciales
-4. Asigna "Flexible Comerciales"
+1. Crea un horario "Flexible Comerciales" (Lun-Vie 00:00-23:59, flexibilidad total)
+2. Asignación masiva permanente a los comerciales
 
 ---
 
 ## Notificaciones a empleados
 
-### ¿Se notifica el cambio?
+La asignación de horarios **no envía por sí misma un aviso** a los empleados. Ten en cuenta:
 
-Cuando cambias el horario de un empleado:
-
-**Con cambio inmediato:**
-- El empleado ve el nuevo horario en su perfil inmediatamente
-- Se recomienda avisar por email/mensaje
-
-**Con cambio programado:**
-- El empleado ve su horario actual hasta la fecha programada
-- Opcionalmente puede ver "Próximo cambio programado"
-
-{: .important }
-> **Recomendación**: SIEMPRE comunica cambios de horario a los empleados, aunque sea opcional. Evita malentendidos.
-
-### Email de notificación manual
-
-Puedes enviar email a los afectados:
-
-```
-Asunto: Cambio de horario - Junio 2025
-
-Estimado equipo,
-
-Os informamos que a partir del 1 de junio de 2025 pasaremos a 
-horario de verano intensivo:
-
-Lunes a Viernes: 08:00 - 15:00 (jornada continua)
-
-Este horario estará vigente hasta el 30 de septiembre.
-
-Podéis consultar vuestro horario actualizado en AhoraFicho 
-en vuestro perfil.
-
-Saludos,
-RR.HH.
-```
+- El botón de fichaje del empleado se adapta automáticamente a su horario vigente
+- Si el horario tiene configurados los **minutos de notificación de inicio y fin**, el empleado recibirá **recordatorios de entrada y salida** (email y push) según esos tiempos
+- Se recomienda comunicar los cambios de horario por los canales habituales de la empresa
 
 ---
 
 ## Verificar asignaciones
 
-### Comprobar que se aplicó correctamente
-
 Después de asignar horarios:
 
-1. Ve al listado de empleados
-2. Verifica la columna "Horario"
+1. Ve al listado de **"Trabajadores"**
+2. Verifica la columna de horario
 3. Comprueba que todos tienen el horario correcto
-
-### Generar reporte de horarios
-
-Exporta un listado de empleados con sus horarios:
-
-1. Ve a **"Configuraciones"** → **"Trabajadores"**
-2. Haz clic en **"Exportar"**
-3. El Excel incluirá la columna "Horario Asignado"
 
 ---
 
@@ -421,63 +237,18 @@ Exporta un listado de empleados con sus horarios:
 
 ### No veo la opción de asignación masiva
 
-**Posibles causas:**
-- No tienes permisos de Administrador
-- La funcionalidad no está disponible en tu plan
-
-**Solución:**
-- Verifica tus permisos
-- Contacta con soporte
+- Verifica que tienes permisos de Administrador
 
 ### El cambio programado no se aplicó
 
-**Verificaciones:**
 1. ¿La fecha ya pasó?
-2. ¿El cambio sigue en "Pendientes"?
-3. ¿Hay algún error en el log?
-
-**Solución:**
-- Si sigue pendiente, cancélalo y vuelve a crearlo
-- Contacta con soporte si persiste
+2. ¿El cambio sigue en "Pendiente"?
+3. Si sigue pendiente, cancélalo y vuelve a crearlo; si persiste, contacta con soporte
 
 ### Empleado no aparece en la selección
 
-**Causas:**
-- Empleado desactivado
-- Filtros activos que lo excluyen
-
-**Solución:**
-- Verifica que el empleado está activo
-- Quita todos los filtros y busca por nombre
-
----
-
-## Mejores prácticas
-
-### ✅ Recomendaciones
-
-**Planificación:**
-- Programa cambios con 2 semanas de antelación
-- Comunica a empleados antes del cambio
-- Documenta el motivo en la descripción
-
-**Verificación:**
-- Revisa la lista de empleados seleccionados antes de aplicar
-- Usa filtros para evitar seleccionar empleados incorrectos
-- Genera reporte después de cambios masivos
-
-**Comunicación:**
-- Avisa siempre a los empleados
-- Explica motivo y duración del cambio
-- Recuerda fechas de vuelta (si aplica)
-
-### ❌ Evita
-
-- Cambiar horarios sin avisar
-- Asignaciones masivas sin verificar selección
-- Cancelar cambios programados a última hora
-- No documentar cambios importantes
-- Cambios retroactivos (fechas pasadas)
+- Comprueba que el empleado está **activo** (no desactivado)
+- Quita los filtros y busca por nombre
 
 ---
 
@@ -489,14 +260,11 @@ Sí, cada empleado puede tener un horario diferente independientemente de su dep
 
 ### ¿Qué pasa si cambio el horario de un empleado a mitad de mes?
 
-El sistema calculará correctamente:
-- Días con horario antiguo → según horario antiguo
-- Días con horario nuevo → según horario nuevo
-- Los reportes mostrarán ambos períodos
+El sistema calculará cada día con el horario vigente en esa fecha, y los reportes lo reflejarán correctamente.
 
 ### ¿Puedo ver qué horario tenía un empleado en una fecha pasada?
 
-Sí, en el **Historial de Horarios** del empleado puedes ver todos sus horarios pasados con fechas exactas.
+Sí, en el **histórico de horarios** del empleado puedes ver todos sus horarios con fechas de inicio y fin.
 
 ### ¿Los cambios de horario afectan a fichajes anteriores?
 
@@ -504,7 +272,7 @@ No, los fichajes pasados se mantienen con el horario que tenían en ese momento.
 
 ### ¿Puedo programar múltiples cambios de horario?
 
-Sí, puedes programar varios cambios para diferentes fechas futuras.
+Sí, puedes programar varios cambios permanentes y temporales para diferentes fechas.
 
 ---
 
@@ -514,12 +282,10 @@ Si tienes problemas al asignar horarios:
 
 - 📧 Email: soporte@ahoraficho.es
 - 💬 [Preguntas Frecuentes](/preguntas-frecuentes/)
-- 📞 Soporte telefónico
 
 ---
 
 ## Guías relacionadas
 
 - 👉 [Crear Horarios](/guias-por-rol/administrador/crear-horarios/)
-- 👉 [Configurar Turnos Rotativos](/guias-por-rol/administrador/configurar-turnos-rotativos/)
 - 👉 [Dar de alta empleados](/guias-por-rol/administrador/dar-alta-empleados/)

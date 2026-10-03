@@ -23,7 +23,7 @@ Genera el informe mensual completo de fichajes por empleado, ideal para el cálc
 
 ## ¿Qué es el Reporte Mensual?
 
-Es un **informe completo en PDF** que contiene todos los fichajes de un empleado durante un mes (o un año entero). Es el mismo formato que el [Informe para Inspección de Trabajo](/reportes/informe-inspeccion-trabajo/), pero lo usamos internamente para:
+Es un **informe completo en PDF** que contiene todos los fichajes de un empleado (o departamento) durante un mes (o un año entero). A diferencia de las exportaciones oficiales de inspección (que se generan desde la Gestión de Fichajes), el reporte mensual está pensado para uso interno:
 
 - 💰 **Cálculo de nóminas**: Verificar horas trabajadas para el pago mensual
 - 📊 **Auditorías internas**: Documentar el cumplimiento horario
@@ -41,13 +41,13 @@ Es un **informe completo en PDF** que contiene todos los fichajes de un empleado
 ### Paso 1: Acceder al módulo de reportes
 
 1. Inicia sesión como **Administrador** o **Manager**
-2. Ve al menú lateral y haz clic en **"Reportes"**
-3. Selecciona **"Informe Mensual"** o **"Reporte Mensual"**
+2. Ve al menú lateral y haz clic en la sección **"Reportes"**
+3. Selecciona **"Reporte mensual"**
 
 ![Acceso a reportes mensuales](/assets/images/placeholder-acceso-reporte-mensual.png)
 
 {: .note }
-> El **Informe Mensual** y el **Informe para Inspección de Trabajo** son el mismo reporte, solo cambia el nombre según el contexto de uso.
+> El **Reporte mensual** es un informe de uso interno (nóminas, archivo, comunicación con el empleado). Para el documento oficial de inspección, ver [Informe para Inspección de Trabajo](/reportes/informe-inspeccion-trabajo/), que se exporta desde **"Empresa" → "Gestión de Fichajes"**.
 
 ### Paso 2: Seleccionar el empleado
 

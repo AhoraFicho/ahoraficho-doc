@@ -37,17 +37,25 @@ Un **fichaje** es el registro de tu entrada o salida del trabajo. AhoraFicho reg
 
 ## Tipos de fichaje
 
-En AhoraFicho existen **4 tipos** de registros:
+El botón de fichaje **cambia automáticamente** según tu horario y tus fichajes del día:
 
-| Tipo | Icono | Descripción | Cuándo usarlo |
-|:-----|:------|:------------|:--------------|
-| **Entrada** | 🟢 | Inicio de jornada | Al llegar al trabajo |
-| **Salida a pausa** | 🟡 | Inicio de descanso | Comida, café, etc. |
-| **Regreso de pausa** | 🟡 | Fin de descanso | Al volver del descanso |
-| **Salida** | 🔴 | Fin de jornada | Al terminar tu día laboral |
+| Botón | Descripción | Cuándo aparece |
+|:------|:------------|:---------------|
+| **Iniciar jornada** | 🟢 Inicio de jornada | Primer fichaje del día |
+| **Iniciar pausa** | 🟡 Inicio de descanso | Salida intermedia (comida, café...) |
+| **Terminar pausa** | 🟡 Fin de descanso | Al volver del descanso |
+| **Finalizar jornada** | 🔴 Fin de jornada | Último fichaje del día |
+| **Fichar ahora** | ⚡ Fichaje adicional | Cuando tu jornada ya está completa (horas extra) |
 
 {: .note }
-> El sistema detecta automáticamente qué tipo de fichaje corresponde según tu estado actual.
+> El sistema determina automáticamente qué tipo de fichaje corresponde según tu horario y estado actual: tú solo tienes que pulsar el botón.
+
+### Registro de jornada en un paso
+
+Si tu horario tiene activado el **fichaje en un paso**, verás el botón **"Registrar Jornada"**: se abre un modal con los bloques de tu horario de hoy, que puedes **ajustar** antes de confirmar. Al confirmar se registran todos los fichajes del día de una sola vez (con GPS si aplica).
+
+{: .important }
+> Ya no podrás usarlo ese día si vuelves a intentarlo: *"Ya tienes fichajes registrados hoy. No puedes usar el fichaje en un paso."*
 
 ---
 
@@ -79,14 +87,14 @@ Escaneando un código QR rotativo desde la app móvil -->
 
 Esta es la forma más rápida y común:
 
-1. **Inicia sesión** en AhoraFicho.es
-2. En el Dashboard verás un **botón grande de fichaje** arriba a la derecha
+1. **Inicia sesión** en la web de tu empresa
+2. En la barra superior verás el **botón de fichaje**
 3. El botón muestra tu **estado actual**:
    - *"Iniciar jornada"* para entrar
    - *"Iniciar pausa"* si estás trabajando
    - *"Terminar pausa"* si estás en descanso
    - *"Finalizar jornada"* para salir
-   - *"Fichar"* restro de registros
+   - *"Fichar ahora"* si la jornada ya está completa
 
 4. **Haz clic en el botón**
 5. Si la geolocalización está habilitada, el navegador te pedirá **permiso para acceder a tu ubicación**
@@ -94,7 +102,18 @@ Esta es la forma más rápida y común:
 7. ¡Listo! Verás una **confirmación** del fichaje
 
 ![Botón de fichaje en Dashboard](../assets/images/boton-fichaje-dashboard.png)
-*Botón de fichaje visible en el Dashboard*
+*Botón de fichaje visible en la barra superior*
+
+### Salida teórica
+
+Si tu horario lo permite y fichas la salida **después de tu hora teórica**, aparecerá un aviso: *"Has superado tu hora teórica de salida"* con la pregunta *"¿Con qué hora deseas fichar la salida?"*:
+
+- **Hora actual**: se registra la hora real en la que fichas
+- **Hora teórica**: se registra tu hora teórica de salida (el ajuste queda registrado como cambio auto-aprobado con su trazabilidad)
+
+### Aviso antes de fichar
+
+Si estás fuera de tu ventana horaria habitual, puede aparecer un **aviso previo** antes de registrar el fichaje, con la opción **"Fichar igualmente"** si lo que intentas hacer es correcto.
 
 ---
 
@@ -125,10 +144,7 @@ Si tu empresa tiene terminales de fichaje con PIN:
 
 ### Configuración previa
 
-1. Tu administrador te habrá asignado un **PIN de 6 dígitos**
-2. Puedes consultar tu PIN en:
-   - **Mi Perfil** → **PIN de terminal**
-   - O preguntando a tu administrador
+Tu administrador te habrá asignado un **PIN de 6 dígitos** al darte de alta. Si no lo sabes, pídeselo a tu administrador (no se consulta desde el perfil de empleado).
 
 ### Proceso de fichaje
 
@@ -243,21 +259,15 @@ El Dashboard muestra:
 
 Ve a **"Mi Trabajo"** → **"Mis Fichajes"** para ver:
 
-- Listado completo de fichajes por día
-- Filtros por fecha
-- Detalles de cada fichaje:
-  - Hora exacta
-  - Tipo (entrada/salida/pausa)
-  - Ubicación (si aplica)
-  - Dispositivo usado
+- Listado completo de tus días con su **estado** (Correcto, Incidencia, Ausencia, Sin fichajes)
+- Tarjetas de resumen: total de días, horas totales, días correctos e incidencias
+- Resumen semanal con navegación por semanas
+- Detalle de cada fichaje: hora exacta, tipo (entrada/salida) y método de acceso
 
-### En "Mi Resumen Diario"
+👉 [Ver guía: Consultar Mis Fichajes](/guias-por-rol/empleado/consultar-mis-fichajes/)
 
-Ve a **"Mi Trabajo"** → **"Mi resumen diario"** para ver:
-
-- Resumen consolidado por día
-- Total de horas trabajadas
-- Horas efectivas (descontando pausas)
+{: .note }
+> Si tu empresa tiene activado el **cierre automático de fichajes abiertos**, los días con fichaje de entrada sin salida se cierran automáticamente por la noche: recibirás un aviso por email/push y podrás corregir la hora con una [solicitud de cambio](/guias-por-rol/empleado/olvide-fichar/).
 
 ---
 

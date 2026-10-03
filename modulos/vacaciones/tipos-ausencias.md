@@ -71,8 +71,8 @@ Días libres pagados por situaciones específicas contempladas en el Estatuto de
 - **Cuándo**: Consecutivos desde la fecha
 
 #### Nacimiento de hijo
-- **Días**: 4-5 semanas (según convenio)
-- **Justificante**: Certificado de nacimiento
+- **Días**: 6 semanas (obligatorias según Estatuto de los Trabajadores; ampliables según convenio)
+- **Justificante**: Certificado de nacimiento o libro de familia
 - **Ampliable**: Por parto múltiple o discapacidad
 
 #### Fallecimiento familiar

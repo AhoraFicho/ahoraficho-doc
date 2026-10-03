@@ -8,7 +8,7 @@ nav_order: 1
 # Métodos de Fichaje
 {: .no_toc }
 
-AhoraFicho ofrece 5 métodos diferentes para que los empleados registren su entrada y salida. Cada método está diseñado para diferentes entornos de trabajo y necesidades.
+AhoraFicho ofrece 4 métodos diferentes para que los empleados registren su entrada y salida. Cada método está diseñado para diferentes entornos de trabajo y necesidades. El fichaje por código QR estará disponible próximamente.
 {: .fs-6 .fw-300 }
 
 ---
@@ -21,6 +21,11 @@ AhoraFicho ofrece 5 métodos diferentes para que los empleados registren su entr
 
 ---
 
+{: .important }
+> **Conexión a internet**: Todos los métodos de fichaje requieren conexión a internet en el momento del fichaje. No existe modo offline: el fichaje se registra en el servidor de forma inmediata.
+
+---
+
 ## Comparativa de métodos
 
 | Método | Velocidad | Requiere | Ideal para |
@@ -29,6 +34,9 @@ AhoraFicho ofrece 5 métodos diferentes para que los empleados registren su entr
 | **📱 App Móvil** | ⭐⭐⭐⭐ | App instalada | Teletrabajo, movilidad |
 | **🔢 PIN** | ⭐⭐⭐⭐⭐ | Solo PIN (6 dígitos) | Fábricas, almacenes |
 | **🏷️ RFID** | ⭐⭐⭐⭐⭐ | Tarjeta/llavero | Oficinas grandes, hoteles |
+| **📷 QR** | — | — | 🔜 Próximamente |
+
+Cada trabajador puede tener habilitados uno o varios métodos: el Administrador los configura en la ficha del empleado (alta o edición).
 
 ---
 
@@ -41,33 +49,45 @@ Fichar desde el navegador accediendo a la plataforma web.
 1. Abre tu navegador (Chrome, Firefox, Edge, Safari)
 2. Ve a la url de tu empresa, por ejemplo: **demo.ahoraficho.es**
 3. Inicia sesión con tu usuario y contraseña
-4. Haz clic en el botón **"Fichar"** en el dashboard
-5. Confirma el fichaje
+4. Pulsa el botón de fichaje de la barra superior: **"Iniciar jornada"**, **"Iniciar pausa"**, **"Terminar pausa"**, **"Finalizar jornada"** o **"Fichar ahora"**, según el momento del día
 
 <!-- ![Fichaje web](/assets/images/placeholder-fichaje-web.png) -->
+
+### El botón se adapta a tu horario
+
+El botón cambia automáticamente según tus fichajes de hoy y tu horario:
+
+| Situación | Botón |
+|-----------|-------|
+| Primer fichaje del día | **Iniciar jornada** |
+| Pausa (salida intermedia) | **Iniciar pausa** |
+| Volver de la pausa | **Terminar pausa** |
+| Último fichaje del día | **Finalizar jornada** |
+| Jornada ya completa (horas extra) | **Fichar ahora** |
+
+### Registro de jornada en un paso
+
+Si tu empresa ha activado el **fichaje en un paso** en tu horario, en lugar del botón habitual verás **"Registrar Jornada"**: se abre un modal con los bloques de tu horario de hoy, que puedes ajustar antes de confirmar. Al confirmar se registran todos los fichajes del día de una sola vez.
 
 ### Ventajas
 
 ✅ No requiere instalar nada
 ✅ Funciona en cualquier ordenador con internet
-✅ Permite añadir comentarios al fichar
-✅ Muestra el último fichaje realizado
+✅ Muestra el estado de tu jornada en todo momento
 
 ### Desventajas
 
-❌ Requiere escribir usuario y contraseña cada vez (a menos que guardes sesión)
+❌ Requiere escribir usuario y contraseña (a menos que guardes sesión)
 ❌ Más lento que PIN o RFID
-❌ Requiere abrir navegador
 
 ### Ideal para
 
 - Empleados con ordenador de sobremesa en oficina
 - Trabajadores con tareas administrativas
 - Teletrabajo desde casa
-- Empleados que ya tienen la web abierta
 
 {: .tip }
-> **Consejo**: Guarda demo.ahoraficho.es como marcador/favorito en tu navegador para acceder rápidamente.
+> **Consejo**: Guarda la url de tu empresa como marcador/favorito en tu navegador para acceder rápidamente.
 
 ---
 
@@ -78,26 +98,26 @@ Fichar desde la aplicación móvil de AhoraFicho en tu smartphone.
 ### Cómo funciona
 
 1. Descarga la app **AhoraFicho** desde Google Play (Android) o App Store (iOS)
-2. Inicia sesión con tu usuario y contraseña
+2. Inicia sesión con tu usuario y contraseña (o escanea el código QR de configuración desde la web)
 3. Abre la app
-4. Toca el botón grande **"Fichar"**
-5. Confirma con tu huella dactilar o Face ID (opcional)
+4. Toca el botón grande de fichaje
+5. ¡Fichaje registrado!
 
 <!-- ![Fichaje app móvil](/assets/images/placeholder-fichaje-app.png) -->
 
 ### Ventajas
 
-✅ Muy rápido (la app se abre en 1 segundo)
+✅ Muy rápido (la app se abre al instante)
 ✅ Puede usar **GPS** para verificar ubicación
-✅ Funciona sin internet (sincroniza después)
-✅ Notificaciones recordatorias
-✅ Puede escanear **QR** para fichar
+✅ Recibes notificaciones push (recordatorios, aprobaciones, alertas)
+✅ Mismo botón adaptativo que la web
 
 ### Desventajas
 
 ❌ Requiere instalación previa
 ❌ Consume batería si usa GPS constantemente
 ❌ Necesita smartphone personal o corporativo
+❌ **Requiere conexión a internet** (datos móviles o WiFi)
 
 ### Ideal para
 
@@ -116,35 +136,29 @@ Fichar desde la aplicación móvil de AhoraFicho en tu smartphone.
 
 ## 3. 🔢 Fichaje PIN
 
-Fichar usando un código PIN de 6 dígitos en un terminal compartido.
+Fichar usando un código PIN de 6 dígitos en un terminal compartido (tablet u ordenador en modo kiosco).
 
 ### Cómo funciona
 
-1. Accede al terminal de fichaje (tablet, ordenador compartido)
+1. Accede al terminal de fichaje
 2. La pantalla muestra un **teclado numérico**
 3. Introduce tu **PIN de 6 dígitos** (ej: 123456)
-4. Pulsa **"Enter"** o **"Fichar"**
-5. El sistema confirma el fichaje mostrando tu nombre
+4. El sistema valida el PIN y muestra un resumen: tu nombre, **"Tiempo trabajado hoy"** y tus **"Fichajes de hoy"**
+5. Pulsa el botón de fichaje y verás la confirmación **"Fichaje registrado"** con la hora
 
 <!-- ![Fichaje PIN](/assets/images/placeholder-fichaje-pin.png) -->
 
 ### ¿Dónde está mi PIN?
 
-Tu PIN personal está en:
-- Email de bienvenida cuando te dieron de alta
-- **"Mi Perfil"** → **"Datos de acceso"** → **"PIN de fichaje"**
-- Pregunta a tu Manager o Administrador
-
-{: .note }
-> **Cambiar PIN**: Puedes cambiar tu PIN desde tu perfil si lo olvidas o quieres uno más memorable.
+Tu PIN de terminal se define cuando el Administrador te da de alta (o al importar empleados masivamente). No puedes cambiarlo tú mismo: si lo olvidas, pide a tu Administrador que te asigne uno nuevo.
 
 ### Ventajas
 
 ✅ **Muy rápido**: Fichar en 3 segundos
 ✅ No requiere login completo
 ✅ No necesita smartphone personal
-✅ Higiénico (solo teclado, sin tocar mucho)
 ✅ Un terminal sirve para todos
+✅ Muestra el tiempo trabajado del día al fichar
 
 ### Desventajas
 
@@ -164,83 +178,27 @@ Tu PIN personal está en:
 ### Configurar terminal PIN
 
 **Para Administradores:**
-1. Prepara un dispositivo (tablet, ordenador touch)
-2. Abre demo.ahoraficho.es
-3. Inicia sesión con una cuenta de Administrador
-4. Ve a **"Configuración"** → **"Dispositivos"**
-5. Registra un nuevo termina **"Modo Terminal"**
-6. La pantalla se bloqueará mostrando solo el teclado PIN
-7. Coloca el terminal en un lugar accesible para todos
+1. Ve a **"Configuraciones"** → **"Dispositivos"**
+2. Registra un nuevo dispositivo: el sistema genera los tokens de acceso del terminal
+3. Abre en el dispositivo la url del terminal (formato `/AccessEntry/Terminal/{token}?secToken={tokenSeguridad}`)
+4. La pantalla queda en **modo kiosco**: teclado numérico de PIN a pantalla completa, sin acceso a ninguna otra función
+5. Coloca el terminal en un lugar accesible para todos
 
 {: .warning }
-> **Seguridad**: El terminal en modo PIN no permite acceder a ninguna otra función. Solo fichar con PIN.
+> **Seguridad**: El terminal en modo kiosco no permite acceder a ninguna otra función de la plataforma. Solo fichar con PIN.
 
 ---
 
-<!-- ## 4. 📷 Fichaje QR
-
-Fichar escaneando un código QR con la app móvil.
-
-### Cómo funciona
-
-1. Tu empresa genera un **código QR** único
-2. El código se imprime y coloca visible (entrada oficina, recepción, etc.)
-3. El empleado abre la **app de AhoraFicho**
-4. Toca el botón **"Escanear QR"** (icono de cámara)
-5. Apunta la cámara al código QR
-6. El fichaje se registra automáticamente
-
-![Fichaje QR](/assets/images/placeholder-fichaje-qr.png)
-
-### Ventajas
-
-✅ **Muy rápido**: 2 segundos
-✅ **Higiénico**: Sin tocar ninguna pantalla
-✅ No requiere recordar PIN ni contraseña
-✅ Funciona aunque no haya WiFi (usa datos móviles)
-✅ Un código QR sirve para todos
-
-### Desventajas
-
-❌ Requiere smartphone con cámara
-❌ Requiere tener la app instalada
-❌ El código puede dañarse/borrarse si está impreso
-❌ Necesita buena iluminación para escanear
-
-### Ideal para
-
-- **Oficinas modernas**
-- **Tiendas** y comercios
-- **Hoteles** y restaurantes
-- **Clínicas** y consultorios
-- Empresas que prefieren fichaje sin contacto
-
-### Generar código QR
-
-**Para Administradores:**
-1. Ve a **"Configuración"** → **"Métodos de Fichaje"**
-2. Sección **"Fichaje QR"**
-3. Haz clic en **"Generar código QR"**
-4. Selecciona el edificio/ubicación
-5. Descarga el código en PDF o PNG
-6. Imprime y coloca en un lugar visible
-
-{: .tip }
-> **Recomendación**: Plastifica el código QR impreso para que dure más y sea resistente al agua/suciedad.
-
---- -->
-
 ## 4. 🏷️ Fichaje RFID
 
-Fichar acercando una tarjeta o llavero RFID a un lector.
+Fichar acercando una tarjeta o llavero RFID a un lector conectado a un terminal registrado.
 
 ### Cómo funciona
 
-1. Tu empresa instala un **lector RFID** en la entrada
-2. Cada empleado recibe una **tarjeta** o **llavero** RFID personal
+1. Tu empresa instala un **lector RFID** conectado a un terminal registrado en **"Configuraciones" → "Dispositivos"**
+2. Cada empleado recibe una **tarjeta** o **llavero RFID** personal, cuyo identificador (Tag RFID) se da de alta en su ficha
 3. El empleado acerca su tarjeta al lector (sin tocar)
-4. **¡BIP!** El lector emite un sonido y el fichaje se registra
-5. El sistema muestra brevemente el nombre del empleado
+4. El fichaje se registra y el terminal muestra el resultado
 
 <!-- ![Fichaje RFID](/assets/images/placeholder-fichaje-rfid.png) -->
 
@@ -255,7 +213,7 @@ Fichar acercando una tarjeta o llavero RFID a un lector.
 
 ### Desventajas
 
-❌ **Requiere hardware**: Lector RFID (coste adicional)
+❌ **Requiere hardware**: Lector RFID y terminal (coste adicional)
 ❌ Requiere tarjetas/llaveros para cada empleado
 ❌ Si pierdes la tarjeta, no puedes fichar hasta tener otra
 ❌ Instalación inicial más compleja
@@ -284,6 +242,15 @@ Fichar acercando una tarjeta o llavero RFID a un lector.
 
 ---
 
+## 5. 📷 Fichaje QR (Próximamente)
+
+El fichaje escaneando un código QR desde la app móvil estará disponible próximamente.
+
+{: .note }
+> **No confundir**: El código QR actual de la plataforma sirve para **configurar y acceder a la app móvil** (se genera desde el menú **"Descargar APP"**), no para fichar. Ver [Descarga App Móvil](/primeros-pasos/descarga-app-movil/).
+
+---
+
 ## Comparativa técnica
 
 ### Requisitos de cada método
@@ -292,25 +259,24 @@ Fichar acercando una tarjeta o llavero RFID a un lector.
 |--------|----------|----------|----------|-----------------|
 | **Web** | Ordenador/móvil | Navegador | ✅ Sí | No |
 | **App Móvil** | Smartphone | App instalada | ✅ Sí | No |
-| **PIN** | Terminal compartido | Navegador | ✅ Sí | Dispositivo terminal |
-| **RFID** | Lector RFID | - | ✅ Sí | Lector + tarjetas |
+| **PIN** | Terminal compartido | Navegador (modo kiosco) | ✅ Sí | Dispositivo terminal |
+| **RFID** | Lector RFID + terminal | — | ✅ Sí | Lector + tarjetas |
 
 ### Velocidad de fichaje
 
 1. **RFID**: 1 segundo ⚡⚡⚡⚡⚡
-2. **QR**: 2 segundos ⚡⚡⚡⚡⚡
-3. **PIN**: 3 segundos ⚡⚡⚡⚡
-4. **App Móvil**: 5 segundos ⚡⚡⚡⚡
-5. **Web**: 10 segundos ⚡⚡⭐
+2. **PIN**: 3 segundos ⚡⚡⚡⚡
+3. **App Móvil**: 5 segundos ⚡⚡⚡⚡
+4. **Web**: 10 segundos ⚡⚡⭐
 
 ---
 
 ## Combinar varios métodos
 
-Las empresas pueden activar **múltiples métodos** simultáneamente:
+Las empresas pueden habilitar **múltiples métodos** simultáneamente, incluso distintos métodos para cada trabajador:
 
 **Ejemplo: Oficina + Teletrabajo**
-- Empleados en oficina: PIN o QR (rápido)
+- Empleados en oficina: PIN en terminal (rápido)
 - Empleados en remoto: App móvil (con GPS)
 
 **Ejemplo: Fábrica con turnos**
@@ -319,22 +285,20 @@ Las empresas pueden activar **múltiples métodos** simultáneamente:
 - Oficinistas: Web desde sus ordenadores
 
 {: .tip }
-> **Flexibilidad**: Cada empleado puede usar el método que más le convenga según donde esté trabajando ese día.
+> **Flexibilidad**: Cada empleado puede usar cualquiera de los métodos que tenga habilitados según donde esté trabajando ese día.
 
 ---
 
-## Configurar métodos de fichaje
+## Habilitar métodos por trabajador
 
 **Para Administradores:**
 
-1. Ve a **"Configuración"** → **"Trabajadores"** → **"Métodos de Fichaje"**
-2. Activa o desactiva cada método según necesites
-3. Configura opciones específicas:
-   - **Web**: Permitir guardar sesión
-   - **App**: Requerir GPS obligatorio
-   - **PIN**: Longitud del PIN (4 o 6 dígitos)
-   - **RFID**: Configurar lectores
-4. Guarda los cambios
+Los métodos se habilitan **por empleado**, no globalmente:
+
+- En el **alta de trabajador** (sección **"Métodos de Fichaje Permitidos"**): Fichaje Web y Fichaje Móvil vienen activados por defecto; Fichaje PIN y Fichaje RFID se activan introduciendo el PIN de 6 dígitos o el Tag RFID.
+- En la **edición del trabajador** (Configuraciones → Trabajadores → Editar): se pueden activar o desactivar los métodos en cualquier momento.
+
+👉 [Ver guía: Dar de Alta Empleados](/guias-por-rol/administrador/dar-alta-empleados/)
 
 ---
 
@@ -342,24 +306,27 @@ Las empresas pueden activar **múltiples métodos** simultáneamente:
 
 ### ¿Puedo usar diferentes métodos en diferentes días?
 
-Sí, puedes fichar con el método que prefieras cada día (si están activos para el trabajador).
+Sí, puedes fichar con cualquier método que tengas habilitado.
 
 ### ¿Qué método es más seguro?
 
-Todos son seguros, pero RFID y QR son más difíciles de falsificar que PIN (que alguien podría ver).
+Todos son seguros. RFID es más difícil de suplantar que el PIN (que alguien podría ver al marcarlo).
 
 ### ¿El PIN puede repetirse entre empleados?
 
-No, cada empleado tiene un PIN único. El sistema no permite duplicados.
-
-
-### ¿Qué pasa si pierdo mi tarjeta RFID?
-
-Informa inmediatamente a tu Administrador para que la desactive y te asignen una nueva.
+No, cada trabajador tiene su propio PIN de 6 dígitos.
 
 ### ¿Puedo cambiar mi PIN?
 
-Sí, desde **"Mi Perfil"** → **"Cambiar PIN"**.
+No desde la aplicación. Solicita a tu Administrador que te asigne un PIN nuevo.
+
+### ¿Qué pasa si pierdo mi tarjeta RFID?
+
+Informa inmediatamente a tu Administrador para que te asigne un nuevo Tag RFID.
+
+### ¿Necesito internet para fichar?
+
+Sí, todos los métodos requieren conexión a internet en el momento del fichaje.
 
 ---
 

@@ -130,33 +130,25 @@ El formulario está dividido en varias secciones:
 - Tu empresa (ya seleccionada por defecto)
 - No modificable
 
-**Departamento(s)** (obligatorio)
-- Selecciona al menos un departamento
-- Puedes asignar múltiples departamentos
-- Usa Ctrl+Click (Windows) o Cmd+Click (Mac) para seleccionar varios
+**Departamento** (obligatorio)
+- Selecciona el departamento inicial del empleado
+- En el alta se elige **un** departamento; puedes añadir más departamentos después editando su ficha (asignación múltiple desde edición)
 
 **Horario** (obligatorio)
 - Selecciona el horario de trabajo del empleado
 - Si aún no existe, créalo primero en [Horarios](/guias-por-rol/administrador/crear-horarios/)
 - Puedes cambiarlo después si es necesario
 
-**Responsable (Manager 1)** (opcional)
-- Selecciona quién será su responsable directo
-- Aprobará sus ausencias y cambios de fichaje
-- Si no asignas, las aprobaciones irán al administrador
-
-**Responsable 2 (Manager 2)** (opcional)
-- Responsable secundario
-- Útil para coberturas cuando el Manager 1 está ausente
+{: .note }
+> **Responsables y roles**: Los campos **"Responsable"** y **"Responsable 2"**, así como el **rol** del usuario (Manager, Validador...), se configuran **después del alta**, editando la ficha del trabajador. Sin responsable asignado, las aprobaciones de sus ausencias irán al Administrador.
 
 ---
 
 ### 🔐 Configuración de PIN para Terminal
 
 **PIN de terminal** (opcional)
-- Código de 6 dígitos para fichaje en terminales
-- Solo si vas a usar fichaje por PIN
-- Ejemplo: "123456"
+- Código de **6 dígitos numéricos** para fichaje en terminales (modo kiosco)
+- Solo si vas a habilitar el fichaje por PIN
 - Debe ser único por empleado
 
 {: .note }
@@ -170,31 +162,24 @@ Selecciona qué métodos de fichaje puede usar este empleado:
 
 **☑️ Fichaje Web**
 - Desde navegador de escritorio/móvil
-- Recomendado: Activar siempre
+- Por defecto: activado
 
 **☑️ Fichaje Móvil**
 - Desde aplicación iOS/Android
-- Recomendado para trabajadores móviles
+- Por defecto: activado
 
 **☑️ Fichaje PIN**
-- Desde terminal con código PIN
-- Requiere tener PIN configurado
-
-**☑️ Fichaje QR**
-- Escaneando código QR
-- Útil para acceso rápido desde app
+- Desde terminal en modo kiosco con código PIN
+- Al activarlo se solicita el **PIN de terminal** (6 dígitos)
 
 **☑️ Fichaje RFID**
-- Con tarjeta RFID
-- Requiere lectores RFID instalados
+- Con tarjeta RFID en terminal con lector
+- Al activarlo se solicita el **Tag RFID** (identificador de la tarjeta/llavero)
 
 {: .important }
-> **Importante**: Debes marcar al menos un método de fichaje. Si no marcas ninguno, el empleado no podrá fichar.
+> **Fichaje QR**: estará disponible próximamente, por lo que aún no aparece en el alta. Recuerda habilitar al menos un método disponible: si no activas ninguno, el empleado no podrá fichar.
 
-**Tag RFID** (opcional)
-- ID de la tarjeta RFID del empleado
-- Solo necesario si usas fichaje RFID
-- Ejemplo: "0123456789ABCD"
+Los métodos se pueden modificar en cualquier momento desde la **edición del trabajador**.
 
 ---
 
@@ -214,11 +199,6 @@ Selecciona qué métodos de fichaje puede usar este empleado:
 - Si está marcado, debe compartir ubicación al fichar
 - Si no, puede fichar sin ubicación
 - Útil para trabajadores de campo
-
-**☑️ Notificaciones WhatsApp**
-- Si está marcado, recibirá notificaciones por WhatsApp
-- Requiere configuración previa de integración WhatsApp
-- El empleado debe dar su consentimiento
 
 ---
 
@@ -352,7 +332,7 @@ La plantilla incluye estas columnas:
 
 ## Roles y permisos
 
-Al crear un empleado, puedes asignarle roles:
+El rol **no se asigna en el formulario de alta**: se configura después, editando la ficha del trabajador o desde **"Configuraciones" → "Roles"**.
 
 ### Roles disponibles
 
@@ -363,17 +343,20 @@ Al crear un empleado, puedes asignarle roles:
 
 **Manager**
 - Todo lo anterior +
-- Puede validar ausencias de su equipo
-- Puede aprobar cambios de fichaje de su equipo
-- Ve reportes de su departamento
+- Valida **ausencias, gastos e imputaciones** de su equipo (departamentos y/o asignados)
+- Ve reportes de su equipo
+
+**Validador**
+- Valida los **cambios de fichaje** de los empleados de su ámbito
+- Consulta los **cierres mensuales**
+- Ver [Guía del Validador](/guias-por-rol/validador/)
 
 **Admin**
 - Todo lo anterior +
-- Puede dar de alta/baja empleados
-- Puede configurar empresa
-- Acceso a todas las configuraciones
+- Valida ausencias, gastos, imputaciones **y cambios de fichaje**
+- Puede dar de alta/baja empleados, configurar la empresa y **reabrir cierres mensuales**
 
-**SuperAdmin** (solo para AhoraFicho)
+**SuperAdmin** (solo para Solutions2AZ)
 - Acceso total al sistema
 - Gestión multi-empresa
 - No asignes este rol a empleados normales
@@ -383,12 +366,12 @@ Al crear un empleado, puedes asignarle roles:
 Los roles se asignan en la sección **"Configuraciones"** → **"Roles"**:
 
 1. Ve a Roles
-2. Selecciona el rol (Manager, Admin)
+2. Selecciona el rol (Manager, Validador, Admin)
 3. Añade el usuario al rol
 4. Guarda
 
 {: .note }
-> Un usuario puede tener múltiples roles. Por ejemplo, puede ser Manager Y Admin.
+> Un usuario puede tener múltiples roles. Por ejemplo, puede ser Manager Y Validador a la vez.
 
 ---
 
@@ -421,11 +404,11 @@ Si necesitas más usuarios:
 
 ### Empleado con múltiples departamentos
 
-Si un empleado trabaja en varios departamentos:
+En el **alta** se selecciona el departamento inicial. Para asignar varios departamentos a un empleado:
 
-1. En el campo "Departamentos", selecciona todos los necesarios
-2. Mantén pulsado Ctrl (Windows) o Cmd (Mac) para selección múltiple
-3. El primer departamento será el principal
+1. Guarda el alta con su departamento principal
+2. Edita la ficha del trabajador
+3. Marca **todos** los departamentos a los que pertenece
 
 ### Empleado sin departamento
 
@@ -573,7 +556,7 @@ Si tienes problemas al dar de alta empleados:
 
 ## Guías relacionadas
 
-- 👉 [Desactivar usuarios](/guias-por-rol/administrador/desactivar-usuarios/)
+- 👉 [Desactivar usuarios](/guias-por-rol/administrador/desactivar-empleados/)
 - 👉 [Crear horarios](/guias-por-rol/administrador/crear-horarios/)
 - 👉 [Asignar horarios](/guias-por-rol/administrador/asignar-horarios/)
 - 👉 [Asignar vacaciones](/guias-por-rol/administrador/asignar-vacaciones/)

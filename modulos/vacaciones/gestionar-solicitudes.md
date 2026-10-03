@@ -23,86 +23,76 @@ Guía para Administradores sobre cómo gestionar todas las solicitudes de vacaci
 
 ## Vista global de solicitudes
 
-Como **Administrador**, puedes ver y gestionar las solicitudes de toda la empresa.
+Como **Administrador**, puedes ver y resolver las solicitudes de toda la empresa (los Managers solo ven las de su ámbito).
 
 ### Acceder a solicitudes
 
 1. Ve a **"Validaciones"** → **"Ausencias Pendientes"**
-2. Verás solicitudes pendientes de todos los empleados
-<!-- 3. Puedes filtrar por:
-   - Estado (Pendientes, Aprobadas, Rechazadas)
-   - Empleado
-   - Departamento
-   - Tipo de ausencia
-   - Rango de fechas -->
+2. Verás las solicitudes pendientes con:
+   - **Pestañas "Pendientes"** y **"Validadas"** (histórico con selector de año)
+   - **Filtro por trabajador** + botón **"Filtrar"**
+   - Casillas para **selección múltiple**
+
+Como Administrador puedes resolver **cualquier** solicitud, incluidas las de empleados sin responsable asignado y las de segunda aprobación pendientes.
 
 ---
 
-## Aprobar solicitudes masivamente
+## Aprobar o rechazar
 
-### Aprobación rápida
+### Acciones individuales
 
-1. Selecciona múltiples solicitudes (checkbox)
-2. Haz clic en **"Aprobar seleccionadas"**
-3. Confirma la acción
-4. Todas se aprueban simultáneamente
+- Pulsa **✓ (Aprobar)** o **✗ (Denegar)** en cada fila
+- Al denegar se te pedirá el **"Motivo del rechazo (opcional)"**, que queda registrado y visible para el empleado
 
-**Cuándo usar:**
-- Final de mes para aprobar todas las pendientes válidas
-- Vacaciones de Navidad (si aplica cierre de empresa)
+### Acción masiva
+
+1. Selecciona múltiples solicitudes (checkbox o seleccionar todas)
+2. Pulsa **"Aprobar"** o **"Denegar"**
+3. En el diálogo de confirmación, marca **"Notificar al empleado por email"** (activada por defecto)
+4. Confirma
+
+**Cuándo usar la acción masiva:**
+- Final de mes para resolver las pendientes válidas
+- Períodos de cierre de empresa (Navidad)
 - Solicitudes sencillas sin conflictos
 
-<!-- ---
-
-## Resolver conflictos
-
-### Detectar solapamientos
-
-El sistema alerta si:
-- Más del X% del departamento está de vacaciones
-- No hay cobertura mínima
-- Dos empleados clave están ausentes
-
-**Acciones:**
-1. Contacta con los empleados para escalonar fechas
-2. Rechaza una y aprueba otra (explicando motivo)
-3. Negocia solución alternativa -->
+{: .note }
+> Si tu empresa usa la **doble aprobación** (EnableTwoLevelAbsenceApproval), el flujo Resp. 1 → Resp. 2 se respeta: el sistema impedirá resolver en el orden incorrecto con el aviso *"La ausencia debe aprobarse/rechazarse por el responsable correspondiente en el orden establecido."* Como Administrador puedes resolver en cualquier momento las que estén a la espera.
 
 ---
 
 ## Gestionar bajas médicas
 
-Las bajas médicas **no requieren aprobación**, pero debes:
+Según la configuración del tipo **"Baja"** en tu empresa:
 
-1. Registrarlas en el sistema cuando te entreguen el parte
-2. Verificar que el empleado ha presentado parte oficial
-3. Archivar documentación (obligación legal)
-4. Actualizar estado cuando presente alta médica
+1. Verifica que el empleado ha adjuntado el **parte oficial** (el formulario lo solicita)
+2. Revisa y resuelve la solicitud como cualquier otra
+3. Archiva la documentación (obligación legal)
+4. Registra las prórrogas: el empleado puede subir partes de confirmación desde sus ausencias
 
 ---
 
-## Configuración de políticas
+## Configuración relacionada
 
-### Establecer reglas
+### Saldo de vacaciones por empleado
 
-**Desde**: Trabajadores → Editar trabajador → Ausencias máximas
+**Desde**: Configuraciones → **Trabajadores** → Editar trabajador → campo **"Max Ausencias"** y su caducidad. Ver [Asignar Vacaciones](/guias-por-rol/administrador/asignar-vacaciones/).
 
-<!-- **Opciones:**
-- Días de antelación mínima (ej: 15 días)
-- Máximo de empleados simultáneos (ej: no más del 30%)
-- Períodos bloqueados (ej: Black Friday en retail)
-- Caducidad de vacaciones (31 dic o arrastre a marzo) -->
+### Bloqueos de vacaciones por edificio
+
+Si necesitas impedir solicitudes en ciertas fechas (campañas, cierres de empresa): Configuraciones → **"Bloqueos de vacaciones"**. Los empleados verán el error correspondiente al intentar solicitar en esas fechas.
+
+### Tipos de ausencia
+
+Configuraciones → **"Tipos de Ausencias"**: crea, edita o desactiva los tipos que los empleados pueden solicitar, con su color en el calendario.
 
 ---
 
 ## Reportes de ausencias
 
-### Generar informes
-
-1. **Informe mensual**: Ausencias del mes por departamento
-2. **Planificación**: Ausencias futuras aprobadas
-3. **Saldo del equipo**: Días pendientes por empleado
-4. **Costes**: Días retribuidos vs no retribuidos
+- **"Validaciones" → "Ausencias Pendientes" → pestaña "Validadas"**: histórico por año
+- Menú **"Empresa" → "Calendario de la empresa"**: visión de todas las ausencias aprobadas
+- Menú **"Reportes" → "Resumen Ausencias"**: visión general de la empresa (contadores por tipo y año)
 
 ---
 
@@ -110,11 +100,15 @@ Las bajas médicas **no requieren aprobación**, pero debes:
 
 ### ¿Puedo modificar una solicitud ya aprobada?
 
-Sí, puedes cancelar la aprobación si es necesario (emergencia operativa). Siempre explica el motivo al empleado.
+Puedes gestionarla desde la **"Gestión de Ausencias"** del menú Empresa (eliminar días futuros o ajustar). Siempre explica el motivo al empleado.
 
 ### ¿Qué hago con solicitudes muy antiguas pendientes?
 
-Contacta con el Manager responsable para que las revise. Si ya pasó la fecha, recházalas.
+Contacta con el Manager responsable para que las revise, o resuélvelas tú directamente. Si ya pasó la fecha, recházalas.
+
+### ¿Puedo crear una ausencia en nombre de un empleado?
+
+Sí, desde **"Empresa" → "Gestión de Ausencias"** puedes crear ausencias para cualquier empleado (útil para registrar bajas comunicadas por teléfono).
 
 ---
 
@@ -122,3 +116,5 @@ Contacta con el Manager responsable para que las revise. Si ya pasó la fecha, r
 
 - 👉 [Aprobar Vacaciones (Manager)](/guias-por-rol/manager/aprobar-vacaciones/)
 - 👉 [Asignar Vacaciones](/guias-por-rol/administrador/asignar-vacaciones/)
+- 👉 [Solicitar Vacaciones (Empleado)](/guias-por-rol/empleado/solicitar-vacaciones/)
+- 👉 [Módulo de Vacaciones](/modulos/vacaciones/)

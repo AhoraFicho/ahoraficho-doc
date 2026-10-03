@@ -44,49 +44,45 @@ El informe incluye:
 
 ## Generar el Informe para Inspección
 
-### Paso 1: Acceder al módulo de reportes
+### Paso 1: Acceder a la gestión de fichajes
 
-1. Inicia sesión como **Administrador** o **Manager**
-2. Ve al menú lateral y haz clic en **"Reportes"**
-3. Selecciona **"Informe Mensual"** (también conocido como "Reporte para Inspección")
-
-![Acceso a reportes mensuales](/assets/images/placeholder-acceso-informe-mensual.png)
-
-### Paso 2: Seleccionar el empleado
-
-1. En el desplegable **"Empleado"**, selecciona el trabajador del que necesitas el informe
-2. Los empleados aparecen ordenados alfabéticamente con su nombre completo y ID
-
-![Seleccionar empleado](/assets/images/placeholder-seleccionar-empleado-informe.png)
-
-{: .tip }
-> Puedes buscar rápidamente escribiendo el nombre del empleado en el campo de búsqueda del desplegable.
-
-### Paso 3: Seleccionar el período
-
-1. Elige el **año** del desplegable (últimos 5 años disponibles)
-2. Elige el **mes** específico, o selecciona **"Todos"** para un informe anual completo
-
-![Seleccionar período](/assets/images/placeholder-seleccionar-periodo-informe.png)
+1. Inicia sesión como **Administrador** (o SuperAdmin)
+2. Ve al menú lateral **"Empresa"** → **"Gestión de Fichajes"**
+3. En la parte superior encontrarás los botones de **exportación para inspección**
 
 {: .note }
-> **Informe anual**: Si seleccionas "Todos" en el mes, el PDF incluirá los 12 meses del año seleccionado. Ten en cuenta que será un documento más extenso.
+> **Solo Administradores**: las exportaciones de inspección están en la gestión de fichajes de la empresa. Los Managers disponen del [Reporte Mensual](/reportes/reporte-mensual/) de su equipo para uso interno.
 
-### Paso 4: Añadir comentarios (opcional)
+### Paso 2: Aplicar los filtros
 
-1. En el campo **"Observaciones"**, puedes añadir comentarios adicionales
-2. Estos comentarios aparecerán al final del PDF
+Filtra por empleado, departamento, edificio y rango de fechas según lo que requiera la inspección (un mes, un trimestre, un año...).
 
-**Ejemplos de comentarios útiles:**
-- "Período de formación del 10 al 15 de marzo"
-- "Empleado en teletrabajo desde el 1 de junio"
-- "Reducción de jornada autorizada en agosto"
+### Paso 3: Elegir el formato de exportación
 
-### Paso 5: Generar y descargar el PDF
+| Formato | Qué contiene | Uso recomendado |
+|---------|--------------|-----------------|
+| **Excel crudo** | Una fila por fichaje, con hora real de registro | Análisis detallado |
+| **PDF crudo** | Una fila por fichaje | Presentación oficial detallada |
+| **Excel consolidado** | Una fila por jornada (agrupado por día) | Revisión rápida |
+| **PDF consolidado** | Una fila por jornada | **Formato más habitual para inspección** |
 
-1. Haz clic en el botón **"Descargar Informe"**
-2. El sistema generará el PDF automáticamente
-3. Guarda el archivo en tu equipo
+### Paso 4: Descargar y archivar
+
+1. Haz clic en el formato deseado
+2. El sistema generará el documento con los datos filtrados
+3. Guarda el archivo con la fecha de generación
+
+{: .important }
+> **Integridad de los datos**: las exportaciones de inspección incluyen un **hash de verificación de integridad**, y avisan si hay jornadas con un número impar de fichajes (posible salida sin registrar). Esto aporta fiabilidad al documento presentado.
+
+### Contenido del informe
+
+- ✅ **Datos del empleado**: Nombre completo
+- ✅ **Período consultado**: fechas incluidas
+- ✅ **Fichajes diarios**: entrada y salida de cada día (y hora de registro real)
+- ✅ **Horas trabajadas**: totales por día
+- ✅ **Ausencias justificadas**: vacaciones, bajas, permisos
+- ✅ **Observaciones**: notas de modificaciones de fichaje (con quién las aprobó), comentarios por jornada
 
 ![Descargar informe](/assets/images/placeholder-descargar-informe-pdf.png)
 

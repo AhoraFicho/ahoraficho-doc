@@ -3,13 +3,13 @@ layout: default
 title: Consultar Mis Fichajes
 parent: Empleado
 grand_parent: Guías por Rol
-nav_order: 3
+nav_order: 2
 ---
 
 # Consultar Mis Fichajes
 {: .no_toc }
 
-Cómo consultar tu historial de fichajes, resúmenes y estadísticas.
+Cómo consultar tu historial de fichajes, entender los estados de cada día y verificar tus horas trabajadas.
 {: .fs-6 .fw-300 }
 
 ---
@@ -22,428 +22,141 @@ Cómo consultar tu historial de fichajes, resúmenes y estadísticas.
 
 ---
 
-## Acceder a tus fichajes
+## Acceder a Mis Fichajes
 
-Para ver tus fichajes tienes dos secciones principales:
+1. Ve al menú lateral **"Mi Trabajo"**
+2. Selecciona **"Mis Fichajes"**
 
-### 📋 Mis Fichajes
-**Ruta**: "Mi Trabajo" → "Mis Fichajes"
-
-Listado detallado de todos tus registros de entrada/salida con:
-- Fecha y hora exacta
-- Tipo de fichaje (entrada, salida, pausa)
-- Ubicación (si aplica)
-- Dispositivo usado
-- IP de conexión
-
-### 📊 Mi Resumen Diario
-**Ruta**: "Mi Trabajo" → "Mi resumen diario"
-
-Vista consolidada por día con:
-- Horas totales trabajadas
-- Horas efectivas (descontando pausas)
-- Comparación con tu horario
-- Indicadores de incidencias
+En la parte superior verás los botones de **"Cierre Mensual"** (cuando estás dentro del plazo de cierre) y **"Mis Cierres"**.
 
 ---
 
-## Mis Fichajes - Vista detallada
+## Qué verás en la pantalla
 
-### Información que verás
+### Tarjetas de resumen
 
-Para cada fichaje registrado se muestra:
+En la parte superior encontrarás **4 tarjetas** con las estadísticas del periodo filtrado:
 
-| Campo | Descripción | Ejemplo |
-|:------|:------------|:--------|
-| **Fecha y hora** | Momento exacto del fichaje | 23/12/2024 08:15:32 |
-| **Tipo** | Entrada, Pausa, Fin pausa, Salida | 🟢 Entrada |
-| **Ubicación** | Dirección GPS (si está habilitado) | Calle Mayor 123, Madrid |
-| **Precisión** | Margen de error del GPS | ±10 metros |
-| **Dispositivo** | Desde dónde fichaste | App móvil Android |
-| **IP** | Dirección IP de conexión | 192.168.1.100 |
-| **Estado** | Normal o con solicitud de cambio | ✅ Normal |
+| Tarjeta | Qué muestra |
+|---------|-------------|
+| **Total días** | Número de días incluidos en el filtro |
+| **Horas totales** | Suma de horas entre el primer y último fichaje de cada día |
+| **Correcto** | Días con la jornada completa y sin incidencias |
+| **Incidencias** | Días con algún problema (fichajes impares, falta de salida...) |
 
-### Códigos de color
+### Filtros
 
-Los fichajes se muestran con diferentes colores según su tipo:
+- **Fecha inicio / Fecha fin**: rango a consultar
+- **Estado**: Todos los estados / Solo correctos / Solo incidencias
+- Botones rápidos: **"Esta semana"**, **"Semana pasada"**, **"Este mes"**, **"Mes pasado"**
 
-- 🟢 **Verde**: Entrada (inicio jornada)
-- 🟡 **Amarillo**: Pausas (inicio y fin)
-- 🔴 **Rojo**: Salida (fin jornada)
+### Panel "Resumen semanal"
 
----
-
-## Filtros y búsqueda
-
-### Filtrar por fecha
-
-Puedes filtrar tus fichajes de varias formas:
-
-**Por rango de fechas:**
-1. Selecciona **"Fecha desde"**
-2. Selecciona **"Fecha hasta"**
-3. Haz clic en **"Filtrar"** o **"Buscar"**
-
-**Filtros rápidos:**
-- 📅 **Hoy**: Fichajes del día actual
-- 📅 **Ayer**: Fichajes de ayer
-- 📅 **Esta semana**: Lunes a domingo de esta semana
-- 📅 **Semana pasada**: Lunes a domingo de la semana anterior
-- 📅 **Este mes**: Todo el mes en curso
-- 📅 **Mes pasado**: Mes anterior completo
-
-{: .tip }
-> **Consejo**: Usa los filtros rápidos para consultas habituales y el rango personalizado para períodos específicos.
-
-### Exportar fichajes
-
-Puedes exportar tus fichajes en diferentes formatos:
-
-1. Aplica los filtros deseados
-2. Haz clic en **"Exportar"** o **"Descargar"**
-3. Selecciona el formato:
-   - **Excel (.xlsx)**: Para análisis en hojas de cálculo
-   - **PDF**: Para impresión o archivo
-   - **CSV**: Para importar en otros sistemas
-
-{: .note }
-> Los fichajes exportados incluyen todos los campos: fecha, hora, ubicación, IP, dispositivo, etc.
+Debajo de los filtros tienes un resumen de tu semana con navegación **"Semana anterior / Semana actual / Semana siguiente"**.
 
 ---
 
-## Mi Resumen Diario
+## Entender el estado de cada día
 
-### Vista de resumen
+Cada día del listado muestra un estado:
 
-Esta pantalla te muestra un resumen consolidado por día:
+| Estado | Icono | Significado |
+|--------|-------|-------------|
+| **Correcto** | ✅ check-circle (verde) | Jornada completa, fichajes pares (todas las entradas con su salida) |
+| **Incidencia** | ⚠️ alert-circle (ámbar) | Algo no cuadra: fichajes impares (falta salida), fuera de horario... Incluye botón **"Solucionar"** |
+| **Ausencia** | 📅 calendar-check | Día con ausencia aprobada (vacaciones, baja...). Muestra el tipo y, si cubre la jornada, la etiqueta "Efectivo" |
+| **Sin fichajes** | ❌ x-circle (rojo) | No hay ningún fichaje ese día laborable. Incluye botón **"Solucionar"** |
 
-```
-┌─────────────────────────────────────────────┐
-│ Lunes 23/12/2024                           │
-├─────────────────────────────────────────────┤
-│ 🟢 Entrada:        08:15                   │
-│ 🟡 Inicio pausa:   14:00                   │
-│ 🟡 Fin pausa:      15:00                   │
-│ 🔴 Salida:         18:30                   │
-├─────────────────────────────────────────────┤
-│ ⏱️ Horas totales:   10h 15m                │
-│ ✅ Horas efectivas: 9h 15m                 │
-│ 📋 Horario:         8h 00m                 │
-│ ➕ Extras:          +1h 15m                │
-└─────────────────────────────────────────────┘
-```
+### Los fichajes del día
 
-### Cálculo de horas
+Al desplegar un día verás cada fichaje con:
 
-**Horas totales:**
-- Tiempo desde entrada hasta salida
-- Incluye pausas
+- 🕐 La **hora** registrada
+- 🟢🔴 El **tipo** (entrada/salida) según su posición en la jornada
+- 🏷️ El **método de acceso** (Web, Móvil, PIN, Terminal...)
 
-**Horas efectivas:**
-- Tiempo trabajado real
-- Excluye pausas
+### Horas totales vs horas efectivas
 
-**Comparación con horario:**
-- 🟢 Verde: Cumplido o superado
-- 🟡 Amarillo: Cerca del objetivo
-- 🔴 Rojo: Incompleto
-
-### Indicadores de estado
-
-Cada día puede tener diferentes estados:
-
-| Indicador | Significado |
-|:----------|:------------|
-| ✅ **Correcto** | Jornada completa, fichajes correctos |
-| ⚠️ **Incidencia** | Falta fichaje o solicitud pendiente |
-| 🔄 **Solicitud pendiente** | Cambio de fichaje en validación |
-| 🔴 **Incompleto** | Falta fichar salida o pausa |
-| 📅 **Festivo** | Día festivo, no aplica |
-| 🌴 **Ausencia** | Vacaciones o permiso |
+- **Horas totales**: desde el primer fichaje hasta el último
+- Si fichaste salida a comer y vuelta de comer, el tiempo de pausa resta de las horas efectivas
 
 ---
 
-## Resumen Semanal
+## Solicitar un cambio de fichaje
 
-Algunas vistas también ofrecen resumen semanal:
+Junto a cada fichaje verás el **icono del lápiz** ✏️ (*"Solicitar cambio"*) para corregir su hora. Ver la guía completa:
 
-### Tabla semanal
+👉 [¿Olvidé Fichar?](/guias-por-rol/empleado/olvide-fichar/)
 
-```
-┌──────────┬──────────┬──────────┬─────────┐
-│   Día    │ Entrada  │  Salida  │  Horas  │
-├──────────┼──────────┼──────────┼─────────┤
-│ Lunes    │  08:15   │  18:30   │  9h 15m │
-│ Martes   │  08:10   │  17:45   │  8h 35m │
-│ Miércoles│  08:20   │  18:00   │  8h 40m │
-│ Jueves   │  08:05   │  17:30   │  8h 25m │
-│ Viernes  │  08:30   │  15:00   │  6h 30m │
-├──────────┴──────────┴──────────┼─────────┤
-│ TOTAL SEMANA                   │ 41h 25m │
-└────────────────────────────────┴─────────┘
-```
-
-### Estadísticas semanales
-
-- 📊 **Promedio diario**: Horas medias por día
-- ⏱️ **Total semanal**: Suma de todas las horas
-- 📈 **Cumplimiento**: % respecto al horario asignado
-- ⚠️ **Incidencias**: Número de días con problemas
+Si el día está **"Sin fichajes"** o con **"Incidencia"**, usa el botón **"Solucionar"**.
 
 ---
 
-## Ver detalles de un fichaje
+## Estados de una solicitud de cambio
 
-### Información ampliada
+Cuando solicitas un cambio de hora, la solicitud pasa por estos estados:
 
-Haz clic en cualquier fichaje para ver todos los detalles:
+| Estado | Qué significa |
+|--------|---------------|
+| **Pendiente** | Esperando que un Validador o Administrador la revise. El fichaje mantiene su hora original y no puedes solicitar otro cambio sobre él |
+| **Aceptada** | La hora del fichaje se ha actualizado con la solicitada |
+| **Rechazada** | La hora original se mantiene. Puedes enviar una nueva solicitud mejor justificada |
 
-**Información básica:**
-- Fecha y hora exacta (hasta segundos)
-- Tipo de acceso
-- Usuario que fichó
-
-**Información de ubicación (si aplica):**
-- 📍 Latitud y Longitud
-- 📍 Dirección completa
-- 📍 Precisión del GPS
-- 🗺️ **Ver en mapa**: Abre Google Maps con la ubicación
-
-**Información técnica:**
-- 💻 Dispositivo usado (Web, App Android, App iOS, Terminal PIN, etc.)
-- 🌐 Navegador (si fue desde web)
-- 🔢 IP de conexión
-- 🏢 Edificio asociado (si aplica)
-
-**Historial de cambios:**
-- Si hubo solicitud de cambio: fecha, motivo, estado
-- Aprobador y fecha de aprobación
+Toda la trazabilidad del cambio (quién lo aprobó y cuándo) queda registrada en el sistema y es visible en los reportes de tu empresa.
 
 ---
 
-## Solicitudes de cambio en fichajes
+## Cierre mensual
 
-### Identificar fichajes con solicitudes
+Desde esta pantalla accedes al **Cierre Mensual** cuando estás en plazo: confirma tus fichajes del mes anterior y firma digitalmente.
 
-Los fichajes con solicitudes de cambio se marcan con:
-
-- 🟡 **Pendiente**: Amarillo, esperando aprobación
-- ✅ **Aprobado**: Verde, cambio aplicado
-- ❌ **Rechazado**: Rojo, solicitud denegada
-
-### Ver estado de solicitud
-
-Para cada solicitud puedes ver:
-
-1. **Fecha y hora original**: La que estaba registrada
-2. **Fecha y hora solicitada**: La que pediste cambiar
-3. **Observaciones**: Tu justificación
-4. **Estado**: Pendiente / Aprobada / Rechazada
-5. **Aprobador**: Quién lo revisó
-6. **Comentarios del aprobador**: Si hay feedback
-
-### Cancelar solicitud pendiente
-
-Si una solicitud está pendiente, puedes cancelarla:
-
-1. Localiza el fichaje con solicitud pendiente
-2. Haz clic en **"Cancelar solicitud"**
-3. Confirma la cancelación
-
-{: .warning }
-> Una vez aprobada o rechazada, no puedes cancelar la solicitud.
-
----
-
-## Comparar con tu horario
-
-### Horario asignado
-
-En el resumen diario puedes ver:
-
-**Tu horario estándar:**
-- Entrada esperada: 08:00
-- Salida esperada: 17:00
-- Pausa: 1 hora
-- Total: 8 horas diarias
-
-**Tu fichaje real:**
-- Entrada: 08:15 (⚠️ +15 min tarde)
-- Salida: 18:30 (✅ +1h 30m extra)
-- Pausa: 1 hora
-- Total: 9h 15m (+1h 15m)
-
-### Flexibilidad horaria
-
-Si tu empresa tiene margen de flexibilidad:
-
-- **Flexibilidad**: ±15 minutos
-- **Entrada válida**: Entre 07:45 - 08:15
-- **Salida válida**: Entre 16:45 - 17:15
-
-Los fichajes dentro del margen se consideran correctos.
-
----
-
-## Notificaciones de impuntualidad
-
-### Sistema de alertas
-
-Si tu empresa tiene configuradas notificaciones de impuntualidad:
-
-**Recibirás alerta cuando:**
-- 🔴 Llegues más de X minutos tarde (según configuración)
-- 🔴 No fiches la entrada antes de X hora
-
-**Niveles de severidad:**
-- 🟡 **Bajo** (5-15 min tarde): Aviso informativo
-- 🟠 **Medio** (15-30 min tarde): Alerta al Manager
-- 🔴 **Alto** (>30 min tarde): Alerta crítica
-
-{: .note }
-> Las notificaciones de impuntualidad son configuradas por tu empresa y pueden variar.
-
----
-
-<!-- ## Gráficos y estadísticas
-
-### Vista de gráficos (si está disponible)
-
-Algunas empresas tienen habilitados gráficos con:
-
-**Gráfico de horas semanales:**
-- Barras por día de la semana
-- Comparación con horario objetivo
-- Media semanal
-
-**Gráfico de puntualidad:**
-- Días con entrada puntual vs. tarde
-- Promedio de retraso
-
-**Gráfico mensual:**
-- Total horas por mes
-- Comparación mes a mes
-
---- -->
-
-## Casos especiales
-
-### Día sin fichar
-
-Si un día aparece sin fichajes:
-
-- ❓ **Sin datos**: No fichaste ese día
-- ⚠️ **Incidencia**: Se marca en rojo
-
-**Qué hacer:**
-1. Verifica que realmente trabajaste ese día
-2. Si trabajaste: [Solicita un cambio de fichaje](/guias-por-rol/empleado/olvide-fichar/)
-3. Si no trabajaste: Verifica si hay ausencia registrada
-
-### Fichajes duplicados
-
-Si aparecen fichajes duplicados:
-
-- Puede ser un error de sincronización
-- Contacta con tu administrador para que lo corrija
-- O solicita eliminación del duplicado
-
-<!-- ### Fichajes automáticos
-
-Si tu empresa tiene configurado autofichaje:
-
-- 🔵 Aparecen marcados como "Automático"
-- Se generan según tu horario
-- Puedes solicitar cambios si no son correctos -->
+👉 [Ver guía: Cierre Mensual](/guias-por-rol/empleado/cierres-mensuales/)
 
 ---
 
 ## Preguntas frecuentes
 
-### ¿Puedo ver fichajes de hace más de 1 año?
+### ¿Por qué un día aparece con incidencia si fichué?
 
-Sí, el historial completo está disponible. Usa los filtros de fecha para acceder a períodos antiguos.
+Las causas más habituales:
 
-### ¿Por qué algunos fichajes no tienen ubicación?
+- **Fichajes impares**: fichaste la entrada pero no la salida (o viceversa)
+- **Fuera de horario**: el fichaje está fuera de la ventana flexible de tu horario
+- **Falta una pausa**: tu horario requiere fichar la salida y vuelta de comer
 
-Posibles razones:
-- GPS desactivado en tu dispositivo
-- Fichaste desde terminal PIN/RFID (no tienen GPS)
-- No diste permisos de ubicación
-- Fichaste desde web sin activar ubicación
+Pulsa **"Solucionar"** para corregirlo.
 
-### ¿Puedo modificar un fichaje directamente?
+### ¿Puedo exportar mis fichajes?
 
-No, por seguridad los empleados no pueden modificar fichajes directamente. Debes [solicitar un cambio](/guias-por-rol/empleado/olvide-fichar/) que será aprobado por tu superior.
+Sí, la tabla de fichajes incluye las opciones de exportación de DataTables (impresión y exportación a los formatos disponibles).
 
-### ¿Las horas extras se pagan automáticamente?
+### ¿Quién puede ver mis fichajes?
 
-No, AhoraFicho solo registra las horas. La compensación de horas extras depende de:
-- Política de tu empresa
-- Tu contrato laboral
-- Acuerdos con tu Manager
+- **Tú**: todos los tuyos
+- **Tu Manager**: vía reportes de su equipo
+- **Validadores y Administradores**: según su ámbito
+- **SuperAdmin**: todas las empresas
 
-### ¿Qué significa "IP no permitida"?
+### ¿Puedo ver la ubicación GPS de cada fichaje?
 
-Indica que fichaste desde una IP no autorizada. Tu empresa puede tener restricciones de IP para mayor seguridad.
+La ubicación se registra en el sistema cuando tu empresa tiene el control por GPS activado, y se usa para validar que fichas dentro del área autorizada. La vista de empleado muestra la hora y el método de acceso de cada fichaje.
 
----
+### ¿Por qué no aparece el lápiz en un fichaje?
 
-## Consejos útiles
-
-### ✅ Revisa regularmente
-
-- **Diario**: Verifica que fichaste correctamente
-- **Semanal**: Revisa tu resumen y horas totales
-- **Mensual**: Antes del cierre de nómina
-
-### ✅ Exporta para tus registros
-
-- Descarga mensualmente tus fichajes
-- Guarda copias en PDF
-- Útil para futuras consultas
-
-### ✅ Actúa rápido ante errores
-
-- Si detectas un error, solicita corrección de inmediato
-- No esperes días o semanas
-- Más fácil de justificar reciente que antiguo
-
----
-
-## Impresión y reportes
-
-### Imprimir resumen mensual
-
-Para imprimir un resumen de tus fichajes:
-
-1. Aplica filtros del mes deseado
-2. Ve a **"Mi resumen diario"**
-3. Haz clic en **"Imprimir"** o usa Ctrl+P
-4. Selecciona tu impresora o "Guardar como PDF"
-
-### Reporte para nómina
-
-Si necesitas un reporte oficial para nómina:
-
-1. Contacta con tu administrador
-2. Ellos pueden generar reportes oficiales firmados digitalmente
-3. O usa la función de exportar con todos los detalles
+Porque ya tiene una **solicitud de cambio pendiente**. Espera a que se resuelva.
 
 ---
 
 ## ¿Necesitas ayuda?
 
-Si tienes problemas al consultar tus fichajes:
-
-- 🔧 Contacta con tu Administrador
 - 📧 Email: soporte@ahoraficho.es
-- 💬 Consulta las [Preguntas Frecuentes](/preguntas-frecuentes/)
+- 💬 [Preguntas Frecuentes](/preguntas-frecuentes/)
 
 ---
 
 ## Guías relacionadas
 
-- 👉 [Cómo fichar correctamente](/primeros-pasos/primer-fichaje/)
-- 👉 [¿Olvidé fichar?](/guias-por-rol/empleado/olvide-fichar/)
-- 👉 [Mi perfil y configuración](/guias-por-rol/empleado/mi-perfil/)
+- 👉 [¿Olvidé Fichar?](/guias-por-rol/empleado/olvide-fichar/)
+- 👉 [Cierre Mensual](/guias-por-rol/empleado/cierres-mensuales/)
+- 👉 [Primer Fichaje](/primeros-pasos/primer-fichaje/)
+- 👉 [Módulo de Fichajes](/modulos/fichajes/)

@@ -42,7 +42,7 @@ Las vacaciones son días de ausencia retribuida que los empleados pueden solicit
 ### Paso 1: Acceder a la gestión de empleados
 
 1. Inicia sesión como **Administrador**
-2. Ve al menú lateral y haz clic en **"Empleados"**
+2. Ve al menú lateral **"Configuraciones"** → **"Trabajadores"**
 3. Busca al empleado al que quieres asignar vacaciones
 4. Haz clic en el botón **"Editar"** (icono de lápiz) junto a su nombre
 
@@ -50,19 +50,17 @@ Las vacaciones son días de ausencia retribuida que los empleados pueden solicit
 
 ### Paso 2: Configurar días de vacaciones
 
-1. En el formulario de edición del empleado, busca la sección **"Vacaciones"**
-2. Introduce los días de vacaciones anuales en el campo **"Días de vacaciones"**
-3. Selecciona la fecha de inicio del período de vacaciones (por defecto 1 de enero)
-4. Establece la fecha de caducidad (opcional)
-5. Haz clic en **"Guardar cambios"**
+1. En el formulario de edición del empleado, busca el campo de vacaciones (**"Max Ausencias"**)
+2. Introduce los días de vacaciones anuales
+3. Establece o verifica la **fecha de caducidad** del saldo (habitualmente 31 de diciembre)
+4. Haz clic en **"Guardar cambios"**
 
 ![Configurar vacaciones del empleado](/assets/images/placeholder-configurar-vacaciones.png)
 
 {: .note }
-> **Ejemplo práctico**: Si un empleado tiene derecho a 22 días de vacaciones al año desde el 1 de enero hasta el 31 de diciembre, introduce:
-> - Días de vacaciones: **22**
-> - Fecha inicio período: **01/01/2024**
-> - Fecha caducidad: **31/12/2024**
+> **Ejemplo práctico**: Si un empleado tiene derecho a 22 días de vacaciones al año con caducidad a fin de año, introduce:
+> - Max Ausencias: **22**
+> - Fecha caducidad: **31/12 del año en curso**
 
 ---
 
@@ -98,11 +96,9 @@ En ocasiones, los empleados pueden tener derecho a días adicionales por:
 
 ### Cómo añadir días extras
 
-1. Ve a **"Empleados"** → Selecciona el empleado → **"Editar"**
-2. En la sección **"Vacaciones"**, busca el campo **"Días adicionales"**
-3. Introduce el número de días extras
-4. (Opcional) Añade un comentario explicativo del motivo
-5. Guarda los cambios
+1. Ve a **"Configuraciones" → "Trabajadores"** → Editar empleado
+2. Ajusta el campo de vacaciones (**"Max Ausencias"**) o crea una bolsa adicional para el año correspondiente
+3. Guarda los cambios
 
 ![Días adicionales de vacaciones](/assets/images/placeholder-dias-adicionales.png)
 
@@ -115,9 +111,9 @@ En ocasiones, los empleados pueden tener derecho a días adicionales por:
 
 Si necesitas ajustar los días de vacaciones de un empleado (por error, cambio de contrato, etc.):
 
-1. Ve a **"Empleados"** → Editar empleado
-2. Modifica el valor en el campo **"Días de vacaciones"**
-3. El sistema recalculará automáticamente el saldo disponible
+1. Ve a **"Configuraciones" → "Trabajadores"** → Editar empleado
+2. Modifica el valor del campo de vacaciones
+3. El sistema recalculará automáticamente el saldo disponible por año
 4. Guarda los cambios
 
 {: .warning }
@@ -129,18 +125,17 @@ Si necesitas ajustar los días de vacaciones de un empleado (por error, cambio d
 
 ### Ver el saldo de un empleado
 
-1. Ve a **"Empleados"**
-2. En el listado, verás una columna **"Vacaciones"** con el saldo actual
-3. El formato será: **Días consumidos / Días totales** (ejemplo: 10/22)
-4. Para más detalle, haz clic en **"Ver detalle"** junto al empleado
+1. Ve a **"Configuraciones" → "Trabajadores"**
+2. En el listado, consulta la columna de vacaciones con el saldo actual
+3. Para más detalle, abre la ficha del empleado
 
 ![Saldo de vacaciones](/assets/images/placeholder-saldo-vacaciones.png)
 
 ### Consultar el historial de vacaciones
 
-1. Ve a **"Vacaciones y Ausencias"** en el menú lateral
-2. Filtra por empleado usando el buscador
-3. Verás todas las solicitudes: **Pendientes**, **Aprobadas** y **Rechazadas**
+1. Ve a **"Empresa"** → **"Gestión de Ausencias"**
+2. Filtra por empleado y año
+3. Verás todas las solicitudes: **Pendientes**, **Aceptadas** y **Rechazadas**
 4. Puedes exportar el informe en PDF o Excel
 
 ---
@@ -149,14 +144,16 @@ Si necesitas ajustar los días de vacaciones de un empleado (por error, cambio d
 
 ### Empleado de nueva incorporación
 
-Para empleados que se incorporan a mitad de año, calcula los días de vacaciones proporcionalmente:
+Al dar de alta a un empleado, AhoraFicho calcula automáticamente el **prorrateo** de vacaciones:
+
+- Días proporcionales al año de entrada según los **meses devengados** (el mes inicial computa completo si se trabajan 15 días o más)
+- Más la bolsa completa del año siguiente
+- Caducidad: 31 de diciembre
 
 **Ejemplo**: Si la política es 22 días al año y el empleado entra el 1 de julio:
-- Días correspondientes: 22 / 12 meses × 6 meses = **11 días**
+- Días correspondientes: 22 / 12 meses × 6 meses ≈ **11 días** (generados automáticamente)
 
-1. Asigna los días proporcionales en el campo **"Días de vacaciones"**
-2. Establece la fecha de inicio del período como su fecha de alta
-3. Fecha de caducidad: 31 de diciembre del año actual
+Puedes ajustar los días después del alta si tu convenio lo requiere.
 
 ### Empleado con contrato temporal
 
@@ -167,14 +164,10 @@ Para contratos temporales, los días de vacaciones deben calcularse también pro
 
 ### Baja laboral durante el período de vacaciones
 
-Si un empleado se pone de baja estando de vacaciones:
-
-1. El período de vacaciones se interrumpe automáticamente
-2. Los días posteriores a la baja no se descuentan del saldo
-3. El empleado podrá solicitar esos días en otra fecha
+Si un empleado se pone de baja estando de vacaciones, según el Estatuto de los Trabajadores el período de vacaciones se interrumpe y los días deben poder disfrutarse en otra fecha.
 
 {: .note }
-> El sistema de AhoraFicho **no gestiona automáticamente** las bajas médicas durante vacaciones. Deberás ajustar manualmente el saldo si es necesario.
+> AhoraFicho **no gestiona automáticamente** las bajas médicas durante vacaciones. Deberás ajustar manualmente las ausencias y el saldo si es necesario.
 
 ---
 

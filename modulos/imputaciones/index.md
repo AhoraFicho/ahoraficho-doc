@@ -1,9 +1,9 @@
 ---
-# layout: default
-# title: Imputaciones
-# nav_order: 9
-# has_children: true
-# permalink: /modulos/imputaciones/
+layout: default
+title: Imputaciones
+nav_order: 9
+has_children: true
+permalink: /modulos/imputaciones/
 ---
 
 # Módulo de Imputaciones
@@ -23,26 +23,31 @@ Registro de las horas que cada empleado dedica a diferentes proyectos, clientes 
 
 ### Funcionalidades
 
-- 📊 **Imputar horas**: Registrar tiempo por proyecto
-- ✅ **Aprobación**: Managers validan semanalmente
+- 📊 **Hoja semanal**: Matriz de proyectos × días para imputar el tiempo (formatos tipo "8h 30m", "8:30" o "8,5")
+- ✅ **Aprobación**: Los Managers validan las imputaciones desde "Validaciones"
+- 🔒 **Bloqueo**: Las imputaciones aprobadas quedan cerradas y no se pueden modificar
 - 💰 **Facturación**: Horas facturables a clientes
 - 📈 **Rentabilidad**: Análisis coste vs ingreso
-- 🎯 **Proyectos**: Crear y asignar proyectos
+- 🎯 **Proyectos**: Crear y asignar proyectos (Configuraciones → Proyectos)
+- ⚠️ **Aviso de umbral diario**: Alerta si el total del día supera el umbral recomendado (configurable)
 
 ---
 
 ## Flujo semanal
 
 **Empleado:**
-1. Al final de cada día, imputa horas trabajadas
-2. Distribuye entre proyectos activos
-3. Al final de semana, envía para aprobación
+1. En su **hoja semanal**, imputa las horas por proyecto y día (puede copiar la semana anterior)
+2. Guarda la semana (hay borrador automático local)
+3. Las imputaciones quedan pendientes de validación
 
 **Manager:**
-1. Revisa semanalmente
-2. Verifica que horas imputadas = horas fichadas
-3. Aprueba o rechaza
-4. Si rechaza, empleado corrige y reenvía
+1. Revisa las imputaciones en **"Validaciones" → "Imputaciones Pendientes"**
+2. Verifica que las horas imputadas son coherentes con los fichajes
+3. Aprueba o rechaza imputación a imputación
+4. Las aprobadas quedan **bloqueadas**; las rechazadas el empleado puede corregirlas
+
+{: .note }
+> Si tu empresa tiene activada la **auto-aceptación**, las imputaciones se crean directamente aprobadas sin pasar por validación.
 
 ---
 

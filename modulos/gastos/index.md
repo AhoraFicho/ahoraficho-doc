@@ -1,9 +1,9 @@
 ---
-# layout: default
-# title: Gastos
-# nav_order: 8
-# has_children: true
-# permalink: /modulos/gastos/
+layout: default
+title: Gastos
+nav_order: 8
+has_children: true
+permalink: /modulos/gastos/
 ---
 
 # Módulo de Gastos
@@ -23,17 +23,18 @@ Permite a los empleados registrar gastos realizados por cuenta de la empresa y s
 
 ### Funcionalidades
 
-- 📸 **Subir tickets**: Foto o PDF del justificante
-- 💰 **Gestión de gastos**: Crear, editar, eliminar
-- ✅ **Aprobación**: Managers validan los gastos
-- 💳 **Reembolso**: Integración con nómina o transferencias
-- 📊 **Reportes**: Análisis de gastos por empleado/departamento
+- 📸 **Subir tickets**: PDF o imagen del justificante (opcional, según política de empresa)
+- 💰 **Gestión de gastos**: Crear y eliminar gastos pendientes
+- ✅ **Aprobación**: Los Managers validan desde "Validaciones"
+- 📊 **Exportación**: Listados exportables para contabilidad
 
 ---
 
 ## Tipos de gastos típicos
 
-- 🚗 **Kilometraje**: Uso vehículo personal (0,19 €/km)
+Los **tipos de gasto** son configurables por la empresa (Configuraciones → "Tipos de gasto"). Habituales:
+
+- 🚗 **Kilometraje**: Uso vehículo personal
 - 🍽️ **Comidas con clientes**: Restaurantes
 - 🏨 **Alojamiento**: Hoteles en viajes
 - 🚆 **Transporte**: Trenes, aviones, taxis
@@ -45,19 +46,18 @@ Permite a los empleados registrar gastos realizados por cuenta de la empresa y s
 ## Flujo de gestión
 
 **Empleado:**
-1. Realiza el gasto
-2. Sube el ticket a AhoraFicho
-3. Completa importe, categoría, concepto
-4. Envía para aprobación
+1. En **"Mi Trabajo" → "Mis gastos"**, pulsa **"Nueva solicitud"**
+2. Completa: tipo de gasto, proyecto (opcional), cantidad, fecha y observaciones
+3. Adjunta el ticket si tu política lo requiere
+4. Guarda: el gasto queda **pendiente** de validación
 
 **Manager:**
-1. Recibe notificación
-2. Revisa gasto y ticket
-3. Aprueba o rechaza
-4. Añade comentarios si rechaza
+1. Ve a **"Validaciones" → "Gastos Pendientes"**
+2. Revisa el gasto y descarga el ticket
+3. Aprueba (✓) o deniega (✗)
 
 **Administración:**
-1. Ve gastos aprobados
+1. Consulta los gastos aprobados (Empresa → Gestión de Gastos)
 2. Procesa reembolsos
 3. Exporta para contabilidad
 

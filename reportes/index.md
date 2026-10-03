@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Reportes
-nav_order: 5
+nav_order: 6
 has_children: true
 permalink: /reportes/
 ---
@@ -25,6 +25,10 @@ Estos reportes te ayudan a supervisar el día a día de tu equipo:
 - **[Resumen Diario por Departamento](/reportes/resumen-diario-departamento/)**: Visualiza los fichajes, horas trabajadas e incidencias de cada día.
 - **[Resumen Semanal por Departamento](/reportes/resumen-semanal-departamento/)**: Analiza el rendimiento semanal de tu equipo.
 - **[Reporte de Impuntualidades](/reportes/reporte-impuntualidades/)**: Detecta retrasos en las entradas de los empleados.
+- **Reporte horas nocturnas**: Horas trabajadas en franja nocturna.
+- **Bolsa horas extras** (si el módulo está activo): Saldos del banco de horas extras del equipo.
+- **Resumen Ausencias**: Visión general de ausencias de la empresa (solo Administradores).
+- **Resumen por Proyectos** y **Reporte de servicios** (si los módulos están activos).
 
 ### 📋 Reportes Oficiales y Legales
 
@@ -55,7 +59,8 @@ El acceso a los reportes depende del rol del usuario:
 |-----|-------------------|
 | **SuperAdmin** | Todos los reportes de todas las empresas |
 | **Administrador** | Todos los reportes de su empresa |
-| **Manager** | Solo reportes de su departamento asignado |
+| **Manager** | Reportes de su equipo (departamento y/o asignados) |
+| **Validador** | No tiene acceso a reportes de equipo |
 | **Empleado** | Solo sus propios fichajes (no reportes) |
 
 ---

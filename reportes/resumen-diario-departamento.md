@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Resumen Diario por Departamento
 parent: Reportes
@@ -41,9 +41,8 @@ Es un **reporte en tiempo real** que muestra el detalle de los fichajes de cada 
 ### Paso 1: Navegar al reporte
 
 1. Inicia sesión como **Manager** o **Administrador**
-2. Ve al menú lateral y haz clic en **"Departamentos"**
-3. Selecciona el departamento que quieres consultar
-4. Haz clic en **"Resumen Diario"** o **"Ver Fichajes"**
+2. Ve al menú lateral, sección **"Reportes"**
+3. Haz clic en **"Resumen diario"**
 
 ![Acceso a resumen diario](/assets/images/placeholder-acceso-resumen-diario.png)
 
@@ -310,7 +309,7 @@ Los festivos configurados en el sistema no aparecen como días laborables. Si un
 
 ### ¿Las incidencias se notifican automáticamente?
 
-Puedes configurar notificaciones automáticas para recibir un email al final del día si hay incidencias. Ve a **"Configuración"** → **"Notificaciones"**.
+Puedes configurar notificaciones automáticas para recibir un email al final del día si hay incidencias. Ve a **"Configuraciones"** → **"Notificaciones"**.
 
 ### ¿Puedo comparar dos períodos diferentes?
 

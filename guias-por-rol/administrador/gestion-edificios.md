@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Gestión de Edificios
 parent: Guía del Administrador
@@ -34,7 +34,7 @@ Los edificios son las **ubicaciones físicas** o **centros de trabajo** donde tu
 - ✅ Generar reportes segmentados por centro de trabajo
 
 {: .important }
-> **Concepto clave**: Un edificio representa una ubicación física real (oficina, almacén, fábrica, tienda, etc.). Cada empleado debe estar asignado a un edificio para un correcto control horario.
+> **Concepto clave**: Un edificio representa una ubicación física real (oficina, almacén, fábrica, tienda, etc.). Es recomendable que cada empleado esté asignado a un edificio para un correcto control de ubicación, aunque un empleado **sin edificio asignado podrá fichar desde cualquier ubicación**.
 
 ---
 
@@ -43,7 +43,7 @@ Los edificios son las **ubicaciones físicas** o **centros de trabajo** donde tu
 ### Paso 1: Acceder a la gestión de edificios
 
 1. Inicia sesión como **Administrador**
-2. Ve al menú lateral y haz clic en **"Configuración"**
+2. Ve al menú lateral y haz clic en **"Configuraciones"**
 3. Selecciona **"Edificios"**
 4. Haz clic en el botón **"Nuevo Edificio"**
 
@@ -118,7 +118,7 @@ Esta relación te permite:
 
 ### Asignar departamentos al edificio
 
-1. Ve a **"Configuración"** → **"Edificios"**
+1. Ve a **"Configuraciones"** → **"Edificios"**
 2. Edita el edificio al que quieres asignar departamentos
 3. Desplázate hasta la sección **"Departamentos en este edificio"**
 4. Marca las casillas de los departamentos que operan en esta ubicación
@@ -153,14 +153,14 @@ Para que los empleados puedan fichar correctamente, deben estar asignados a un e
 
 ### Opción 1: Desde el perfil del empleado
 
-1. Ve a **"Empleados"** → Selecciona el empleado
+1. Ve a **"Trabajadores"** → Selecciona el empleado
 2. Haz clic en **"Editar"**
 3. En el campo **"Edificio"**, selecciona la ubicación del desplegable
 4. Guarda los cambios
 
 ### Opción 2: Asignación masiva
 
-1. Ve a **"Empleados"**
+1. Ve a **"Trabajadores"**
 2. Selecciona varios empleados marcando las casillas
 3. Haz clic en **"Acciones masivas"**
 4. Selecciona **"Cambiar edificio"**
@@ -275,7 +275,7 @@ Puedes activar ambos controles simultáneamente para máxima seguridad.
 
 Si necesitas modificar los datos de un edificio:
 
-1. Ve a **"Configuración"** → **"Edificios"**
+1. Ve a **"Configuraciones"** → **"Edificios"**
 2. Busca el edificio en el listado
 3. Haz clic en el botón **"Editar"** (icono de lápiz)
 4. Modifica los campos necesarios
@@ -290,7 +290,7 @@ Si necesitas modificar los datos de un edificio:
 
 Si un edificio deja de usarse (cierre, mudanza, etc.):
 
-1. Ve a **"Configuración"** → **"Edificios"**
+1. Ve a **"Configuraciones"** → **"Edificios"**
 2. Edita el edificio que quieres desactivar
 3. Desmarca la casilla **"Activo"**
 4. Guarda los cambios
@@ -311,7 +311,7 @@ Si un edificio deja de usarse (cierre, mudanza, etc.):
 
 ### Ver detalles del edificio
 
-1. Ve a **"Configuración"** → **"Edificios"**
+1. Ve a **"Configuraciones"** → **"Edificios"**
 2. Haz clic sobre el nombre del edificio
 3. Verás un resumen con:
    - Datos de ubicación
@@ -324,7 +324,7 @@ Si un edificio deja de usarse (cierre, mudanza, etc.):
 
 ### Ver empleados por edificio
 
-1. Ve a **"Empleados"**
+1. Ve a **"Trabajadores"**
 2. Usa el filtro **"Edificio"** en la parte superior
 3. Selecciona el edificio
 4. Verás solo los empleados de esa ubicación
@@ -337,7 +337,7 @@ Cada edificio puede tener su propio calendario de festivos locales.
 
 ### Configurar festivos específicos
 
-1. Ve a **"Configuración"** → **"Días Festivos"**
+1. Ve a **"Configuraciones"** → **"Días Festivos"**
 2. Al crear un nuevo festivo, selecciona el **"Edificio"** al que aplica
 3. Los festivos locales solo afectarán a empleados de ese edificio
 

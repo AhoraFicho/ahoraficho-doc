@@ -23,36 +23,44 @@ El **módulo de Vacaciones y Ausencias** permite a los empleados solicitar días
 
 ### Funcionalidades principales
 
-- 📅 **Solicitar vacaciones**: Los empleados piden sus días libres
-- ✅ **Aprobar/Rechazar**: Los Managers validan las solicitudes
-- 📊 **Control de días**: Días disponibles vs consumidos
-- 📧 **Notificaciones**: Alertas automáticas
-- 📑 **Reportes**: Informes de ausencias
+- 📅 **Solicitar ausencias**: Los empleados piden vacaciones, permisos y bajas desde su calendario
+- ✅ **Aprobar/Rechazar**: Los Managers (y Administradores) validan las solicitudes, individual o masivamente
+- 🔁 **Doble aprobación opcional**: Flujo Responsable 1 → Responsable 2 con estado "Pendiente Segunda Aprobación"
+- 🌗 **Media jornada**: Vacaciones de medio día (mañana/tarde) para días sueltos
+- 📊 **Control de días por año**: Saldo por año administrativo con caducidad
+- 🚫 **Bloqueos de vacaciones**: Fechas bloqueadas por edificio (campañas, cierres)
+- 📆 **Calendarios**: De equipo, de empresa y general
+- 📧 **Notificaciones**: Email y push en cada cambio de estado
 
 ---
 
 ## Tipos de ausencias
 
-| Tipo | Descuenta vacaciones | Requiere aprobación | Retribuida |
-|------|---------------------|---------------------|------------|
-| **Vacaciones** | ✅ Sí | ✅ Sí | ✅ Sí |
-| **Permiso retribuido** | ❌ No | ✅ Sí | ✅ Sí |
-| **Baja médica** | ❌ No | ❌ No | ⚠️ Parcial |
-| **Asuntos propios** | ❌ No | ✅ Sí | ❌ No |
-| **Permiso no retribuido** | ❌ No | ✅ Sí | ❌ No |
+Los tipos son **configurables por empresa** (Configuraciones → "Tipos de Ausencias"). Los habituales:
+
+| Tipo | Descuenta vacaciones | Adjunto | Duración |
+|------|---------------------|---------|----------|
+| **Vacaciones** | ✅ Sí | No | Día completo o media jornada |
+| **Baja** | ❌ No | Sí (parte médico) | — |
+| **Teletrabajo** | ❌ No | Opcional | Opcional |
+| **Asuntos propios** | ❌ No | Opcional | Opcional |
+| **Otras ausencias justificadas** | ❌ No | Opcional | Opcional |
+| **Compensatorio** (banco de horas) | ❌ No (consume horas del banco) | No | — |
+
+👉 [Ver todos los tipos en detalle](/modulos/vacaciones/tipos-ausencias/)
 
 ### Vacaciones anuales
 
 - Días establecidos por convenio (generalmente 22-30 días/año)
-- Se acumulan proporcionalmente cada mes trabajado
-- Pueden tener fecha de caducidad (ej: 31 diciembre)
-- Deben ser aprobadas por el Manager
+- Al dar de alta a un empleado se genera el **prorrateo** del año en curso (por meses devengados) más la bolsa del año siguiente
+- Cada bolsa tiene **fecha de caducidad** (habitualmente 31 de diciembre)
+- Se aprueban por el Responsable (Manager) y, si está activa la doble aprobación, también por el segundo responsable
 
 👉 [Ver guía: Solicitar Vacaciones](/guias-por-rol/empleado/solicitar-vacaciones/) | 👉 [Ver guía: Aprobar Vacaciones](/guias-por-rol/manager/aprobar-vacaciones/)
 
 ### Permisos retribuidos
 
-Días libres pagados por situaciones específicas:
+Días libres pagados por situaciones específicas (según Estatuto y convenio):
 - Matrimonio (15 días)
 - Nacimiento de hijo (6 semanas)
 - Fallecimiento familiar (2-4 días según parentesco)
@@ -64,18 +72,15 @@ Días libres pagados por situaciones específicas:
 
 ### Bajas médicas
 
-- No requieren aprobación del Manager (solo informativa)
-- El empleado debe presentar parte médico a RRHH
+- El empleado adjunta el **parte médico** en la solicitud
 - No descuentan vacaciones
-- Los días de baja interrumpen las vacaciones si coinciden
+- Los días de baja interrumpen las vacaciones si coinciden (gestión manual por RRHH)
 
 ### Asuntos propios
 
-Días libres por motivos personales sin especificar:
-- Política varía según empresa
-- Generalmente 2-6 días/año
-- Algunos son retribuidos, otros no
-- Requieren aprobación del Manager
+Días libres por motivos personales:
+- Política varía según empresa (generalmente con duración configurable)
+- Requieren aprobación del Responsable
 
 ---
 
@@ -83,16 +88,16 @@ Días libres por motivos personales sin especificar:
 
 ### Para Empleados
 
-1. **Solicitar** → Selecciona fechas y tipo de ausencia
-2. **Esperar** → El Manager revisa la solicitud
-3. **Notificación** → Recibes email con la decisión
-4. **Disfrutar** → Si se aprueba, los días quedan bloqueados
+1. **Solicitar** → Selecciona el rango en tu calendario y completa el formulario (tipo, año administrativo, media jornada, motivo, adjunto)
+2. **Esperar** → El Responsable (Manager) revisa la solicitud; con doble aprobación, pasa después al segundo responsable
+3. **Notificación** → Recibes email y push con la decisión
+4. **Disfrutar** → Si se acepta, los días quedan registrados y descontados del saldo
 
 ### Para Managers
 
-1. **Recibir** → Notificación de nueva solicitud
-2. **Revisar** → Verificar cobertura y saldo disponible
-3. **Decidir** → Aprobar o rechazar con justificación
+1. **Recibir** → Notificación de nuevas solicitudes pendientes
+2. **Revisar** → Verificar saldo, cobertura y calendario del equipo
+3. **Decidir** → Aprobar o denegar (individual o masivamente, con motivo en el rechazo)
 4. **Notificar** → El empleado recibe la respuesta
 
 👉 [Ver guía: Aprobar Vacaciones (Manager)](/guias-por-rol/manager/aprobar-vacaciones/)
@@ -101,100 +106,57 @@ Días libres por motivos personales sin especificar:
 
 ## Consultar saldo de vacaciones
 
-Los empleados pueden ver su saldo en cualquier momento:
+Los empleados ven su saldo por **año administrativo** en "Mis ausencias" (tarjetas del año anterior, actual y siguiente):
 
-**Saldo mostrado:**
-- **Días totales**: Días anuales asignados
-- **Días consumidos**: Ya disfrutados
-- **Días pendientes**: Solicitudes sin aprobar
-- **Días disponibles**: Restantes para solicitar
+- **Aceptada**: días aprobados
+- **Pendiente**: solicitudes sin resolver
+- **Rechazada**: días denegados
+- **No usadas**: días aún disponibles
 
-**Ejemplo:**
-```
-Saldo de vacaciones 2025:
-Total asignado: 22 días
-Consumidos: 8 días
-Pendientes: 3 días (esperando aprobación)
-Disponibles: 11 días
-```
+Con avisos de **caducidad** (días perdidos / disponibles / alerta de próximas caducidades).
 
-👉 [Ver guía: Consultar Saldo (Empleado)](/guias-por-rol/empleado/solicitar-vacaciones/)
+👉 [Ver guía: Solicitar Vacaciones (Empleado)](/guias-por-rol/empleado/solicitar-vacaciones/)
 
 ---
 
-## Calendario de equipo
+## Calendarios de ausencias
 
-Los Managers pueden ver un calendario con todas las ausencias:
+- **"Equipo" → "Calendario del equipo"**: ausencias del equipo de tu responsable
+- **"Equipo" → "Calendario General"** (si está habilitado): todas las ausencias visibles de la empresa
+- **"Empresa" → "Calendario de la empresa"** (Admin): todas las ausencias de la empresa
 
-- 🟢 **Verde**: Ausencias aprobadas
-- 🟡 **Amarillo**: Ausencias pendientes
-- 🔴 **Rojo**: Ausencias rechazadas
-- ⚪ **Azul**: Festivos
-
-Permite detectar solapamientos y planificar mejor la cobertura.
+Permite detectar solapamientos y planificar la cobertura.
 
 ---
 
 ## Políticas de vacaciones
 
-### Antelación mínima
-
-Cada empresa puede establecer:
-- Días de antelación para solicitar (ej: 15 días)
-- Excepciones para emergencias
-- Períodos bloqueados (ej: cierre de trimestre)
-
 ### Caducidad de vacaciones
 
-Según convenio, las vacaciones pueden:
-- **Caducar** el 31 de diciembre (no se arrastran)
-- **Arrastrarse** al año siguiente (hasta marzo/junio)
-- **Pagarse** si no se disfrutan (excepcional)
+Cada bolsa anual puede tener **fecha de caducidad** (habitualmente 31 de diciembre). El empleado recibe avisos de las caducidades próximas y ve los días perdidos/disponibles reales.
 
 👉 [Ver guía: Asignar Vacaciones (Admin)](/guias-por-rol/administrador/asignar-vacaciones/)
 
-### Períodos restringidos
+### Bloqueos de vacaciones
 
-Los Managers pueden:
-- Bloquear fechas específicas (ej: Black Friday en retail)
-- Limitar el número de personas de vacaciones simultáneamente
-- Establecer turnos rotativos para períodos populares
+El Administrador puede definir **rangos de fechas bloqueadas por edificio** (Configuraciones → "Bloqueos de vacaciones"): en esas fechas los empleados no podrán solicitar vacaciones y verán el error correspondiente (ideal para campañas, cierres de empresa o picos de actividad).
 
 ---
 
 ## Notificaciones
 
+Las notificaciones se envían por **email y push**, y cada empleado puede configurar qué recibe desde **"Mi Perfil" → "Notificaciones"**:
+
 ### Para Empleados
 
-- 📧 Solicitud enviada correctamente
-- 📧 Vacaciones aprobadas
-- 📧 Vacaciones rechazadas (con motivo)
-- 📧 Recordatorio: vacaciones próximas (7 días antes)
-- 📧 Alerta: vacaciones por caducar
+- 📧 Cambio de estado de sus ausencias (aceptada / rechazada / pendiente 2ª aprobación)
+- 📧 Resúmenes de ausencias próximas a caducar (visible en pantalla)
 
-### Para Managers
+### Para Managers y Admins
 
-- 📧 Nueva solicitud pendiente
-- 📧 Recordatorio: solicitudes sin revisar (24h)
-- 📧 Alerta: vacaciones que generan problemas de cobertura
+- 📧 Ausencias pendientes de validación (aviso diario o resumen semanal, según configuración)
 
-<!-- ---
-
-## Reportes de ausencias
-
-### Para Managers
-
-- **Resumen mensual**: Ausencias del mes por empleado
-- **Saldo del equipo**: Días pendientes de cada uno
-- **Planificación**: Ausencias futuras ya aprobadas
-
-### Para Administradores
-
-- **Informe anual**: Total de días de vacaciones consumidos
-- **Costes**: Días retribuidos vs no retribuidos
-- **Cumplimiento**: % de vacaciones disfrutadas
-
-👉 [Ver guía: Reportes](/reportes/) -->
+👉 [Ver guía: Notificaciones](/guias-por-rol/empleado/notificaciones/)
 
 ---
 

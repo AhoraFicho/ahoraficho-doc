@@ -6,10 +6,10 @@ grand_parent: Guías por Rol
 nav_order: 1
 ---
 
-# Aprobar Vacaciones
+# Aprobar Vacaciones y Ausencias
 {: .no_toc }
 
-Aprende a revisar, aprobar o rechazar las solicitudes de vacaciones y ausencias de los empleados de tu departamento de forma rápida y eficiente.
+Cómo revisar, aprobar o rechazar las solicitudes de vacaciones y ausencias de tu equipo.
 {: .fs-6 .fw-300 }
 
 ---
@@ -22,189 +22,133 @@ Aprende a revisar, aprobar o rechazar las solicitudes de vacaciones y ausencias 
 
 ---
 
-## ¿Qué son las solicitudes de vacaciones?
+## ¿Qué solicitudes recibirás?
 
-Las **solicitudes de vacaciones** son peticiones que los empleados envían cuando quieren tomarse días libres. Como Manager, tu trabajo es:
+Como Manager validarás las ausencias (vacaciones, permisos, bajas...) de los empleados de tu ámbito:
 
-- ✅ **Revisar** la solicitud y verificar que es viable
-- ✅ **Aprobar** si todo está correcto
-- ✅ **Rechazar** si no es posible (con justificación)
-- ✅ **Gestionar** la cobertura del equipo durante las ausencias
+- Los empleados de los **departamentos** de los que eres responsable
+- y/o los empleados que te tienen asignados como **Responsable** (o Responsable 2)
+
+{: .note }
+> Si tienes empleados asignados directamente como Responsable, la validación de ausencias se limita **exclusivamente** a esos empleados (aunque pertenezcan a varios departamentos).
 
 {: .important }
-> **Responsabilidad del Manager**: Eres el responsable de asegurar que siempre haya suficiente personal para cubrir las operaciones. Antes de aprobar, verifica que no se quede el equipo sin cobertura.
+> **Doble aprobación**: Si tu empresa tiene activada la **aprobación en dos niveles**, las ausencias pasan primero por el **Responsable 1** y después por el **Responsable 2**. Solo quien corresponda en cada nivel puede resolver la solicitud.
 
 ---
 
-## Acceder a las solicitudes de vacaciones
+## Acceder a las solicitudes pendientes
 
-### Opción 1: Desde Notificaciones
+### Desde el menú
 
-Cuando un empleado solicita vacaciones, recibirás una **notificación por email**:
+1. Ve al menú lateral → **"Validaciones"** → **"Ausencias Pendientes"**
+2. Se abrirá la pantalla **"Ausencias pendientes del departamento"**
 
-```
-Asunto: Nueva solicitud de vacaciones - Juan Pérez
+### Desde las notificaciones
 
-Juan Pérez ha solicitado vacaciones:
-- Desde: 15/01/2025
-- Hasta: 19/01/2025
-- Días: 5 días laborables
-- Motivo: Vacaciones de invierno
+Recibirás notificaciones por email y push cuando haya ausencias pendientes de tu validación (según la configuración de tu empresa: aviso diario o resumen semanal).
 
-Haz clic aquí para revisar la solicitud.
-```
+### En la pantalla
 
-1. Abre el email
-2. Haz clic en el enlace **"Revisar solicitud"**
-3. Se abrirá la página de detalle de la solicitud
+- **Pestaña "Pendientes"**: solicitudes esperando tu validación
+- **Pestaña "Validadas"**: histórico de ausencias ya resueltas, con selector de **año**
+- **Filtro** por trabajador + botón **"Filtrar"**
 
-### Opción 2: Desde el menú
-
-1. Inicia sesión como **Manager**
-2. Ve al menú lateral → **"Validaciones"** o **"Ausencias pendientes"**
-3. Verás un listado con todas las solicitudes de tu(s) departamento(s)
-
-<!-- ![Menú vacaciones manager](/assets/images/placeholder-menu-vacaciones-manager.png) -->
-
-### Opción 3: Desde el Dashboard
-
-En tu dashboard principal verás un widget con:
-- Número de solicitudes pendientes de aprobación
-- Acceso directo al listado
-
----
-
-## Listado de solicitudes de vacaciones
-
-Al acceder a la sección de vacaciones, verás una tabla con todas las solicitudes:
-
-### Columnas de la tabla
+### Columnas del listado
 
 | Columna | Descripción |
 |---------|-------------|
-| **Empleado** | Nombre del solicitante + departamento |
-| **Fecha** | Primer día de la ausencia |
-| **Observaciones** | Información extra asociada a la solicitud |
-| **Tipo** | Vacaciones, Permiso, Baja médica, etc. |
-| **Estado** | Pendiente, Aprobado, Rechazado |
-| **Fecha Solicitud** | Cuándo se solicitó |
-| **Acciones** | Botones para aprobar/rechazar |
-
-<!-- ![Listado solicitudes vacaciones](/assets/images/placeholder-listado-vacaciones-manager.png) -->
-
-### Filtros disponibles
-
-Puedes filtrar las solicitudes por:
-
-- **Estado**: Pendientes, Aprobadas, Rechazadas, Todas
-- **Empleado**: Un empleado específico
-- **Departamento**: Si gestionas varios departamentos
-- **Fecha**: Rango de fechas de las solicitudes
-
-{: .tip }
-> **Consejo**: Usa el filtro **"Solo Pendientes"** para ver únicamente las que requieren tu acción inmediata.
+| ☑️ | Casilla para selección múltiple |
+| **Acciones** | Aprobar (✓) / Denegar (✗) |
+| **Trabajador** | Empleado solicitante |
+| **Tipo** | Vacaciones, Baja, Asuntos propios... (con badge Mañana/Tarde en media jornada) |
+| **Fecha** | Día (o rango) de la ausencia |
+| **Duración** | Para permisos con duración |
+| **Motivo** | Comentario del empleado |
+| **Estado** | Visible si tu empresa usa doble aprobación: "Pendiente" o **"Pendiente 2ª Aprobación"** (+ quién aprobó el primer nivel) |
 
 ---
 
-## Revisar una solicitud de vacaciones
-
-<!-- ### Paso 1: Abrir el detalle
-
-1. Haz clic en el botón **"Ver Detalle"** o en el nombre del empleado
-2. Se abrirá una ventana con la información completa
-
-### Información que verás
-
-**Datos de la solicitud:**
-- 👤 **Empleado**: Nombre completo, departamento, foto
-- 📅 **Período**: Fecha desde - Fecha hasta
-- 🗓️ **Días solicitados**: Número de días laborables
-- 📝 **Tipo de ausencia**: Vacaciones, Permiso, etc.
-- 💬 **Motivo**: Comentario del empleado (opcional)
-- 📊 **Saldo de vacaciones**: Días disponibles / Días totales
-- ⏰ **Fecha de solicitud**: Cuándo lo pidió
-
-**Vista del calendario:**
-- Días solicitados marcados en color
-- Festivos incluidos en el período (no se descuentan)
-- Fines de semana visibles
-
-![Detalle solicitud vacaciones](/assets/images/placeholder-detalle-solicitud-vacaciones.png) -->
-
-### Verificaciones que debes hacer
+## Verificaciones que debes hacer
 
 Antes de aprobar, comprueba:
 
-1. ✅ **¿Tiene días disponibles?** Verifica su saldo de vacaciones
-2. ✅ **¿El período es razonable?** Verifica las fechas
-3. ✅ **¿Habrá cobertura?** Comprueba que no se quede el equipo sin personal
-4. ✅ **¿Cumple los plazos?** Verifica si avisó con suficiente antelación (según política de empresa)
-5. ✅ **¿Hay solapamientos?** Verifica que otros empleados no estén también de vacaciones esos días
+1. ✅ **¿Tiene días disponibles?** Verifica su saldo (recuerda los días pendientes de caducar)
+2. ✅ **¿El período es razonable?** Verifica las fechas y la antelación
+3. ✅ **¿Habrá cobertura?** Comprueba el **"Calendario del equipo"** (menú **"Equipo"**)
+4. ✅ **¿Hay solapamientos?** Verifica que no coincidan demasiadas ausencias
+5. ✅ **¿El motivo es claro?** Si no lo es, pide aclaración antes de decidir
 
 {: .warning }
-> **Importante**: El sistema **no valida automáticamente** si quedará cobertura. Eres tú quien debe verificar que no coincidan demasiadas ausencias.
+> **Importante**: El sistema **no valida automáticamente** la cobertura del equipo ni los solapamientos entre empleados. Eres tú quien debe verificarlo.
 
 ---
 
 ## Aprobar una solicitud
 
-Si todo está correcto y puedes aprobar la solicitud:
+### Individual
 
-### Paso 1: Hacer clic en "Aprobar"
+1. Pulsa el icono **✓ (Aprobar)** en la fila de la solicitud
 
-1. En el detalle de la solicitud, haz clic en el botón **"Aprobar"**
-2. (Opcional) Añade un comentario de aprobación
-3. Haz clic en **"Confirmar"**
+### Masiva
 
-<!-- ![Aprobar solicitud](/assets/images/placeholder-aprobar-vacaciones.png) -->
+1. Marca las casillas de las solicitudes (o selecciona todas)
+2. Pulsa el botón **"Aprobar"** (verde, con contador de seleccionadas)
+3. En el diálogo de confirmación, marca o desmarca **"Notificar al empleado por email"** (activada por defecto)
+4. Confirma con **"Sí, Aprobar"**
 
-### Paso 2: Confirmación
+### Qué ocurre al aprobar
 
-- El estado cambiará a **"Aprobado"** (badge verde)
-- El empleado recibirá una **notificación por email** confirmando la aprobación
-- Los días se descontarán de su saldo de vacaciones
-- Las fechas quedarán bloqueadas en su calendario
+- El estado pasa a **"Aceptada"** (badge verde)
+- El empleado recibe una **notificación por email y push**
+- Los días se **descuentan** de su saldo de vacaciones
+- La ausencia aparece en el calendario del equipo
 
 {: .tip }
-> **Añade un comentario positivo**: Algo como "Aprobado. ¡Disfruta tus vacaciones!" mejora la moral del equipo.
+> Si tu empresa usa **doble aprobación** y no eres el segundo responsable, al aprobar la solicitud pasará a estado **"Pendiente Segunda Aprobación"** y la resolverá el Responsable 2 del empleado. Si intentas resolver una solicitud que no te corresponde, el sistema te avisará: *"La ausencia debe aprobarse/rechazarse por el responsable correspondiente en el orden establecido."*
 
 ---
 
 ## Rechazar una solicitud
 
-Si no puedes aprobar la solicitud por algún motivo:
+### Individual
 
-### Paso 1: Hacer clic en "Rechazar"
+1. Pulsa el icono **✗ (Denegar)** en la fila
+2. Aparecerá un campo para indicar el **"Motivo del rechazo (opcional)"**
+3. Confirma
 
-1. En el detalle de la solicitud, haz clic en el botón **"Rechazar"**
-2. **OBLIGATORIO**: Añade un comentario explicando el motivo del rechazo
-3. Haz clic en **"Confirmar"**
+### Masiva
 
-<!-- ![Rechazar solicitud](/assets/images/placeholder-rechazar-vacaciones.png) -->
+1. Marca las casillas y pulsa **"Denegar"** (rojo)
+2. Confirma en el diálogo (con opción de notificar por email)
 
-### Paso 2: Justificar el rechazo
-
-**Ejemplos de comentarios apropiados:**
+### Buenas prácticas al rechazar
 
 ✅ **Buenos comentarios:**
 - "Lo siento, ya tenemos 3 personas de vacaciones esa semana. ¿Podrías solicitar otra fecha?"
-- "No podemos aprobar con tan poca antelación. Por favor, solicita con al menos 15 días de antelación."
-- "Ese período coincide con el cierre de trimestre. ¿Podrías posponerlo a la semana siguiente?"
+- "Necesitamos más antelación. Por favor, solicita con al menos 15 días."
 
-❌ **Malos comentarios (evitar):**
+❌ **Evita:**
 - "No" (sin explicación)
 - "Porque no puedo" (poco profesional)
-- "Ya veremos" (ambiguo)
 
 {: .important }
-> **Siempre explica el motivo**: Los empleados tienen derecho a saber por qué se rechaza su solicitud. Sé claro, profesional y propón alternativas si es posible.
+> **Siempre explica el motivo** cuando rechaces: el empleado verá el comentario en sus ausencias y podrá proponer fechas alternativas.
 
-### Paso 3: Confirmación
+---
 
-- El estado cambiará a **"Rechazado"** (badge rojo)
-- El empleado recibirá una **notificación por email** con tu comentario
-- Los días **NO** se descontarán de su saldo
-- El empleado podrá solicitar otras fechas
+## Tipos de ausencias que recibirás
+
+| Tipo | Requiere aprobación | Descuenta vacaciones |
+|------|---------------------|----------------------|
+| **Vacaciones** | ✅ Sí | ✅ Sí |
+| **Baja** | Según configuración | ❌ No |
+| **Teletrabajo** | Según configuración | ❌ No |
+| **Asuntos propios** | ✅ Sí | ❌ No |
+| **Otras ausencias justificadas** | ✅ Sí | ❌ No |
+| **Compensatorio** (banco de horas) | ✅ Sí | ❌ No (consume horas del banco) |
+
+👉 [Ver todos los tipos en detalle](/modulos/vacaciones/tipos-ausencias/)
 
 ---
 
@@ -212,44 +156,11 @@ Si no puedes aprobar la solicitud por algún motivo:
 
 Si aprobaste por error o las circunstancias cambiaron:
 
-### Cancelar una aprobación
-
-1. Ve al listado de vacaciones
-2. Filtra por **"Aprobadas"**
-3. Busca la solicitud que quieres cancelar
-4. Haz clic en **"Cancelar aprobación"**
-5. Añade un comentario explicando por qué cancelas
-6. Confirma la acción
+- En modo **Administrador**, ve a **"Validaciones" → "Ausencias Pendientes" → pestaña "Validadas"** y gestiona la ausencia desde la **"Gestión de Ausencias"** del menú Empresa
+- Comunícate **siempre con el empleado antes** de anular una aprobación concedida
 
 {: .warning }
-> **Importante**: Cancelar una aprobación ya concedida debe hacerse con mucho cuidado y solo en casos excepcionales (emergencias, cambios de planificación críticos, etc.). Comunica con el empleado **antes** de cancelar.
-
----
-
-## Gestionar cobertura del equipo
-
-### Consultar el calendario del equipo
-
-Para ver qué empleados están de vacaciones en un período:
-
-1. Ve a **"Equipo"** → **"Calendario del Equipo"**
-2. Verás un calendario con:
-   - Ausencias aprobadas (en verde)
-   - Ausencias pendientes (en amarillo)
-   - Festivos (en gris)
-
-![Calendario del equipo](/assets/images/placeholder-calendario-equipo.png)
-
-### Detectar solapamientos
-
-Antes de aprobar, usa el calendario para verificar:
-
-- ¿Cuántas personas ya están de vacaciones esas fechas?
-- ¿Quedará suficiente personal para cubrir las operaciones?
-- ¿Hay fechas alternativas con menos ausencias?
-
-{: .tip }
-> **Regla general**: Intenta que no haya más del 30-40% del equipo de vacaciones simultáneamente (ajusta según tu operativa).
+> Cancelar una aprobación ya concedida debe hacerse solo en casos excepcionales y con comunicación previa al empleado.
 
 ---
 
@@ -257,167 +168,55 @@ Antes de aprobar, usa el calendario para verificar:
 
 ### Criterios recomendados
 
-Para ser justo y consistente, establece criterios claros:
-
-1. **Antigüedad de la solicitud**: Primero en pedir, primero en aprobar
-2. **Días de antelación**: Mínimo 15 días de antelación (o según política de empresa)
-3. **Equidad**: Rota períodos populares (verano, Navidad) entre empleados
-4. **Cobertura crítica**: Rechaza si el período es crítico para la operativa
-5. **Saldo disponible**: El empleado debe tener días disponibles
+1. **Antigüedad de la solicitud**: primero en pedir, primero en aprobar
+2. **Días de antelación**: mínimo razonable según política de empresa
+3. **Equidad**: rota períodos populares (verano, Navidad) entre empleados
+4. **Cobertura crítica**: rechaza si el período es crítico para la operativa
+5. **Saldo disponible**: el empleado debe tener días
 
 ### Períodos conflictivos
 
-Para períodos muy solicitados (verano, Navidad):
-
-- Establece un **sistema de turnos rotativos** entre años
+- Establece un **sistema de rotación entre años**
 - Comunica las fechas límite para solicitar con antelación
 - Sé transparente sobre por qué apruebas a unos y a otros no
 
 ---
 
-## Tipos de ausencias
-
-Aunque la funcionalidad es la misma, puedes recibir solicitudes de diferentes tipos:
-
-| Tipo | Requiere aprobación | Descuenta de vacaciones |
-|------|---------------------|-------------------------|
-| **Vacaciones** | ✅ Sí | ✅ Sí |
-| **Permiso retribuido** | ✅ Sí | ❌ No |
-| **Baja médica** | ❌ No (informativa) | ❌ No |
-| **Asuntos propios** | ✅ Sí | ❌ No |
-| **Permiso no retribuido** | ✅ Sí | ❌ No |
-
-{: .note }
-> **Bajas médicas**: No requieren tu aprobación, son informativas. El empleado debe presentar el parte médico a RRHH.
-
----
-
-<!-- ## Notificaciones y recordatorios
-
-### Configurar tus notificaciones
-
-Puedes configurar cuándo recibir alertas:
-
-1. Ve a **"Mi Perfil"** → **"Notificaciones"**
-2. Activa o desactiva:
-   - Nueva solicitud de vacaciones
-   - Recordatorio de solicitudes pendientes (cada 24/48h)
-   - Vacaciones próximas a empezar
-3. Guarda los cambios
-
-### Recordatorios automáticos
-
-El sistema puede enviarte recordatorios si tienes solicitudes pendientes:
-
-- **Cada 24 horas**: Si hay solicitudes de más de 1 día sin revisar
-- **3 días antes del inicio**: Si hay vacaciones aprobadas próximas a empezar
-
---- -->
-
-## Casos especiales
-
-### Empleado solicita más días de los que tiene disponibles
-
-**Situación**: El empleado solicita 10 días pero solo tiene 7 disponibles.
-
-**Acción:**
-1. Rechaza la solicitud
-2. Comentario: "Solicitas 10 días pero solo tienes 7 disponibles. Por favor, ajusta tu solicitud."
-3. El empleado deberá solicitar menos días o esperar a acumular más
-
-### Emergencia familiar (solicitud de última hora)
-
-**Situación**: El empleado necesita vacaciones urgentes por emergencia.
-
-**Acción:**
-1. Evalúa si es realmente una emergencia (fallecimiento, enfermedad grave, etc.)
-2. Si es válido, aprueba aunque sea con poca antelación
-3. Añade comentario: "Aprobado por emergencia familiar. Espero que todo mejore pronto."
-4. Reorganiza la cobertura del equipo internamente
-
-### Empleado solicita vacaciones durante período de prueba
-
-**Situación**: Un empleado recién incorporado pide vacaciones.
-
-**Acción:**
-- Consulta la política de empresa sobre vacaciones en período de prueba
-- Si no está permitido, rechaza con explicación: "Durante el período de prueba no se pueden solicitar vacaciones según política de empresa."
-- Si está permitido, evalúa como cualquier otra solicitud
-
-### Empleado con vacaciones aprobadas causa baja antes de disfrutarlas
-
-**Situación**: Empleado tenía vacaciones aprobadas para la semana siguiente pero se pone de baja médica hoy.
-
-**Acción:**
-1. Las vacaciones quedan **automáticamente suspendidas** durante la baja
-2. Cuando el empleado vuelva de la baja, puede solicitar de nuevo esos días
-3. No se descuentan días de su saldo si estuvo de baja
-
----
-
-## Reportes y análisis
-
-### Consultar histórico de aprobaciones
-
-Para ver todas tus aprobaciones/rechazos:
-
-1. Ve a **"Vacaciones"** → **"Historial"**
-2. Filtra por tus decisiones
-3. Verás todas las solicitudes que has gestionado
-
-### Estadísticas del equipo
-
-Puedes consultar:
-- **Días de vacaciones consumidos** por empleado
-- **Días pendientes** de consumir
-- **Tendencias**: ¿Qué meses son más solicitados?
-- **Tasa de aprobación**: % de solicitudes aprobadas vs rechazadas
-
----
-
 ## Preguntas frecuentes
 
-### ¿Qué pasa si no respondo a una solicitud?
+### ¿Puedo aprobar vacaciones parciales (solo algunos días del rango)?
 
-La solicitud permanecerá en estado "Pendiente" indefinidamente. El empleado no podrá tomarse las vacaciones hasta que apruebes o rechaces.
+El empleado solicita rangos concretos de días: si solo puedes aprobar parte, rechaza la solicitud (indicando el motivo) y pídele que solicite las fechas válidas por separado.
 
-### ¿Puedo aprobar parcialmente una solicitud?
+### ¿Puedo ver las ausencias ya validadas?
 
-Si. Si el empleado solicita 10 días y solo puedes aprobar 5, debes:
-1. Aceptar los días que consideres y 
-2. rechazar los que no añadiendo la justificación oportuna
+Sí, en la pestaña **"Validadas"** de la pantalla de validación, con selector de año.
 
-### ¿Los empleados pueden cancelar vacaciones aprobadas?
+### ¿El sistema avisa si dos empleados coinciden de vacaciones?
 
-Sí, el empleado puede cancelar sus vacaciones aprobadas (antes de que empiecen). El sistema te notificará de la cancelación.
+No automáticamente. Consulta el **"Calendario del equipo"** antes de aprobar.
 
-### ¿Puedo aprobar vacaciones que empiezan mañana?
+### ¿Puedo validar mis propias ausencias?
 
-Técnicamente sí, pero depende de la política de tu empresa sobre antelación mínima. Evalúa caso por caso.
+Si eres Manager y también tienes responsable asignado, tus ausencias las validará tu responsable o un Administrador. El sistema limita quién puede resolver cada solicitud según el nivel de aprobación.
 
-### ¿Qué hago si dos empleados clave solicitan las mismas fechas?
+### ¿Qué pasa con las ausencias de empleados sin responsable asignado?
 
-Debes decidir según criterios objetivos:
-- ¿Quién solicitó primero?
-- ¿Quién tuvo vacaciones recientemente?
-- ¿Es posible escalonar (uno la primera semana, otro la segunda)?
-- Comunica transparentemente tu decisión
+Las resuelve un **Administrador** directamente.
 
 ---
 
 ## ¿Necesitas ayuda?
 
-Si tienes dudas sobre cómo aprobar vacaciones:
-
 - 📧 Email: soporte@ahoraficho.es
 - 💬 [Preguntas Frecuentes](/preguntas-frecuentes/)
-- 👤 Contacta con el Administrador de tu empresa
 
 ---
 
 ## Guías relacionadas
 
 - 👉 [Solicitar Vacaciones (Empleado)](/guias-por-rol/empleado/solicitar-vacaciones/)
-- 👉 [Asignar Vacaciones (Administrador)](/guias-por-rol/administrador/asignar-vacaciones/)
-- 👉 [Aprobar Cambios de Fichaje](/guias-por-rol/manager/aprobar-cambios-fichaje/)
+- 👉 [Tipos de ausencias](/modulos/vacaciones/tipos-ausencias/)
+- 👉 [Gestionar Solicitudes (Admin)](/modulos/vacaciones/gestionar-solicitudes/)
+- 👉 [Resumen Diario por Departamento](/reportes/resumen-diario-departamento/)
 - 👉 [Guía del Manager](/guias-por-rol/manager/)

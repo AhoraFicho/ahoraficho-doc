@@ -28,7 +28,9 @@ Las aplicaciones de AhoraFicho para iOS y Android son **webviews embebidas**, lo
 - ✅ Cargan la misma plataforma web optimizada para móvil
 - ✅ Siempre están actualizadas (no requieren actualizaciones constantes)
 - ✅ Ofrecen experiencia nativa (notificaciones push, acceso rápido)
-- ✅ Funcionan offline para consultas (requieren conexión para fichar)
+
+{: .important }
+> **Conexión a internet obligatoria**: La app requiere conexión a internet (WiFi o datos móviles) para funcionar. No dispone de modo offline: ni el fichaje ni las consultas funcionan sin conexión.
 
 ---
 
@@ -133,9 +135,9 @@ La app solicitará permisos para funcionar correctamente:
   - "Permitir solo mientras se usa la app" - Suficiente para uso en oficina
 
 #### 📷 Cámara
-- **Cuándo**: Al escanear códigos QR
-- **Por qué**: Para leer códigos QR de acceso o fichaje
-- **Necesario solo si usas fichaje por QR**
+- **Cuándo**: Al escanear el código QR de configuración de la app
+- **Por qué**: Para leer el código QR que se muestra en la web al pulsar **"Descargar APP"**
+- **Necesario solo para el primer acceso mediante QR**
 
 #### 🔔 Notificaciones
 - **Cuándo**: Primera apertura
@@ -191,24 +193,7 @@ La app tiene un menú inferior con acceso directo a:
 6. ¡Fichaje registrado!
 
 {: .note }
-> El fichaje desde app móvil es instantáneo y se sincroniza automáticamente con la plataforma web.
-
----
-
-<!-- ## Funcionalidades offline
-
-La app permite algunas funcionalidades sin conexión:
-
-### ✅ Funciona offline:
-- Consultar tus últimos fichajes (cacheados)
-- Ver tu resumen de ausencias
-- Ver tu horario asignado
-
-### ❌ Requiere conexión:
-- Registrar nuevos fichajes
-- Solicitar ausencias o vacaciones
-- Consultar validaciones pendientes
-- Ver información actualizada del equipo
+> El fichaje desde la app se registra al instante en la plataforma web. Recuerda que necesitas conexión a internet para poder fichar.
 
 ---
 
@@ -216,27 +201,14 @@ La app permite algunas funcionalidades sin conexión:
 
 La app puede enviarte notificaciones para:
 
-- 🔔 Recordatorios de fichaje
-- ⏰ Alertas de llegada tarde
-- ✅ Aprobaciones de ausencias
-- 📄 Nuevos documentos disponibles
-- 🎉 Mensajes de la empresa
+- ⏰ Recordatorios de entrada y salida
+- ⚠️ Alertas de fichaje incompleto o de llegada tarde
+- ✅ Cambios de estado en tus solicitudes (ausencias, cambios de fichaje)
+- 📄 Nuevos documentos recibidos
 
-### Configurar notificaciones
+Puedes configurar qué notificaciones recibes y por qué canal (email o push) desde **"Mi Perfil"** → **"Notificaciones"**.
 
-**Para activar/desactivar notificaciones:**
-
-1. Ve a **Ajustes de Android**
-2. Selecciona **Aplicaciones** → **AhoraFicho**
-3. Toca en **Notificaciones**
-4. Activa/desactiva según tus preferencias
-
-**Desde la app:**
-
-1. Ve a tu **Perfil** en la app
-2. Selecciona **Configuración**
-3. Toca **Notificaciones**
-4. Personaliza qué tipo de notificaciones quieres recibir -->
+👉 [Ver guía: Notificaciones](/guias-por-rol/empleado/notificaciones/)
 
 ---
 
@@ -280,15 +252,6 @@ La app puede enviarte notificaciones para:
 3. Limpia caché:
    - Ajustes → Apps → AhoraFicho → Almacenamiento → Limpiar caché
 4. Si persiste, desinstala y reinstala la app
-
-<!-- ### No recibo notificaciones
-
-**Soluciones:**
-1. Verifica que las notificaciones estén activadas:
-   - Ajustes → Apps → AhoraFicho → Notificaciones
-2. Verifica que no esté en modo "No molestar"
-3. Desactiva optimización de batería para AhoraFicho:
-   - Ajustes → Batería → Optimización de batería → AhoraFicho → No optimizar -->
 
 ### La ubicación no se registra
 
@@ -336,7 +299,7 @@ Si necesitas desinstalar la app:
 3. Pulsa **"Desinstalar"**
 
 {: .warning }
-> Al desinstalar la app, perderás los datos cacheados localmente, pero tu información en la plataforma web permanece intacta.
+> Al desinstalar la app perderás la sesión y la configuración guardada en el dispositivo (permisos, preferencias), pero tu información en la plataforma web permanece intacta.
 
 ---
 

@@ -53,67 +53,46 @@ Como Manager, tu trabajo es:
 
 ## Acceder a las solicitudes de gastos
 
-### Opción 1: Desde Notificaciones
+### Desde el menú
 
-Cuando un empleado sube un gasto, recibirás una **notificación por email**:
-
-```
-Asunto: Nuevo gasto pendiente de aprobación - Juan Pérez
-
-Juan Pérez ha presentado un gasto:
-- Concepto: Comida con cliente
-- Importe: 45,50 €
-- Fecha: 15/01/2025
-- Categoría: Restauración
-
-Haz clic aquí para revisar el gasto.
-```
-
-### Opción 2: Desde el menú
-
-1. Inicia sesión como **Manager**
-2. Ve al menú lateral → **"Mis Gastos"** o **"Gastos"**
-3. Pestaña **"Pendientes de aprobar"**
-4. Verás todos los gastos de tu(s) departamento(s) que esperan validación
+1. Inicia sesión como **Manager** (o Administrador)
+2. Ve al menú lateral → **"Validaciones"** → **"Gastos Pendientes"**
+3. Verás todos los gastos de tu ámbito que esperan validación
 
 ![Menú gastos manager](/assets/images/placeholder-menu-gastos-manager.png)
 
-### Opción 3: Desde el Dashboard
+### Desde las notificaciones
 
-En tu dashboard verás:
-- Número de gastos pendientes de aprobación
-- Importe total pendiente de validar
-- Acceso directo al listado
+Cuando un empleado sube un gasto pendiente de tu validación, recibirás **notificación** según la configuración de tu empresa.
+
+{: .note }
+> El listado muestra los gastos en estado **pendiente**. Los ya resueltos puedes consultarlos en el histórico del empleado desde **"Empresa" → "Gestión de Gastos"** (Admin) o en "Mis gastos" del propio empleado.
 
 ---
 
 ## Listado de gastos pendientes
 
-Al acceder verás una tabla con todos los gastos:
+Al acceder verás una tabla con todos los gastos pendientes:
 
 ### Columnas de la tabla
 
 | Columna | Descripción |
 |---------|-------------|
-| **Empleado** | Nombre del solicitante + departamento |
-| **Fecha** | Día en que se realizó el gasto |
-| **Concepto** | Descripción del gasto |
-| **Categoría** | Tipo (Transporte, Restauración, Alojamiento, etc.) |
-| **Importe** | Cantidad en euros |
-| **Ticket** | Icono indicando si hay justificante adjunto |
-| **Estado** | Pendiente, Aprobado, Rechazado |
-| **Fecha Subida** | Cuándo se registró el gasto |
-| **Acciones** | Botones para revisar/aprobar/rechazar |
+| **Trabajador** | Empleado solicitante |
+| **Fecha gasto** | Día en que se realizó el gasto |
+| **Tipo gasto** | Categoría (Transporte, Restauración, Alojamiento, etc.) |
+| **Proyecto** | Proyecto asignado (si aplica) |
+| **Cantidad** | Importe en euros |
+| **Fichero** | Icono de descarga del ticket/factura adjunto |
+| **Observaciones** | Comentarios del empleado |
+| **Acciones** | Aprobar (✓) / Denegar (✗) |
 
 ![Listado gastos](/assets/images/placeholder-listado-gastos.png)
 
 ### Filtros disponibles
 
-- **Estado**: Pendientes, Aprobados, Rechazados, Todos
-- **Empleado**: Filtrar por un empleado específico
-- **Categoría**: Transporte, Restauración, Alojamiento, etc.
-- **Fecha**: Rango de fechas del gasto
-- **Importe**: Rango de importes (ej: más de 100€)
+- **Trabajador**: filtrar por un empleado concreto (o todos)
+- Botón **"Filtrar"**
 
 {: .tip }
 > **Consejo**: Ordena por importe descendente para revisar primero los gastos más altos.
@@ -215,23 +194,14 @@ Verifica que cumple las normas de tu empresa, por ejemplo:
 
 Si el gasto cumple todos los requisitos:
 
-### Paso 1: Hacer clic en "Aprobar"
+1. Descarga y revisa el **ticket/factura** desde el icono de la columna Fichero
+2. Pulsa el icono **✓ (Aprobar)** en la fila del gasto
 
-1. En el detalle del gasto, haz clic en **"Aprobar"**
-2. (Opcional) Añade un comentario interno
-3. Haz clic en **"Confirmar"**
+### Confirmación
 
-![Aprobar gasto](/assets/images/placeholder-aprobar-gasto.png)
-
-### Paso 2: Confirmación
-
-- El estado cambiará a **"Aprobado"** (badge verde)
-- El empleado recibirá una **notificación** de aprobación
-- El gasto pasará al departamento de **Administración/RRHH** para el reembolso
-- Quedará registrado con tu nombre como aprobador
-
-{: .tip }
-> **Añade un comentario positivo**: "Aprobado. Gracias por adjuntar el ticket completo."
+- El estado cambiará a **"Aceptada"** (badge verde)
+- El gasto quedará registrado con tu nombre como aprobador
+- El gasto pasará al flujo de **Administración/RRHH** para el reembolso
 
 ---
 
@@ -239,36 +209,16 @@ Si el gasto cumple todos los requisitos:
 
 Si el gasto no cumple los requisitos:
 
-### Paso 1: Hacer clic en "Rechazar"
+1. Pulsa el icono **✗ (Denegar)** en la fila del gasto
 
-1. En el detalle del gasto, haz clic en **"Rechazar"**
-2. **OBLIGATORIO**: Añade un comentario explicando el motivo del rechazo
-3. Haz clic en **"Confirmar"**
-
-![Rechazar gasto](/assets/images/placeholder-rechazar-gasto.png)
-
-### Paso 2: Justificar el rechazo
-
-**Ejemplos de comentarios apropiados:**
-
-✅ **Buenos comentarios:**
-- "Falta adjuntar el ticket. Por favor, súbelo y vuelve a solicitar."
-- "El importe del ticket (35 €) no coincide con lo declarado (45 €). Por favor, corrige."
-- "Comidas personales no son reembolsables. Solo se aprueban comidas con clientes."
-- "Este gasto supera el límite de 50 € por comida. Rechazado."
-- "El ticket es ilegible. Por favor, sube una foto más clara."
-
-❌ **Malos comentarios (evitar):**
-- "No" (sin explicación)
-- "Muy caro" (poco específico)
-- "No me gusta" (subjetivo)
-
-### Paso 3: Confirmación
+### Confirmación
 
 - El estado cambiará a **"Rechazado"** (badge rojo)
-- El empleado recibirá una **notificación** con tu comentario
-- El gasto **NO se reembolsará**
-- El empleado puede corregir y volver a subirlo si es posible
+- El gasto **no se reembolsará**
+- El empleado verá el estado en "Mis gastos" y puede corregirlo creando un nuevo gasto
+
+{: .important }
+> **Comunica el motivo**: la pantalla de validación no incluye campo de comentarios, así que explica el rechazo al empleado por los canales habituales (email, conversación) indicando qué falta o qué corregir.
 
 ---
 
@@ -276,15 +226,11 @@ Si el gasto no cumple los requisitos:
 
 Si el gasto necesita aclaración pero podría ser aprobable:
 
-### Opción: Añadir comentario sin decidir aún
+1. **No lo apruebes todavía**: mantén la solicitud pendiente o denégala pidiendo corrección
+2. Pregunta directamente al empleado lo que necesites aclarar
+3. Cuando lo corrija (nuevo gasto o aclaración), revisa de nuevo y decide
 
-1. En el detalle del gasto, usa el campo **"Comentarios"**
-2. Pregunta lo que necesites aclarar
-3. El empleado recibirá notificación con tu pregunta
-4. Cuando responda, revisa de nuevo y aprueba/rechaza
-
-**Ejemplo de comentario:**
-"¿Quién fue el cliente con el que comiste? Por favor, añade su nombre en observaciones para poder aprobar."
+**Ejemplo de petición:** "¿Quién fue el cliente con el que comiste? Indícalo en las observaciones para poder aprobar el gasto."
 
 ---
 
@@ -392,24 +338,16 @@ Material oficina:
 
 ### Consultar gastos aprobados del mes
 
-1. Ve a **"Gastos"** → **"Reportes"**
-2. Filtra por mes actual
-3. Filtra por **"Aprobados"**
-4. Verás el total de gastos aprobados y el importe total
-
-### Estadísticas útiles
-
-- **Gasto medio** por empleado
-- **Categorías más utilizadas**
-- **Tendencias**: ¿Aumentan o disminuyen los gastos?
-- **Empleados con más gastos**: ¿Es normal según su rol?
+1. Ve a **"Empresa"** → **"Gestión de Gastos"** (Administradores)
+2. Filtra por mes y estado
+3. Verás el total de gastos aprobados y su importe
 
 ### Exportar para Administración
 
-Al final de mes, puedes exportar:
-1. **Listado de gastos aprobados** en Excel
+Al final de mes, puedes exportar el listado de gastos (opciones de exportación de la tabla):
+1. **Listado de gastos aprobados** (PDF o Excel)
 2. Envíalo a Administración/RRHH para que procesen los reembolsos
-3. Incluye: Empleado, concepto, importe, fecha, ticket
+3. Incluye: empleado, tipo, importe, fecha y ticket
 
 ---
 
@@ -457,6 +395,6 @@ Si tienes dudas sobre cómo aprobar gastos:
 ## Guías relacionadas
 
 - 👉 [Aprobar Vacaciones](/guias-por-rol/manager/aprobar-vacaciones/)
-- 👉 [Aprobar Cambios de Fichaje](/guias-por-rol/manager/aprobar-cambios-fichaje/)
+- 👉 [Aprobar Cambios de Fichaje (Validador)](/guias-por-rol/validador/aprobar-cambios-fichaje/)
 - 👉 [Aprobar Imputaciones](/guias-por-rol/manager/aprobar-imputaciones/)
 - 👉 [Guía del Manager](/guias-por-rol/manager/)
