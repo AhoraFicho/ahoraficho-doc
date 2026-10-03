@@ -13,7 +13,7 @@ AhoraFicho.es es la solución completa para el control horario digital que cumpl
 {: .fs-6 .fw-300 }
 
 [Empezar ahora](/primeros-pasos/){: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Probar Demo](https://democompleta.ahoraficho.es/Identity/Account/AutoLogin?username=comercial@solutions2az.net&password=Demo@2025){: .btn .fs-5 .mb-4 .mb-md-0 target="_blank" }
+[Probar Demo](https://democompleta.ahoraficho.es){: .btn .fs-5 .mb-4 .mb-md-0 target="_blank" } 
 
 ---
 
