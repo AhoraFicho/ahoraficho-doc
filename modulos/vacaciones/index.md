@@ -31,6 +31,7 @@ El **módulo de Vacaciones y Ausencias** permite a los empleados solicitar días
 - 🚫 **Bloqueos de vacaciones**: Fechas bloqueadas por edificio (campañas, cierres)
 - 📆 **Calendarios**: De equipo, de empresa y general
 - 📧 **Notificaciones**: Email y push en cada cambio de estado
+- 🗓️ **Sincronización con Google Calendar**: Las vacaciones aprobadas se copian en un calendario de Google
 
 ---
 
@@ -222,3 +223,4 @@ Si tienes dudas sobre vacaciones y ausencias:
 - 👉 [Aprobar Vacaciones (Manager)](/guias-por-rol/manager/aprobar-vacaciones/)
 - 👉 [Asignar Vacaciones (Admin)](/guias-por-rol/administrador/asignar-vacaciones/)
 - 👉 [Días Festivos](/guias-por-rol/administrador/dias-festivos/)
+- 👉 [Sincronización con Google Calendar](/modulos/vacaciones/sincronizacion-google-calendar/)
