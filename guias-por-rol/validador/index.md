@@ -48,19 +48,27 @@ Qué solicitudes ve un Validador:
 
 - ✅ **Aprobar o rechazar solicitudes de cambio de fichaje** (individual o masivamente)
 - ✅ **Consultar los cierres mensuales** de los empleados de su ámbito
+- ✅ **Consultar los reportes de fichajes** de su ámbito: Resumen diario, Resumen semanal, Reporte mensual, Reporte horas nocturnas e Impuntualidades (sección **"Reportes"** del menú)
 - ✅ Recibir **notificaciones** de nuevas solicitudes de cambio pendientes
 - ✅ Fichar y gestionar sus propios datos (como cualquier empleado)
 - ❌ No puede validar ausencias, gastos ni imputaciones (eso es del Manager/Admin)
-- ❌ No puede acceder a la configuración de la empresa ni a los reportes de departamento
+- ❌ No puede acceder a la configuración de la empresa
 
 ## Menú del Validador
 
-El menú lateral muestra la sección **"Validaciones"** con:
+El menú lateral muestra las secciones **"Validaciones"** y **"Reportes"** con:
 
 ```
 ✅ Validaciones
    ├── Cambios de Fichajes
    └── Cierres Mensuales
+
+📊 Reportes
+   ├── Resumen diario
+   ├── Resumen semanal
+   ├── Reporte mensual
+   ├── Reporte horas nocturnas
+   └── Impuntualidades
 ```
 
 Junto a **"Cambios de Fichajes"** verás un **badge contador** con las solicitudes pendientes de revisar.
@@ -77,7 +85,7 @@ Junto a **"Cambios de Fichajes"** verás un **badge contador** con las solicitud
 | Validar imputaciones del equipo | ✅ | ❌ |
 | **Aprobar cambios de fichaje** | ❌ | ✅ |
 | **Consultar cierres mensuales** | ❌ | ✅ |
-| Reportes de departamento | ✅ | ❌ |
+| **Reportes de fichajes** (diario, semanal, mensual, nocturnas, impuntualidades) | ✅ | ✅ |
 | Calendarios de equipo | ✅ | ❌ |
 | Configuración de la empresa | ❌ | ❌ |
 | Dar de alta empleados | ❌ | ❌ |
