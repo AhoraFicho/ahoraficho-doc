@@ -86,7 +86,35 @@ Menú **"Reportes" → "Bolsa horas extras"** (Administradores y SuperAdmin):
 - El sistema compara cada día los **fichajes reales** con el **horario** del empleado
 - Las horas por encima del horario se acumulan como horas extras (con el multiplicador y umbrales configurados)
 - Los cambios de fichaje aprobados **recalculan** el banco del día afectado
+- Crear, editar o **eliminar fichajes desde la gestión de fichajes** también recalcula automáticamente la bolsa del día, de forma que la bolsa nunca se queda descuadrada
 - La acumulación puede incluir ajustes automáticos (reconciliación) para corregir desviaciones
+
+---
+
+## Corregir movimientos: anular o eliminar
+
+Desde el detalle de una bolsa (**"Reportes" → "Bolsa horas extras" → detalle de un trabajador**), cada movimiento muestra acciones en la primera columna:
+
+### Anular movimiento (Administradores y SuperAdmin)
+
+- El botón de **anular** (flecha de vuelta) crea un movimiento inverso que compensa el original y pide indicar un **motivo**
+- El movimiento original pasa a estado **"Anulada"** y deja de contar, pero se conserva para auditoría
+- Es la opción recomendada para corregir pagos, consumos o acumulaciones dejando traza
+
+### Eliminar movimiento (solo SuperAdmin autorizado)
+
+- El botón de **eliminar** (papelera) borra el movimiento **definitivamente**, junto con sus anulaciones asociadas si las tiene, y recalcula los totales de la bolsa al momento
+- Pide indicar un **motivo**, que queda registrado en la auditoría
+- No está disponible para movimientos de **día compensatorio** (se corrigen eliminando la ausencia correspondiente) ni para movimientos que ya tienen consumos o pagos vinculados
+- Úsalo solo para limpiar registros erróneos sin recorrido (por ejemplo, acumulaciones generadas por fichajes que luego se borraron)
+
+{: .warning }
+> Eliminar un movimiento **no se puede deshacer**. Si necesitas conservar la traza del error, usa **anular** en su lugar.
+
+### Reconciliar
+
+- El botón **"Reconciliar"** comprueba que los totales de la bolsa coinciden con sus movimientos y corrige cualquier discrepancia
+- Si el problema son acumulaciones ligadas a fichajes ya eliminados, gestiona los fichajes o elimina el movimiento directamente: reconciliar solo aritmética de totales, no recalcula días
 
 ---
 
@@ -108,6 +136,10 @@ Depende del **multiplicador** configurado por tu empresa (ej: con x1,5, un día 
 ### ¿Puedo solicitar medio día compensatorio?
 
 Sí: indica las horas concretas a usar (0 = día completo). El sistema validará que te alcancen para el horario del día elegido.
+
+### Se eliminaron fichajes de un día y la bolsa quedó con horas de más, ¿qué hago?
+
+Desde la versión actual, crear, editar o eliminar fichajes desde la gestión de fichajes recalcula la bolsa del día automáticamente. Si tienes movimientos antiguos que quedaron huérfanos por fichajes ya borrados, un **SuperAdmin** puede **eliminarlos directamente** desde el detalle de la bolsa (o anularlos), y la bolsa quedará cuadrada.
 
 ---
 
