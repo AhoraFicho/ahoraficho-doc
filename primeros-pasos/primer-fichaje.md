@@ -267,7 +267,7 @@ Ve a **"Mi Trabajo"** → **"Mis Fichajes"** para ver:
 👉 [Ver guía: Consultar Mis Fichajes](/guias-por-rol/empleado/consultar-mis-fichajes/)
 
 {: .note }
-> Si tu empresa tiene activado el **cierre automático de fichajes abiertos**, los días con fichaje de entrada sin salida se cierran automáticamente por la noche: recibirás un aviso por email/push y podrás corregir la hora con una [solicitud de cambio](/guias-por-rol/empleado/olvide-fichar/).
+> Si tu empresa tiene activado el **cierre automático de fichajes abiertos**, los días con fichaje de entrada sin salida se cierran automáticamente por la noche: recibirás un aviso por email/push y podrás corregir la hora con una [solicitud de cambio](/guias-por-rol/empleado/olvide-fichar/). Si olvidas cerrar **varios días seguidos**, el sistema solo cierra automáticamente la primera noche; los días siguientes quedan como incidencia pendiente de resolver (para evitar registrar jornadas completas ficticias y horas extras que no son reales).
 
 ---
 

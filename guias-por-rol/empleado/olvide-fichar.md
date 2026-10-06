@@ -70,9 +70,9 @@ No tienes ningún fichaje ese día o tu jornada está incompleta. Usa el botón 
 | Campo | Descripción |
 |-------|-------------|
 | **Nueva hora** | La hora correcta del fichaje (solo la hora: la fecha del fichaje se mantiene) |
-| **Motivo** | Explica brevemente qué pasó (ej: "Olvidé fichar al salir con prisa", "Error de la app") |
+| **Motivo** | **Obligatorio**: explica brevemente qué pasó (ej: "Olvidé fichar al salir con prisa", "Error de la app") |
 
-3. Pulsa **"Guardar"**
+3. Pulsa **"Guardar"**. Si el motivo está vacío, la solicitud no se enviará.
 
 ### Paso 5: Esperar la validación
 
