@@ -140,6 +140,8 @@ Los empleados pueden fichar desde cualquier lugar sin limitaciones.
 
 Los empleados solo pueden fichar si están dentro del radio configurado del edificio.
 
+Si el trabajador pertenece a un departamento con un centro con GPS y otro centro sin restricciones (por ejemplo, "Teletrabajo"), sí podrá fichar desde fuera del centro: el fichaje quedará asociado automáticamente al centro sin restricciones.
+
 **Ideal para**:
 - Oficinas físicas con presencia obligatoria
 - Fábricas y almacenes

@@ -366,15 +366,18 @@ Si un empleado trabaja en diferentes edificios (ejemplo: comercial que visita va
 
 {: .tip }
 > **Solución recomendada**: Para empleados que trabajan en múltiples ubicaciones, crea un edificio genérico llamado "Teletrabajo" o "Ubicación múltiple" sin restricciones de GPS ni IP.
+>
+> Si el empleado pertenece a un departamento con un centro con GPS y este edificio sin restricciones, podrá fichar desde fuera del centro: el fichaje se asociará automáticamente al edificio sin restricciones. Dentro del radio del centro, el fichaje se asocia al centro con GPS.
 
 ### Empleado en teletrabajo ocasional
 
 Si un empleado trabaja habitualmente en la oficina pero algunos días en remoto:
 
-1. Configura el edificio con restricción de geolocalización
-2. Cuando el empleado esté en remoto autorizado:
-   - Desmarca temporalmente la restricción de ubicación
-   - O permite fichaje manual con justificación
+1. Configura el edificio de la oficina con restricción de geolocalización
+2. Crea un edificio "Teletrabajo" sin restricciones y asígnalo al departamento del empleado
+3. Con esta configuración, el empleado ficha con normalidad:
+   - Dentro de la oficina: el fichaje se asocia al edificio con GPS
+   - En remoto: el fichaje se asocia a "Teletrabajo", sin bloqueo de ubicación
 
 ### Mudanza de oficina
 
@@ -453,7 +456,10 @@ Los edificios en sí no afectan directamente, pero los **festivos locales** conf
 
 ### ¿Qué pasa si un empleado intenta fichar fuera del radio GPS permitido?
 
-Recibirá un mensaje de error indicando que no está en la ubicación autorizada. El fichaje no se registrará hasta que esté dentro del radio permitido.
+Depende de sus edificios:
+
+- Si **todos** sus edificios tienen geolocalización: recibirá un mensaje de error indicando que no está en la ubicación autorizada. El fichaje no se registrará hasta que esté dentro del radio permitido.
+- Si además tiene **algún edificio sin restricciones** (por ejemplo, "Teletrabajo"): podrá fichar y el registro se asociará automáticamente a ese edificio.
 
 ---
 
