@@ -76,7 +76,7 @@ En el desplegable del formulario verás los tipos configurados por tu empresa. L
 Selecciona el tipo del desplegable. Según el tipo:
 
 - **Vacaciones**: no se pide adjunto ni duración (descuenta del saldo)
-- **Baja**: aparece el campo de **fichero** para adjuntar el parte médico
+- **Baja**: aparecen el campo de **fichero** para adjuntar el parte médico y la **duración** (opcional)
 - **Resto de tipos**: aparecen el fichero (opcional) y la **duración**
 
 ### 📅 Fechas
@@ -100,7 +100,7 @@ Para **vacaciones de un solo día**, si tu horario lo permite, puedes elegir:
 
 ### ⏱️ Duración (para permisos)
 
-En tipos que no son vacaciones ni baja, puedes indicar la duración del permiso (de 30 minutos a 10 horas, en intervalos de 30 minutos).
+En todos los tipos salvo vacaciones, puedes indicar la duración del permiso (de 30 minutos a 10 horas, en intervalos de 30 minutos). Es opcional: puedes añadirla o modificarla más tarde desde el listado.
 
 ### 📎 Fichero (opcional, obligatorio en baja)
 
@@ -174,7 +174,7 @@ Puedes eliminar cualquier ausencia con **fecha futura** (pendiente o aceptada):
 ### Otras acciones sobre tus ausencias
 
 - **Subir adjunto** 📤: si el tipo lo permite y aún no tiene archivo
-- **Modificar duración** ✏️: en permisos con duración (entre 30 minutos y 10 horas)
+- **Modificar duración** ✏️: en cualquier tipo salvo vacaciones (entre 30 minutos y 10 horas); también puedes añadirla si la ausencia se creó sin duración
 
 {: .warning }
 > **No se pueden editar las fechas ni el tipo** de una solicitud: si te has equivocado, elimínala y crea una nueva. Para cancelar una ausencia que ya ha empezado o pasada, contacta con tu Manager o Administrador.
