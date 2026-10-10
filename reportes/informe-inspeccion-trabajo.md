@@ -75,6 +75,9 @@ Filtra por empleado, departamento, edificio y rango de fechas según lo que requ
 {: .important }
 > **Integridad de los datos**: las exportaciones de inspección incluyen un **hash de verificación de integridad**, y avisan si hay jornadas con un número impar de fichajes (posible salida sin registrar). Esto aporta fiabilidad al documento presentado.
 
+{: .note }
+> **Cambios de fichaje con aprobador**: si un fichaje fue modificado mediante una solicitud de cambio, el informe muestra **quién aprobó o rechazó el cambio y en qué fecha**. El Excel consolidado y los dos PDF incluyen las columnas dedicadas **"Aprobado por"** y **"Fecha aprobación"**; en el Excel crudo el detalle completo aparece en la columna de observaciones (por ejemplo, "aprobado por Ana García el 05/10/2026 10:15").
+
 ### Contenido del informe
 
 - ✅ **Datos del empleado**: Nombre completo
@@ -83,6 +86,7 @@ Filtra por empleado, departamento, edificio y rango de fechas según lo que requ
 - ✅ **Horas trabajadas**: totales por día
 - ✅ **Ausencias justificadas**: vacaciones, bajas, permisos
 - ✅ **Observaciones**: notas de modificaciones de fichaje (con quién las aprobó), comentarios por jornada
+- ✅ **Aprobado por / Fecha aprobación**: en el Excel consolidado y en los PDF, quién validó cada cambio de fichaje y cuándo
 
 ![Descargar informe](/assets/images/placeholder-descargar-informe-pdf.png)
 
@@ -319,5 +323,5 @@ Si tienes dudas sobre cómo generar o presentar el informe:
 
 ---
 
-**Última actualización**: Diciembre 2024
+**Última actualización**: Octubre 2026
 **Normativa aplicable**: RD 8/2019 y Estatuto de los Trabajadores
