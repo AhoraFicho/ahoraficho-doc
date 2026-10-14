@@ -100,7 +100,15 @@ Para **vacaciones de un solo día**, si tu horario lo permite, puedes elegir:
 
 ### ⏱️ Duración (para permisos)
 
-En todos los tipos salvo vacaciones, puedes indicar la duración del permiso (de 30 minutos a 10 horas, en intervalos de 30 minutos). Es opcional: puedes añadirla o modificarla más tarde desde el listado.
+En todos los tipos salvo vacaciones, puedes indicar la duración del permiso. Es opcional: puedes añadirla o modificarla más tarde desde el listado.
+
+Según cómo tenga configurada la plataforma tu empresa, el campo de duración se muestra de dos formas:
+
+- **Desplegable con opciones fijas**: de 30 minutos a 10 horas, en intervalos de 30 minutos.
+- **Campo numérico libre**: introduces directamente los minutos que necesitas.
+
+{: .note }
+> Si en tu empresa ves el campo numérico en lugar del desplegable, escribe la duración del permiso en minutos (por ejemplo, `45` para tres cuartos de hora).
 
 ### 📎 Fichero (opcional, obligatorio en baja)
 
@@ -174,7 +182,7 @@ Puedes eliminar cualquier ausencia con **fecha futura** (pendiente o aceptada):
 ### Otras acciones sobre tus ausencias
 
 - **Subir adjunto** 📤: si el tipo lo permite y aún no tiene archivo
-- **Modificar duración** ✏️: en cualquier tipo salvo vacaciones (entre 30 minutos y 10 horas); también puedes añadirla si la ausencia se creó sin duración
+- **Modificar duración** ✏️: en cualquier tipo salvo vacaciones (con desplegable de 30 minutos a 10 horas o campo libre de minutos, según la configuración de tu empresa); también puedes añadirla si la ausencia se creó sin duración
 
 {: .warning }
 > **No se pueden editar las fechas ni el tipo** de una solicitud: si te has equivocado, elimínala y crea una nueva. Para cancelar una ausencia que ya ha empezado o pasada, contacta con tu Manager o Administrador.
