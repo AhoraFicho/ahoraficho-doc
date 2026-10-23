@@ -89,6 +89,9 @@ Menú **"Reportes" → "Bolsa horas extras"** (Administradores y SuperAdmin):
 - Crear, editar o **eliminar fichajes desde la gestión de fichajes** también recalcula automáticamente la bolsa del día, de forma que la bolsa nunca se queda descuadrada
 - La acumulación puede incluir ajustes automáticos (reconciliación) para corregir desviaciones
 
+{: .note }
+> **Turnos que empiezan a las 00:00**: si el horario de un día empieza a medianoche (ej. turno nocturno 00:00-08:00), esas horas cuentan como jornada normal. Solo se acumulan como extras las horas que superen el horario del día, igual que en cualquier otro turno.
+
 ---
 
 ## Corregir movimientos: anular o eliminar
