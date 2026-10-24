@@ -295,7 +295,7 @@ Ve a **"Mi Trabajo"** → **"Mis Fichajes"** para ver:
 
 ### "Ya has registrado un fichaje hace X segundos"
 
-AhoraFicho previene fichajes duplicados. Debes esperar **al menos 1 minuto** entre fichajes.
+AhoraFicho previene fichajes duplicados. Debes esperar **al menos 2 minutos** entre fichajes.
 
 {: .note }
 > Esta protección evita fichajes accidentales duplicados.
