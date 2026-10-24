@@ -94,6 +94,20 @@ Menú **"Reportes" → "Bolsa horas extras"** (Administradores y SuperAdmin):
 
 ---
 
+## Marcar horas como pagadas
+
+Desde **"Reportes" → "Bolsa horas extras"**, con el botón de pago por empleado, se abre un modal con **dos fechas**:
+
+- **Fecha de referencia de las horas** (opcional): el día al que corresponden las horas. El sistema **valida que a esa fecha existiera saldo suficiente**; así no se pueden pagar horas que aún no se habían generado.
+- **Fecha de pago** (opcional): la fecha real en la que se pagaron (ej. la del nomina). Ninguna fecha puede ser futura, y la fecha de pago no puede ser anterior a la fecha de referencia.
+
+Si no se indica ninguna fecha, el pago se valida contra el saldo actual y se registra hoy.
+
+{: .important }
+> Al pagar, además de la fila negativa de tipo **"Pagada"** que descuenta el saldo, las entradas **"Acumulado"** originales consumidas quedan marcadas como **"Acumulado (pagada)"** en positivo: es solo la traza de qué día concreto se pagó. El descuento real es siempre la fila negativa.
+
+---
+
 ## Corregir movimientos: anular o eliminar
 
 Desde el detalle de una bolsa (**"Reportes" → "Bolsa horas extras" → detalle de un trabajador**), cada movimiento muestra acciones en la primera columna:
@@ -102,6 +116,7 @@ Desde el detalle de una bolsa (**"Reportes" → "Bolsa horas extras" → detalle
 
 - El botón de **anular** (flecha de vuelta) crea un movimiento inverso que compensa el original y pide indicar un **motivo**
 - El movimiento original pasa a estado **"Anulada"** y deja de contar, pero se conserva para auditoría
+- La **contrapartida** de la anulación aparece como **"Anulada"** (con el movimiento que cancela al pasar el cursor): no es una deuda ni un consumo real, solo el marcador que cancela el original
 - Es la opción recomendada para corregir pagos, consumos o acumulaciones dejando traza
 
 ### Eliminar movimiento (solo SuperAdmin autorizado)
