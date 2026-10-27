@@ -74,7 +74,7 @@ Menú **"Reportes" → "Bolsa horas extras"** (Administradores y SuperAdmin):
 
 - **Tarjetas de equipo**: horas disponibles, horas debidas, saldo neto y solicitudes económicas pendientes
 - **Solicitudes económicas**: aprobar (✓) o rechazar (✗) con motivo
-- **Tabla por empleado**: acumuladas / disfrutadas / pagadas / debidas / saldo neto / caducidad
+- **Tabla por empleado**: saldo neto (primera columna, la cifra principal) / acumuladas / disfrutadas / pagadas / debidas / caducidad
 - **Acciones por empleado**: crear día compensatorio, **reconciliar** el saldo con los fichajes reales, **marcar horas como pagadas** (parcial o totalmente)
 - **Registro manual**: añadir ajustes manuales de minutos
 - Filtros por departamento, trabajador y año
