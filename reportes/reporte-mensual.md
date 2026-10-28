@@ -69,6 +69,9 @@ Es un **informe completo en PDF** que contiene todos los fichajes de un empleado
 
 ![Seleccionar período](/assets/images/placeholder-periodo-mensual.png)
 
+{: .important }
+> **El informe nunca incluye el día en curso ni días futuros.** Si generas el reporte de un mes todavía abierto (por ejemplo, octubre generado el día 26), el PDF llega hasta el día anterior. Una jornada sin cerrar contaría como déficit completo y falsearía los totales; genera la versión final el mes siguiente.
+
 {: .warning }
 > **Informe anual**: Si seleccionas "Todos", el PDF incluirá los 12 meses del año. Será un documento extenso (puede tener más de 20 páginas).
 
@@ -114,46 +117,44 @@ El PDF generado incluye las siguientes secciones:
 
 ### 3. Tabla de fichajes diarios
 
-Para cada día laborable del mes:
+Para cada día del período (una fila por día), con las marcas de entrada y salida en columnas separadas (E1, S1, E2, S2...):
 
-| Fecha | Día | Entrada | Salida | Horas | Observaciones |
-|-------|-----|---------|--------|-------|---------------|
-| 01/03/2024 | Viernes | 09:00 | 18:00 | 8h 00m | - |
-| 04/03/2024 | Lunes | 09:05 | 18:10 | 8h 05m | - |
-| 05/03/2024 | Martes | - | - | - | Vacaciones |
-| 06/03/2024 | Miércoles | 09:00 | 14:00 | 5h 00m | Media jornada |
+| Fecha | Horas Teóricas | Horas Trabajadas | Horas Efectivas | Dif. Real | E1 | S1 |
+|-------|----------------|------------------|-----------------|-----------|------|------|
+| 01/03/2024 | 8h | 9h 05m | 8h 05m | +00:05 | 09:00 | 18:05 |
+| 04/03/2024 | 8h | VACACIONES | - | - | | |
+| 05/03/2024 | - | FESTIVO | - | - | | |
+| 06/03/2024 | 8h | 5h 00m | 5h 00m | -03:00 | 09:00 | 14:00 |
+
+- **Horas Teóricas**: jornada del horario asignado para ese día (descuento de pausa incluido).
+- **Horas Trabajadas**: tiempo entre pares de fichajes (entrada-salida).
+- **Horas Efectivas**: horas trabajadas con la pausa del horario descontada.
+- **Dif. Real**: diferencia entre efectivas y teóricas, con signo.
+
+{: .tip }
+> **Cuadre exacto**: las horas se calculan restando las marcas ya mostradas (truncadas a minutos). La resta manual de E1/S1 del PDF da siempre los mismos minutos que el informe.
 
 {: .note }
-> **Festivos**: Aparecen marcados claramente y no se cuentan como ausencias. Ejemplo: "8 diciembre - Inmaculada Concepción - Festivo Nacional"
+> **Festivos y ausencias**: los festivos se muestran con fondo naranja. Las **vacaciones** son días neutros: no suman horas teóricas ni mueven la diferencia. Las **ausencias aprobadas que no son vacaciones** (bajas, permisos sin sueldo...) muestran el horario teórico del día y restan su diferencia real, igual que en la bolsa de horas extras (ver [Casos especiales](#casos-especiales)).
 
 ### 4. Resumen del mes
 
-**Estadísticas clave:**
+En la cabecera del PDF aparecen los totales del período:
 
-- **Días laborables del mes**: 22 días
-- **Días trabajados**: 20 días
-- **Días de vacaciones**: 2 días
-- **Días de baja médica**: 0 días
-- **Festivos**: 1 día
-- **Total horas trabajadas**: 160h 30m
-- **Horas teóricas**: 160h 00m
-- **Diferencia**: +0h 30m (horas extras)
+- **Horas Teóricas**: suma de la jornada teórica de los días computables
+- **Total Horas**: suma de horas trabajadas (antes de descontar pausa)
+- **Horas Efectivas**: suma de horas efectivas (pausa descontada)
+- **Diferencia Real**: saldo global del período; si el tipo de informe lo permite, también puede mostrarse la **Diferencia Ajustada** con el umbral de horas extras configurado
 
-### 5. Desglose de ausencias
+Si algún día se trabajó sin horario asignado, el PDF añade el aviso **"Días trabajados sin horario"** y esas filas aparecen resaltadas.
 
-Si hubo ausencias en el mes, se detallan:
+### 5. Ajustes del banco de horas extras
 
-| Tipo | Fechas | Días | Estado |
-|------|--------|------|--------|
-| Vacaciones | 05-06/03/2024 | 2 | Aprobado |
-| Baja médica | - | 0 | - |
-| Permiso retribuido | - | 0 | - |
+Si el banco de horas extras está activo y el trabajador tiene en el período pagos en nómina, días compensatorios o anulaciones, aparecen como **filas propias con fondo naranja** y su importe con signo. Así la Diferencia Real refleja el saldo realmente pendiente, no solo el acumulado por fichajes.
 
 ### 6. Observaciones finales
 
-- Comentarios añadidos por el administrador
-- Notas sobre fichajes modificados o ajustados
-- Justificaciones de ausencias
+Bloque "Comentarios" con el texto que se introdujo al generar el informe.
 
 ---
 
@@ -285,8 +286,43 @@ Si un empleado estuvo de baja médica todo el mes:
 
 - Días trabajados: 0
 - Total horas: 0h 00m
-- En cada día aparecerá: "Baja médica"
+- En cada día aparecerá: "Baja médica", con las horas teóricas de su horario y la diferencia en negativo (misma regla que la bolsa de horas extras)
 - El reporte sigue siendo válido y debe conservarse
+
+### Vacaciones y ausencias: ¿cuentan como jornada cumplida?
+
+| Tipo de ausencia | Horas Teóricas | Horas Efectivas | Diferencia Real |
+|------------------|----------------|-----------------|-----------------|
+| **Vacaciones** | No cuentan (día neutro, fila con "-") | No cuentan | Neutra (no mueve el saldo) |
+| **Tipo con "Computa como tiempo efectivo" activado** (formación, permisos retribuidos) | Cuenta la jornada como cumplida | Suma la duración registrada de la ausencia más los fichajes | Neutra si cubre la jornada |
+| **Tipo sin "Computa como tiempo efectivo"** (bajas, permisos sin sueldo, asuntos propios) | Cuenta la jornada del horario | Solo los fichajes reales del día | Negativa si no se cubre el horario; si el empleado trabaja parte del día, muestra su diferencia real |
+
+{: .tip }
+> **Criterio habitual en España**: para el registro de jornada, las vacaciones y los permisos retribuidos se consideran tiempo de trabajo efectivo, así que normalmente deben llevar la casilla **"Computa como tiempo efectivo"** activada. Las bajas médicas no la llevan.
+
+Las **vacaciones** no penalizan la diferencia total del informe: un mes de vacaciones no aparece como si el trabajador debiera esas horas. Las **bajas y permisos sin sueldo** restan igual que en la bolsa de horas extras: el horario no cubierto se refleja como diferencia negativa del período.
+
+### Días trabajados sin horario
+
+Si un empleado ficha un día sin horario asignado (por ejemplo, un sábado sin turno):
+
+- La fila aparece **resaltada en rojo**
+- Horas Teóricas: **0m** (no tenía jornada asignada)
+- La Diferencia Real muestra las horas trabajadas completas (con signo positivo)
+- El encabezado añade el aviso "Días trabajados sin horario"
+
+Esas horas cuentan como trabajadas en los totales.
+
+### Fichaje incompleto (entrada sin salida)
+
+Si un día tiene un número impar de fichajes (una entrada sin salida registrada):
+
+- La marca sin pareja **no computa** como tiempo trabajado
+- La fila muestra el aviso **"Salida sin registrar"** en rojo bajo las horas trabajadas
+- La diferencia de ese día puede aparecer como déficit hasta que se corrija el fichaje
+
+{: .important }
+> Corrige el fichaje desde la **Gestión de Fichajes** y vuelve a generar el informe para que los totales reflejen la jornada real.
 
 ---
 

@@ -89,6 +89,9 @@ Menú **"Reportes" → "Bolsa horas extras"** (Administradores y SuperAdmin):
 - Crear, editar o **eliminar fichajes desde la gestión de fichajes** también recalcula automáticamente la bolsa del día, de forma que la bolsa nunca se queda descuadrada
 - La acumulación puede incluir ajustes automáticos (reconciliación) para corregir desviaciones
 
+{: .important }
+> **Ausencias y bolsa**: las ausencias aprobadas que **no son vacaciones** (bajas, permisos sin sueldo, asuntos propios...) no perdonan el horario del día: si el trabajador no cubre la jornada, la bolsa registra el tiempo no trabajado como horas negativas. Las **vacaciones** siguen siendo días neutros que no generan ni positivos ni negativos.
+
 {: .note }
 > **Turnos que empiezan a las 00:00**: si el horario de un día empieza a medianoche (ej. turno nocturno 00:00-08:00), esas horas cuentan como jornada normal. Solo se acumulan como extras las horas que superen el horario del día, igual que en cualquier otro turno.
 
