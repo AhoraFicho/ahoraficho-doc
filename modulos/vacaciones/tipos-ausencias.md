@@ -342,6 +342,24 @@ Sí, pero el Manager debe aprobar el permiso no retribuido también.
 
 ---
 
+## Configuración para administradores: cómo computa cada tipo
+
+En **"Configuraciones" → "Tipos de Ausencias"** cada tipo tiene dos opciones que deciden cómo afectan sus días a los reportes y a la bolsa de horas:
+
+| Opción | Efecto en un día aprobado de ese tipo |
+|--------|----------------------------------------|
+| *(sin opciones marcadas)* | El día computa: cuenta su jornada teórica y, si no se trabaja, genera déficit en los reportes y en la bolsa (comportamiento de bajas y permisos sin sueldo). |
+| **Cuenta como tiempo efectivo** | La jornada se considera cumplida: cuenta en teóricas y en efectivas, con diferencia neutra (comportamiento de formación o permisos retribuidos computables). |
+| **No cuenta para la jornada** | El día queda fuera del cómputo por completo, igual que las vacaciones: no cuenta en el total del período ni genera déficit (ideal para asuntos propios retribuidos). Si la ausencia es de media jornada, solo computa la parte trabajada. |
+
+{: .important }
+> **«No cuenta para la jornada» tiene precedencia**: si un tipo la tiene marcada, el efecto de «Cuenta como tiempo efectivo» no aplica. Al guardar un tipo con cualquiera de las dos opciones cambiadas, AhoraFicho **recalcula automáticamente los días ya registrados** de ese tipo en la bolsa de horas, de modo que los informes y el saldo quedan coherentes sin intervención manual.
+
+{: .tip }
+> **Criterio habitual**: vacaciones → tipo Vacaciones (neutro por diseño). Formación y permisos retribuidos computables → «Cuenta como tiempo efectivo». Asuntos propios retribuidos → «No cuenta para la jornada». Bajas y permisos sin sueldo → sin ninguna de las dos (restan la jornada no trabajada).
+
+---
+
 ## ¿Necesitas ayuda?
 
 - 📧 Email: soporte@ahoraficho.es

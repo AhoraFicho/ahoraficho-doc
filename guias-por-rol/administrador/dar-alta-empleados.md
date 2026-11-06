@@ -312,6 +312,7 @@ La plantilla incluye estas columnas:
 |:------|:------------|:--------|
 | Nombre completo | Sí | Juan Pérez García |
 | Email | Sí | juan.perez@empresa.com |
+| Usuario | No | jperez |
 | DNI | Sí | 12345678A |
 | Teléfono | No | 600123456 |
 | Departamento | Sí | Ventas |
@@ -319,7 +320,7 @@ La plantilla incluye estas columnas:
 | Contraseña | Sí | Temporal123! |
 
 {: .warning }
-> **Importante**: Todos los emails deben ser únicos. Emails duplicados causarán error en la importación.
+> **Importante**: Los **emails pueden repetirse** entre trabajadores (por ejemplo, padres con email familiar compartido). Lo que no puede repetirse es el **nombre de usuario**. Si dejas vacía la columna **Usuario**, se usará el email como nombre de usuario, así que en ese caso el email tampoco podrá repetirse. Las filas con usuario duplicado se omiten y el resto se importa correctamente; al terminar verás un resumen con el resultado.
 
 ### Ventajas de la importación masiva
 
@@ -501,14 +502,14 @@ Para empleados temporales:
 
 **Errores comunes:**
 - Formato de archivo incorrecto (usa CSV o Excel)
-- Emails duplicados
+- Nombres de usuario duplicados (o emails duplicados cuando no se indica la columna Usuario)
 - Departamentos que no existen
 - Horarios que no existen
 
 **Solución:**
 - Descarga la plantilla de nuevo
 - Verifica que departamentos y horarios existan
-- Revisa que no haya emails repetidos
+- Revisa que los nombres de usuario no estén repetidos
 - Asegúrate del formato correcto
 
 ---
