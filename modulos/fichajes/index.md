@@ -123,6 +123,17 @@ El botón de fichaje cambia automáticamente según tu horario y tus fichajes de
 {: .tip }
 > **Automático**: El empleado solo pulsa el botón; el sistema determina el tipo de fichaje según tu horario y los registros del día. Si tu horario tiene activado el **registro de jornada en un paso**, verás el botón "Registrar Jornada" para registrar todos los fichajes del día de una sola vez.
 
+### Informe de jornada al finalizar
+
+Si tu empresa ha activado el **informe de jornada** en tu horario, al pulsar **"Finalizar jornada"** (el último fichaje del día) se abrirá una ventana pidiéndote una **frase breve con lo que has hecho ese día**.
+
+- Es **obligatorio**: no se completa el fichaje de salida hasta escribir el informe.
+- El texto se guarda junto a tu fichaje de salida y puede consultarlo tu empresa desde la **Gestión de Fichajes**.
+- Si cierras la ventana sin escribir nada, el fichaje no se registra y podrás volver a fichar.
+
+{: .note }
+> Este paso solo aparece si el administrador lo ha activado en el horario. En el resto de horarios, el fichaje de salida se registra como siempre.
+
 ---
 
 ## Control de ubicación

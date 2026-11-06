@@ -273,6 +273,33 @@ Sistema que permite al empleado registrar **toda su jornada de golpe**: en lugar
 
 ---
 
+## Informe de jornada al finalizar
+
+### ¿Qué es?
+
+Un check del horario que pide al empleado **una frase breve describiendo lo que ha hecho ese día** cuando pulsa **"Finalizar jornada"** (su último fichaje del día). El texto se guarda en el fichaje de salida.
+
+**☑️ Activarlo**
+
+- Activa la opción **"Solicitar informe al finalizar la jornada"** en la sección de fichaje del formulario del horario.
+- Afecta a todos los empleados que tengan ese horario asignado.
+
+**Comportamiento**
+
+- El informe es **obligatorio**: el empleado no completa su fichaje de salida sin escribirlo.
+- Solo se pide en el fichaje de **fin de jornada**, no en el resto de fichajes del día.
+- Funciona tanto en la web como en la **app móvil**.
+
+**¿Dónde se ve el informe?**
+
+- En **"Empresa" → "Gestión de Fichajes"**, nueva columna **"Informe de jornada"** con el texto (se incluye en las exportaciones).
+- Al **editar un fichaje** desde la gestión, el informe aparece como campo de texto editable, por si hay que corregirlo.
+
+{: .tip }
+> **Útil para**: justificar la actividad del día (mantenimientos, clientes atendidos, tareas realizadas) y como apoyo documental en auditorías e inspecciones.
+
+---
+
 ## Guardar el horario
 
 Una vez configurado todo:
