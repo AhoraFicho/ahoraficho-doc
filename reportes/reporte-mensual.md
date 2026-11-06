@@ -119,32 +119,40 @@ El PDF generado incluye las siguientes secciones:
 
 Para cada día del período (una fila por día), con las marcas de entrada y salida en columnas separadas (E1, S1, E2, S2...):
 
-| Fecha | Horas Teóricas | Horas Trabajadas | Horas Efectivas | Dif. Real | E1 | S1 |
-|-------|----------------|------------------|-----------------|-----------|------|------|
-| 01/03/2024 | 8h | 9h 05m | 8h 05m | +00:05 | 09:00 | 18:05 |
-| 04/03/2024 | 8h | VACACIONES | - | - | | |
-| 05/03/2024 | - | FESTIVO | - | - | | |
-| 06/03/2024 | 8h | 5h 00m | 5h 00m | -03:00 | 09:00 | 14:00 |
+| Fecha | Horas Teóricas | Horas Efectivas | Diferencia | Concepto | E1 | S1 |
+|-------|----------------|-----------------|------------|----------|------|------|
+| 01/10 | 8h | 8h 07m | +00:07 | | 09:12 | 18:19 |
+| 08/10 | 8h | 0m | -08:00 | Sin fichajes | | |
+| 12/10 | — | — | — | Festivo | | |
+| 03/10 | 0m | 8h | — | Compensatorio (computa como efectivo) | | |
+| 03/10 | — | — | -08:00 | Día compensatorio (bolsa) | | |
+| 10/10 | 0m | 9h 09m | +09:09 | Trabajado sin horario | 08:54 | 18:03 |
 
-- **Horas Teóricas**: jornada del horario asignado para ese día (descuento de pausa incluido).
-- **Horas Trabajadas**: tiempo entre pares de fichajes (entrada-salida).
-- **Horas Efectivas**: horas trabajadas con la pausa del horario descontada.
-- **Dif. Real**: diferencia entre efectivas y teóricas, con signo.
+- **Horas Teóricas**: jornada del horario asignado para ese día (descuento de pausa incluido). Siempre numérica; "—" en festivos y vacaciones que no computan.
+- **Horas Efectivas**: tiempo real del día: fichajes con la pausa del horario descontada, más la jornada cubierta por ausencias que computan como efectivo. Siempre numérica.
+- **Diferencia**: efectivas menos teóricas del día, con signo. Muestra "—" solo en los días que están fuera del total (festivos sin fichar, vacaciones neutras y ausencias que cubren la jornada).
+- **Concepto**: el motivo del día (ausencia, festivo, sin fichajes, trabajado sin horario, ajuste del banco...). Nunca aparece texto dentro de las columnas de horas.
+
+Al pie de la tabla, la **fila TOTALES** muestra la suma exacta de cada columna, idéntica a la cabecera: el cuadre se verifica de un vistazo, sin sumar a mano.
 
 {: .tip }
-> **Cuadre exacto**: las horas se calculan restando las marcas ya mostradas (truncadas a minutos). La resta manual de E1/S1 del PDF da siempre los mismos minutos que el informe.
+> **Cuadre exacto**: las horas se calculan restando las marcas ya mostradas (truncadas a minutos). La resta manual de E1/S1 del PDF da siempre los mismos minutos que el informe, y la suma de la columna Diferencia coincide con la fila TOTALES.
+
+{: .important }
+> **Un solo cálculo para todo**: el resumen diario, el resumen semanal, este informe mensual y la bolsa de horas extras usan exactamente el mismo cálculo del día. La Diferencia del PDF cuadra con el detalle día a día, y la **Diferencia según bolsa** cuadra con el saldo pendiente de la bolsa de horas extras del trabajador.
 
 {: .note }
-> **Festivos y ausencias**: los festivos se muestran con fondo naranja. Las **vacaciones** son días neutros: no suman horas teóricas ni mueven la diferencia. Las **ausencias aprobadas que no son vacaciones** (bajas, permisos sin sueldo...) muestran el horario teórico del día y restan su diferencia real, igual que en la bolsa de horas extras (ver [Casos especiales](#casos-especiales)).
+> **Festivos, ausencias y pendientes** (columna Concepto y color de la fila): los festivos van en naranja y no suman horas si no se trabajan. Las **vacaciones** son días neutros: no suman horas teóricas ni mueven la diferencia. Las **ausencias aprobadas que no son vacaciones** (bajas, permisos sin sueldo...) muestran el horario teórico del día y restan su diferencia real, igual que en la bolsa de horas extras. Las **ausencias que computan como efectivo** muestran la jornada cubierta en Efectivas y no generan diferencia. Las **ausencias pendientes de aprobar** van en amarillo y las horas se calculan como un día normal. Los **ajustes del banco** (días compensatorios, pagos, anulaciones) van en naranja con su importe con signo en la Diferencia.
 
 ### 4. Resumen del mes
 
-En la cabecera del PDF aparecen los totales del período:
+En la cabecera del PDF aparecen los totales del período (idénticos a la fila TOTALES del pie):
 
 - **Horas Teóricas**: suma de la jornada teórica de los días computables
-- **Total Horas**: suma de horas trabajadas (antes de descontar pausa)
-- **Horas Efectivas**: suma de horas efectivas (pausa descontada)
-- **Diferencia Real**: saldo global del período; si el tipo de informe lo permite, también puede mostrarse la **Diferencia Ajustada** con el umbral de horas extras configurado
+- **Horas Efectivas**: suma del tiempo real del período (fichajes con pausa + jornadas cubiertas por ausencias computables)
+- **Pausa descontada en el período**: total de pausa restada automáticamente por el horario (solo si hay pausa configurada)
+- **Diferencia**: efectivas menos teóricas, más los ajustes del banco, sin ningún umbral
+- **Diferencia según bolsa**: la misma diferencia con el criterio de la bolsa de horas extras (umbral de overtime positivo y negativo); coincide con el saldo que la bolsa registrará por el período
 
 Si algún día se trabajó sin horario asignado, el PDF añade el aviso **"Días trabajados sin horario"** y esas filas aparecen resaltadas.
 

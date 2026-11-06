@@ -121,6 +121,25 @@ Configura igual que los días laborables:
 
 ---
 
+## Descuento de pausa por día
+
+Cada día de la semana tiene un campo de **descuento de pausa** (en minutos). Es el tiempo que el sistema **resta automáticamente** de la jornada del día, aunque el trabajador no lo fichaje.
+
+**Cuándo usarlo:**
+
+- Jornadas con **pausa de comida no fichada**: si el empleado trabaja de 9 a 17 pero come 1 hora sin fichar, configura un descuento de pausa de **60 minutos** ese día. Su jornada teórica será de 7 horas y todo cuadra sin déficits falsos.
+- Contratos de **39 horas semanales** con viernes reducido y hora de comida: define los bloques reales del viernes o su descuento de pausa, y el resumen diario y el informe mensual mostrarán la jornada correcta.
+
+**Cómo se aplica:**
+
+- Al **horario teórico** del día: la jornada se calcula con la pausa ya descontada.
+- Al **tiempo efectivo** fichado: las horas fichadas del día se reducen en los minutos de pausa configurados.
+
+{: .important }
+> Si un día tiene descuento de pausa, el trabajador debe fichar **ese tiempo extra** para cubrir la jornada: con 60 minutos de pausa configurados y una jornada de 8 horas, tendrá que fichar 9 horas para que el día salga exacto. Si el empleado sí ficha la pausa (entrada y salida de comer), deja el descuento a **0**.
+
+---
+
 ## Ejemplos de configuración
 
 ### Ejemplo 1: Jornada Partida Típica

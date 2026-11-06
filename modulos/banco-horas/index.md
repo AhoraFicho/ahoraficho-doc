@@ -93,6 +93,12 @@ Menú **"Reportes" → "Bolsa horas extras"** (Administradores y SuperAdmin):
 > **Ausencias y bolsa**: las ausencias aprobadas que **no son vacaciones** (bajas, permisos sin sueldo, asuntos propios...) no perdonan el horario del día: si el trabajador no cubre la jornada, la bolsa registra el tiempo no trabajado como horas negativas. Las **vacaciones** siguen siendo días neutros que no generan ni positivos ni negativos.
 
 {: .note }
+> **Festivos, días de descanso y días sin horario**: en esos días todo lo fichado cuenta como **positivo** (el horario del día es 0); nunca se generan horas negativas, ni aunque se fiche poco. Un trabajador **sin horario asignado** también acumula en positivo lo que fiche. Además, los días con **fichajes incompletos** (una entrada sin su salida) no registran nada hasta corregirse. Este criterio es el mismo que muestran los reportes como "Diferencia Ajustada", de modo que la bolsa y los reportes siempre cuadran.
+
+{: .note }
+> **Media jornada de vacaciones**: la bolsa procesa el día con la jornada de la parte trabajada (mañana o tarde según el corte del horario), igual que el informe mensual.
+
+{: .note }
 > **Turnos que empiezan a las 00:00**: si el horario de un día empieza a medianoche (ej. turno nocturno 00:00-08:00), esas horas cuentan como jornada normal. Solo se acumulan como extras las horas que superen el horario del día, igual que en cualquier otro turno.
 
 ---
