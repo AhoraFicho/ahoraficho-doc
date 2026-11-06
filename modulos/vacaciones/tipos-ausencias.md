@@ -349,14 +349,14 @@ En **"Configuraciones" → "Tipos de Ausencias"** cada tipo tiene dos opciones q
 | Opción | Efecto en un día aprobado de ese tipo |
 |--------|----------------------------------------|
 | *(sin opciones marcadas)* | El día computa: cuenta su jornada teórica y, si no se trabaja, genera déficit en los reportes y en la bolsa (comportamiento de bajas y permisos sin sueldo). |
-| **Cuenta como tiempo efectivo** | La jornada se considera cumplida: cuenta en teóricas y en efectivas, con diferencia neutra (comportamiento de formación o permisos retribuidos computables). |
+| **Cuenta como tiempo efectivo** | La ausencia suma su duración registrada al tiempo efectivo y el día muestra su **diferencia real**: si fichajes + duración cubren el teórico queda a cero, lo que falte resta (en el informe y en la bolsa) y el exceso suma como overtime (comportamiento de formación o permisos retribuidos computables). |
 | **No cuenta para la jornada** | El día queda fuera del cómputo por completo, igual que las vacaciones: no cuenta en el total del período ni genera déficit (ideal para asuntos propios retribuidos). Si la ausencia es de media jornada, solo computa la parte trabajada. |
 
 {: .important }
 > **«No cuenta para la jornada» tiene precedencia**: si un tipo la tiene marcada, el efecto de «Cuenta como tiempo efectivo» no aplica. Al guardar un tipo con cualquiera de las dos opciones cambiadas, AhoraFicho **recalcula automáticamente los días ya registrados** de ese tipo en la bolsa de horas, de modo que los informes y el saldo quedan coherentes sin intervención manual.
 
 {: .tip }
-> **Criterio habitual**: vacaciones → tipo Vacaciones (neutro por diseño). Formación y permisos retribuidos computables → «Cuenta como tiempo efectivo». Asuntos propios retribuidos → «No cuenta para la jornada». Bajas y permisos sin sueldo → sin ninguna de las dos (restan la jornada no trabajada).
+> **Criterio habitual**: vacaciones → tipo Vacaciones (neutro por diseño). Formación y permisos retribuidos computables → «Cuenta como tiempo efectivo» (marcar siempre la duración real de la ausencia). **Bajas médicas → «No cuenta para la jornada»** (el día ni suma ni resta: no penaliza la bolsa ni falsea el registro con horas no trabajadas). Asuntos propios retribuidos → «No cuenta para la jornada». Permisos sin sueldo → sin ninguna de las dos si la empresa quiere que resten, o «No cuenta para la jornada» si prefiere que no penalice.
 
 ---
 

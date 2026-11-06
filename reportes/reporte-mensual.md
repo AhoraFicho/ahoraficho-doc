@@ -124,7 +124,7 @@ Para cada día del período (una fila por día), con las marcas de entrada y sal
 | 01/10 | 8h | 8h 07m | +00:07 | | 09:12 | 18:19 |
 | 08/10 | 8h | 0m | -08:00 | Sin fichajes | | |
 | 12/10 | — | — | — | Festivo | | |
-| 03/10 | 0m | 8h | — | Compensatorio (computa como efectivo) | | |
+| 03/10 | 8h | 8h | 00:00 | Compensatorio (computa como efectivo) | | |
 | 03/10 | — | — | -08:00 | Día compensatorio (bolsa) | | |
 | 10/10 | 0m | 9h 09m | +09:09 | Trabajado sin horario | 08:54 | 18:03 |
 
@@ -142,7 +142,7 @@ Al pie de la tabla, la **fila TOTALES** muestra la suma exacta de cada columna, 
 > **Un solo cálculo para todo**: el resumen diario, el resumen semanal, este informe mensual y la bolsa de horas extras usan exactamente el mismo cálculo del día. La Diferencia del PDF cuadra con el detalle día a día, y la **Diferencia según bolsa** cuadra con el saldo pendiente de la bolsa de horas extras del trabajador.
 
 {: .note }
-> **Festivos, ausencias y pendientes** (columna Concepto y color de la fila): los festivos van en naranja y no suman horas si no se trabajan. Las **vacaciones** son días neutros: no suman horas teóricas ni mueven la diferencia. Las **ausencias aprobadas que no son vacaciones** (bajas, permisos sin sueldo...) muestran el horario teórico del día y restan su diferencia real, igual que en la bolsa de horas extras. Las **ausencias que computan como efectivo** muestran la jornada cubierta en Efectivas y no generan diferencia. Las **ausencias pendientes de aprobar** van en amarillo y las horas se calculan como un día normal. Los **ajustes del banco** (días compensatorios, pagos, anulaciones) van en naranja con su importe con signo en la Diferencia.
+> **Festivos, ausencias y pendientes** (columna Concepto y color de la fila): los festivos van en naranja y no suman horas si no se trabajan. Las **vacaciones** son días neutros: no suman horas teóricas ni mueven la diferencia. Las **ausencias aprobadas que no son vacaciones** (bajas, permisos sin sueldo...) muestran el horario teórico del día y restan su diferencia real, igual que en la bolsa de horas extras. Las **ausencias que computan como efectivo** suman su duración a las Efectivas y muestran su diferencia real: lo que fichajes + duración no cubran del teórico resta (en el informe y en la bolsa), y el exceso suma como overtime. Las **ausencias pendientes de aprobar** van en amarillo y las horas se calculan como un día normal. Los **ajustes del banco** (días compensatorios, pagos, anulaciones) van en naranja con su importe con signo en la Diferencia.
 
 ### 4. Resumen del mes
 
@@ -302,7 +302,7 @@ Si un empleado estuvo de baja médica todo el mes:
 | Tipo de ausencia | Horas Teóricas | Horas Efectivas | Diferencia Real |
 |------------------|----------------|-----------------|-----------------|
 | **Vacaciones** | No cuentan (día neutro, fila con "-") | No cuentan | Neutra (no mueve el saldo) |
-| **Tipo con "Computa como tiempo efectivo" activado** (formación, permisos retribuidos) | Cuenta la jornada como cumplida | Suma la duración registrada de la ausencia más los fichajes | Neutra si cubre la jornada |
+| **Tipo con "Computa como tiempo efectivo" activado** (formación, permisos retribuidos) | Cuenta la jornada como cumplida | Suma la duración registrada de la ausencia más los fichajes | Real: lo no cubierto resta y el exceso suma, igual que la bolsa |
 | **Tipo sin "Computa como tiempo efectivo"** (bajas, permisos sin sueldo, asuntos propios) | Cuenta la jornada del horario | Solo los fichajes reales del día | Negativa si no se cubre el horario; si el empleado trabaja parte del día, muestra su diferencia real |
 
 {: .tip }
