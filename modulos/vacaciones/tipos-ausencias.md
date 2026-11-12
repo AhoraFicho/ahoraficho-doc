@@ -358,6 +358,18 @@ En **"Configuraciones" → "Tipos de Ausencias"** cada tipo tiene dos opciones q
 {: .tip }
 > **Criterio habitual**: vacaciones → tipo Vacaciones (neutro por diseño). Formación y permisos retribuidos computables → «Cuenta como tiempo efectivo» (marcar siempre la duración real de la ausencia). **Bajas médicas → «No cuenta para la jornada»** (el día ni suma ni resta: no penaliza la bolsa ni falsea el registro con horas no trabajadas). Asuntos propios retribuidos → «No cuenta para la jornada». Permisos sin sueldo → sin ninguna de las dos si la empresa quiere que resten, o «No cuenta para la jornada» si prefiere que no penalice.
 
+### Aviso rápido al responsable (minutos)
+
+Además del recordatorio diario de ausencias pendientes, cada tipo de ausencia tiene el campo **«Aviso rápido (minutos)»** (por defecto **30**): si una solicitud de ese tipo sigue pendiente cuando pasan esos minutos desde su registro, el responsable recibe de inmediato un aviso por email y notificación push con **todas las solicitudes pendientes nuevas de su equipo agrupadas en un único mensaje**, con enlace directo para validarlas.
+
+- **0 = desactivado**: el tipo no genera aviso rápido y solo aplica el recordatorio diario (útil por ejemplo para vacaciones, que se piden con antelación).
+- Si el responsable valida las solicitudes **antes** de que venza el aviso, este **no se envía**.
+- Cada solicitud avisa al responsable **una sola vez**; después sigue apareciendo en el recordatorio diario mientras esté pendiente.
+- El canal del aviso se puede desactivar desde las preferencias de notificación con la opción **«Nuevas solicitudes de ausencia (aviso rápido)»**.
+
+{: .tip }
+> **Criterio habitual**: permisos puntuales (asuntos propios, permisos retribuidos) → 30 minutos, para que el responsable sepa en el momento que alguien espera respuesta. Vacaciones y bajas → 0 o un valor alto, porque se gestionan con calma y ya tienen el recordatorio diario.
+
 ---
 
 ## ¿Necesitas ayuda?

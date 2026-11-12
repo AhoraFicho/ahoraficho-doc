@@ -46,7 +46,13 @@ Como Manager validarás las ausencias (vacaciones, permisos, bajas...) de los em
 
 ### Desde las notificaciones
 
-Recibirás notificaciones por email y push cuando haya ausencias pendientes de tu validación (según la configuración de tu empresa: aviso diario o resumen semanal).
+Recibirás notificaciones por email y push cuando haya ausencias pendientes de tu validación:
+
+- **Aviso diario**: resumen con todas las ausencias pendientes de tu equipo.
+- **Aviso rápido**: unos minutos después de que alguien registre una solicitud (el tiempo depende del tipo de ausencia), con las solicitudes nuevas agrupadas en un solo mensaje. Si ya las validaste antes de que llegue, no se envía.
+- **Resumen semanal**: viernes por la mañana, con las ausencias previstas de la semana siguiente.
+
+Puedes activar o desactivar cada aviso desde **tu perfil → Notificaciones**.
 
 ### En la pantalla
 
