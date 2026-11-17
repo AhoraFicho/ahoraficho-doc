@@ -66,6 +66,9 @@ La solicitud queda **pendiente** y será aprobada o rechazada por un **Administr
 
 Cada movimiento del banco (acumulación, compensación, pago, ajuste) queda registrado con fecha, tipo, minutos y observaciones.
 
+- **Día compensatorio**: muestra en **"Día referencia"** la **fecha de la ausencia** disfrutada (el día libre que compensa), tanto en tu bolsa como en el detalle de administración.
+- **Trazabilidad FIFO**: al compensar o pagar, el sistema consume primero los movimientos **más antiguos** (por día de referencia), **incluyendo los ajustes manuales** positivos. El movimiento consumido pasa a estado **"Compensada"** o **"Pagada"**; si solo se usa una parte, el resto queda **"Pendiente"**.
+
 ---
 
 ## Para el Manager/Administrador: "Bolsa horas extras"
@@ -113,7 +116,7 @@ Desde **"Reportes" → "Bolsa horas extras"**, con el botón de pago por emplead
 Si no se indica ninguna fecha, el pago se valida contra el saldo actual y se registra hoy.
 
 {: .important }
-> Al pagar, además de la fila negativa de tipo **"Pagada"** que descuenta el saldo, las entradas **"Acumulado"** originales consumidas quedan marcadas como **"Acumulado (pagada)"** en positivo: es solo la traza de qué día concreto se pagó. El descuento real es siempre la fila negativa.
+> Al pagar, además de la fila negativa de tipo **"Pagada"** que descuenta el saldo, los movimientos positivos originales consumidos (días **"Acumulado"** o **"Ajuste manual"**) quedan marcados como consumidos: es solo la traza de qué día concreto se pagó. El descuento real es siempre la fila negativa.
 
 ---
 
@@ -141,6 +144,7 @@ Desde el detalle de una bolsa (**"Reportes" → "Bolsa horas extras" → detalle
 ### Reconciliar
 
 - El botón **"Reconciliar"** comprueba que los totales de la bolsa coinciden con sus movimientos y corrige cualquier discrepancia
+- También completa el **día de referencia** de los días compensatorios antiguos que no lo tenían, usando la fecha de la ausencia que compensan
 - Si el problema son acumulaciones ligadas a fichajes ya eliminados, gestiona los fichajes o elimina el movimiento directamente: reconciliar solo aritmética de totales, no recalcula días
 
 ---
