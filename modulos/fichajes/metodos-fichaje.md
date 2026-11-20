@@ -69,6 +69,9 @@ El botón cambia automáticamente según tus fichajes de hoy y tu horario:
 
 Si tu empresa ha activado el **fichaje en un paso** en tu horario, en lugar del botón habitual verás **"Registrar Jornada"**: se abre un modal con los bloques de tu horario de hoy, que puedes ajustar antes de confirmar. Al confirmar se registran todos los fichajes del día de una sola vez.
 
+{: .tip }
+> Si recibes un **recordatorio de que no has fichado** (notificación push o email), al abrirlo se abre directamente este mismo modal, como si hubieras pulsado **"Registrar Jornada"** tú mismo. Solo aplica si tu horario usa el fichaje en un paso; si no, el enlace te lleva a la pantalla de fichajes de siempre.
+
 ### Ventajas
 
 ✅ No requiere instalar nada
@@ -128,7 +131,7 @@ Fichar desde la aplicación móvil de AhoraFicho en tu smartphone.
 - Cualquier empleado con smartphone
 
 {: .important }
-> **Geolocalización**: Si tu empresa tiene activado el control por GPS, la app verificará que estés en la ubicación correcta antes de permitir fichar.
+> **Geolocalización**: Si tu empresa tiene activado el control por GPS, la app verificará que estés en la ubicación correcta antes de permitir fichar. Si la señal GPS es débil (por ejemplo, en un interior o con el GPS desactivado, donde el móvil puede ubicarte por antenas con un error de cientos de metros), verás un aviso antes de registrar el fichaje: puedes reintentar la lectura (acércate a una ventana o activa el GPS) o continuar asumiendo esa imprecisión.
 
 👉 [Ver guía: Descarga App Móvil](/primeros-pasos/descarga-app-movil/)
 

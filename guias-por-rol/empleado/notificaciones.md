@@ -83,6 +83,19 @@ Para desactivarlas, vuelve al mismo sitio y pulsa **"Desactivar notificaciones d
 
 ---
 
+## Recordatorios de fichaje con acceso directo
+
+Los recordatorios **"Recordatorio de entrada"** y **"Empleado sin fichaje"** no solo avisan: al pinchar en ellos, ya sea desde la **notificación push** o el **botón del email**, se abre directamente la pantalla de fichajes.
+
+- Si tu horario usa el **registro de jornada en un paso**, se abre directamente el modal de **"Registrar Jornada"** con los bloques del día, listo para revisar y confirmar: es igual que pulsar el botón tú mismo.
+- Si tu horario es normal (entrada, pausas y salida una a una), llegas a la pantalla de fichajes como siempre.
+- Si todavía no puedes fichar (es demasiado pronto según tu horario o ya registraste la jornada), no se abre nada: la pantalla queda normal y podrás fichar cuando te corresponda.
+
+{: .note }
+> Si abres el enlace sin haber iniciado sesión, tras acceder con tu cuenta el registro de jornada se abre automáticamente.
+
+---
+
 ## Preguntas frecuentes
 
 ### No recibo notificaciones por email
