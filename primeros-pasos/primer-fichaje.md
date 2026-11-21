@@ -215,6 +215,9 @@ Depende de la configuración de tu empresa:
 - **Obligatoria**: No podrás fichar sin compartir ubicación
 - **Opcional**: Puedes fichar sin ubicación (se registrará como "sin ubicación")
 
+{: .note }
+> Si el GPS es débil (interiores, GPS desactivado), el fichaje se bloquea hasta obtener una lectura precisa: pulsa **"Reintentar"**, acércate a una ventana o sal al exterior. Además, antes de registrar verás una confirmación con la **dirección que se va a registrar**: si no es correcta, pulsa **"Volver a intentar"** en lugar de confirmar.
+
 {: .tip }
 > Si trabajas desde ubicaciones variables, consulta con tu administrador sobre la configuración de geolocalización.
 
