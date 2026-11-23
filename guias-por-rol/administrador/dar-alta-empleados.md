@@ -196,7 +196,7 @@ Los métodos se pueden modificar en cualquier momento desde la **edición del tr
 - Recomendado: Marcado para la mayoría
 
 **☑️ Requiere Geolocalización**
-- Si está marcado, debe compartir ubicación al fichar
+- Si está marcado, debe compartir ubicación al fichar **desde el móvil** (app o navegador móvil); desde el navegador de un ordenador no se exige, porque los PCs no disponen de GPS
 - Si no, puede fichar sin ubicación
 - Útil para trabajadores de campo
 

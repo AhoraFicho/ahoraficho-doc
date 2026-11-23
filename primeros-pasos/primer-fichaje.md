@@ -212,7 +212,7 @@ La geolocalización permite:
 ### ¿Es obligatoria?
 
 Depende de la configuración de tu empresa:
-- **Obligatoria**: No podrás fichar sin compartir ubicación
+- **Obligatoria**: No podrás fichar sin compartir ubicación **desde el móvil** (app o navegador móvil); desde el navegador de un ordenador no se exige, porque los PCs no disponen de GPS
 - **Opcional**: Puedes fichar sin ubicación (se registrará como "sin ubicación")
 
 {: .note }
