@@ -216,7 +216,7 @@ Depende de la configuración de tu empresa:
 - **Opcional**: Puedes fichar sin ubicación (se registrará como "sin ubicación")
 
 {: .note }
-> Si el GPS es débil (interiores, GPS desactivado), el fichaje se bloquea hasta obtener una lectura precisa: pulsa **"Reintentar"**, acércate a una ventana o sal al exterior. Además, antes de registrar verás una confirmación con la **dirección que se va a registrar**: si no es correcta, pulsa **"Volver a intentar"** en lugar de confirmar.
+> Si el GPS es débil (interiores, GPS desactivado), el fichaje se bloquea hasta obtener una lectura precisa: pulsa **"Reintentar"**, acércate a una ventana o sal al exterior. Antes de registrar verás una confirmación con la **dirección que se va a registrar**: si es correcta, confirma y listo; si prefieres una lectura más precisa pulsa **"Esperar más precisa"**, y si la dirección no es la esperada (por ejemplo, aparece un pueblo vecino) pulsa **"Volver a intentar"**.
 
 {: .tip }
 > Si trabajas desde ubicaciones variables, consulta con tu administrador sobre la configuración de geolocalización.
