@@ -30,6 +30,7 @@ AhoraFicho se organiza en módulos: dos siempre activos por requerimiento legal 
 | **[Banco de horas extras](/modulos/banco-horas/)** | Acumulación de horas extra, días compensatorios y compensación económica |
 | **[Servicios](/modulos/servicios/)** | Programación y control de servicios (limpieza, mantenimiento...) |
 | **[Documentos](/modulos/documentos/)** | Distribución de documentos con acuse de recibo |
+| **[Espacios](/modulos/espacios/)** | Reserva de salas, escritorios y recursos compartidos con calendario y aprobaciones |
 
 {: .note }
 > La activación de los módulos opcionales la realiza el equipo de AhoraFicho según el plan contratado. Contacta con soporte@ahoraficho.es.

@@ -48,6 +48,7 @@ AhoraFicho cuenta con **6 módulos** que puedes activar según las necesidades d
 | **Imputaciones** | Seguimiento de proyectos y tareas | Opcional |
 | **Servicios** | Control de servicios externos (limpiezas, mantenimiento) | Opcional |
 | **Documentos** | Distribución y acuse de recibo de documentos | Opcional |
+| **[Espacios](/modulos/espacios/)** | Reserva de salas, escritorios y recursos compartidos | Opcional |
 
 Además, con el **Banco de horas extras** (opcional), los empleados acumulan las horas trabajadas de más y pueden solicitar días compensatorios o compensación económica.
 
