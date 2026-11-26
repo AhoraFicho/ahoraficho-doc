@@ -31,8 +31,8 @@ Si eres responsable de algún recurso, también verás el número de solicitudes
 
 En la pestaña **Calendario** puedes cambiar el modo de vista con los botones **Día**, **Semana** y **Mes**:
 
-- **Día**: rejilla horizontal con los recursos en filas y las horas en columnas. La franja roja marca la hora actual. Pulsar sobre una franja libre crea una reserva en ese hueco.
-- **Semana**: cada recurso en una fila y los siete días en columnas, con un recuadro por reserva. Pulsa sobre un día para abrirlo en detalle.
+- **Día**: rejilla horizontal con los recursos en filas y las horas en columnas. La franja roja marca la hora actual. En el ordenador, arrastra sobre una franja libre para crear la reserva con ese horario; en el móvil, toca el hueco deseado y elige la duración entre las propuestas. Los nombres de las salas quedan fijos a la izquierda mientras te desplazas por las horas.
+- **Semana**: en ordenador y tablet, cada recurso en una fila y los siete días en columnas, con un recuadro por reserva. En el móvil se muestra como una lista compacta por día con sus reservas. En ambos casos, pulsa sobre un día para abrirlo en detalle.
 - **Mes**: rejilla mensual con los días del mes; cada día muestra hasta tres reservas y un contador si hay más. Pulsa sobre un día para abrirlo en detalle.
 
 Los colores de los recuadros:
@@ -59,10 +59,11 @@ En la pestaña **Buscar disponibilidad** indica fecha, hora de inicio y fin (y o
 1. Pulsa **Nueva reserva** (o una franja libre del calendario o **Reservar aquí** en el buscador).
 2. Paso 1 — **Elige cuándo**: fecha, hora de inicio y duración.
 3. Paso 2 — **Elige recurso**: los recursos disponibles en ese hueco. Los no disponibles aparecen atenuados.
-4. Paso 3 — **Datos de la reserva**: titular (tú o, si tienes permiso, otra persona), título, motivo, asistentes internos e invitados externos (email por línea con el formato `Nombre <email>`).
+4. Paso 3 — **Datos de la reserva**: título y **número de asistentes**, asistentes internos e invitados externos (correos separados por `;`).
+   La reserva se crea siempre a tu nombre.
 
 {: .note }
-> Algunos recursos exigen completar el **título**, el **motivo**, los **asistentes** o la **descripción** según su configuración. Los campos marcados con \* son obligatorios.
+> Algunos recursos exigen completar el **título**, el **motivo**, los **asistentes** o la **descripción** según su configuración. Motivo y descripción solo aparecen cuando el recurso los exige, y los campos marcados con \* son obligatorios.
 
 5. Pulsa **Confirmar reserva**:
    - Si el recurso tiene **confirmación automática**, queda confirmada al instante.
@@ -101,8 +102,13 @@ Los responsables de un recurso ven en esta misma pantalla las solicitudes pendie
 
 En una tablet colocada a la entrada (terminal de Espacios), los empleados pueden ver la ocupación del recurso y reservar o hacer check-in con su **PIN**:
 
-- El terminal muestra el estado: **Disponible**, **Ocupada**, **Reserva pendiente**, **Mantenimiento**, **Bloqueada** o **Fuera de horario**.
-- **Reserva rápida por PIN** para recursos que no exigen título ni motivo; para el resto, usa la web.
+- La pantalla se divide en dos zonas: a la izquierda, el estado grande de la sala con sus acciones; a la derecha, **"Reservas de hoy"**, la agenda del día **siempre visible** con todas las reservas del recurso.
+- El estado grande puede ser: **Disponible**, **Ocupado**, **Reserva pendiente**, **Mantenimiento**, **Bloqueada** o **Fuera de horario**, y el color de la banda superior acompaña al estado en todo momento.
+- En la agenda, la reserva activa aparece destacada con la etiqueta **En curso**, las solicitudes pendientes con **Pendiente** y las pasadas quedan atenuadas. La agenda se actualiza sola.
+- Para reservar, pulsa **Reservar ahora** e introduce tu **PIN**. Elige una hora de inicio y después una de las duraciones disponibles para esa hora, con el intervalo exacto que se creará. Comprueba el intervalo y pulsa **Confirmar reserva**. El terminal muestra el resultado y vuelve a la pantalla principal.
+- Elige **Ahora** para empezar al confirmar, si el recurso permite reservar sin antelación y queda un hueco suficiente. Los inicios programados siguen las franjas del recurso.
+- Si el recurso exige confirmar utilización, el botón **Confirmar utilización** aparece solo dentro de la ventana configurada en la sala (desde unos minutos antes del inicio hasta unos minutos después) y desaparece al confirmar o al cerrarse la ventana.
+- Si la sala está ocupada, **Liberar sala** termina antes la reserva activa con el PIN del organizador y deja la sala libre.
 - El check-in y la liberación por PIN funcionan igual que en la web.
 
 {: .important }

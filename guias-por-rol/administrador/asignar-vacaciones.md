@@ -51,16 +51,18 @@ Las vacaciones son días de ausencia retribuida que los empleados pueden solicit
 ### Paso 2: Configurar días de vacaciones
 
 1. En el formulario de edición del empleado, busca el campo de vacaciones (**"Max Ausencias"**)
-2. Introduce los días de vacaciones anuales
+2. Introduce los días de vacaciones anuales. **Se admiten medios días**: escribe el valor con coma decimal (p. ej. `22,5`) y el consumo combinara jornadas completas (1 día) y medias jornadas (0,5)
 3. Establece o verifica la **fecha de caducidad** del saldo (habitualmente 31 de diciembre)
 4. Haz clic en **"Guardar cambios"**
 
 ![Configurar vacaciones del empleado](/assets/images/placeholder-configurar-vacaciones.png)
 
 {: .note }
-> **Ejemplo práctico**: Si un empleado tiene derecho a 22 días de vacaciones al año con caducidad a fin de año, introduce:
-> - Max Ausencias: **22**
+> **Ejemplo práctico**: Si un empleado tiene derecho a 22,5 días de vacaciones al año con caducidad a fin de año, introduce:
+> - Max Ausencias: **22,5**
 > - Fecha caducidad: **31/12 del año en curso**
+>
+> La bolsa se consumirá exactamente con 22 jornadas completas más 1 media jornada.
 
 ---
 

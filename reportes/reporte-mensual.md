@@ -88,11 +88,30 @@ Puedes incluir comentarios que aparecerán al final del PDF:
 ### Paso 5: Descargar el PDF
 
 1. Haz clic en **"Descargar Informe"**
-2. El PDF se generará automáticamente
-3. Guarda el archivo en tu sistema
+2. El PDF se genera y se abre en una **pestaña nueva**, con el visor de PDF de tu navegador o de tu dispositivo
+3. Desde el visor puedes hacer zoom sobre el documento y guardarlo en tu sistema
+
+![Descargar informe mensual](/assets/images/placeholder-descargar-reporte-mensual.png)
 
 {: .tip }
-> El archivo se descarga con nombre descriptivo: `Informe_[NombreEmpleado]_[Mes][Año].pdf` para facilitar su organización.
+> El archivo se genera con nombre descriptivo: `Informe_[ID de empleado]_[Mes][Año].pdf` para facilitar su organización.
+
+{: .note }
+> En la **app móvil**, la pestaña nueva se abre fuera del visor integrado, de modo que puedes ampliar el documento con el lector de PDF que tengas instalado en el teléfono. El enlace de apertura es temporal: si tardas en consultarlo, vuelve a generarlo desde la pantalla del informe.
+
+### Paso 6: Enviar el informe por email (opcional)
+
+Si prefieres enviarlo directamente al trabajador sin descargarlo:
+
+1. Configura el informe como en los pasos anteriores
+2. Haz clic en **"Enviar por email"**
+3. Se abre una ventana con el **email del trabajador ya rellenado**; puedes cambiarlo por otra dirección si lo necesitas
+4. Pulsa **"Enviar"**: el destinatario recibe el informe en PDF como **adjunto**
+
+![Enviar informe por email](/assets/images/placeholder-enviar-reporte-mensual-email.png)
+
+{: .note }
+> El email se envía con la plantilla corporativa de AhoraFicho e indica quién lo ha enviado. La dirección se precarga con el email del trabajador seleccionado en cada envío y puede modificarse, pero no se guarda para futuros envíos.
 
 ---
 
@@ -129,7 +148,7 @@ Para cada día del período (una fila por día), con las marcas de entrada y sal
 | 10/10 | 0m | 9h 09m | +09:09 | Trabajado sin horario | 08:54 | 18:03 |
 
 - **Horas Teóricas**: jornada del horario asignado para ese día (descuento de pausa incluido). Siempre numérica; "—" en festivos y vacaciones que no computan.
-- **Horas Efectivas**: tiempo real del día: fichajes con la pausa del horario descontada, más la jornada cubierta por ausencias que computan como efectivo. Siempre numérica.
+- **Horas Efectivas**: tiempo real del día: fichajes con la pausa del horario descontada, más la jornada cubierta por ausencias que computan como efectivo. La pausa del horario solo se descuenta cuando ese día se fichan 6 horas o más: en jornadas más cortas no se llegó a hacer la comida y no se resta. Siempre numérica.
 - **Diferencia**: efectivas menos teóricas del día, con signo. Muestra "—" solo en los días que están fuera del total (festivos sin fichar, vacaciones neutras y ausencias que cubren la jornada).
 - **Concepto**: el motivo del día (ausencia, festivo, sin fichajes, trabajado sin horario, ajuste del banco...). Nunca aparece texto dentro de las columnas de horas.
 
@@ -142,7 +161,7 @@ Al pie de la tabla, la **fila TOTALES** muestra la suma exacta de cada columna, 
 > **Un solo cálculo para todo**: el resumen diario, el resumen semanal, este informe mensual y la bolsa de horas extras usan exactamente el mismo cálculo del día. La Diferencia del PDF cuadra con el detalle día a día, y la **Diferencia según bolsa** cuadra con el saldo pendiente de la bolsa de horas extras del trabajador.
 
 {: .note }
-> **Festivos, ausencias y pendientes** (columna Concepto y color de la fila): los festivos van en naranja y no suman horas si no se trabajan. Las **vacaciones** son días neutros: no suman horas teóricas ni mueven la diferencia. Las **ausencias aprobadas que no son vacaciones** (bajas, permisos sin sueldo...) muestran el horario teórico del día y restan su diferencia real, igual que en la bolsa de horas extras. Las **ausencias que computan como efectivo** suman su duración a las Efectivas y muestran su diferencia real: lo que fichajes + duración no cubran del teórico resta (en el informe y en la bolsa), y el exceso suma como overtime. Las **ausencias pendientes de aprobar** van en amarillo y las horas se calculan como un día normal. Los **ajustes del banco** (días compensatorios, pagos, anulaciones) van en naranja con su importe con signo en la Diferencia.
+> **Festivos, ausencias y pendientes** (columna Concepto y color de la fila): los festivos van en naranja y no suman horas si no se trabajan. Las **vacaciones** son días neutros: no suman horas teóricas ni mueven la diferencia. Las **ausencias aprobadas que no son vacaciones** (bajas, permisos sin sueldo...) muestran el horario teórico del día y restan su diferencia real, igual que en la bolsa de horas extras. Las **ausencias que computan como efectivo** suman su duración a las Efectivas y muestran su diferencia real: lo que fichajes + duración no cubran del teórico resta (en el informe y en la bolsa), y el exceso suma como overtime. Las **ausencias pendientes de aprobar** van en amarillo y las horas se calculan como un día normal. Los **ajustes del banco** (días compensatorios, pagos, ajustes manuales, anulaciones) van en naranja con su importe con signo en la Diferencia.
 
 ### 4. Resumen del mes
 
@@ -158,7 +177,7 @@ Si algún día se trabajó sin horario asignado, el PDF añade el aviso **"Días
 
 ### 5. Ajustes del banco de horas extras
 
-Si el banco de horas extras está activo y el trabajador tiene en el período pagos en nómina, días compensatorios o anulaciones, aparecen como **filas propias con fondo naranja** y su importe con signo. Así la Diferencia Real refleja el saldo realmente pendiente, no solo el acumulado por fichajes.
+Si el banco de horas extras está activo y el trabajador tiene en el período pagos en nómina, días compensatorios, ajustes manuales (cargas o descuentos) o anulaciones, aparecen como **filas propias con fondo naranja** y su importe con signo, con el motivo y la fecha de registro. Así la Diferencia Real refleja el saldo realmente pendiente, no solo el acumulado por fichajes.
 
 ### 6. Observaciones finales
 
@@ -209,7 +228,7 @@ Bloque "Comentarios" con el texto que se introdujo al generar el informe.
 
 **Proceso:**
 1. Genera el reporte del empleado
-2. Envíale el PDF por email con un mensaje tipo:
+2. Haz clic en **"Enviar por email"** y adjúntaselo directamente (el email del trabajador se rellena solo), o descárgalo y envíalo tú mismo con un mensaje tipo:
 
 ```
 Asunto: Resumen de fichajes - Marzo 2024
@@ -271,6 +290,23 @@ Si un empleado tiene pausas largas (por ejemplo, jornada partida):
 - Fichajes: 4 (2 pares)
 - Total horas: 9 horas (de 09:00 a 20:00)
 - Horas efectivas: 9 horas (restando la pausa)
+
+### Día compensado parcialmente (media jornada)
+
+Si el empleado compensa parte de la jornada y ficha solo la otra mitad (por ejemplo, compensa la mañana de 4 horas y trabaja la tarde), ese día **no se descuenta la pausa de comida**, porque con tan pocas horas no llegó a hacerla:
+
+**Ejemplo:** horario de 09:00 a 18:00 (8h efectivas, 1h de pausa configurada)
+- Compensatorio aprobado: 4h (09:00 - 13:00)
+- Fichajes: 14:00 - 18:10 (4h 10m)
+
+**En el reporte aparecerá:**
+- Horas teóricas: 8h
+- Horas efectivas: 8h 10m (4h 10m fichadas + 4h compensadas, sin restar la pausa)
+- Diferencia: +0h 10m
+- Y una fila naranja propia con los -4h del día compensatorio disfrutado
+
+{: .note }
+> La regla general: la pausa del horario se descuenta solo cuando el día suma **6 horas o más** de fichajes. En días completos el cálculo es el de siempre (total menos pausa); en medias jornadas compensadas o días cortos, las horas fichadas cuentan íntegras.
 
 ### Empleado con jornada intensiva en verano
 
@@ -352,7 +388,7 @@ Para empresas con muchos empleados, puedes automatizar parte del proceso:
 3. **Día 6-8**:
    - Vuelve a generar los reportes (versión final)
    - Archiva en carpetas organizadas
-   - Envía a cada empleado su PDF
+   - Envía a cada empleado su PDF con el botón **"Enviar por email"**
 
 {: .tip }
 > **Consejo**: Crea una plantilla de email para enviar a los empleados cada mes. Solo tendrás que cambiar el mes y adjuntar el PDF correspondiente.
@@ -383,6 +419,10 @@ No, cada reporte es **individual**. Solo contiene datos del empleado seleccionad
 ### ¿Puedo generar un reporte de varios empleados a la vez?
 
 Actualmente no en un solo PDF. Debes generar un PDF por cada empleado. Sin embargo, puedes usar el [Resumen Semanal](/reportes/resumen-semanal-departamento/) o [Diario](/reportes/resumen-diario-departamento/) para ver múltiples empleados en un solo reporte.
+
+### ¿A qué email llega el informe con "Enviar por email"?
+
+Se rellena automáticamente el email del trabajador seleccionado, pero puedes cambiarlo por cualquier otra dirección en la ventana de envío antes de mandarlo. El informe viaja siempre como **adjunto en PDF**.
 
 ---
 

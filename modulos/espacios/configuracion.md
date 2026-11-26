@@ -74,6 +74,11 @@ La pestaña **Acceso** es la que determina la privacidad: si eliges "solo ocupac
 
 **Configuraciones → Dispositivos**: cada tablet de puerta se registra como dispositivo con **modo Espacios** (única o multi-recurso) y los recursos asignados. El terminal se abre con un token y muestra la ocupación en tiempo real, reserva rápida y check-in/liberación por PIN de empleado.
 
+- **App AhoraFicho (Android o iOS):** en el listado de dispositivos, abre el **Código QR - Registro de dispositivo** (icono de QR). En la app, entra en modo terminal y escanéalo con el mismo botón que usas para un terminal de fichaje. La app abre Espacios según el modo del dispositivo y conserva la dirección del terminal registrado. Si ya está registrado, no hace falta volver a escanear el QR de la app.
+- **Navegador:** abre la dirección del terminal con los tokens del dispositivo: `/accessentry/terminal/{KeyToken}?secToken={SecurityToken}`.
+
+La cabecera del terminal de Espacios muestra el logotipo principal de la aplicación a la izquierda y la hora y la fecha a la derecha.
+
 ## Panel de espacios
 
 **Configuraciones → Espacios → Panel de espacios**: estadísticas del periodo que elijas:

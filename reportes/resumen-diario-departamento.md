@@ -210,7 +210,7 @@ Son las horas **realmente trabajadas**, descontando las pausas:
 > Para nóminas y cálculo de productividad, usa siempre las **Horas Efectivas**, ya que representan el tiempo real de trabajo.
 
 {: .important }
-> **Todo cuadra con la bolsa de horas extras**: el resumen diario, el resumen semanal, el informe mensual y la bolsa de horas extras usan el mismo cálculo. La **Diferencia** de cada día (con el criterio "Ajustada" activado) coincide con lo que la bolsa registra por ese día, y los totales del informe mensual coinciden con la suma de este resumen.
+> **Todo cuadra con la bolsa de horas extras**: el resumen diario, el resumen semanal, el informe mensual y la bolsa de horas extras usan el mismo cálculo. La **Diferencia** de cada día (con el criterio "Ajustada" activado) coincide con lo que la bolsa registra por ese día, y los totales del informe mensual coinciden con la suma de este resumen. Los movimientos de la bolsa que afectan al saldo (pagos, días compensatorios, **ajustes manuales** y anulaciones) aparecen como filas propias con su importe y motivo.
 
 ---
 

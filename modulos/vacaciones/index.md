@@ -53,9 +53,16 @@ Los tipos son **configurables por empresa** (Configuraciones → "Tipos de Ausen
 ### Vacaciones anuales
 
 - Días establecidos por convenio (generalmente 22-30 días/año)
-- Al dar de alta a un empleado se genera el **prorrateo** del año en curso (por meses devengados) más la bolsa del año siguiente
+- **Las bolsas admiten medios días**: se pueden configurar máximos decimales como 22,5 y se consumen combinando jornadas completas (1 día) y medias jornadas (0,5)
+- Al dar de alta a un empleado se genera el **prorrateo** del año en curso (por meses devengados, redondeado al medio día más cercano) más la bolsa del año siguiente
 - Cada bolsa tiene **fecha de caducidad** (habitualmente 31 de diciembre)
 - Se aprueban por el Responsable (Manager) y, si está activa la doble aprobación, también por el segundo responsable
+
+{: .tip }
+> Las bolsas se configuran en **Configuraciones → Ausencias → Bolsas de ausencias** (individual o masiva para varios trabajadores). Introduce el valor con coma decimal para los medios días (p. ej. `22,5`).
+
+{: .note }
+> El prorrateo del año de alta redondea al múltiplo de 0,5 más cercano: por ejemplo, 6 meses de una bolsa de 22,5 días genera 11,5 días.
 
 👉 [Ver guía: Solicitar Vacaciones](/guias-por-rol/empleado/solicitar-vacaciones/) | 👉 [Ver guía: Aprobar Vacaciones](/guias-por-rol/manager/aprobar-vacaciones/)
 
