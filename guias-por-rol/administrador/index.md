@@ -104,6 +104,9 @@ Configurar el calendario de festivos de la empresa.
 #### [Bloqueos de Vacaciones](/guias-por-rol/administrador/bloqueos-vacaciones/)
 Impedir solicitudes de vacaciones en fechas concretas por edificio.
 
+#### [Copias de Seguridad](/guias-por-rol/administrador/copias-seguridad/)
+Configurar copias automáticas de la base de datos a tu servidor FTP o FTPS.
+
 </div>
 
 ---
@@ -161,6 +164,7 @@ Configuraciones
 ├── Tipos de gasto (si módulo activo)
 ├── Tipos de servicio (si módulo activo)
 ├── Categoría documentos (si módulo activo)
+├── Copias de seguridad
 └── Roles
 ```
 

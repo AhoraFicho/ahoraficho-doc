@@ -78,6 +78,7 @@ Además, con el **Banco de horas extras** (opcional), los empleados acumulan las
 - [Crear y asignar horarios](/guias-por-rol/administrador/crear-horarios/)
 - [Asignar horarios de forma masiva](/guias-por-rol/administrador/asignar-horarios/)
 - [Desactivar usuarios](/guias-por-rol/administrador/desactivar-empleados/)
+- [Copias de seguridad](/guias-por-rol/administrador/copias-seguridad/)
 - [Informe para inspección de trabajo](/reportes/informe-inspeccion-trabajo/)
 
 </div>
