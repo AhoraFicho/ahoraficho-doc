@@ -19,7 +19,7 @@ Los empleados acumulan las horas trabajadas de más y pueden compensarlas con d�
 
 ## ¿Qué es el banco de horas extras?
 
-El **banco de horas extras** (también "bolsa de horas") registra automáticamente las horas que cada empleado trabaja por encima de su horario (y también los débitos, si se trabaja de menos). Esas horas se acumulan con una **caducidad** y se pueden compensar de dos formas:
+El **banco de horas extras** (también "bolsa de horas") registra automáticamente las horas que cada empleado trabaja por encima de su horario (y también los débitos, si se trabaja de menos). Esas horas se acumulan en una **bolsa** — que puede tener **fecha de caducidad** o quedarse **sin caducidad**, según configure tu empresa — y se pueden compensar de dos formas:
 
 - 🗓️ **Día compensatorio**: tomarte un día (o unas horas) libres gastando horas del banco
 - 💶 **Compensación económica**: solicitar el pago de las horas acumuladas
@@ -38,7 +38,7 @@ Ve a **"Mi Trabajo" → "Mi bolsa de horas"**. Verás:
 - **Disfrutadas**: horas ya compensadas con días
 - **Pagadas**: horas ya compensadas económicamente
 - **Horas debidas**: saldo negativo (horas debidas a la empresa)
-- **Caducidad**: fecha límite de las horas acumuladas
+- **Caducidad**: fecha límite de las horas acumuladas; si tu empresa configura la bolsa **sin caducidad**, verás el texto **«Sin caducidad»**
 - **Multiplicador de compensación** (si aplica): el coste en horas de un día compensatorio puede ser mayor que 1 (ej: x1,5)
 
 ### Solicitar día compensatorio
@@ -78,7 +78,7 @@ Menú **"Reportes" → "Bolsa horas extras"** (Administradores y SuperAdmin):
 - **Tarjetas de equipo**: horas disponibles, horas debidas, saldo neto y solicitudes económicas pendientes
 - **Solicitudes económicas**: aprobar (✓) o rechazar (✗) con motivo
 - **Tabla por empleado**: saldo neto (primera columna, la cifra principal) / acumuladas / disfrutadas / pagadas / debidas / caducidad
-- **Acciones por empleado**: crear día compensatorio, **reconciliar** el saldo con los fichajes reales, **marcar horas como pagadas** (parcial o totalmente)
+- **Acciones por empleado**: crear día compensatorio, **editar la caducidad** de la bolsa, **reconciliar** el saldo con los fichajes reales, **marcar horas como pagadas** (parcial o totalmente)
 - **Registro manual**: añadir ajustes manuales de minutos
 - Filtros por departamento, trabajador y año
 
@@ -100,6 +100,9 @@ Menú **"Reportes" → "Bolsa horas extras"** (Administradores y SuperAdmin):
 
 {: .note }
 > **Media jornada de vacaciones**: la bolsa procesa el día con la jornada de la parte trabajada (mañana o tarde según el corte del horario), igual que el informe mensual.
+
+{: .note }
+> **Pausa de comida solo en jornadas de 6 horas o más**: el descuento de pausa configurado en el horario se aplica cuando el día suma 6 horas o más de fichajes. En jornadas más cortas (por ejemplo, compensar media jornada y fichar solo la otra mitad) no se llegó a hacer la comida y las horas fichadas cuentan íntegras: el día compensado no arrastra una hora de comida fantasma ni genera horas negativas falsas.
 
 {: .note }
 > **Turnos que empiezan a las 00:00**: si el horario de un día empieza a medianoche (ej. turno nocturno 00:00-08:00), esas horas cuentan como jornada normal. Solo se acumulan como extras las horas que superen el horario del día, igual que en cualquier otro turno.
@@ -153,7 +156,10 @@ Desde el detalle de una bolsa (**"Reportes" → "Bolsa horas extras" → detalle
 
 ### ¿Las horas extras caducan?
 
-Sí, cada bolsa tiene fecha de caducidad (visible en tu saldo). Úsalas antes de que venzan.
+Depende de cómo lo configure tu empresa: una bolsa puede tener **fecha de caducidad** (visible en tu saldo; úsalas antes de que venzan) o quedar **sin caducidad** y no perderse nunca. El Administrador puede cambiar la caducidad de una bolsa en cualquier momento desde **"Bolsa horas extras"** (icono de lápiz), incluso quitarla del todo marcando **"Sin caducidad"**.
+
+{: .note }
+> Si una bolsa ya ha caducado, editar su fecha **no la reactiva**: el Administrador debe primero **anular el movimiento de caducidad** desde el detalle de la bolsa y después ajustar la fecha.
 
 ### ¿Un día compensatorio cuesta lo mismo que las horas que tengo?
 

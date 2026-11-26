@@ -344,7 +344,13 @@ Sí, pero el Manager debe aprobar el permiso no retribuido también.
 
 ## Configuración para administradores: cómo computa cada tipo
 
-En **"Configuraciones" → "Tipos de Ausencias"** cada tipo tiene dos opciones que deciden cómo afectan sus días a los reportes y a la bolsa de horas:
+En **"Configuraciones" → "Tipos de Ausencias"** cada tipo tiene las siguientes opciones que deciden cómo se identifica y cómo afectan sus días a los reportes y a la bolsa de horas:
+
+### Código (opcional)
+
+Cada tipo puede tener un **código** opcional que lo identifica de forma única sin depender de su identificador interno (que puede ser distinto en cada empresa). AhoraFicho lo usa para localizar tipos concretos: el tipo **Vacaciones** lleva el código `VACACIONES` y el tipo **No disponible** el código `NO DISPONIBLE`. Puedes dejarlo vacío en el resto de tipos.
+
+### Opciones de cómputo
 
 | Opción | Efecto en un día aprobado de ese tipo |
 |--------|----------------------------------------|
@@ -369,6 +375,17 @@ Además del recordatorio diario de ausencias pendientes, cada tipo de ausencia t
 
 {: .tip }
 > **Criterio habitual**: permisos puntuales (asuntos propios, permisos retribuidos) → 30 minutos, para que el responsable sepa en el momento que alguien espera respuesta. Vacaciones y bajas → 0 o un valor alto, porque se gestionan con calma y ya tienen el recordatorio diario.
+
+---
+
+## Tipo «No disponible»
+
+Es un tipo de ausencia especial que AhoraFicho crea automáticamente al solicitar **vacaciones** en empresas que computan por **días hábiles**:
+
+- Cuando el rango solicitado incluye días **sin horario** (fines de semana libres, días no laborables del calendario del trabajador) o **festivos**, esos días no se piden como vacaciones (no descuentan saldo), pero **se registran como "No disponible"** en el calendario.
+- Así queda constancia visual de qué días del rango no están disponibles, tanto para el trabajador como para el responsable que aprueba.
+- No consumen vacaciones, no requieren aprobación propia y acompañan al resto de la solicitud (si la solicitud se confirma en masa, se confirman también).
+- El Administrador puede personalizar su **nombre y color** en "Tipos de Ausencias"; el código `NO DISPONIBLE` debe conservarse para que la identificación automática siga funcionando.
 
 ---
 

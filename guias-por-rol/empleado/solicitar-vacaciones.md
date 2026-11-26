@@ -81,7 +81,11 @@ Selecciona el tipo del desplegable. Según el tipo:
 
 ### 📅 Fechas
 
-Del primer día al último. El sistema **excluye automáticamente fines de semana y festivos** del cómputo.
+Del primer día al último. Según cómo configure tu empresa el cómputo (**días hábiles** o **naturales**), el sistema decide qué días del rango son vacaciones:
+
+- Los días **sin horario** (fines de semana libres, días no laborables de tu calendario) y los **festivos** **no descuentan saldo**.
+- Si tu empresa computa por días hábiles, esos días excluidos se registran automáticamente en el calendario como ausencia **"No disponible"**: sirve para dejar constancia visual de que ese día no está disponible, y no consume vacaciones. Aparecerá en tu calendario y en el de tu responsable junto a los días de vacaciones.
+- Si computa por días naturales, sí se cuentan todos los días del rango (salvo festivos, que se marcan también como "No disponible").
 
 ### 🗓️ Año administrativo
 
@@ -243,7 +247,7 @@ La solicitud permanece **Pendiente** (o **Pendiente Segunda Aprobación**) hasta
 
 ### ¿Los festivos cuentan como vacaciones?
 
-No: los festivos configurados no se descuentan del saldo y se excluyen automáticamente del cálculo de días.
+No: los festivos configurados no se descuentan del saldo. Si tu empresa computa por días hábiles, los festivos dentro del rango solicitado aparecen en el calendario como **"No disponible"**, sin consumir vacaciones.
 
 ### ¿Qué pasa si me pongo enfermo durante mis vacaciones?
 
