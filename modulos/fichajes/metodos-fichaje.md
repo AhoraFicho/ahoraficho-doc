@@ -158,6 +158,21 @@ Fichar usando un código PIN de 6 dígitos en un terminal compartido (tablet u o
 
 Tu PIN de terminal se define cuando el Administrador te da de alta (o al importar empleados masivamente). No puedes cambiarlo tú mismo: si lo olvidas, pide a tu Administrador que te asigne uno nuevo.
 
+### Solicitar un cambio de fichaje desde el terminal
+
+En el resumen que aparece tras introducir tu PIN, cada fichaje de hoy lleva un **icono de lápiz**: al pulsarlo puedes solicitar un **cambio de fichaje** directamente desde el terminal.
+
+1. Pulsa el **lápiz** junto al fichaje que quieres modificar
+2. Se abre una ventana con la **"Hora original"** del fichaje
+3. Indica la **"Nueva hora"** correcta
+4. Escribe el **motivo** del cambio (obligatorio, máximo 500 caracteres)
+5. Pulsa **"Guardar"**: verás la confirmación de que la solicitud se ha enviado y volverás al resumen para seguir fichando con normalidad
+
+La solicitud queda **pendiente de validación**: la revisará un validador o administrador igual que las solicitudes hechas desde **"Mis Fichajes"**. Mientras una solicitud está pendiente, el fichaje muestra un **icono de reloj de arena** en lugar del lápiz y no admite solicitar otro cambio hasta que se valide o rechace.
+
+{: .tip }
+> Si te equivocas al fichar en el terminal (por ejemplo, fichaste la salida en lugar de la entrada), no necesitas ir a un ordenador: pide el cambio allí mismo desde el lápiz.
+
 ### Ventajas
 
 ✅ **Muy rápido**: Fichar en 3 segundos
@@ -349,5 +364,7 @@ Si tienes dudas sobre los métodos de fichaje:
 
 - 👉 [Primer Fichaje](/primeros-pasos/primer-fichaje/)
 - 👉 [Descarga App Móvil](/primeros-pasos/descarga-app-movil/)
+- 👉 [Consultar Mis Fichajes](/guias-por-rol/empleado/consultar-mis-fichajes/)
+- 👉 [Aprobar Cambios de Fichaje](/guias-por-rol/validador/aprobar-cambios-fichaje/)
 - 👉 [Gestión de Edificios](/guias-por-rol/administrador/gestion-edificios/)
 - 👉 [Módulo de Fichajes](/modulos/fichajes/)

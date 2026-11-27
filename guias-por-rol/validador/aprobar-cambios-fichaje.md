@@ -30,6 +30,8 @@ Los **cambios de fichaje** son solicitudes que los empleados envían cuando:
 - ❌ **Ficharon a una hora incorrecta** (por error)
 - ❌ **Necesitan corregir** la hora de un fichaje ya registrado
 
+Las solicitudes se envían desde **"Mis Fichajes"** en la web o la app, y también desde el **terminal de fichaje por PIN**: en el resumen del kiosco, cada fichaje del día lleva un lápiz para pedir el cambio en el momento (ver [Métodos de Fichaje](/modulos/fichajes/metodos-fichaje/)).
+
 {: .important }
 > **Solo se modifica la hora**: El empleado solicita una **nueva hora para el mismo día** del fichaje. No puede cambiar la fecha ni añadir o eliminar fichajes desde la solicitud. Si falta un fichaje completo por añadir o hay que eliminar uno erróneo, se hace desde la gestión de fichajes del Administrador (o con el botón "Solucionar" del propio empleado, que genera un cambio auto-aprobado).
 
