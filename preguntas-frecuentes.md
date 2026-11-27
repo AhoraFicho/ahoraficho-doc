@@ -37,6 +37,7 @@ Si tu empresa te ha habilitado el fichaje por PIN o RFID, tus credenciales de te
 2. Haz clic en **"¿Olvidaste tu contraseña?"**
 3. Introduce tu email
 4. Recibirás un enlace para crear una nueva contraseña
+5. Tras crearla, pulsa **"Ir a iniciar sesión"** y accede con tu nueva contraseña
 
 ### ¿Puedo cambiar mi contraseña?
 

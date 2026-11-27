@@ -262,6 +262,7 @@ Si prefieres acceder manualmente:
 3. Recibirás un email con un enlace de recuperación
 4. Haz clic en el enlace (válido por 24 horas)
 5. Establece tu nueva contraseña
+6. Verás la confirmación de que la contraseña se ha cambiado correctamente: pulsa **"Ir a iniciar sesión"** para entrar con tu nueva contraseña
 
 {: .warning }
 > Si no recibes el email en 5 minutos, revisa tu carpeta de spam o contacta con tu administrador.
