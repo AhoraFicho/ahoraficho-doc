@@ -60,6 +60,7 @@ Además, con el **Banco de horas extras** (opcional), los empleados acumulan las
 
 ### 👤 Empleado
 - [Mi primer fichaje](/primeros-pasos/primer-fichaje/)
+- [Consultar mi horario](/guias-por-rol/empleado/consultar-mi-horario/)
 - [Solicitar vacaciones](/guias-por-rol/empleado/solicitar-vacaciones/)
 - [¿Olvidé fichar?](/guias-por-rol/empleado/olvide-fichar/)
 

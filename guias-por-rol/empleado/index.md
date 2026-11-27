@@ -84,6 +84,9 @@ Proceso completo para solicitar vacaciones y permisos.
 ### [Consultar Mis Fichajes](/guias-por-rol/empleado/consultar-mis-fichajes/)
 Cómo ver tu historial, resúmenes y estadísticas.
 
+### [Consultar Mi Horario](/guias-por-rol/empleado/consultar-mi-horario/)
+Consulta tu horario de la semana actual, la siguiente o de cualquier otra semana desde el panel principal.
+
 ### [Notificaciones](/guias-por-rol/empleado/notificaciones/)
 Configura qué avisos recibes por email y push.
 

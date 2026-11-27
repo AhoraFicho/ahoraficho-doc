@@ -158,5 +158,6 @@ Porque ya tiene una **solicitud de cambio pendiente**. Espera a que se resuelva.
 
 - 👉 [¿Olvidé Fichar?](/guias-por-rol/empleado/olvide-fichar/)
 - 👉 [Cierre Mensual](/guias-por-rol/empleado/cierres-mensuales/)
+- 👉 [Consultar Mi Horario](/guias-por-rol/empleado/consultar-mi-horario/)
 - 👉 [Primer Fichaje](/primeros-pasos/primer-fichaje/)
 - 👉 [Módulo de Fichajes](/modulos/fichajes/)
